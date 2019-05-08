@@ -2,27 +2,20 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import AddIcon from "@material-ui/icons/Add";
 import AppBar from "@material-ui/core/AppBar";
-import Fab from "@material-ui/core/Fab";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
 const StyledAppBar = styled(AppBar)`
   && {
-    background-color: #222;
-  }
-`;
-
-const AddButton = styled(Fab)`
-  && {
-    margin-left: 4rem;
+    background-color: #f5f5f5;
+    box-shadow: none;
   }
 `;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #777;
 
   &:focus,
   &:hover,
@@ -40,18 +33,9 @@ class Header extends Component {
         <Toolbar>
           <StyledLink to="/">
             <Typography variant="title" color="inherit">
-              MemoMemo
+              Jun's portfolio
             </Typography>
           </StyledLink>
-          <AddButton
-            color="primary"
-            aria-label="Add"
-            component={Link}
-            to="/new"
-            size="small"
-          >
-            <AddIcon />
-          </AddButton>
         </Toolbar>
       </StyledAppBar>
     );

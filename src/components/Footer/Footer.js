@@ -1,12 +1,24 @@
 import React, { Component } from "react";
-import "./Footer.css";
+import styled from "styled-components";
+
+const StyledFooter = styled.div`
+  background-color: #cfd8dc;
+  padding: 3rem;
+`;
+
+const Copyright = styled.p`
+  text-align: center;
+  color: #777;
+`;
 
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer">
-        <p className="copyright">Copyright &copy; 2018 - 2019 MemoMemo All rights reserved.</p>
-      </footer>
+      <StyledFooter className="footer">
+        <Copyright>
+          &copy; Jun Yamada 2018-2019 All rights reserved.
+        </Copyright>
+      </StyledFooter>
     );
   }
 }
