@@ -8,7 +8,7 @@ import Typography from "@material-ui/core/Typography";
 
 const StyledAppBar = styled(AppBar)`
   && {
-    background-color: #f5f5f5;
+    background-color: #efebe9;
     box-shadow: none;
   }
 `;
@@ -33,7 +33,7 @@ class Header extends Component {
         <Toolbar>
           <StyledLink to="/">
             <Typography variant="title" color="inherit">
-              Jun's portfolio
+              Jun Yamada
             </Typography>
           </StyledLink>
         </Toolbar>

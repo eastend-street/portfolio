@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.div`
-  background-color: #cfd8dc;
+  /* background-color: #d7ccc8; */
   padding: 3rem;
 `;
 

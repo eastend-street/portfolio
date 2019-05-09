@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
+import WorkCard from "../WorkCard/WorkCard";
 
 const StyledContainer = styled.div`
   min-height: 20rem;
@@ -34,7 +35,7 @@ const StyledH1 = styled.h1`
 
 const StyledH2 = styled.h2`
   text-align: center;
-  margin: 1rem auto;
+  margin: 2rem auto;
 `;
 
 const StyledH3 = styled.h3`
@@ -42,14 +43,39 @@ const StyledH3 = styled.h3`
   margin: 0 auto;
 `;
 
+const GridCardItem = styled(Grid)`
+  && {
+    padding: 1rem;
+  }
+`;
+
 class About extends Component {
+  renderWorkCard() {
+    return (
+      <React.Fragment>
+        <GridCardItem item xs={12} md={6}>
+          <WorkCard />
+        </GridCardItem>
+        <GridCardItem item xs={12} md={6}>
+          <WorkCard />
+        </GridCardItem>
+        <GridCardItem item xs={12} md={6}>
+          <WorkCard />
+        </GridCardItem>
+        <GridCardItem item xs={12} md={6}>
+          <WorkCard />
+        </GridCardItem>
+      </React.Fragment>
+    );
+  }
+
   render() {
     return (
       <StyledContainer>
         <ContentTitle container>
           <Grid item xs={12}>
             <StyledH1>
-              I'm Jun, a Front-end developer based in Vancouver.
+              Hi, I'm Jun, a Front-end developer based in Vancouver.
             </StyledH1>
           </Grid>
         </ContentTitle>
@@ -57,11 +83,11 @@ class About extends Component {
           <Grid item xs={12}>
             <StyledH2>About</StyledH2>
             <StyledH3>
-              My name is Jun Yamada, Japanese, a front-end developer living in
+              My name is Jun Yamada, Japanese, a front-end developer based in
               Vancouver, Canada.
             </StyledH3>
             <Grid container justify="center">
-              <Grid item xs={10}>
+              <Grid item xs={11} sm={10} md={8} lg={7}>
                 <p>
                   I have worked as a front-end web developer, a software
                   engineer. As a developer, my strength is a software focused
@@ -71,11 +97,15 @@ class About extends Component {
                 </p>
               </Grid>
             </Grid>
+            <StyledH3>Work experience</StyledH3>
           </Grid>
         </ContentAbout>
         <ContentWorks container justify="center">
           <Grid item xs={12}>
             <StyledH2>Works</StyledH2>
+          </Grid>
+          <Grid item xs={12}>
+            <Grid container>{this.renderWorkCard()}</Grid>
           </Grid>
         </ContentWorks>
       </StyledContainer>
