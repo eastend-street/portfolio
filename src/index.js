@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-// import Work from "./components/Work/Work";
-import About from "./components/About/About";
+import Main from "./components/Main/Main";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -13,10 +12,7 @@ import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(
   <BrowserRouter>
     <Header />
-    <Switch>
-      <Route path="/" exact component={About} />
-      {/* <Route path="/work" exact component={Work} /> */}
-    </Switch>
+    <Main />
     <Footer />
   </BrowserRouter>,
   document.getElementById("root")

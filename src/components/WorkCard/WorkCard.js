@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 
-const WorkCard = styled(Card)`
+const StyledWorkCard = styled(Card)`
   && {
     box-shadow: none;
   }
@@ -18,16 +18,16 @@ const WorkImage = styled(CardMedia)`
   }
 `;
 
-class About extends Component {
+class WorkCard extends Component {
   render() {
     return (
-      <WorkCard>
+      <StyledWorkCard>
         <CardActionArea>
           <WorkImage image="http://i.imgur.com/I86rTVl.jpg" />
         </CardActionArea>
-      </WorkCard>
+      </StyledWorkCard>
     );
   }
 }
 
-export default About;
+export default WorkCard;
