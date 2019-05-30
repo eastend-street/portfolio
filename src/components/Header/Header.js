@@ -45,7 +45,7 @@ class Header extends Component {
         <Toolbar>
           <StyledLink to="/">
             <Typography variant="title" color="inherit">
-              Jun Yamada
+              Jun's portfolio
             </Typography>
           </StyledLink>
           <WrapButton>
