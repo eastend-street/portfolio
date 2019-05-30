@@ -3,18 +3,26 @@ import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
 import WorkCard from "../WorkCard/WorkCard";
+import { Typography } from "@material-ui/core";
+
 
 
 const ContentWorks = styled(Grid)`
   && {
-    min-height: 40rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 `;
 
-const StyledH2 = styled.h2`
-  text-align: center;
-  margin: 2rem auto;
+const Title = styled(Typography)`
+  && {
+    text-align: center;
+    color: inherit;
+    margin-bottom: 5rem;
+    font-weight: bold;
+  }
 `;
+
 
 const GridCardItem = styled(Grid)`
   && {
@@ -47,9 +55,9 @@ class Work extends Component {
     return (
       <ContentWorks container justify="center">
         <Grid item xs={12}>
-          <StyledH2>Works</StyledH2>
+          <Title variant="h4">Works</Title>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={10}>
           <Grid container>{this.renderWorkCard()}</Grid>
         </Grid>
       </ContentWorks>

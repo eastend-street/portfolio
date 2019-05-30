@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Title from "../Title/Title";
 import About from "../About/About";
 import Work from "../Work/Work";
+import WorkExperience from "../WorkExperience/WorkExperience";
 
 const StyledContainer = styled.div`
   min-height: 20rem;
@@ -17,6 +18,7 @@ class Main extends Component {
         <Title />
         <About />
         <Work />
+        <WorkExperience />        
       </StyledContainer>
     );
   }

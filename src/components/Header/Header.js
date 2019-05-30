@@ -9,14 +9,14 @@ import Typography from "@material-ui/core/Typography";
 
 const StyledAppBar = styled(AppBar)`
   && {
-    background-color: #efebe9;
+    background-color: #f9f2ec;
     box-shadow: none;
   }
 `;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #777;
+  color: #4e4e4e;
 
   &:focus,
   &:hover,
@@ -33,7 +33,7 @@ const WrapButton = styled.div`
 
 const StyledButton = styled(Button)`
   && {
-    color: #777;
+    color: #4e4e4e;
     text-transform: none;
   }
 `;
@@ -49,8 +49,8 @@ class Header extends Component {
             </Typography>
           </StyledLink>
           <WrapButton>
-            <StyledButton>Work</StyledButton>
             <StyledButton>About</StyledButton>
+            <StyledButton>Work</StyledButton>
             <StyledButton>Contact</StyledButton>
           </WrapButton>
         </Toolbar>

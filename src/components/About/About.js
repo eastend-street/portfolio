@@ -2,45 +2,66 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
+import profile from "../../static/images/profile.jpg";
+import { Typography } from "@material-ui/core";
 
 const ContentAbout = styled(Grid)`
   && {
-    min-height: 40rem;
+    background-color: #fcfcfc;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
   }
 `;
 
-const StyledH2 = styled.h2`
-  text-align: center;
-  margin: 2rem auto;
+const Title = styled(Typography)`
+  && {
+    text-align: center;
+    color: inherit;
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
 `;
 
-const StyledH3 = styled.h3`
-  text-align: center;
-  margin: 0 auto;
+const IntroSentence = styled(Typography)`
+  && {
+    margin-bottom: 2rem;
+  }
+`
+
+const ProfilePhoto = styled.img`
+  max-width: 50%;
+`;
+
+const ProfileGrid = styled(Grid)`
+  && {
+    text-align: center;
+  }
 `;
 
 class About extends Component {
   render() {
     return (
       <ContentAbout container justify="center">
-        <Grid item xs={12}>
-          <StyledH2>About</StyledH2>
-          <StyledH3>
-            My name is Jun Yamada, Japanese, a front-end developer based in
-            Vancouver, Canada.
-          </StyledH3>
-          <Grid container justify="center">
-            <Grid item xs={11} sm={10} md={8} lg={7}>
-              <p>
+        <Grid item xs={10}>
+          <Title variant="h4">About</Title>
+          <Grid container>
+            <ProfileGrid item xs={6}>
+              <ProfilePhoto src={profile} alt="profile" />
+            </ProfileGrid>
+            <Grid item xs={6}>
+              <IntroSentence variant="h5">
+                My name is Jun Yamada, Japanese, a front-end developer based in
+                Vancouver, Canada.
+              </IntroSentence>
+              <Typography variant="subtitle1">
                 I have worked as a front-end web developer, a software engineer.
                 As a developer, my strength is a software focused front-end,
                 writing JavaScript frameworks / libraries like React.js, Vue.js.
                 Also I am excited about startup culture, service architecture,
                 designing intuitive UI.
-              </p>
+              </Typography>
             </Grid>
           </Grid>
-          <StyledH3>Work experience</StyledH3>
         </Grid>
       </ContentAbout>
     );
