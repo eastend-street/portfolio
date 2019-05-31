@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
-import profile from "../../static/images/profile.jpg";
+import profile from "../../static/images/profile.png";
 import { Typography } from "@material-ui/core";
 
 const ContentAbout = styled(Grid)`
@@ -26,7 +26,30 @@ const IntroSentence = styled(Typography)`
   && {
     margin-bottom: 2rem;
   }
-`
+`;
+
+const Skills = styled(Typography)`
+  && {
+    margin-top: 4rem;
+  }
+`;
+
+const StyledUl = styled.ul`
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+`;
+
+const StyledLi = styled.li`
+  margin-top: 0.5rem;
+`;
+
+const Category = styled.span`
+  /* font-weight: bold; */
+`;
+
+const StrongSkills = styled.span`
+  font-weight: bold;
+`;
 
 const ProfilePhoto = styled.img`
   max-width: 50%;
@@ -50,8 +73,8 @@ class About extends Component {
             </ProfileGrid>
             <Grid item xs={6}>
               <IntroSentence variant="h5">
-                My name is Jun Yamada, Japanese, a front-end developer based in
-                Vancouver, Canada.
+                My name is Jun Yamada, a Japanese front-end developer based in
+                Vancouver.
               </IntroSentence>
               <Typography variant="subtitle1">
                 I have worked as a front-end web developer, a software engineer.
@@ -59,6 +82,28 @@ class About extends Component {
                 writing JavaScript frameworks / libraries like React.js, Vue.js.
                 Also I am excited about startup culture, service architecture,
                 designing intuitive UI.
+                <br />
+                In my spare time, I like working out, watching movie.
+              </Typography>
+              <Skills variant="h5">Skills</Skills>
+              <Typography variant="subtitle1">
+                <StyledUl>
+                  <StyledLi>
+                    <Category>Languages: </Category>
+                    <StrongSkills>JavaScript</StrongSkills>, TypeScript, Python,
+                    HTML5, CSS3, Sass, Java
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Frameworks/Libraries: </Category>
+                    <StrongSkills>React.js</StrongSkills>,
+                    <StrongSkills> Vue.js</StrongSkills>, Django, jQuery,
+                    Bootstrap
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Others: </Category>Docker,Google Cloud Platform,
+                    MySQL, Git, Ubuntu
+                  </StyledLi>
+                </StyledUl>
               </Typography>
             </Grid>
           </Grid>

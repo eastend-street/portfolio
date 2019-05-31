@@ -21,7 +21,7 @@ class Title extends Component {
       <ContentTitle container>
         <Grid item xs={12}>
           <StyledH1>
-            Hi, I'm Jun. A Front-end developer based in Vancouver.
+            Hi, I'm Jun. A front-end developer based in Vancouver.
           </StyledH1>
         </Grid>
       </ContentTitle>
