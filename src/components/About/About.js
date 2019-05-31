@@ -94,13 +94,13 @@ class About extends Component {
                     HTML5, CSS3, Sass, Java
                   </StyledLi>
                   <StyledLi>
-                    <Category>Frameworks/Libraries: </Category>
+                    <Category>Frameworks / Libraries: </Category>
                     <StrongSkills>React.js</StrongSkills>,
                     <StrongSkills> Vue.js</StrongSkills>, Django, jQuery,
                     Bootstrap
                   </StyledLi>
                   <StyledLi>
-                    <Category>Others: </Category>Docker,Google Cloud Platform,
+                    <Category>Others: </Category>Docker, Google Cloud Platform,
                     MySQL, Git, Ubuntu
                   </StyledLi>
                 </StyledUl>

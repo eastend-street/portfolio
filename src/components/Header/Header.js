@@ -50,7 +50,7 @@ class Header extends Component {
           </StyledLink>
           <WrapButton>
             <StyledButton>About</StyledButton>
-            <StyledButton>Work</StyledButton>
+            <StyledButton>Works</StyledButton>
             <StyledButton>Contact</StyledButton>
           </WrapButton>
         </Toolbar>
