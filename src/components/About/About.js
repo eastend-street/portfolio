@@ -24,12 +24,14 @@ const Title = styled(Typography)`
 
 const IntroSentence = styled(Typography)`
   && {
+    color: inherit;
     margin-bottom: 2rem;
   }
 `;
 
 const Skills = styled(Typography)`
   && {
+    color: inherit;
     margin-top: 4rem;
   }
 `;
@@ -41,13 +43,16 @@ const StyledUl = styled.ul`
 
 const StyledLi = styled.li`
   margin-top: 0.5rem;
+  color: inherit;
 `;
 
 const Category = styled.span`
   /* font-weight: bold; */
+  color: inherit;
 `;
 
 const StrongSkills = styled.span`
+  color: inherit;
   font-weight: bold;
 `;
 
@@ -85,7 +90,7 @@ class About extends Component {
                 <br />
                 In my spare time, I like working out, watching movie.
               </Typography>
-              <Skills variant="h5">Skills</Skills>
+              <Skills variant="h6">Skills</Skills>
               <Typography variant="subtitle1">
                 <StyledUl>
                   <StyledLi>
