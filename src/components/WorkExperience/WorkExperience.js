@@ -77,7 +77,7 @@ class WorkExperience extends Component {
         <Grid item xs={12}>
           <Title variant="h4">Work experience</Title>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={10} sm={8}>
           <EachCompany>
             <Occupation variant="h6">Software Engineer</Occupation>
             <CompanyName variant="subtitle1">bizocean Co., Ltd.</CompanyName>

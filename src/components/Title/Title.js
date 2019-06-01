@@ -19,7 +19,7 @@ class Title extends Component {
   render() {
     return (
       <ContentTitle container>
-        <Grid item xs={12}>
+        <Grid item xs={11} sm={12}>
           <StyledH1>
             Hi, I'm Jun. A front-end developer based in Vancouver.
           </StyledH1>

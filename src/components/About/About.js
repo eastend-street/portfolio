@@ -70,13 +70,13 @@ class About extends Component {
   render() {
     return (
       <ContentAbout container justify="center">
-        <Grid item xs={10}>
+        <Grid item xs={11} sm={10}>
           <Title variant="h4">About</Title>
-          <Grid container>
-            <ProfileGrid item xs={6}>
+          <Grid container justify="center">
+            <ProfileGrid item xs={9} sm={5} md={6}>
               <ProfilePhoto src={profile} alt="profile" />
             </ProfileGrid>
-            <Grid item xs={6}>
+            <Grid item xs={11} sm={7} md={6}>
               <IntroSentence variant="h5">
                 My name is Jun Yamada, a Japanese front-end developer based in
                 Vancouver.
