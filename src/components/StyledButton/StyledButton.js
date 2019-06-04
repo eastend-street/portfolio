@@ -17,9 +17,19 @@ const StyledResumeButton = styled(Button)`
 `;
 
 class StyledButton extends Component {
+  constructor(){
+    super()
+    this.openLink = this.openLink.bind(this);
+  }
+  openLink(){
+    console.log('open')
+  }
+
   render() {
-    return <StyledResumeButton>{this.props.name}</StyledResumeButton>;
-  };
+    return(
+      <StyledResumeButton onClick={this.openLink}>{this.props.name}</StyledResumeButton>
+    );
+  }
 }
 
 export default StyledButton;
