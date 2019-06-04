@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import profile from "../../static/images/profile.png";
 import { Typography } from "@material-ui/core";
+import StyledButton from "../StyledButton/StyledButton";
 
 const ContentAbout = styled(Grid)`
   && {
@@ -66,6 +67,10 @@ const ProfileGrid = styled(Grid)`
   }
 `;
 
+const ContentButton = styled.div`
+  margin: 3rem;
+`;
+
 class About extends Component {
   render() {
     return (
@@ -110,6 +115,10 @@ class About extends Component {
                   </StyledLi>
                 </StyledUl>
               </Typography>
+              <ContentButton>
+                <StyledButton name="Download resume" />
+                <StyledButton name="Contact me" />
+              </ContentButton>
             </Grid>
           </Grid>
         </Grid>
