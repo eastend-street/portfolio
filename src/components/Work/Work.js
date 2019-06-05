@@ -53,7 +53,7 @@ class Work extends Component {
 
   render() {
     return (
-      <ContentWorks container justify="center">
+      <ContentWorks container justify="center" id="works">
         <Grid item xs={12}>
           <Title variant="h4">Works</Title>
         </Grid>

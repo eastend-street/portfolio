@@ -6,7 +6,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-// import { HashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const StyledAppBar = styled(AppBar)`
   && {
@@ -18,6 +18,32 @@ const StyledAppBar = styled(AppBar)`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #4e4e4e;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
+const StyledHashLink = styled(HashLink)`
+  text-decoration: none;
+  color: #4e4e4e;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  color: white;
 
   &:focus,
   &:hover,
@@ -50,11 +76,19 @@ class Header extends Component {
             </Typography>
           </StyledLink>
           <WrapButton>
-            {/* <HashLink to="#about"> */}
+            <StyledHashLink smooth={true} to="#about">
               <StyledButton>About</StyledButton>
-            {/* </HashLink> */}
-            <StyledButton>Works</StyledButton>
-            <StyledButton>Contact</StyledButton>
+            </StyledHashLink>
+            <StyledHashLink smooth={true} to="#works">
+              <StyledButton>Works</StyledButton>
+            </StyledHashLink>
+            <StyledAnchor
+              href="mailto:jun.yamada0097@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <StyledButton>Contact</StyledButton>
+            </StyledAnchor>
           </WrapButton>
         </Toolbar>
       </StyledAppBar>

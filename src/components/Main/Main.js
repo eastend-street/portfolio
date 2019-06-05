@@ -18,7 +18,7 @@ class Main extends Component {
         <Title />
         <About />
         <Work />
-        <WorkExperience />        
+        <WorkExperience />
       </StyledContainer>
     );
   }
