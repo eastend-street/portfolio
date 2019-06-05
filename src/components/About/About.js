@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import profile from "../../static/images/profile.png";
 import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
+import resume from "../../static/pdf/resume_jun_yamada .pdf";
 
 const ContentAbout = styled(Grid)`
   && {
@@ -116,8 +117,11 @@ class About extends Component {
                 </StyledUl>
               </Typography>
               <ContentButton>
-                <StyledButton name="Download resume" url="https://www.google.co.jp"/>
-                <StyledButton name="Contact me" url="mailto:jun.yamada0097@gmail.com"/>
+                <StyledButton name="Download resume" url={resume} />
+                <StyledButton
+                  name="Contact me"
+                  url="mailto:jun.yamada0097@gmail.com"
+                />
               </ContentButton>
             </Grid>
           </Grid>
