@@ -16,18 +16,29 @@ const StyledResumeButton = styled(Button)`
   }
 `;
 
-class StyledButton extends Component {
-  constructor(){
-    super()
-    this.openLink = this.openLink.bind(this);
-  }
-  openLink(){
-    console.log('open')
-  }
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  color: white;
 
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
+class StyledButton extends Component {
   render() {
-    return(
-      <StyledResumeButton onClick={this.openLink}>{this.props.name}</StyledResumeButton>
+    return (
+      <StyledAnchor
+        href={this.props.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <StyledResumeButton>{this.props.name}</StyledResumeButton>
+      </StyledAnchor>
     );
   }
 }
