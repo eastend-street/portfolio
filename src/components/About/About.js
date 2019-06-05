@@ -75,7 +75,7 @@ const ContentButton = styled.div`
 class About extends Component {
   render() {
     return (
-      <ContentAbout container justify="center">
+      <ContentAbout container justify="center" id="about">
         <Grid item xs={11} sm={10}>
           <Title variant="h4">About</Title>
           <Grid container justify="center">

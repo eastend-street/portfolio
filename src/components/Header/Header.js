@@ -6,6 +6,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+// import { HashLink } from "react-router-hash-link";
 
 const StyledAppBar = styled(AppBar)`
   && {
@@ -28,7 +29,7 @@ const StyledLink = styled(Link)`
 `;
 
 const WrapButton = styled.div`
-    margin: 0 0 0 auto;
+  margin: 0 0 0 auto;
 `;
 
 const StyledButton = styled(Button)`
@@ -49,7 +50,9 @@ class Header extends Component {
             </Typography>
           </StyledLink>
           <WrapButton>
-            <StyledButton>About</StyledButton>
+            {/* <HashLink to="#about"> */}
+              <StyledButton>About</StyledButton>
+            {/* </HashLink> */}
             <StyledButton>Works</StyledButton>
             <StyledButton>Contact</StyledButton>
           </WrapButton>
