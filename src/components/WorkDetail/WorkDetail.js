@@ -22,21 +22,27 @@ const Title = styled(Typography)`
   }
 `;
 
-const Description = styled.div`
+const ContentDescription = styled.div`
   background-color: #fcfcfc;
-  padding-top: 5rem;
+  padding-top: 10rem;
 `;
 
 const SiteDescription = styled(Typography)`
   && {
-    /* margin: rem auto; */
+  }
+`;
+
+const WhatIsIt = styled(Typography)`
+  && {
+    font-weight: bold;
+    margin: 3rem auto 1rem auto;
   }
 `;
 
 const StyledWorkCard = styled(Card)`
   && {
     box-shadow: none;
-    transform: translateY(20%)
+    transform: translateY(20%);
     /* margin: 0 auto -20% */
   }
 `;
@@ -50,7 +56,26 @@ const WorkImage = styled(CardMedia)`
 
 const ButtonWrapper = styled.div`
   text-align: center;
-  margin-top: 2rem;
+`;
+
+const Technology = styled(Typography)`
+  && {
+    margin: 5rem auto 1rem auto;
+    font-weight: bold;
+  }
+`;
+
+const StyledUl = styled.ul`
+  margin: 2rem auto 5rem auto;
+  padding-left: 1rem;
+`;
+
+const StyledLi = styled.li`
+  margin-top: 1rem;
+`;
+
+const Category = styled.span`
+  font-weight: bold;
 `;
 
 class WorkDetail extends Component {
@@ -69,27 +94,51 @@ class WorkDetail extends Component {
             </StyledWorkCard>
           </Grid>
         </Grid>
-        <Description>
+        <ContentDescription>
           <Grid container justify="center">
             <Grid item xs={7}>
-              <Description>
-                <SiteDescription variant="subtitle1">
-                  MemoMemo is a bookmark and note service for developer. <br />
-                  If you can solve a error, you can write a note that how to
-                  solve the error, and save website that was used to help
-                  resolve the error. Of course, even non-developers, you can use
-                  MemoMemo as a bookmark and note managing web service.
-                </SiteDescription>
-                <ButtonWrapper>
-                  <StyledButton
-                    name="Visit Website"
-                    url="https://www.google.com/"
-                  />
-                </ButtonWrapper>
-              </Description>
+              <ButtonWrapper>
+                <StyledButton
+                  name="Visit Website"
+                  url="https://www.google.com/"
+                />
+              </ButtonWrapper>
+              <WhatIsIt variant="h6">What is MemoMemo?</WhatIsIt>
+              <SiteDescription variant="subtitle1">
+                MemoMemo is a bookmark and note service for developer. <br />
+                If you solve a error, you can write a note that how to solve the
+                error, and save website that was used to help resolve the error.
+                Of course, even non-developers, you can use MemoMemo as a
+                bookmark and note managing web service.
+              </SiteDescription>
+              <Technology variant="h6">Technology</Technology>
+              <Typography variant="subtitle1">
+                I developed all of the service, front end, back end, infrastructure and design. The front
+                end made by React.js, back end made by Python.
+                In front end, I used Redux and styled-components, 
+                correct style application and state management are realized.
+                In back end, I used Django REST framework and Google cloud platform. 
+                It established RESTful API communication.
+              </Typography>
+              <StyledUl>
+                <StyledLi>
+                  <Category>Front-end: </Category> React.js, Redux, styled-components, 
+                  Material-ui
+                </StyledLi>
+                <StyledLi>
+                  <Category>Backend: </Category> Django REST framework, Python
+                </StyledLi>
+                <StyledLi>
+                  <Category>Infrastructure: </Category> Google cloud platform,
+                  Docker
+                </StyledLi>
+                <StyledLi>
+                  <Category>Others: </Category> REST API, Axios, Gunicorn
+                </StyledLi>
+              </StyledUl>
             </Grid>
           </Grid>
-        </Description>
+        </ContentDescription>
       </ContentWorkDetail>
     );
   }
