@@ -23,7 +23,7 @@ class WorkCard extends Component {
   render() {
     return (
       <StyledWorkCard>
-        <CardActionArea>
+        <CardActionArea href="/work/">
           <WorkImage image={WorkPhoto} />
         </CardActionArea>
       </StyledWorkCard>

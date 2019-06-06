@@ -31,7 +31,7 @@ const GridCardItem = styled(Grid)`
 `;
 
 
-class Work extends Component {
+class Works extends Component {
   renderWorkCard() {
     return (
       <React.Fragment>
@@ -65,4 +65,4 @@ class Work extends Component {
   }
 }
 
-export default Work;
+export default Works;

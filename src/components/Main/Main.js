@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Title from "../Title/Title";
 import About from "../About/About";
-import Work from "../Work/Work";
+import Works from "../Works/Works";
 import WorkExperience from "../WorkExperience/WorkExperience";
 
 const StyledContainer = styled.div`
@@ -17,7 +17,7 @@ class Main extends Component {
       <StyledContainer>
         <Title />
         <About />
-        <Work />
+        <Works />
         <WorkExperience />
       </StyledContainer>
     );
