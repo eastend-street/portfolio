@@ -3,11 +3,14 @@ import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
+import StyledButton from "../StyledButton/StyledButton";
+import resume from "../../static/pdf/resume_jun_yamada .pdf";
+
 
 const ContentWorkExperience = styled(Grid)`
   && {
     padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     background-color: #fcfcfc;
   }
 `;
@@ -68,6 +71,11 @@ const StyledLi = styled.li`
 
 const EachCompany = styled.div`
   margin-top: 5rem;
+`;
+
+const ContentButton = styled.div`
+  margin-top: 8rem;
+  text-align: center;
 `;
 
 class WorkExperience extends Component {
@@ -151,6 +159,15 @@ class WorkExperience extends Component {
               <DescSentence>Java, SQL, VBA</DescSentence>
             </SkillDescription>
           </EachCompany>
+        </Grid>
+        <Grid item xs={10} sm={8}>
+          <ContentButton>
+            <StyledButton name="Download resume" url={resume} />
+            <StyledButton
+              name="Say Hello"
+              url="mailto:jun.yamada0097@gmail.com"
+            />
+          </ContentButton>
         </Grid>
       </ContentWorkExperience>
     );

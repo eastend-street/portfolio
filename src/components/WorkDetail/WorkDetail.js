@@ -8,6 +8,8 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import WorkPhoto from "../../static/images/sample.png";
 import StyledButton from "../StyledButton/StyledButton";
+import resume from "../../static/pdf/resume_jun_yamada .pdf";
+
 
 const ContentWorkDetail = styled.div`
   padding-top: 5rem;
@@ -25,6 +27,7 @@ const Title = styled(Typography)`
 const ContentDescription = styled.div`
   background-color: #fcfcfc;
   padding-top: 10rem;
+  padding-bottom: 2rem;
 `;
 
 const SiteDescription = styled(Typography)`
@@ -78,6 +81,11 @@ const Category = styled.span`
   font-weight: bold;
 `;
 
+const ContentButton = styled.div`
+  margin-top: 3rem;
+  text-align: center;
+`;
+
 class WorkDetail extends Component {
   render() {
     return (
@@ -113,17 +121,18 @@ class WorkDetail extends Component {
               </SiteDescription>
               <Technology variant="h6">Technology</Technology>
               <Typography variant="subtitle1">
-                I developed all of the service, front end, back end, infrastructure and design. The front
-                end made by React.js, back end made by Python.
-                In front end, I used Redux and styled-components, 
-                correct style application and state management are realized.
-                In back end, I used Django REST framework and Google cloud platform. 
-                It established RESTful API communication.
+                I developed all of the service, front end, back end,
+                infrastructure and design. The front end made by React.js, back
+                end made by Python. In front end, I used Redux and
+                styled-components, correct style application and state
+                management are realized. In back end, I used Django REST
+                framework and Google cloud platform. It established RESTful API
+                communication.
               </Typography>
               <StyledUl>
                 <StyledLi>
-                  <Category>Front-end: </Category> React.js, Redux, styled-components, 
-                  Material-ui
+                  <Category>Front-end: </Category> React.js, Redux,
+                  styled-components, Material-ui
                 </StyledLi>
                 <StyledLi>
                   <Category>Backend: </Category> Django REST framework, Python
@@ -138,6 +147,13 @@ class WorkDetail extends Component {
               </StyledUl>
             </Grid>
           </Grid>
+          <ContentButton>
+            <StyledButton name="Download resume" url={resume} />
+            <StyledButton
+              name="Say Hello"
+              url="mailto:jun.yamada0097@gmail.com"
+            />
+          </ContentButton>
         </ContentDescription>
       </ContentWorkDetail>
     );
