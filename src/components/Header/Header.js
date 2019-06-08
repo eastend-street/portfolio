@@ -70,7 +70,7 @@ class Header extends Component {
     return (
       <StyledAppBar position="static">
         <Toolbar>
-          <StyledLink to="/">
+          <StyledLink to={process.env.PUBLIC_URL + '/'}>
             <Typography variant="title" color="inherit">
               Jun
             </Typography>

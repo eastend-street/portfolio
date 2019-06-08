@@ -13,8 +13,8 @@ import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(
   <BrowserRouter>
     <Header />
-    <Route path="/" exact component={Main} />
-    <Route path="/work/" exact component={WorkDetail} />
+    <Route path={process.env.PUBLIC_URL + '/'} exact component={Main} />
+    <Route path={process.env.PUBLIC_URL + '/work/'} exact component={WorkDetail} />
     <Footer />
   </BrowserRouter>,
   document.getElementById("root")

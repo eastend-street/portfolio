@@ -23,7 +23,7 @@ class WorkCard extends Component {
   render() {
     return (
       <StyledWorkCard>
-        <CardActionArea href="/work/">
+        <CardActionArea href={process.env.PUBLIC_URL + '/work/'}>
           <WorkImage image={WorkPhoto} />
         </CardActionArea>
       </StyledWorkCard>
