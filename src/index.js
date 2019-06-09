@@ -21,10 +21,16 @@ ReactDOM.render(
         name="description"
         content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
       />
-      <meta property="og:url" content="https://eastend-street.github.io/portfolio/" />
+      <meta
+        property="og:url"
+        content="https://eastend-street.github.io/portfolio/"
+      />
       <meta property="og:title" content="Home - Jun Yamada Portfolio" />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver." />
+      <meta
+        property="og:description"
+        content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
+      />
       <meta property="og:image" content="../src/static/images/profile.png" />
       <meta name="twitter:card" content="Summary Card" />
       {/* <meta name="twitter:site" content="@Twitter user name" /> */}
