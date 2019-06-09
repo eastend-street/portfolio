@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
@@ -9,7 +10,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import WorkPhoto from "../../static/images/sample.png";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada .pdf";
-
 
 const ContentWorkDetail = styled.div`
   padding-top: 5rem;
@@ -89,73 +89,78 @@ const ContentButton = styled.div`
 class WorkDetail extends Component {
   render() {
     return (
-      <ContentWorkDetail>
-        <Grid container justify="center">
-          <Grid item xs={12}>
-            <Title variant="h4">MemoMemo</Title>
-          </Grid>
-          <Grid item xs={8}>
-            <StyledWorkCard>
-              <CardActionArea target="_blank" href="https://www.google.com/">
-                <WorkImage image={WorkPhoto} />
-              </CardActionArea>
-            </StyledWorkCard>
-          </Grid>
-        </Grid>
-        <ContentDescription>
+      <React.Fragment>
+        <Helmet>
+          <title>Work</title>
+        </Helmet>
+        <ContentWorkDetail>
           <Grid container justify="center">
-            <Grid item xs={7}>
-              <ButtonWrapper>
-                <StyledButton
-                  name="Visit Website"
-                  url="https://www.google.com/"
-                />
-              </ButtonWrapper>
-              <WhatIsIt variant="h6">What is MemoMemo?</WhatIsIt>
-              <SiteDescription variant="subtitle1">
-                MemoMemo is a bookmark and note service for developer. <br />
-                If you solve a error, you can write a note that how to solve the
-                error, and save website that was used to help resolve the error.
-                Of course, even non-developers, you can use MemoMemo as a
-                bookmark and note managing web service.
-              </SiteDescription>
-              <Technology variant="h6">Technology</Technology>
-              <Typography variant="subtitle1">
-                I developed all of the service, front end, back end,
-                infrastructure and design. The front end made by React.js, back
-                end made by Python. In front end, I used Redux and
-                styled-components, correct style application and state
-                management are realized. In back end, I used Django REST
-                framework and Google cloud platform. It established RESTful API
-                communication.
-              </Typography>
-              <StyledUl>
-                <StyledLi>
-                  <Category>Front-end: </Category> React.js, Redux,
-                  styled-components, Material-ui
-                </StyledLi>
-                <StyledLi>
-                  <Category>Backend: </Category> Django REST framework, Python
-                </StyledLi>
-                <StyledLi>
-                  <Category>Infrastructure: </Category> Google cloud platform,
-                  Docker
-                </StyledLi>
-                <StyledLi>
-                  <Category>Others: </Category> REST API, Axios, Gunicorn
-                </StyledLi>
-              </StyledUl>
+            <Grid item xs={12}>
+              <Title variant="h4">MemoMemo</Title>
+            </Grid>
+            <Grid item xs={8}>
+              <StyledWorkCard>
+                <CardActionArea target="_blank" href="https://www.google.com/">
+                  <WorkImage image={WorkPhoto} />
+                </CardActionArea>
+              </StyledWorkCard>
             </Grid>
           </Grid>
-          <ContentButton>
-            <StyledButton name="Download resume" url={resume} />
-            <StyledButton
-              name="Say Hello"
-              url="mailto:jun.yamada0097@gmail.com"
-            />
-          </ContentButton>
-        </ContentDescription>
-      </ContentWorkDetail>
+          <ContentDescription>
+            <Grid container justify="center">
+              <Grid item xs={7}>
+                <ButtonWrapper>
+                  <StyledButton
+                    name="Visit Website"
+                    url="https://www.google.com/"
+                  />
+                </ButtonWrapper>
+                <WhatIsIt variant="h6">What is MemoMemo?</WhatIsIt>
+                <SiteDescription variant="subtitle1">
+                  MemoMemo is a bookmark and note service for developer. <br />
+                  If you solve a error, you can write a note that how to solve
+                  the error, and save website that was used to help resolve the
+                  error. Of course, even non-developers, you can use MemoMemo as
+                  a bookmark and note managing web service.
+                </SiteDescription>
+                <Technology variant="h6">Technology</Technology>
+                <Typography variant="subtitle1">
+                  I developed all of the service, front end, back end,
+                  infrastructure and design. The front end made by React.js,
+                  back end made by Python. In front end, I used Redux and
+                  styled-components, correct style application and state
+                  management are realized. In back end, I used Django REST
+                  framework and Google cloud platform. It established RESTful
+                  API communication.
+                </Typography>
+                <StyledUl>
+                  <StyledLi>
+                    <Category>Front-end: </Category> React.js, Redux,
+                    styled-components, Material-ui
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Backend: </Category> Django REST framework, Python
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Infrastructure: </Category> Google cloud platform,
+                    Docker
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Others: </Category> REST API, Axios, Gunicorn
+                  </StyledLi>
+                </StyledUl>
+              </Grid>
+            </Grid>
+            <ContentButton>
+              <StyledButton name="Download resume" url={resume} />
+              <StyledButton
+                name="Say Hello"
+                url="mailto:jun.yamada0097@gmail.com"
+              />
+            </ContentButton>
+          </ContentDescription>
+        </ContentWorkDetail>
+      </React.Fragment>
     );
   }
 }

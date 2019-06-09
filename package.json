@@ -6,6 +6,7 @@
     "@material-ui/core": "^3.9.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.1",
@@ -41,5 +42,5 @@
     "gh-pages": "^2.0.1",
     "redux-devtools-extension": "^2.13.8"
   },
-  "homepage": "http://eastend-street.github.io/portfolio"
+  "homepage": "https://eastend-street.github.io/portfolio"
 }
