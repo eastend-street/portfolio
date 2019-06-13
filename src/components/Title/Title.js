@@ -5,8 +5,7 @@ import Grid from "@material-ui/core/Grid";
 
 const ContentTitle = styled(Grid)`
   && {
-    min-height: 40rem;
-    justify-content: center;
+    min-height: 90vh;
     align-items: center;
   }
 `;

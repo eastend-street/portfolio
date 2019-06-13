@@ -113,6 +113,7 @@ class WorkDetail extends Component {
                   <StyledButton
                     name="Visit Website"
                     url="https://www.google.com/"
+                    target="_blank"
                   />
                 </ButtonWrapper>
                 <WhatIsIt variant="h6">What is MemoMemo?</WhatIsIt>
@@ -152,10 +153,11 @@ class WorkDetail extends Component {
               </Grid>
             </Grid>
             <ContentButton>
-              <StyledButton name="Download resume" url={resume} />
+              <StyledButton name="Download resume" url={resume} target="_blank"/>
               <StyledButton
                 name="Say Hello"
                 url="mailto:jun.yamada0097@gmail.com"
+                target="_blank"
               />
             </ContentButton>
           </ContentDescription>

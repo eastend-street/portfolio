@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Main from "./components/Main/Main";
 import WorkDetail from "./components/WorkDetail/WorkDetail";
+import NotFound from "./components/NotFound/NotFound";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -38,12 +39,11 @@ ReactDOM.render(
       <meta property="og:locale" content="en_CA" />
     </Helmet>
     <Header />
-    <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
-    <Route
-      path={process.env.PUBLIC_URL + "/work/"}
-      exact
-      component={WorkDetail}
-    />
+    <Switch>
+      <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
+      <Route path="/work/" exact component={WorkDetail} />
+      <Route component={NotFound} />
+    </Switch>
     <Footer />
   </BrowserRouter>,
   document.getElementById("root")

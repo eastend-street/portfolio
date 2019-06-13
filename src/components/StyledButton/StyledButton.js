@@ -34,7 +34,7 @@ class StyledButton extends Component {
     return (
       <StyledAnchor
         href={this.props.url}
-        target="_blank"
+        target={this.props.target}
         rel="noopener noreferrer"
       >
         <StyledResumeButton>{this.props.name}</StyledResumeButton>

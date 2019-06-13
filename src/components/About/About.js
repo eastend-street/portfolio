@@ -117,10 +117,11 @@ class About extends Component {
                 </StyledUl>
               </Typography>
               <ContentButton>
-                <StyledButton name="Download resume" url={resume} />
+                <StyledButton name="Download resume" url={resume} target="_blank"/>
                 <StyledButton
                   name="Contact me"
                   url="mailto:jun.yamada0097@gmail.com"
+                  target="_blank"
                 />
               </ContentButton>
             </Grid>

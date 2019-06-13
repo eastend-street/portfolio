@@ -7,7 +7,7 @@ import Works from "../Works/Works";
 import WorkExperience from "../WorkExperience/WorkExperience";
 
 const StyledContainer = styled.div`
-  min-height: 20rem;
+  /* min-height: 20rem; */
 `;
 
 
