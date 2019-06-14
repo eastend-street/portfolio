@@ -79,10 +79,10 @@ class About extends Component {
         <Grid item xs={11} sm={10}>
           <Title variant="h4">About</Title>
           <Grid container justify="center">
-            <ProfileGrid item xs={9} sm={5} md={6}>
+            <ProfileGrid item xs={12} sm={5} md={6}>
               <ProfilePhoto src={profile} alt="profile" />
             </ProfileGrid>
-            <Grid item xs={11} sm={7} md={6}>
+            <Grid item xs={12} sm={7} md={6}>
               <IntroSentence variant="h5">
                 My name is Jun Yamada, a Japanese front-end developer based in
                 Vancouver.
