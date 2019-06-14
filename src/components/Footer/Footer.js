@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import githubLogo from "../../static/images/logo/github.png";
-import linkedInLogo from "../../static/images/logo/linkedIn.png";
+import linkedInLogo from "../../static/images/logo/linkedin.png";
 import FacebookLogo from "../../static/images/logo/facebook.png";
 
 const StyledFooter = styled.div`

@@ -17,8 +17,8 @@ const StyledH1 = styled.h1`
 class Title extends Component {
   render() {
     return (
-      <ContentTitle container>
-        <Grid item xs={11} sm={12}>
+      <ContentTitle container justify="center">
+        <Grid item xs={11} lg={12}>
           <StyledH1>
             Hi, I'm Jun. A front-end developer based in Vancouver.
           </StyledH1>
