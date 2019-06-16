@@ -1,6 +1,6 @@
 #  WIP: Jun's Portfolio
-This is my portfolio showing front-end development and works.
-https://junyamada.info
+This is my portfolio showing front-end development and works.  
+Website: &nbsp; https://junyamada.info
 
 ## Skills I Used
 - React.js
