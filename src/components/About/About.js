@@ -31,24 +31,31 @@ const Title = styled(Typography)`
 const IntroSentence = styled(Typography)`
   && {
     color: inherit;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
-const Skills = styled(Typography)`
+const Strength = styled(Typography)`
   && {
     color: inherit;
     margin-top: 4rem;
   }
 `;
 
+const Skills = styled(Typography)`
+  && {
+    color: inherit;
+    margin-top: 2.5rem;
+  }
+`;
+
 const StyledUl = styled.ul`
-  margin-top: 0.5rem;
-  padding-left: 1rem;
+  margin-top: 0.1rem;
+  padding-left: 2rem;
 `;
 
 const StyledLi = styled.li`
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   color: inherit;
 `;
 
@@ -77,7 +84,7 @@ const ContentButton = styled.div`
 `;
 
 const ContentSocial = styled.div`
-  margin-top: 2rem;
+  margin-top: 3rem;
 `;
 
 const SocialLogo = styled.img`
@@ -105,27 +112,31 @@ class About extends Component {
                 Vancouver.
               </IntroSentence>
               <Typography variant="subtitle1">
-                I have worked as a front-end web developer, a software engineer.
-                As a developer, my strength is a software focused front-end,
-                writing JavaScript frameworks / libraries like React.js, Vue.js.
-                Also I am excited about startup culture, service architecture,
-                designing intuitive UI.
+                I have worked as a front-end web developer / a software engineer.
+                My strength is a software focused front-end, writing JavaScript
+                frameworks / libraries like
+                <StrongSkills> React.js, Vue.js.</StrongSkills>
                 <br />
                 In my spare time, I like working out, watching movie.
               </Typography>
-              <Skills variant="h6">Skills</Skills>
+              <Strength variant="h6">Strong skills</Strength>
+              <Typography variant="subtitle1">
+                <StyledUl>
+                  <StyledLi>JavaScript</StyledLi>
+                  <StyledLi>React.js</StyledLi>
+                  <StyledLi>Vue.js</StyledLi>
+                </StyledUl>
+              </Typography>
+              <Skills variant="h6">Other skills</Skills>
               <Typography variant="subtitle1">
                 <StyledUl>
                   <StyledLi>
                     <Category>Languages: </Category>
-                    <StrongSkills>JavaScript</StrongSkills>, TypeScript, Python,
-                    HTML5, CSS3, Sass, Java
+                    TypeScript, Python, HTML5, CSS3, Sass, Java
                   </StyledLi>
                   <StyledLi>
                     <Category>Frameworks / Libraries: </Category>
-                    <StrongSkills>React.js</StrongSkills>,
-                    <StrongSkills> Vue.js</StrongSkills>, Django, jQuery,
-                    Bootstrap
+                    Django, jQuery, Bootstrap
                   </StyledLi>
                   <StyledLi>
                     <Category>Others: </Category>Docker, Google Cloud Platform,
@@ -158,14 +169,14 @@ class About extends Component {
               </ContentSocial>
               <ContentButton>
                 <Grid container>
-                  <Grid item xs={12} md={6} style={{textAlign: "center"}}>
+                  <Grid item xs={12} md={6} style={{ textAlign: "center" }}>
                     <StyledButton
                       name="Download resume"
                       url={resume}
                       target="_blank"
                     />
                   </Grid>
-                  <Grid item xs={12} md={6} style={{textAlign: "center"}}>
+                  <Grid item xs={12} md={6} style={{ textAlign: "center" }}>
                     <StyledButton
                       name="Contact me"
                       url="mailto:jun.yamada0097@gmail.com"

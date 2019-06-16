@@ -33,24 +33,30 @@ const Occupation = styled(Typography)`
 const CompanyName = styled(Typography)`
   && {
     color: inherit;
+    margin-left: 1rem;
   }
 `;
 
 const Period = styled(Typography)`
   && {
     color: #626262;
+    margin-left: 1rem;
   }
 `;
 const Place = styled(Typography)`
   && {
     color: #626262;
+    margin-left: 1rem;
   }
 `;
 
-const Description = styled.div``;
+const Description = styled.div`
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+`;
 
 const SkillDescription = styled.div`
-  margin-top: 1.5rem;
+  margin: 1.5rem auto auto 1rem;
 `;
 
 const DescSentence = styled(Typography)`
@@ -90,7 +96,7 @@ class WorkExperience extends Component {
             <Occupation variant="h6">Software Engineer</Occupation>
             <CompanyName variant="subtitle1">bizocean Co., Ltd.</CompanyName>
             <Period variant="subtitle2">
-              September 2017 – September 2018 (1year and 1month)
+            September 2017 – September 2018 (1year and 1month)
             </Period>
             <Place variant="subtitle2">Tokyo, Japan</Place>
             <Description>
