@@ -90,6 +90,10 @@ const ContentButton = styled.div`
 `;
 
 class WorkDetail extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <React.Fragment>
