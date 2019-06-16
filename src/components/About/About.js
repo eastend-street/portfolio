@@ -60,7 +60,6 @@ const StyledLi = styled.li`
 `;
 
 const Category = styled.span`
-  /* font-weight: bold; */
   color: inherit;
 `;
 

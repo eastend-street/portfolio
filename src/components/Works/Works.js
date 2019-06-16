@@ -36,16 +36,16 @@ class Works extends Component {
     return (
       <React.Fragment>
         <GridCardItem item xs={12} md={6}>
-          <WorkCard />
+          <WorkCard url={process.env.PUBLIC_URL + "/work/memomemo"}/>
         </GridCardItem>
         <GridCardItem item xs={12} md={6}>
-          <WorkCard />
+          <WorkCard url={process.env.PUBLIC_URL + "/work/marketplace"}/>
         </GridCardItem>
         <GridCardItem item xs={12} md={6}>
-          <WorkCard />
+          <WorkCard url={process.env.PUBLIC_URL + "/work/slackbot"}/>
         </GridCardItem>
         <GridCardItem item xs={12} md={6}>
-          <WorkCard />
+          <WorkCard url={process.env.PUBLIC_URL + "/work/blog"}/>
         </GridCardItem>
       </React.Fragment>
     );

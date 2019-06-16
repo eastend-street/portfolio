@@ -98,7 +98,7 @@ class WorkDetail extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work</title>
+          <title>Work - MemoMemo</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>

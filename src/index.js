@@ -4,17 +4,15 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Main from "./components/Main/Main";
-import WorkDetail from "./components/WorkDetail/WorkDetail";
+import MemoMemo from "./components/MemoMemo/MemoMemo";
+import MarketPlace from "./components/MarketPlace/MarketPlace";
 import NotFound from "./components/NotFound/NotFound";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Helmet
-      titleTemplate="%s - Jun's Portfolio"
-      defaultTitle="Jun's Portfolio"
-    >
+    <Helmet titleTemplate="%s - Jun's Portfolio" defaultTitle="Jun's Portfolio">
       <meta
         name="description"
         content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
@@ -36,7 +34,8 @@ ReactDOM.render(
     </Helmet>
     <Switch>
       <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
-      <Route path="/work/" exact component={WorkDetail} />
+      <Route path="/work/memomemo" exact component={MemoMemo} />
+      <Route path="/work/marketplace" exact component={MarketPlace} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,

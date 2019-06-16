@@ -37,7 +37,7 @@ class WorkCard extends Component {
   render() {
     return (
       <StyledWorkCard>
-        <StyledLink to={process.env.PUBLIC_URL + "/work/"}>
+        <StyledLink to={this.props.url}>
           <CardActionArea>
             <WorkImage image={WorkPhoto} />
           </CardActionArea>
