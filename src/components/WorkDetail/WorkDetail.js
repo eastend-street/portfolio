@@ -82,7 +82,7 @@ const Category = styled.span`
 `;
 
 const ContentButton = styled.div`
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   text-align: center;
 `;
 
@@ -98,7 +98,7 @@ class WorkDetail extends Component {
             <Grid item xs={12}>
               <Title variant="h4">MemoMemo</Title>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={11} sm={10} md={8}>
               <StyledWorkCard>
                 <CardActionArea target="_blank" href="https://www.google.com/">
                   <WorkImage image={WorkPhoto} />
@@ -108,7 +108,7 @@ class WorkDetail extends Component {
           </Grid>
           <ContentDescription>
             <Grid container justify="center">
-              <Grid item xs={7}>
+              <Grid item xs={11} sm={10} md={8} lg={7}>
                 <ButtonWrapper>
                   <StyledButton
                     name="Visit Website"
