@@ -15,8 +15,8 @@ import * as serviceWorker from "./serviceWorker";
 ReactDOM.render(
   <BrowserRouter>
     <Helmet
-      titleTemplate="%s - Jun Yamada Portfolio"
-      defaultTitle="Jun Yamada Portfolio"
+      titleTemplate="%s - Jun's Portfolio"
+      defaultTitle="Jun's Portfolio"
     >
       <meta
         name="description"
@@ -34,7 +34,7 @@ ReactDOM.render(
       />
       <meta property="og:image" content="../src/static/images/profile.png" />
       <meta name="twitter:card" content="Summary Card" />
-      <meta property="og:site_name" content="Jun Yamada Portfolio" />
+      <meta property="og:site_name" content="Jun's Portfolio" />
       <meta property="og:locale" content="en_CA" />
     </Helmet>
     <Header />
