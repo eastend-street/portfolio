@@ -3,6 +3,4 @@
 https://junyamada.info
 
 ## Technologies
-- Langange: JavaScript
-- Framework: React.js
-- Others: Styled-components
+React.js, Styled-components, Material-ui, React Router
