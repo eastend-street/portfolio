@@ -34,7 +34,6 @@ ReactDOM.render(
       />
       <meta property="og:image" content="../src/static/images/profile.png" />
       <meta name="twitter:card" content="Summary Card" />
-      {/* <meta name="twitter:site" content="@Twitter user name" /> */}
       <meta property="og:site_name" content="Jun Yamada Portfolio" />
       <meta property="og:locale" content="en_CA" />
     </Helmet>
