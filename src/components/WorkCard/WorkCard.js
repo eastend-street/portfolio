@@ -15,7 +15,7 @@ const StyledWorkCard = styled(Card)`
 
 const WorkImage = styled(CardMedia)`
   && {
-    min-height: 15rem;
+    min-height: 20rem;
     object-fit: contain;
   }
 `;
