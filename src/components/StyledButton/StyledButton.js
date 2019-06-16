@@ -11,7 +11,8 @@ const StyledResumeButton = styled(Button)`
     text-transform: none;
     padding: 0.5rem;
     margin: 1rem;
-    min-width: 10rem;
+    width: 80%;
+    max-width: 15rem;
     color: #4e4e4e;
   }
 `;

@@ -74,7 +74,7 @@ const EachCompany = styled.div`
 `;
 
 const ContentButton = styled.div`
-  margin-top: 8rem;
+  margin-top: 4rem;
   text-align: center;
 `;
 

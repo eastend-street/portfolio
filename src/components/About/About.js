@@ -7,6 +7,10 @@ import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada .pdf";
 
+import githubLogo from "../../static/images/logo/github.png";
+import linkedInLogo from "../../static/images/logo/linkedin.png";
+import FacebookLogo from "../../static/images/logo/facebook.png";
+
 const ContentAbout = styled(Grid)`
   && {
     background-color: #fcfcfc;
@@ -69,7 +73,20 @@ const ProfileGrid = styled(Grid)`
 `;
 
 const ContentButton = styled.div`
-  margin: 3rem;
+  margin: 2rem auto;
+`;
+
+const ContentSocial = styled.div`
+  margin-top: 2rem;
+`;
+
+const SocialLogo = styled.img`
+  text-align: center;
+  height: 2rem;
+  margin: auto 0.5rem;
+  :hover {
+    opacity: 0.5;
+  }
 `;
 
 class About extends Component {
@@ -116,13 +133,46 @@ class About extends Component {
                   </StyledLi>
                 </StyledUl>
               </Typography>
-              <ContentButton>
-                <StyledButton name="Download resume" url={resume} target="_blank"/>
-                <StyledButton
-                  name="Contact me"
-                  url="mailto:jun.yamada0097@gmail.com"
+              <ContentSocial>
+                <a
+                  href="https://github.com/eastend-street"
                   target="_blank"
-                />
+                  rel="noopener noreferrer"
+                >
+                  <SocialLogo src={githubLogo} alt="Github" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/jun-yamada-0097"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialLogo src={linkedInLogo} alt="LinkedIn" />
+                </a>
+                <a
+                  href="https://www.facebook.com/yamada.junya1211"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SocialLogo src={FacebookLogo} alt="Facebook" />
+                </a>
+              </ContentSocial>
+              <ContentButton>
+                <Grid container>
+                  <Grid item xs={12} md={6} style={{textAlign: "center"}}>
+                    <StyledButton
+                      name="Download resume"
+                      url={resume}
+                      target="_blank"
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6} style={{textAlign: "center"}}>
+                    <StyledButton
+                      name="Contact me"
+                      url="mailto:jun.yamada0097@gmail.com"
+                      target="_blank"
+                    />
+                  </Grid>
+                </Grid>
               </ContentButton>
             </Grid>
           </Grid>
