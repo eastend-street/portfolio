@@ -11,6 +11,9 @@ import WorkPhoto from "../../static/images/sample.png";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada .pdf";
 
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
 const ContentWorkDetail = styled.div`
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -93,6 +96,7 @@ class WorkDetail extends Component {
         <Helmet>
           <title>Work</title>
         </Helmet>
+        <Header />
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
@@ -153,7 +157,11 @@ class WorkDetail extends Component {
               </Grid>
             </Grid>
             <ContentButton>
-              <StyledButton name="Download resume" url={resume} target="_blank"/>
+              <StyledButton
+                name="Download resume"
+                url={resume}
+                target="_blank"
+              />
               <StyledButton
                 name="Say Hello"
                 url="mailto:jun.yamada0097@gmail.com"
@@ -162,6 +170,7 @@ class WorkDetail extends Component {
             </ContentButton>
           </ContentDescription>
         </ContentWorkDetail>
+        <Footer />
       </React.Fragment>
     );
   }

@@ -67,21 +67,29 @@ const StyledButton = styled(Button)`
 
 class Header extends Component {
   render() {
+    let isHome = false;
+    if (window.location.pathname === "/") {
+      isHome = true;
+    }
     return (
       <StyledAppBar position="static">
         <Toolbar>
-          <StyledLink to={process.env.PUBLIC_URL + '/'}>
+          <StyledLink to={process.env.PUBLIC_URL + "/"}>
             <Typography variant="title" color="inherit">
               Jun
             </Typography>
           </StyledLink>
           <WrapButton>
-            <StyledHashLink smooth={true} to="#about">
-              <StyledButton>About</StyledButton>
-            </StyledHashLink>
-            <StyledHashLink smooth={true} to="#works">
-              <StyledButton>Works</StyledButton>
-            </StyledHashLink>
+            {isHome && (
+              <React.Fragment>
+                <StyledHashLink smooth={true} to="#about">
+                  <StyledButton>About</StyledButton>
+                </StyledHashLink>
+                <StyledHashLink smooth={true} to="#works">
+                  <StyledButton>Works</StyledButton>
+                </StyledHashLink>
+              </React.Fragment>
+            )}
             <StyledAnchor
               href="mailto:jun.yamada0097@gmail.com"
               target="_blank"
