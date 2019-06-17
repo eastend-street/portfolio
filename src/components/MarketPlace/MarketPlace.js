@@ -60,10 +60,6 @@ const WorkImage = styled(CardMedia)`
   }
 `;
 
-const ButtonWrapper = styled.div`
-  text-align: center;
-`;
-
 const Technology = styled(Typography)`
   && {
     margin: 5rem auto 1rem auto;
@@ -125,7 +121,7 @@ class MarketPlace extends Component {
                   <br />
                   It designed to sell email inventory by online. Ad buyers can
                   search and sort inventory by price, date, type and other
-                  criteria.
+                  conditions.
                   <br />
                   <br />* I could not show you the web service due to company
                   rules. But I could show you demo screen shot on this page. Let

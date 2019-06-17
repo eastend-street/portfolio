@@ -7,9 +7,9 @@ import { Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
-import WorkPhoto from "../../static/images/sample.png";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada .pdf";
+import MemoMemoPhoto from "../../static/images/websites/memomemo/home-memomemo.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -57,6 +57,7 @@ const WorkImage = styled(CardMedia)`
   && {
     min-height: 30rem;
     object-fit: contain;
+    background-size: contain;
   }
 `;
 
@@ -106,10 +107,10 @@ class WorkDetail extends Component {
             <Grid item xs={12}>
               <Title variant="h4">MemoMemo</Title>
             </Grid>
-            <Grid item xs={11} sm={10} md={8}>
+            <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
                 <CardActionArea target="_blank" href="https://www.google.com/">
-                  <WorkImage image={WorkPhoto} />
+                  <WorkImage image={MemoMemoPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
             </Grid>

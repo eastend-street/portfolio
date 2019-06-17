@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
-import WorkPhoto from "../../static/images/sample.png";
 
 const StyledWorkCard = styled(Card)`
   && {
@@ -39,7 +38,7 @@ class WorkCard extends Component {
       <StyledWorkCard>
         <StyledLink to={this.props.url}>
           <CardActionArea>
-            <WorkImage image={WorkPhoto} />
+            <WorkImage image={this.props.image} />
           </CardActionArea>
         </StyledLink>
       </StyledWorkCard>

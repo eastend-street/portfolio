@@ -63,10 +63,10 @@ const Category = styled.span`
   color: inherit;
 `;
 
-const StrongSkills = styled.span`
-  color: inherit;
-  font-weight: bold;
-`;
+// const StrongSkills = styled.span`
+//   color: inherit;
+//   font-weight: bold;
+// `;
 
 const ProfilePhoto = styled.img`
   max-width: 50%;
@@ -111,10 +111,9 @@ class About extends Component {
                 Vancouver.
               </IntroSentence>
               <Typography variant="subtitle1">
-                I have worked as a front-end web developer / a software engineer.
-                My strength is a software focused front-end, writing JavaScript
-                frameworks / libraries like
-                <StrongSkills> React.js, Vue.js.</StrongSkills>
+                I have worked as a front-end web developer / a software
+                engineer. My strength is a software focused front-end, writing
+                JavaScript frameworks / libraries like React.js, Vue.js.
                 <br />
                 In my spare time, I like working out, watching movie.
               </Typography>
