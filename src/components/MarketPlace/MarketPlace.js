@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
@@ -99,7 +98,7 @@ class MarketPlace extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work - MarketPlace</title>
+          <title>Work - Mail MarketPlace</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
@@ -118,35 +117,35 @@ class MarketPlace extends Component {
           <ContentDescription>
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
-                <ButtonWrapper>
-                  <StyledButton
-                    name="Visit Website"
-                    url="https://www.google.com/"
-                    target="_blank"
-                  />
-                </ButtonWrapper>
-                <WhatIsIt variant="h6">What is MemoMemo?</WhatIsIt>
+                <WhatIsIt variant="h6">What is Mail MarketPlace?</WhatIsIt>
                 <SiteDescription variant="subtitle1">
-                  MemoMemo is a bookmark and note service for developer. <br />
-                  If you solve a error, you can write a note that how to solve
-                  the error, and save website that was used to help resolve the
-                  error. Of course, even non-developers, you can use MemoMemo as
-                  a bookmark and note managing web service.
+                  Mail MarketPlace is a mail advertisement trading web service.
+                  This is a project I was involved in my previous company,
+                  bizocean Co., Ltd.
+                  <br />
+                  It designed to sell email inventory by online. Ad buyers can
+                  search and sort inventory by price, date, type and other
+                  criteria.
+                  <br />
+                  <br />* I could not show you the web service due to company
+                  rules. But I could show you demo screen shot on this page. Let
+                  me know if you have some question about this service.
                 </SiteDescription>
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
-                  I developed all of the service, front end, back end,
-                  infrastructure and design. The front end made by React.js,
-                  back end made by Python. In front end, I used Redux and
-                  styled-components, correct style application and state
-                  management are realized. In back end, I used Django REST
-                  framework and Google cloud platform. It established RESTful
-                  API communication.
+                  I joined this project from the basic design phase. I developed
+                  this web service responsible for all the front end work. Then
+                  I wrote back end CRUD processing, and constructed cloud
+                  infrastructure environment.
+                  <br />
+                  In the front end, I used Vue.js, Vuex, Vuetify.js and Sass. In
+                  the back end, I used Django REST framework and Google cloud
+                  platform, Docker.
                 </Typography>
                 <StyledUl>
                   <StyledLi>
-                    <Category>Front-end: </Category> React.js, Redux,
-                    styled-components, Material-ui
+                    <Category>Front-end: </Category> Vue.js, Vuex, Vuetify.js,
+                    Vue Router
                   </StyledLi>
                   <StyledLi>
                     <Category>Backend: </Category> Django REST framework, Python
