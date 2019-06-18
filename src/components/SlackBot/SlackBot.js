@@ -95,7 +95,7 @@ class WorkDetail extends Component {
             </Grid>
             <Grid item xs={11} sm={10} md={8}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://www.google.com/">
+                <CardActionArea target="_blank" href="https://github.com/eastend-street/translation_slackbot">
                   <WorkImage image={WorkPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
@@ -107,7 +107,7 @@ class WorkDetail extends Component {
                 <ButtonWrapper>
                   <StyledButton
                     name="View Github"
-                    url="https://www.google.com/"
+                    url="https://github.com/eastend-street/translation_slackbot"
                     target="_blank"
                   />
                 </ButtonWrapper>

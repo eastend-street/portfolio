@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import WorkPhoto from "../../static/images/sample.png";
 import StyledButton from "../StyledButton/StyledButton";
@@ -104,9 +103,7 @@ class MarketPlace extends Component {
             </Grid>
             <Grid item xs={11} sm={10} md={8}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://www.google.com/">
-                  <WorkImage image={WorkPhoto} />
-                </CardActionArea>
+                <WorkImage image={WorkPhoto} />
               </StyledWorkCard>
             </Grid>
           </Grid>

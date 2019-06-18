@@ -55,9 +55,8 @@ const StyledWorkCard = styled(Card)`
 
 const WorkImage = styled(CardMedia)`
   && {
-    min-height: 30rem;
-    object-fit: contain;
-    background-size: contain;
+    height: 0;
+    padding-top: 62.5%;
   }
 `;
 
