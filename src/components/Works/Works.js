@@ -24,7 +24,7 @@ const Title = styled(Typography)`
 
 const GridCardItem = styled(Grid)`
   && {
-    padding: 1rem;
+    /* padding: 1rem; */
     margin-top: 3rem;
   }
 `;
@@ -38,7 +38,6 @@ const ServiceName = styled(Typography)`
     text-align: center;
     color: inherit;
     font-weight: bold;
-    margin-top: 7rem;
   }
 `;
 
@@ -58,29 +57,81 @@ const ServiceDescription = styled(Typography)`
 //   }
 // `;
 
+const MemoMemoImageGrid = styled(Grid)`
+  && {
+    order: 1;
+    @media (max-width: 960px) {
+      order: 2;
+    }
+  }
+`;
+
+const MemoMemoTitleGrid = styled(Grid)`
+  && {
+    order: 2;
+    padding-top: 7rem;
+    @media (max-width: 960px) {
+      order: 1;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+`;
+
+const MarketplaceImageGrid = styled(Grid)`
+  && {
+  }
+`;
+
+const MarketplaceTitleGrid = styled(Grid)`
+  && {
+    padding-top: 5rem;
+  }
+`;
+
+const SlackBotImageGrid = styled(Grid)`
+  && {
+    order: 1;
+    @media (max-width: 960px) {
+      order: 2;
+    }
+  }
+`;
+
+const SlackBotTitleGrid = styled(Grid)`
+  && {
+    order: 2;
+    padding-top: 5rem;
+    @media (max-width: 960px) {
+      order: 1;
+      padding-bottom: 1rem;
+    }
+  }
+`;
+
 class Works extends Component {
   renderWorkCard() {
     return (
       <React.Fragment>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <MemoMemoImageGrid item xs={12} md={6}>
               <WorkCard
                 url={process.env.PUBLIC_URL + "/work/memomemo"}
                 image={MemoMemoPhoto}
               />
-            </Grid>
-            <Grid item xs={12} md={6}>
+            </MemoMemoImageGrid>
+            <MemoMemoTitleGrid item xs={12} md={6}>
               <ServiceName variant="h5">MemoMemo</ServiceName>
               <ServiceDescription variant="subtitle1">
                 - Note and bookmark web service -
               </ServiceDescription>
-            </Grid>
+            </MemoMemoTitleGrid>
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <MarketplaceTitleGrid item xs={12} md={6}>
               <AboutService>
                 <ServiceName variant="h5">Mail Marketplace</ServiceName>
                 <ServiceDescription variant="subtitle1">
@@ -90,29 +141,29 @@ class Works extends Component {
                   Vue.js, Vuex, Django, Python, Google Cloud Platform, Docker
                 </ServiceTechnologies> */}
               </AboutService>
-            </Grid>
-            <Grid item xs={12} md={6}>
+            </MarketplaceTitleGrid>
+            <MarketplaceImageGrid item xs={12} md={6}>
               <WorkCard
                 url={process.env.PUBLIC_URL + "/work/marketplace"}
                 image={SamplePhoto}
               />
-            </Grid>
+            </MarketplaceImageGrid>
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
-            <Grid item xs={12} md={6}>
+            <SlackBotImageGrid item xs={12} md={6}>
               <WorkCard
                 url={process.env.PUBLIC_URL + "/work/slack-bot"}
                 image={SamplePhoto}
               />
-            </Grid>
-            <Grid item xs={12} md={6}>
+            </SlackBotImageGrid>
+            <SlackBotTitleGrid item xs={12} md={6}>
               <ServiceName variant="h5">Translation Slack bot</ServiceName>
               <ServiceDescription variant="subtitle1">
                 - A multilingual translation bot on Slack -
               </ServiceDescription>
-            </Grid>
+            </SlackBotTitleGrid>
           </Grid>
         </GridCardItem>
       </React.Fragment>

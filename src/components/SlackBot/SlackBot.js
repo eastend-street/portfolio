@@ -120,7 +120,7 @@ class WorkDetail extends Component {
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
                   I wrote all of source code. This Slack bot made by Python and using Docker.
-                  Also Google Translate API.
+                  Also Google Cloud Translation API.
                 </Typography>
               </Grid>
             </Grid>
