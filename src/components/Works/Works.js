@@ -26,7 +26,7 @@ const Title = styled(Typography)`
 const GridCardItem = styled(Grid)`
   && {
     /* padding: 1rem; */
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 `;
 
@@ -90,6 +90,9 @@ const MarketplaceImageGrid = styled(Grid)`
 const MarketplaceTitleGrid = styled(Grid)`
   && {
     padding-top: 7rem;
+    @media (max-width: 960px) {
+      padding-top: 1rem;
+    }
   }
 `;
 
@@ -108,6 +111,7 @@ const SlackBotTitleGrid = styled(Grid)`
     padding-top: 7rem;
     @media (max-width: 960px) {
       order: 1;
+      padding-top: 1rem;
       padding-bottom: 1rem;
     }
   }

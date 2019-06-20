@@ -12,9 +12,9 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <React.Fragment>
     <Helmet titleTemplate="%s - Jun's Portfolio" defaultTitle="Jun's Portfolio">
-      <meta
+      {/* <meta
         name="description"
         content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
       />
@@ -31,16 +31,18 @@ ReactDOM.render(
       <meta property="og:image" content="../src/static/images/profile.png" />
       <meta name="twitter:card" content="Summary Card" />
       <meta property="og:site_name" content="Jun's Portfolio" />
-      <meta property="og:locale" content="en_CA" />
+      <meta property="og:locale" content="en_CA" /> */}
     </Helmet>
-    <Switch>
-      <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
-      <Route path="/work/memomemo" exact component={MemoMemo} />
-      <Route path="/work/marketplace" exact component={MarketPlace} />
-      <Route path="/work/slack-bot" exact component={SlackBot} />
-      <Route component={NotFound} />
-    </Switch>
-  </BrowserRouter>,
+    <BrowserRouter>
+      <Switch>
+        <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
+        <Route path="/work/memomemo" exact component={MemoMemo} />
+        <Route path="/work/marketplace" exact component={MarketPlace} />
+        <Route path="/work/slack-bot" exact component={SlackBot} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
+  </React.Fragment>,
   document.getElementById("root")
 );
 
