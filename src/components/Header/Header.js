@@ -65,6 +65,15 @@ const StyledButton = styled(Button)`
   }
 `;
 
+const Logo = styled(Typography)`
+  && {
+    color: inherit;
+    :hover {
+      opacity: 0.7;
+    }
+  }
+`;
+
 class Header extends Component {
   render() {
     let isHome = false;
@@ -75,9 +84,7 @@ class Header extends Component {
       <StyledAppBar position="static">
         <Toolbar>
           <StyledLink to={process.env.PUBLIC_URL + "/"}>
-            <Typography variant="title" color="inherit">
-              Jun
-            </Typography>
+            <Logo variant="title">Jun</Logo>
           </StyledLink>
           <WrapButton>
             {isHome && (

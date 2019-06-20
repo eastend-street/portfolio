@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
@@ -38,6 +39,9 @@ const ServiceName = styled(Typography)`
     text-align: center;
     color: inherit;
     font-weight: bold;
+    :hover {
+      opacity: 0.7;
+    }
   }
 `;
 
@@ -85,7 +89,7 @@ const MarketplaceImageGrid = styled(Grid)`
 
 const MarketplaceTitleGrid = styled(Grid)`
   && {
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
 `;
 
@@ -101,11 +105,24 @@ const SlackBotImageGrid = styled(Grid)`
 const SlackBotTitleGrid = styled(Grid)`
   && {
     order: 2;
-    padding-top: 5rem;
+    padding-top: 7rem;
     @media (max-width: 960px) {
       order: 1;
       padding-bottom: 1rem;
     }
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #4e4e4e;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
   }
 `;
 
@@ -122,7 +139,9 @@ class Works extends Component {
               />
             </MemoMemoImageGrid>
             <MemoMemoTitleGrid item xs={12} md={6}>
-              <ServiceName variant="h5">MemoMemo</ServiceName>
+              <StyledLink to={process.env.PUBLIC_URL + "/work/memomemo"}>
+                <ServiceName variant="h5">MemoMemo</ServiceName>
+              </StyledLink>
               <ServiceDescription variant="subtitle1">
                 - Note and bookmark web service -
               </ServiceDescription>
@@ -133,7 +152,9 @@ class Works extends Component {
           <Grid container>
             <MarketplaceTitleGrid item xs={12} md={6}>
               <AboutService>
-                <ServiceName variant="h5">Mail Marketplace</ServiceName>
+                <StyledLink to={process.env.PUBLIC_URL + "/work/marketplace"}>
+                  <ServiceName variant="h5">Mail Marketplace</ServiceName>
+                </StyledLink>
                 <ServiceDescription variant="subtitle1">
                   - A mail advertisement trading web system -
                 </ServiceDescription>
@@ -159,7 +180,9 @@ class Works extends Component {
               />
             </SlackBotImageGrid>
             <SlackBotTitleGrid item xs={12} md={6}>
-              <ServiceName variant="h5">Translation Slack bot</ServiceName>
+              <StyledLink to={process.env.PUBLIC_URL + "/work/slack-bot"}>
+                <ServiceName variant="h5">Translation Slack bot</ServiceName>
+              </StyledLink>
               <ServiceDescription variant="subtitle1">
                 - A multilingual translation bot on Slack -
               </ServiceDescription>

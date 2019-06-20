@@ -24,6 +24,9 @@ const Title = styled(Typography)`
     text-align: center;
     color: inherit;
     font-weight: bold;
+    :hover {
+      opacity: 0.7;
+    }
   }
 `;
 
@@ -76,6 +79,19 @@ const ContentButton = styled.div`
   text-align: center;
 `;
 
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
 class WorkDetail extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -91,11 +107,19 @@ class WorkDetail extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <Title variant="h4">Translation Slack Bot</Title>
+              <StyledAnchor
+                target="_blank"
+                href="https://github.com/eastend-street/translation_slackbot"
+              >
+                <Title variant="h4">Translation Slack Bot</Title>
+              </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={8}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://github.com/eastend-street/translation_slackbot">
+                <CardActionArea
+                  target="_blank"
+                  href="https://github.com/eastend-street/translation_slackbot"
+                >
                   <WorkImage image={WorkPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
@@ -113,14 +137,16 @@ class WorkDetail extends Component {
                 </ButtonWrapper>
                 <WhatIsIt variant="h6">What is Translation Slack Bot?</WhatIsIt>
                 <SiteDescription variant="subtitle1">
-                  Translation Slack Bot is a multilingual translation bot on Slack. <br />
-                  You can translate English to Japanese, Japanese to English, Other languages to English.
-                  It automatically detects the language and translates it.
+                  Translation Slack Bot is a multilingual translation bot on
+                  Slack. <br />
+                  You can translate English to Japanese, Japanese to English,
+                  Other languages to English. It automatically detects the
+                  language and translates it.
                 </SiteDescription>
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
-                  I wrote all of source code. This Slack bot made by Python and using Docker.
-                  Also Google Cloud Translation API.
+                  I wrote all of source code. This Slack bot made by Python and
+                  using Docker. Also Google Cloud Translation API.
                 </Typography>
               </Grid>
             </Grid>

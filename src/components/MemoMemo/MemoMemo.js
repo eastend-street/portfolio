@@ -24,6 +24,9 @@ const Title = styled(Typography)`
     text-align: center;
     color: inherit;
     font-weight: bold;
+    :hover {
+      opacity: 0.7;
+    }
   }
 `;
 
@@ -89,6 +92,19 @@ const ContentButton = styled.div`
   text-align: center;
 `;
 
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
 class WorkDetail extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -104,7 +120,9 @@ class WorkDetail extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <Title variant="h4">MemoMemo</Title>
+              <StyledAnchor target="_blank" href="https://www.google.com/">
+                <Title variant="h4">MemoMemo</Title>
+              </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>

@@ -25,7 +25,7 @@ const SocialLogo = styled.img`
   height: 2rem;
   margin: auto 1rem;
   :hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 `;
 
