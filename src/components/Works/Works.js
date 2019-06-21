@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import WorkCard from "../WorkCard/WorkCard";
 import { Typography } from "@material-ui/core";
 import MemoMemoPhoto from "../../static/images/websites/memomemo/home-memomemo.png";
+import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png"
 import SamplePhoto from "../../static/images/sample.png";
 
 const ContentWorks = styled(Grid)`
@@ -170,7 +171,7 @@ class Works extends Component {
             <MarketplaceImageGrid item xs={12} md={6}>
               <WorkCard
                 url={process.env.PUBLIC_URL + "/work/marketplace"}
-                image={SamplePhoto}
+                image={MarketplacePhoto}
               />
             </MarketplaceImageGrid>
           </Grid>
