@@ -120,14 +120,14 @@ class WorkDetail extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work - JotDown</title>
+          <title>Work - Jot down</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
               <StyledAnchor target="_blank" href="https://www.google.com/">
-                <Title variant="h4">JotDown</Title>
+                <Title variant="h4">Jot down</Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
@@ -148,12 +148,12 @@ class WorkDetail extends Component {
                     target="_blank"
                   />
                 </ButtonWrapper>
-                <WhatIsIt variant="h6">What is JotDown?</WhatIsIt>
+                <WhatIsIt variant="h6">What is Jot down?</WhatIsIt>
                 <SiteDescription variant="subtitle1">
-                  JotDown is a bookmark and note service for developer. <br />
+                  Jot down is a bookmark and note service for developer. <br />
                   If you solve a error, you can write a note that how to solve
                   the error, and save website that was used to help resolve the
-                  error. Of course, even non-developers, you can use JotDown as
+                  error. Of course, even non-developers, you can use Jot down as
                   a bookmark and note managing web service.
                 </SiteDescription>
                 <Technology variant="h6">Technology</Technology>

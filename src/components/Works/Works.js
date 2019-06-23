@@ -145,7 +145,7 @@ class Works extends Component {
             </JotDownImageGrid>
             <JotDownTitleGrid item xs={12} md={6}>
               <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
-                <ServiceName variant="h5">JotDown</ServiceName>
+                <ServiceName variant="h5">Jot down</ServiceName>
               </StyledLink>
               <ServiceDescription variant="subtitle1">
                 - Note and bookmark web service -
