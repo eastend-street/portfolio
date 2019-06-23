@@ -34,6 +34,12 @@ const ContentDescription = styled.div`
   background-color: #fcfcfc;
   padding-top: 10rem;
   padding-bottom: 2rem;
+  @media (max-width: 800px) {
+      padding-top: 7rem;
+    }
+  @media (max-width: 500px) {
+      padding-top: 5rem;
+  }
 `;
 
 const SiteDescription = styled(Typography)`

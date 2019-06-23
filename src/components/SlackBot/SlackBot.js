@@ -7,9 +7,9 @@ import { Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
-import WorkPhoto from "../../static/images/sample.png";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada .pdf";
+import SlackBotPhoto from "../../static/images/websites/slack-bot/slack-bot.png"
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -34,6 +34,12 @@ const ContentDescription = styled.div`
   background-color: #fcfcfc;
   padding-top: 10rem;
   padding-bottom: 2rem;
+  @media (max-width: 800px) {
+      padding-top: 7rem;
+    }
+  @media (max-width: 500px) {
+      padding-top: 5rem;
+  }
 `;
 
 const SiteDescription = styled(Typography)`
@@ -58,8 +64,8 @@ const StyledWorkCard = styled(Card)`
 
 const WorkImage = styled(CardMedia)`
   && {
-    min-height: 30rem;
-    object-fit: contain;
+    height: 0;
+    padding-top: 62.5%;
   }
 `;
 
@@ -120,7 +126,7 @@ class WorkDetail extends Component {
                   target="_blank"
                   href="https://github.com/eastend-street/translation_slackbot"
                 >
-                  <WorkImage image={WorkPhoto} />
+                  <WorkImage image={SlackBotPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
             </Grid>

@@ -12,6 +12,7 @@ const ContentTitle = styled(Grid)`
 
 const StyledH1 = styled.h1`
   text-align: center;
+  margin-top: -3rem;
 `;
 
 class Title extends Component {
