@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import WorkCard from "../WorkCard/WorkCard";
 import { Typography } from "@material-ui/core";
-import MemoMemoPhoto from "../../static/images/websites/memomemo/home-memomemo.png";
+import JotDownPhoto from "../../static/images/websites/jotdown/home-jotdown.png";
 import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png"
 import SlackBotPhoto from "../../static/images/websites/slack-bot/slack-bot.png"
 
@@ -62,7 +62,7 @@ const ServiceDescription = styled(Typography)`
 //   }
 // `;
 
-const MemoMemoImageGrid = styled(Grid)`
+const JotDownImageGrid = styled(Grid)`
   && {
     order: 1;
     @media (max-width: 960px) {
@@ -71,7 +71,7 @@ const MemoMemoImageGrid = styled(Grid)`
   }
 `;
 
-const MemoMemoTitleGrid = styled(Grid)`
+const JotDownTitleGrid = styled(Grid)`
   && {
     order: 2;
     padding-top: 7rem;
@@ -137,20 +137,20 @@ class Works extends Component {
       <React.Fragment>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
-            <MemoMemoImageGrid item xs={12} md={6}>
+            <JotDownImageGrid item xs={12} md={6}>
               <WorkCard
-                url={process.env.PUBLIC_URL + "/work/memomemo"}
-                image={MemoMemoPhoto}
+                url={process.env.PUBLIC_URL + "/work/jotdown"}
+                image={JotDownPhoto}
               />
-            </MemoMemoImageGrid>
-            <MemoMemoTitleGrid item xs={12} md={6}>
-              <StyledLink to={process.env.PUBLIC_URL + "/work/memomemo"}>
-                <ServiceName variant="h5">MemoMemo</ServiceName>
+            </JotDownImageGrid>
+            <JotDownTitleGrid item xs={12} md={6}>
+              <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
+                <ServiceName variant="h5">JotDown</ServiceName>
               </StyledLink>
               <ServiceDescription variant="subtitle1">
                 - Note and bookmark web service -
               </ServiceDescription>
-            </MemoMemoTitleGrid>
+            </JotDownTitleGrid>
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>

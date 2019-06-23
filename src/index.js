@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Main from "./components/Main/Main";
-import MemoMemo from "./components/MemoMemo/MemoMemo";
+import JotDown from "./components/JotDown/JotDown";
 import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
@@ -36,7 +36,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
-        <Route path="/work/memomemo" exact component={MemoMemo} />
+        <Route path="/work/jotdown" exact component={JotDown} />
         <Route path="/work/marketplace" exact component={MarketPlace} />
         <Route path="/work/slack-bot" exact component={SlackBot} />
         <Route component={NotFound} />

@@ -9,7 +9,7 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada .pdf";
-import MemoMemoPhoto from "../../static/images/websites/memomemo/home-memomemo.png";
+import JotDownPhoto from "../../static/images/websites/jotdown/home-jotdown.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -35,10 +35,10 @@ const ContentDescription = styled.div`
   padding-top: 10rem;
   padding-bottom: 2rem;
   @media (max-width: 800px) {
-      padding-top: 7rem;
-    }
+    padding-top: 7rem;
+  }
   @media (max-width: 500px) {
-      padding-top: 5rem;
+    padding-top: 5rem;
   }
 `;
 
@@ -120,20 +120,20 @@ class WorkDetail extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work - MemoMemo</title>
+          <title>Work - JotDown</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
               <StyledAnchor target="_blank" href="https://www.google.com/">
-                <Title variant="h4">MemoMemo</Title>
+                <Title variant="h4">JotDown</Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
                 <CardActionArea target="_blank" href="https://www.google.com/">
-                  <WorkImage image={MemoMemoPhoto} />
+                  <WorkImage image={JotDownPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
             </Grid>
@@ -148,12 +148,12 @@ class WorkDetail extends Component {
                     target="_blank"
                   />
                 </ButtonWrapper>
-                <WhatIsIt variant="h6">What is MemoMemo?</WhatIsIt>
+                <WhatIsIt variant="h6">What is JotDown?</WhatIsIt>
                 <SiteDescription variant="subtitle1">
-                  MemoMemo is a bookmark and note service for developer. <br />
+                  JotDown is a bookmark and note service for developer. <br />
                   If you solve a error, you can write a note that how to solve
                   the error, and save website that was used to help resolve the
-                  error. Of course, even non-developers, you can use MemoMemo as
+                  error. Of course, even non-developers, you can use JotDown as
                   a bookmark and note managing web service.
                 </SiteDescription>
                 <Technology variant="h6">Technology</Technology>
