@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import profile from "../../static/images/profile.png";
 import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
-import resume from "../../static/pdf/resume_jun_yamada .pdf";
+import resume from "../../static/pdf/resume_jun_yamada.pdf";
 
 import githubLogo from "../../static/images/logo/github.png";
 import linkedInLogo from "../../static/images/logo/linkedin.png";
@@ -116,7 +116,7 @@ class About extends Component {
                 <br />
                 In my free time, I like working out, watching movie.
               </Typography>
-              <Strength variant="h6">Strong skills</Strength>
+              <Strength variant="h6">Specialities:</Strength>
               <Typography variant="subtitle1">
                 <StyledUl>
                   <StyledLi>JavaScript</StyledLi>
@@ -124,7 +124,7 @@ class About extends Component {
                   <StyledLi>Vue.js</StyledLi>
                 </StyledUl>
               </Typography>
-              <Skills variant="h6">Other skills</Skills>
+              <Skills variant="h6">Other skills:</Skills>
               <Typography variant="subtitle1">
                 <StyledUl>
                   <StyledLi>

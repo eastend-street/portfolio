@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import StyledButton from "../StyledButton/StyledButton";
-import resume from "../../static/pdf/resume_jun_yamada .pdf";
+import resume from "../../static/pdf/resume_jun_yamada.pdf";
 import JotDownPhoto from "../../static/images/websites/jotdown/home-jotdown.png";
 
 import Header from "../Header/Header";
@@ -126,13 +126,13 @@ class WorkDetail extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor target="_blank" href="https://www.google.com/">
+              <StyledAnchor target="_blank" href="https://github.com/eastend-street/jotdown">
                 <Title variant="h4">Jot down</Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://www.google.com/">
+                <CardActionArea target="_blank" href="https://github.com/eastend-street/jotdown">
                   <WorkImage image={JotDownPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
@@ -143,8 +143,8 @@ class WorkDetail extends Component {
               <Grid item xs={11} sm={10} md={8} lg={7}>
                 <ButtonWrapper>
                   <StyledButton
-                    name="Visit Website"
-                    url="https://www.google.com/"
+                    name="Coming soon (view Github)"
+                    url="https://github.com/eastend-street/jotdown"
                     target="_blank"
                   />
                 </ButtonWrapper>
