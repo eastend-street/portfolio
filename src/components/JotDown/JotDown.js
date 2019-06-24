@@ -120,7 +120,7 @@ class WorkDetail extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work - Jot down</title>
+          <title>Jot down</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
@@ -159,11 +159,10 @@ class WorkDetail extends Component {
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
                   I developed all of the service, front end, back end,
-                  infrastructure and design. The front end made by React.js,
-                  back end made by Python. In front end, I used Redux and
-                  styled-components, correct style application and state
-                  management are realized. In back end, I used Django REST
-                  framework and Google cloud platform. It established RESTful
+                  infrastructure and design. In front end, I used React, Redux and
+                  styled-components that realized correct style application and state
+                  management. In back end, I used Django REST
+                  framework and Google cloud platform that established RESTful
                   API communication.
                 </Typography>
                 <StyledUl>
@@ -186,12 +185,12 @@ class WorkDetail extends Component {
             </Grid>
             <ContentButton>
               <StyledButton
-                name="Download resume"
+                name="Resume"
                 url={resume}
                 target="_blank"
               />
               <StyledButton
-                name="Say Hello"
+                name="Email"
                 url="mailto:jun.yamada0097@gmail.com"
                 target="_blank"
               />

@@ -168,9 +168,9 @@ class WorkExperience extends Component {
         </Grid>
         <Grid item xs={10} sm={8}>
           <ContentButton>
-            <StyledButton name="Download resume" url={resume} target="_blank"/>
+            <StyledButton name="Resume" url={resume} target="_blank"/>
             <StyledButton
-              name="Say Hello"
+              name="Email"
               url="mailto:jun.yamada0097@gmail.com"
               target="_blank"
             />

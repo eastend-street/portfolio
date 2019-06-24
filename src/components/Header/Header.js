@@ -102,7 +102,7 @@ class Header extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <StyledButton>Contact</StyledButton>
+              <StyledButton>Email</StyledButton>
             </StyledAnchor>
           </WrapButton>
         </Toolbar>

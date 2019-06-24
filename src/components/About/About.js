@@ -107,15 +107,14 @@ class About extends Component {
             </ProfileGrid>
             <Grid item xs={12} sm={7} md={6}>
               <IntroSentence variant="h5">
-                My name is Jun Yamada, a Japanese front-end developer based in
-                Vancouver.
+                My name is Jun Yamada, a Japanese front-end developer
               </IntroSentence>
               <Typography variant="subtitle1">
-                I have worked as a front-end web developer / a software
+                I have worked as a front-end web developer, a software
                 engineer. My strength is a software focused front-end, writing
-                JavaScript frameworks / libraries like React.js, Vue.js.
+                JavaScript frameworks like React.js, Vue.js.
                 <br />
-                In my spare time, I like working out, watching movie.
+                In my free time, I like working out, watching movie.
               </Typography>
               <Strength variant="h6">Strong skills</Strength>
               <Typography variant="subtitle1">
@@ -169,14 +168,14 @@ class About extends Component {
                 <Grid container>
                   <Grid item xs={12} md={6} style={{ textAlign: "center" }}>
                     <StyledButton
-                      name="Download resume"
+                      name="Resume"
                       url={resume}
                       target="_blank"
                     />
                   </Grid>
                   <Grid item xs={12} md={6} style={{ textAlign: "center" }}>
                     <StyledButton
-                      name="Contact me"
+                      name="Email"
                       url="mailto:jun.yamada0097@gmail.com"
                       target="_blank"
                     />

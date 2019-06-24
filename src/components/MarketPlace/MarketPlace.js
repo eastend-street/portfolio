@@ -101,7 +101,7 @@ class MarketPlace extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work - Mail MarketPlace</title>
+          <title>Mail MarketPlace</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
@@ -128,9 +128,8 @@ class MarketPlace extends Component {
                   search and sort inventory by price, date, type and other
                   conditions.
                   <br />
-                  <br />* I could not show you the web service due to company
-                  rules. But I could show you demo screen shot on this page. Let
-                  me know if you have some question about this service.
+                  <br />* Unfortunately, I could not show you the web service due to company
+                  rules.
                 </SiteDescription>
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
@@ -138,10 +137,6 @@ class MarketPlace extends Component {
                   this web service responsible for all the front end work. Then
                   I wrote back end CRUD processing, and constructed cloud
                   infrastructure environment.
-                  <br />
-                  In the front end, I used Vue.js, Vuex, Vuetify.js and Sass. In
-                  the back end, I used Django REST framework and Google cloud
-                  platform, Docker.
                 </Typography>
                 <StyledUl>
                   <StyledLi>
@@ -163,12 +158,12 @@ class MarketPlace extends Component {
             </Grid>
             <ContentButton>
               <StyledButton
-                name="Download resume"
+                name="Resume"
                 url={resume}
                 target="_blank"
               />
               <StyledButton
-                name="Say Hello"
+                name="Email"
                 url="mailto:jun.yamada0097@gmail.com"
                 target="_blank"
               />

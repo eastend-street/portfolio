@@ -107,7 +107,7 @@ class WorkDetail extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>Work - Slack Bot</title>
+          <title>Slack Bot</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
@@ -152,18 +152,18 @@ class WorkDetail extends Component {
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
                   I wrote all of source code. This Slack bot made by Python and
-                  using Docker. Also Google Cloud Translation API.
+                  uses Docker and Google Cloud Translation API.
                 </Typography>
               </Grid>
             </Grid>
             <ContentButton>
               <StyledButton
-                name="Download resume"
+                name="Resume"
                 url={resume}
                 target="_blank"
               />
               <StyledButton
-                name="Say Hello"
+                name="Email"
                 url="mailto:jun.yamada0097@gmail.com"
                 target="_blank"
               />

@@ -58,7 +58,7 @@ const ServiceDescription = styled(Typography)`
 //   && {
 //     text-align: center;
 //     color: inherit;
-//     margin-top: 2rem;
+//     margin-top: 1rem;
 //   }
 // `;
 
@@ -131,6 +131,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
+
 class Works extends Component {
   renderWorkCard() {
     return (
@@ -148,7 +149,7 @@ class Works extends Component {
                 <ServiceName variant="h5">Jot down</ServiceName>
               </StyledLink>
               <ServiceDescription variant="subtitle1">
-                - Note and bookmark web service -
+                - Bookmark and note web service -
               </ServiceDescription>
             </JotDownTitleGrid>
           </Grid>
@@ -161,10 +162,11 @@ class Works extends Component {
                   <ServiceName variant="h5">Mail Marketplace</ServiceName>
                 </StyledLink>
                 <ServiceDescription variant="subtitle1">
-                  - A mail advertisement trading web system -
+                  - A mail advertisement trading system -
                 </ServiceDescription>
-                {/* <ServiceTechnologies variant="subtitle1">
-                  Vue.js, Vuex, Django, Python, Google Cloud Platform, Docker
+                {/* <ServiceTechnologies variant="subtitle2">
+                  Vue.js, Vuex, Django, 
+                  Python, Google Cloud Platform, Docker
                 </ServiceTechnologies> */}
               </AboutService>
             </MarketplaceTitleGrid>
