@@ -10,6 +10,7 @@ import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
+import 'react-app-polyfill/ie11';
 
 ReactDOM.render(
   <React.Fragment>
