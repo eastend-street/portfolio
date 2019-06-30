@@ -1,4 +1,4 @@
-#  WIP: Jun's Portfolio
+# Jun's Portfolio
 This is my portfolio showing front-end development and works.  
 Website: &nbsp; https://junyamada.info
 
