@@ -126,13 +126,13 @@ class WorkDetail extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor target="_blank" href="https://github.com/eastend-street/jotdown">
+              <StyledAnchor target="_blank" href="https://jotdown.site">
                 <Title variant="h4">Jot down</Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://github.com/eastend-street/jotdown">
+                <CardActionArea target="_blank" href="https://jotdown.site">
                   <WorkImage image={JotDownPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
@@ -143,26 +143,24 @@ class WorkDetail extends Component {
               <Grid item xs={11} sm={10} md={8} lg={7}>
                 <ButtonWrapper>
                   <StyledButton
-                    name="Coming soon (view Github)"
-                    url="https://github.com/eastend-street/jotdown"
+                    name="Visit website"
+                    url="https://jotdown.site"
                     target="_blank"
                   />
                 </ButtonWrapper>
                 <WhatIsIt variant="h6">What is Jot down?</WhatIsIt>
                 <SiteDescription variant="subtitle1">
-                  Jot down is a bookmark and note service for developer. <br />
-                  If you solve a error, you can write a note that how to solve
-                  the error, and save website that was used to help resolve the
-                  error. Of course, even non-developers, you can use Jot down as
-                  a bookmark and note managing web service.
+                  Jot down is a bookmark and note web service.
+                  You can save some your favorite website or article to Jot down.
+                  Also you can write a note with your bookmark.
                 </SiteDescription>
                 <Technology variant="h6">Technology</Technology>
                 <Typography variant="subtitle1">
                   I developed all of the service, front end, back end,
-                  infrastructure and design. In front end, I used React, Redux and
+                  infrastructure and design. In front end, using React, Redux and
                   styled-components that realized correct style application and state
-                  management. In back end, I used Django REST
-                  framework and Google cloud platform that established RESTful
+                  management. In back end, using Django REST
+                  framework, Docker, Heroku that established RESTful
                   API communication.
                 </Typography>
                 <StyledUl>
@@ -174,11 +172,10 @@ class WorkDetail extends Component {
                     <Category>Backend: </Category> Django REST framework, Python
                   </StyledLi>
                   <StyledLi>
-                    <Category>Infrastructure: </Category> Google cloud platform,
-                    Docker
+                    <Category>Infrastructure: </Category> Docker, Heroku
                   </StyledLi>
                   <StyledLi>
-                    <Category>Others: </Category> REST API, Axios, Gunicorn
+                    <Category>Others: </Category> REST API, Axios, Gunicorn, Netlify
                   </StyledLi>
                 </StyledUl>
               </Grid>

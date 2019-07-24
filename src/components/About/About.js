@@ -169,7 +169,7 @@ class About extends Component {
                   <Grid item xs={12} md={6} style={{ textAlign: "center" }}>
                     <StyledButton
                       name="Resume"
-                      url={resume}
+                      url={resume + "#index"}
                       target="_blank"
                     />
                   </Grid>
