@@ -11,6 +11,9 @@ import NotFound from "./components/NotFound/NotFound";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import 'react-app-polyfill/ie11';
+// import ogmImage from "./static/images/profile.jpg"
+
+// console.log(ogmImage);
 
 ReactDOM.render(
   <React.Fragment>
