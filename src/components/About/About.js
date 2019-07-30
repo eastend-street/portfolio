@@ -73,16 +73,17 @@ const Skills = styled(Typography)`
 const StyledUl = styled.ul`
   margin-top: 0.1rem;
   padding-left: 2rem;
+  list-style: none;
 `;
 
 const StyledLi = styled.li`
-  /* margin-top: 0.5rem; */
+  margin-bottom: 0.5rem;
   color: inherit;
 `;
 
 const Category = styled.span`
   color: inherit;
-  /* opacity: 0.7; */
+  opacity: 0.7;
 `;
 
 // const StrongSkills = styled.span`
