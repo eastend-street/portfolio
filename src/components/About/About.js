@@ -31,13 +31,33 @@ const Title = styled(Typography)`
 const IntroSentence = styled(Typography)`
   && {
     color: inherit;
-    margin-bottom: 1rem;
+    @media (max-width: 600px) {
+      margin-top: 3rem;
+      text-align:center;
+    }
   }
 `;
+const JobTitle = styled(Typography)`
+  && {
+    color: inherit;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+    @media (max-width: 600px) {
+      text-align:center;
+    }
+  }
+`;
+
+const Introduction = styled(Typography)`
+  && {
+  }
+`;
+
 
 const Strength = styled(Typography)`
   && {
     color: inherit;
+    opacity: 0.7;
     margin-top: 4rem;
   }
 `;
@@ -45,6 +65,7 @@ const Strength = styled(Typography)`
 const Skills = styled(Typography)`
   && {
     color: inherit;
+    opacity: 0.7;
     margin-top: 2.5rem;
   }
 `;
@@ -61,6 +82,7 @@ const StyledLi = styled.li`
 
 const Category = styled.span`
   color: inherit;
+  /* opacity: 0.7; */
 `;
 
 // const StrongSkills = styled.span`
@@ -106,16 +128,16 @@ class About extends Component {
               <ProfilePhoto src={profile} alt="profile" />
             </ProfileGrid>
             <Grid item xs={12} sm={7} md={6}>
-              <IntroSentence variant="h5">
-                My name is Jun Yamada, a Japanese front-end developer
+              <IntroSentence variant="h4">
+              Jun Yamada
               </IntroSentence>
-              <Typography variant="subtitle1">
+              <JobTitle variant="h6">Japanese Front-End developer</JobTitle>
+              <Introduction variant="subtitle1">
                 I have worked as a front-end web developer, a software
                 engineer. My strength is a software focused front-end, writing
                 JavaScript frameworks like React.js, Vue.js.
-                <br />
                 In my free time, I like working out, watching movie.
-              </Typography>
+              </Introduction>
               <Strength variant="h6">Specialities:</Strength>
               <Typography variant="subtitle1">
                 <StyledUl>
@@ -129,15 +151,15 @@ class About extends Component {
                 <StyledUl>
                   <StyledLi>
                     <Category>Languages: </Category>
-                    TypeScript, Python, HTML5, CSS3, Sass, Java
+                    &nbsp;TypeScript, Python, HTML5, CSS3, Sass, Java
                   </StyledLi>
                   <StyledLi>
                     <Category>Frameworks / Libraries: </Category>
-                    Django, jQuery, Bootstrap
+                    &nbsp;Django, jQuery, Bootstrap
                   </StyledLi>
                   <StyledLi>
-                    <Category>Others: </Category>Docker, Google Cloud Platform,
-                    MySQL, Git, Ubuntu
+                    <Category>Others: </Category>
+                    &nbsp;Docker, Google Cloud Platform, MySQL, Git, Ubuntu
                   </StyledLi>
                 </StyledUl>
               </Typography>
