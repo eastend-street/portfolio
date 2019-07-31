@@ -10,10 +10,13 @@ const StyledResumeButton = styled(Button)`
     border-radius: 0rem;
     text-transform: none;
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     width: 80%;
     max-width: 15rem;
     color: #4e4e4e;
+    @media (max-width: 960px) {
+      margin: 1rem;
+    }
   }
 `;
 

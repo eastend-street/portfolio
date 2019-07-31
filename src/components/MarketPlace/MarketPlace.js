@@ -6,8 +6,6 @@ import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
-import StyledButton from "../StyledButton/StyledButton";
-import resume from "../../static/pdf/resume_jun_yamada.pdf";
 import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png"
 
 
@@ -87,11 +85,6 @@ const Category = styled.span`
   font-weight: bold;
 `;
 
-const ContentButton = styled.div`
-  /* margin-top: 3rem; */
-  text-align: center;
-`;
-
 class MarketPlace extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -156,18 +149,6 @@ class MarketPlace extends Component {
                 </StyledUl>
               </Grid>
             </Grid>
-            <ContentButton>
-              <StyledButton
-                name="Resume"
-                url={resume}
-                target="_blank"
-              />
-              <StyledButton
-                name="Email"
-                url="mailto:jun.yamada0097@gmail.com"
-                target="_blank"
-              />
-            </ContentButton>
           </ContentDescription>
         </ContentWorkDetail>
         <Footer />

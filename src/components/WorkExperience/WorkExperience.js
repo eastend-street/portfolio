@@ -6,7 +6,6 @@ import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada.pdf";
 
-
 const ContentWorkExperience = styled(Grid)`
   && {
     padding-top: 5rem;
@@ -96,7 +95,7 @@ class WorkExperience extends Component {
             <Occupation variant="h6">Software Engineer</Occupation>
             <CompanyName variant="subtitle1">bizocean Co., Ltd.</CompanyName>
             <Period variant="subtitle2">
-            September 2017 – September 2018 (1year and 1month)
+              September 2017 – September 2018 (1year and 1month)
             </Period>
             <Place variant="subtitle2">Tokyo, Japan</Place>
             <Description>
@@ -168,7 +167,7 @@ class WorkExperience extends Component {
         </Grid>
         <Grid item xs={10} sm={8}>
           <ContentButton>
-            <StyledButton name="Resume" url={resume} target="_blank"/>
+            <StyledButton name="Resume" url={resume} target="_blank" />
             <StyledButton
               name="Email"
               url="mailto:jun.yamada0097@gmail.com"
