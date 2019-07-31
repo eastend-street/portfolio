@@ -32,20 +32,21 @@ const Occupation = styled(Typography)`
 const CompanyName = styled(Typography)`
   && {
     color: inherit;
-    /* margin-left: 1rem; */
+    margin-top: 0;
   }
 `;
 
 const Period = styled(Typography)`
   && {
-    color: #626262;
-    /* margin-left: 1rem; */
+    color: inherit;
+    margin-top: 0.5rem;
+    opacity: 0.8;
   }
 `;
 const Place = styled(Typography)`
   && {
-    color: #626262;
-    /* margin-left: 1rem; */
+    color: inherit;
+    opacity: 0.8;
   }
 `;
 
@@ -94,7 +95,7 @@ class WorkExperience extends Component {
         </Grid>
         <Grid item xs={11} sm={8}>
           <EachCompany>
-            <Occupation variant="h6">Software Engineer</Occupation>
+            <Occupation variant="h5">Software Engineer</Occupation>
             <CompanyName variant="subtitle1">bizocean Co., Ltd.</CompanyName>
             <Period variant="subtitle2">
               September 2017 – September 2018 (1year and 1month)
@@ -140,7 +141,7 @@ class WorkExperience extends Component {
             </SkillDescription>
           </EachCompany>
           <EachCompany>
-            <Occupation variant="h6">Systems Engineer</Occupation>
+            <Occupation variant="h5">Systems Engineer</Occupation>
             <CompanyName variant="subtitle1">
               Mizuho Information & Research Institute, Inc.
             </CompanyName>
