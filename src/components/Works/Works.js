@@ -204,7 +204,7 @@ class Works extends Component {
     return (
       <ContentWorks container justify="center" id="works">
         <Grid item xs={12}>
-          <Title variant="h4">Works</Title>
+          <Title variant="h4">WORKS</Title>
         </Grid>
         <Grid item xs={11} md={10}>
           <Grid container>{this.renderWorkCard()}</Grid>

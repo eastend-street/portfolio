@@ -88,7 +88,7 @@ class WorkExperience extends Component {
     return (
       <ContentWorkExperience container justify="center">
         <Grid item xs={12}>
-          <Title variant="h4">Work experience</Title>
+          <Title variant="h4">EXPERIENCE</Title>
         </Grid>
         <Grid item xs={11} sm={8}>
           <EachCompany>

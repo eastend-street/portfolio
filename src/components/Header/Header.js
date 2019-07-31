@@ -90,10 +90,10 @@ class Header extends Component {
             {isHome && (
               <React.Fragment>
                 <StyledHashLink smooth={true} to="#about">
-                  <StyledButton>About</StyledButton>
+                  <StyledButton>ABOUT</StyledButton>
                 </StyledHashLink>
                 <StyledHashLink smooth={true} to="#works">
-                  <StyledButton>Works</StyledButton>
+                  <StyledButton>WORKS</StyledButton>
                 </StyledHashLink>
               </React.Fragment>
             )}
@@ -102,7 +102,7 @@ class Header extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <StyledButton>Email</StyledButton>
+              <StyledButton>EMAIL</StyledButton>
             </StyledAnchor>
           </WrapButton>
         </Toolbar>

@@ -6,10 +6,6 @@ import profile from "../../static/images/profile.png";
 import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
 import resume from "../../static/pdf/resume_jun_yamada.pdf";
-
-// import githubLogo from "../../static/images/logo/github.png";
-// import linkedInLogo from "../../static/images/logo/linkedin.png";
-// import FacebookLogo from "../../static/images/logo/facebook.png";
 import javascriptLogo from "../../static/images/logo/javascript.svg";
 import reactLogo from "../../static/images/logo/react.svg";
 import vueLogo from "../../static/images/logo/vue.svg";
@@ -35,7 +31,7 @@ const IntroSentence = styled(Typography)`
   && {
     color: inherit;
     @media (max-width: 600px) {
-      margin-top: 3rem;
+      margin-top: 2rem;
       text-align: center;
     }
   }
@@ -43,10 +39,11 @@ const IntroSentence = styled(Typography)`
 const JobTitle = styled(Typography)`
   && {
     color: inherit;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     opacity: 0.7;
     @media (max-width: 600px) {
-      text-align: center;
+      margin-top: 2rem;
     }
   }
 `;
@@ -149,19 +146,19 @@ class About extends Component {
     return (
       <ContentAbout container justify="center" id="about">
         <Grid item xs={11} sm={10}>
-          <Title variant="h4">About</Title>
+          <Title variant="h4">ABOUT</Title>
           <Grid container justify="center">
             <ProfileGrid item xs={12} sm={5} md={6}>
               <ProfilePhoto src={profile} alt="profile" />
             </ProfileGrid>
             <Grid item xs={12} sm={7} md={6}>
               <IntroSentence variant="h4">Jun Yamada</IntroSentence>
-              <JobTitle variant="h6">Front-End developer</JobTitle>
+              <JobTitle variant="h6">Front-End developer:</JobTitle>
               <Introduction variant="subtitle1">
                 I have worked as a front-end web developer, a software engineer.
                 My strength is a software focused front-end, writing JavaScript
                 frameworks like React.js, Vue.js. In my free time, I like
-                working out, watching movie.
+                working out, watching movies.
               </Introduction>
               <Strength variant="h6">Specialities:</Strength>
               <Grid container>
