@@ -32,34 +32,35 @@ const Occupation = styled(Typography)`
 const CompanyName = styled(Typography)`
   && {
     color: inherit;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 `;
 
 const Period = styled(Typography)`
   && {
     color: #626262;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 `;
 const Place = styled(Typography)`
   && {
     color: #626262;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
   }
 `;
 
 const Description = styled.div`
   margin-top: 1.5rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 `;
 
 const SkillDescription = styled.div`
-  margin: 1.5rem auto auto 1rem;
+  margin: 1.5rem auto auto auto;
 `;
 
 const DescSentence = styled(Typography)`
   && {
+    display: inline;
     color: inherit;
   }
 `;
@@ -67,6 +68,7 @@ const DescSentence = styled(Typography)`
 const StyledUl = styled.ul`
   margin-top: 0.5rem;
   padding-left: 1rem;
+  /* list-style-position: inside; */
   color: inherit;
 `;
 
