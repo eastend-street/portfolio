@@ -39,17 +39,20 @@ const IntroSentence = styled(Typography)`
 const JobTitle = styled(Typography)`
   && {
     color: inherit;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 0.5rem;
     opacity: 0.7;
     @media (max-width: 600px) {
-      margin-top: 2rem;
+      text-align: center;
     }
   }
 `;
 
 const Introduction = styled(Typography)`
   && {
+    @media (max-width: 600px) {
+      margin-top: 2rem;
+    }
   }
 `;
 
@@ -153,7 +156,7 @@ class About extends Component {
             </ProfileGrid>
             <Grid item xs={12} sm={7} md={6}>
               <IntroSentence variant="h4">Jun Yamada</IntroSentence>
-              <JobTitle variant="h6">Front-End developer:</JobTitle>
+              <JobTitle variant="h6">Front-End developer</JobTitle>
               <Introduction variant="subtitle1">
                 I have worked as a front-end web developer, a software engineer.
                 My strength is a software focused front-end, writing JavaScript
@@ -235,7 +238,7 @@ class About extends Component {
                   <Grid item xs={12} md={6}>
                     <StyledButton
                       name="Resume"
-                      url={resume + "#index"}
+                      url={resume}
                       target="_blank"
                     />
                   </Grid>

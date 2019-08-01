@@ -12,6 +12,7 @@ const StyledAppBar = styled(AppBar)`
   && {
     background-color: #f9f2ec;
     box-shadow: none;
+    /* opacity: 0.8; */
   }
 `;
 
@@ -81,7 +82,7 @@ class Header extends Component {
       isHome = true;
     }
     return (
-      <StyledAppBar position="static">
+      <StyledAppBar position="fixed">
         <Toolbar>
           <StyledLink to={process.env.PUBLIC_URL + "/"}>
             <Logo variant="title">Jun</Logo>
