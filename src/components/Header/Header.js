@@ -77,10 +77,11 @@ const Logo = styled(Typography)`
 
 class Header extends Component {
   render() {
-    let isHome = false;
-    if (window.location.pathname === "/") {
-      isHome = true;
-    }
+    const isHome = true;
+    // let isHome = false;
+    // if (window.location.pathname === "/") {
+    //   isHome = true;
+    // }
     return (
       <StyledAppBar position="fixed">
         <Toolbar>
@@ -88,16 +89,14 @@ class Header extends Component {
             <Logo variant="title">Jun</Logo>
           </StyledLink>
           <WrapButton>
-            {isHome && (
-              <React.Fragment>
-                <StyledHashLink smooth={true} to="#about">
-                  <StyledButton>ABOUT</StyledButton>
-                </StyledHashLink>
-                <StyledHashLink smooth={true} to="#works">
-                  <StyledButton>WORKS</StyledButton>
-                </StyledHashLink>
-              </React.Fragment>
-            )}
+            <React.Fragment>
+              <StyledHashLink smooth={true} to="/#about">
+                <StyledButton>ABOUT</StyledButton>
+              </StyledHashLink>
+              <StyledHashLink smooth={true} to="/#works">
+                <StyledButton>WORKS</StyledButton>
+              </StyledHashLink>
+            </React.Fragment>
             <StyledAnchor
               href="mailto:jun.yamada0097@gmail.com"
               target="_blank"
