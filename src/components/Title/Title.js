@@ -40,13 +40,17 @@ const SubTitle = styled(Typography)`
   }
 `;
 
+// const StyledSpan = styled.span`
+  
+// `;
+
 class Title extends Component {
   render() {
     return (
       <ContentTitle container justify="center">
         <Grid item xs={9} md={8} lg={6}>
           <StyledTitle>Hi, I'm Jun.</StyledTitle>
-          <SubTitle>A front-end developer based in Vancouver</SubTitle>
+          <SubTitle>Front-End Web Developer based in Vancouver</SubTitle>
         </Grid>
       </ContentTitle>
     );

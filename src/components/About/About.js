@@ -156,14 +156,15 @@ class About extends Component {
             </ProfileGrid>
             <Grid item xs={12} sm={7} md={6}>
               <IntroSentence variant="h4">Jun Yamada</IntroSentence>
-              <JobTitle variant="h6">Front-End developer</JobTitle>
+              <JobTitle variant="h6">Front-End Web Developer</JobTitle>
               <Introduction variant="subtitle1">
-                I have worked as a front-end web developer, a software engineer.
-                My strength is a software focused front-end, writing JavaScript
-                frameworks like React.js, Vue.js. In my free time, I like
-                working out, watching movies.
+                Front-end web developer with a background as a software and
+                systems engineer. My strength is a software focused front-end using
+                React.js, Vue.js, and JavaScript. Passionate about writing
+                readable and robust code and designing intuitive UI. In my free
+                time, I like working out, watching movies.
               </Introduction>
-              <Strength variant="h6">Specialities:</Strength>
+              <Strength variant="h6">Specialties:</Strength>
               <Grid container>
                 <Grid item>
                   <WrapSkillLogo>
@@ -236,11 +237,7 @@ class About extends Component {
               <ContentButton>
                 <Grid container>
                   <Grid item xs={12} md={6}>
-                    <StyledButton
-                      name="Resume"
-                      url={resume}
-                      target="_blank"
-                    />
+                    <StyledButton name="Resume" url={resume} target="_blank" />
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <StyledButton

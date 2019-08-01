@@ -77,11 +77,6 @@ const Logo = styled(Typography)`
 
 class Header extends Component {
   render() {
-    const isHome = true;
-    // let isHome = false;
-    // if (window.location.pathname === "/") {
-    //   isHome = true;
-    // }
     return (
       <StyledAppBar position="fixed">
         <Toolbar>

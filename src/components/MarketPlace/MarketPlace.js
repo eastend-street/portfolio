@@ -140,7 +140,7 @@ class MarketPlace extends Component {
                     <Category>Backend: </Category> Django REST framework, Python
                   </StyledLi>
                   <StyledLi>
-                    <Category>Infrastructure: </Category> Google cloud platform,
+                    <Category>Infrastructure: </Category> Google Cloud Platform,
                     Docker
                   </StyledLi>
                   <StyledLi>

@@ -114,7 +114,7 @@ class WorkExperience extends Component {
                 <StyledLi>
                   <DescSentence>
                     Constructed cloud infrastructure environment using Google
-                    cloud platform, Docker
+                    Cloud Platform, Docker
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
