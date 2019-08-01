@@ -6,7 +6,7 @@ import { Typography } from "@material-ui/core";
 
 const ContentTitle = styled(Grid)`
   && {
-    min-height: 90vh;
+    min-height: 100vh;
     align-items: center;
   }
 `;

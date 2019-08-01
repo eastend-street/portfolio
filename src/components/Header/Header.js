@@ -10,9 +10,9 @@ import { HashLink } from "react-router-hash-link";
 
 const StyledAppBar = styled(AppBar)`
   && {
-    background-color: #f9f2ec;
+    background-color: transparent;
     box-shadow: none;
-    /* opacity: 0.8; */
+    backdrop-filter: blur(0.1rem);
   }
 `;
 
