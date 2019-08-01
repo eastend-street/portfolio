@@ -5,7 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import profile from "../../static/images/profile.png";
 import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
-import resume from "../../static/pdf/resume_jun_yamada.pdf";
+// import resume from "../../static/pdf/resume_jun_yamada.pdf";
 import javascriptLogo from "../../static/images/logo/javascript.svg";
 import reactLogo from "../../static/images/logo/react.svg";
 import vueLogo from "../../static/images/logo/vue.svg";
@@ -159,8 +159,8 @@ class About extends Component {
               <JobTitle variant="h6">Front-End Web Developer</JobTitle>
               <Introduction variant="subtitle1">
                 Front-end web developer with a background as a software and
-                systems engineer. My strength is a software focused front-end using
-                React.js, Vue.js, and JavaScript. Passionate about writing
+                systems engineer. My strength is a software-focused front-end
+                using React.js, Vue.js, and JavaScript. Passionate about writing
                 readable and robust code and designing intuitive UI. In my free
                 time, I like working out, watching movies.
               </Introduction>
@@ -237,7 +237,8 @@ class About extends Component {
               <ContentButton>
                 <Grid container>
                   <Grid item xs={12} md={6}>
-                    <StyledButton name="Resume" url={resume} target="_blank" />
+                    <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" />
+                    {/* <StyledButton name="Resume" url={resume} target="_blank" /> */}
                   </Grid>
                   <Grid item xs={12} md={6}>
                     <StyledButton
