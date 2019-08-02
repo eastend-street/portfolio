@@ -6,8 +6,8 @@ import Grid from "@material-ui/core/Grid";
 import WorkCard from "../WorkCard/WorkCard";
 import { Typography } from "@material-ui/core";
 import JotDownPhoto from "../../static/images/websites/jotdown/home-jotdown.png";
-import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png"
-import SlackBotPhoto from "../../static/images/websites/slack-bot/slack-bot.png"
+import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png";
+import SlackBotPhoto from "../../static/images/websites/slack-bot/slack-bot.png";
 
 const ContentWorks = styled(Grid)`
   && {
@@ -50,8 +50,30 @@ const ServiceDescription = styled(Typography)`
   && {
     text-align: center;
     color: inherit;
-    /* margin-top: 0.5rem; */
+    opacity: 0.8;
   }
+`;
+
+const Technologies = styled.div`
+  text-align: center;
+  margin-top: 2rem;
+  /* @media (max-width: 1200px) {
+      display: none;
+  } */
+  @media (max-width: 960px) {
+    margin-top: 1rem;
+  }
+`;
+
+const TechName = styled.span`
+  display: inline-block;
+  font-size: 0.8rem;
+  color: inherit;
+  opacity: 0.8;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 0.2rem;
 `;
 
 // const ServiceTechnologies = styled(Typography)`
@@ -74,7 +96,7 @@ const JotDownImageGrid = styled(Grid)`
 const JotDownTitleGrid = styled(Grid)`
   && {
     order: 2;
-    padding-top: 7rem;
+    padding-top: 6rem;
     @media (max-width: 960px) {
       order: 1;
       padding-top: 1rem;
@@ -90,7 +112,7 @@ const MarketplaceImageGrid = styled(Grid)`
 
 const MarketplaceTitleGrid = styled(Grid)`
   && {
-    padding-top: 7rem;
+    padding-top: 6rem;
     @media (max-width: 960px) {
       padding-top: 1rem;
     }
@@ -109,7 +131,7 @@ const SlackBotImageGrid = styled(Grid)`
 const SlackBotTitleGrid = styled(Grid)`
   && {
     order: 2;
-    padding-top: 7rem;
+    padding-top: 6rem;
     @media (max-width: 960px) {
       order: 1;
       padding-top: 1rem;
@@ -131,7 +153,6 @@ const StyledLink = styled(Link)`
   }
 `;
 
-
 class Works extends Component {
   renderWorkCard() {
     return (
@@ -151,7 +172,25 @@ class Works extends Component {
               <ServiceDescription variant="subtitle1">
                 - Bookmark and note web service -
               </ServiceDescription>
+              <Technologies>
+                <TechName>React.js</TechName>
+                <TechName>Redux</TechName>
+                <TechName>Django</TechName>
+                <TechName>Python</TechName>
+                <TechName>Docker</TechName>
+              </Technologies>
             </JotDownTitleGrid>
+            {/* <JotDownTitleGrid item xs={12} md={6}>
+              <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
+                <ServiceName variant="h5">Jot down</ServiceName>
+              </StyledLink>
+              <ServiceDescription variant="subtitle1">
+                - Bookmark and note web service -
+              </ServiceDescription>
+              <Technologies>
+              React.js, Redux, Django REST framework, Python, Docker
+              </Technologies>
+            </JotDownTitleGrid> */}
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
@@ -164,10 +203,14 @@ class Works extends Component {
                 <ServiceDescription variant="subtitle1">
                   - A mail advertisement trading system -
                 </ServiceDescription>
-                {/* <ServiceTechnologies variant="subtitle2">
-                  Vue.js, Vuex, Django, 
-                  Python, Google Cloud Platform, Docker
-                </ServiceTechnologies> */}
+                <Technologies>
+                  <TechName>Vue.js</TechName>
+                  <TechName>Vuex</TechName>
+                  <TechName>Django</TechName>
+                  <TechName>Python</TechName>
+                  <TechName>Docker</TechName>
+                  <TechName>Google Cloud Platform</TechName>
+                </Technologies>
               </AboutService>
             </MarketplaceTitleGrid>
             <MarketplaceImageGrid item xs={12} md={6}>
@@ -193,6 +236,11 @@ class Works extends Component {
               <ServiceDescription variant="subtitle1">
                 - A multilingual translation bot on Slack -
               </ServiceDescription>
+              <Technologies>
+                <TechName>Python</TechName>
+                <TechName>Docker</TechName>
+                <TechName>Google Translation API</TechName>
+              </Technologies>
             </SlackBotTitleGrid>
           </Grid>
         </GridCardItem>

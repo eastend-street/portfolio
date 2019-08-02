@@ -147,6 +147,11 @@ class WorkDetail extends Component {
                     url="https://jotdown.site"
                     target="_blank"
                   />
+                  <StyledButton
+                    name="View Github"
+                    url="https://github.com/eastend-street/jotdown"
+                    target="_blank"
+                  />
                 </ButtonWrapper>
                 <WhatIsIt variant="h6">What is Jot down?</WhatIsIt>
                 <SiteDescription variant="subtitle1">

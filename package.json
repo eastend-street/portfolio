@@ -40,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "2.0",
     "redux-devtools-extension": "^2.13.8"
   },
   "homepage": "https://junyamada.info"

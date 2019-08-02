@@ -12,7 +12,6 @@ const StyledAppBar = styled(AppBar)`
   && {
     /* background-color: transparent; */
     background-color: #f9f2ec;
-    /* background-color: #fff; */
     box-shadow: none;
     /* backdrop-filter: blur(0.1rem); */
   }
