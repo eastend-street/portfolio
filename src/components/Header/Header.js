@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import AppBar from "@material-ui/core/AppBar";
@@ -17,18 +17,18 @@ const StyledAppBar = styled(AppBar)`
   }
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #4e4e4e;
+// const StyledLink = styled(Link)`
+//   text-decoration: none;
+//   color: #4e4e4e;
 
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
-`;
+//   &:focus,
+//   &:hover,
+//   &:visited,
+//   &:link,
+//   &:active {
+//     text-decoration: none;
+//   }
+// `;
 
 const StyledHashLink = styled(HashLink)`
   text-decoration: none;
@@ -76,14 +76,34 @@ const Logo = styled(Typography)`
   }
 `;
 
+const LogoLink = styled.a`
+  text-decoration: none;
+  color: #4e4e4e;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
 class Header extends Component {
   render() {
     return (
       <StyledAppBar position="fixed">
         <Toolbar>
-          <StyledLink to={process.env.PUBLIC_URL + "/"}>
+          <LogoLink
+            href={process.env.PUBLIC_URL + "/"}
+            rel="noopener noreferrer"
+          >
+            {/* <StyledLink to={process.env.PUBLIC_URL + "/"}> */}
+            {/* <StyledHashLink smooth={true} to="/#title"> */}
             <Logo variant="title">Jun</Logo>
-          </StyledLink>
+            {/* </StyledHashLink> */}
+            {/* </StyledLink> */}
+          </LogoLink>
           <WrapButton>
             <React.Fragment>
               <StyledHashLink smooth={true} to="/#about">

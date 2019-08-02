@@ -47,7 +47,7 @@ const SubTitle = styled(Typography)`
 class Title extends Component {
   render() {
     return (
-      <ContentTitle container justify="center">
+      <ContentTitle container justify="center" id="title">
         <Grid item xs={9} md={8} lg={6}>
           <StyledTitle>Hi, I'm Jun.</StyledTitle>
           <SubTitle>Front-End Web Developer based in Vancouver</SubTitle>
