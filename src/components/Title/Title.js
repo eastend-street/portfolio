@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
@@ -15,6 +15,26 @@ const ContentTitle = styled(Grid)`
 //   /* text-align: center; */
 //   margin-top: -3rem;
 // `;
+const fadeInTitle = keyframes`
+  from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+`;
+const fadeInSub = keyframes`
+  from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+  }
+  to {
+      opacity: 0.7;
+      transform: translateY(0);
+  }
+`;
 
 const StyledTitle = styled(Typography)`
   && {
@@ -26,6 +46,9 @@ const StyledTitle = styled(Typography)`
     @media (max-width: 600px) {
       font-size: 2.5rem;
     }
+    animation-name: ${fadeInTitle};
+    animation-duration: 1s;
+    animation: ${fadeInTitle} 0.5s linear 0s 1 forwards;
   }
 `;
 
@@ -33,15 +56,16 @@ const SubTitle = styled(Typography)`
   && {
     color: inherit;
     font-size: 1.7rem;
-    opacity: 0.7;
+    opacity: 0;
     @media (max-width: 600px) {
       font-size: 1.3rem;
     }
+    animation: ${fadeInSub} 0.5s linear 0s 1 forwards;
   }
 `;
 
 // const StyledSpan = styled.span`
-  
+
 // `;
 
 class Title extends Component {
