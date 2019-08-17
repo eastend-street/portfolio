@@ -92,7 +92,7 @@ const LogoLink = styled.a`
 class Header extends Component {
   render() {
     return (
-      <StyledAppBar position="fixed">
+      <StyledAppBar position="static">
         <Toolbar>
           <LogoLink
             href={process.env.PUBLIC_URL + "/"}

@@ -42,12 +42,10 @@ const StyledTitle = styled(Typography)`
     color: inherit;
     font-size: 3.5rem;
     font-weight: bold;
-    margin-top: -3rem;
+    margin-top: -10rem;
     @media (max-width: 600px) {
       font-size: 2.5rem;
     }
-    animation-name: ${fadeInTitle};
-    animation-duration: 1s;
     animation: ${fadeInTitle} 0.5s linear 0s 1 forwards;
   }
 `;
