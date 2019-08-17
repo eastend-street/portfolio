@@ -39,8 +39,7 @@ const IntroSentence = styled(Typography)`
 const JobTitle = styled(Typography)`
   && {
     color: inherit;
-    /* margin-top: 1rem; */
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     opacity: 0.7;
     @media (max-width: 600px) {
       text-align: center;

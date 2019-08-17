@@ -6,15 +6,14 @@ import { Typography } from "@material-ui/core";
 
 const ContentTitle = styled(Grid)`
   && {
-    min-height: 100vh;
+    min-height: calc(100vh - 4rem); /* subtract header height */
     align-items: center;
+    @media (max-width: 600px) {
+      min-height: calc(100vh - 3.5rem); /* subtract header height */
+    }
   }
 `;
 
-// const StyledH1 = styled.h1`
-//   /* text-align: center; */
-//   margin-top: -3rem;
-// `;
 const fadeInTitle = keyframes`
   from {
       opacity: 0;
@@ -38,13 +37,13 @@ const fadeInSub = keyframes`
 
 const StyledTitle = styled(Typography)`
   && {
-    /* text-align: center; */
     color: inherit;
     font-size: 3.5rem;
     font-weight: bold;
-    margin-top: -10rem;
+    margin-top: -4rem; /* subtract header height */
     @media (max-width: 600px) {
       font-size: 2.5rem;
+      margin-top: -3.5rem;  /* subtract header height */
     }
     animation: ${fadeInTitle} 0.5s linear 0s 1 forwards;
   }
@@ -61,10 +60,6 @@ const SubTitle = styled(Typography)`
     animation: ${fadeInSub} 0.5s linear 0s 1 forwards;
   }
 `;
-
-// const StyledSpan = styled.span`
-
-// `;
 
 class Title extends Component {
   render() {

@@ -10,25 +10,10 @@ import { HashLink } from "react-router-hash-link";
 
 const StyledAppBar = styled(AppBar)`
   && {
-    /* background-color: transparent; */
     background-color: #f9f2ec;
     box-shadow: none;
-    /* backdrop-filter: blur(0.1rem); */
   }
 `;
-
-// const StyledLink = styled(Link)`
-//   text-decoration: none;
-//   color: #4e4e4e;
-
-//   &:focus,
-//   &:hover,
-//   &:visited,
-//   &:link,
-//   &:active {
-//     text-decoration: none;
-//   }
-// `;
 
 const StyledHashLink = styled(HashLink)`
   text-decoration: none;
@@ -92,7 +77,7 @@ const LogoLink = styled.a`
 class Header extends Component {
   render() {
     return (
-      <StyledAppBar position="static">
+      <StyledAppBar position="static" id="header">
         <Toolbar>
           <LogoLink
             href={process.env.PUBLIC_URL + "/"}
