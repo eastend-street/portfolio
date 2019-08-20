@@ -236,7 +236,7 @@ class About extends Component {
               <ContentButton>
                 <Grid container>
                   <Grid item xs={12} md={6}>
-                    <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" />
+                    <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" rel="nofollow"/>
                     {/* <StyledButton name="Resume" url={resume} target="_blank" /> */}
                   </Grid>
                   <Grid item xs={12} md={6}>
