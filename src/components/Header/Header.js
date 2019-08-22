@@ -100,7 +100,6 @@ class Header extends Component {
             </React.Fragment>
             <StyledAnchor
               href="mailto:jun.yamada0097@gmail.com"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <StyledButton>EMAIL</StyledButton>

@@ -243,7 +243,6 @@ class About extends Component {
                     <StyledButton
                       name="Email"
                       url="mailto:jun.yamada0097@gmail.com"
-                      target="_blank"
                     />
                   </Grid>
                 </Grid>

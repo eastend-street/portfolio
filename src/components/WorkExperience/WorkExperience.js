@@ -170,11 +170,10 @@ class WorkExperience extends Component {
         </Grid>
         <Grid item xs={10} sm={8}>
           <ContentButton>
-            <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" rel="nofollow"/>
+            {/* <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" rel="nofollow"/> */}
             <StyledButton
               name="Email"
               url="mailto:jun.yamada0097@gmail.com"
-              target="_blank"
             />
           </ContentButton>
         </Grid>
