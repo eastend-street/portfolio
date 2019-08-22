@@ -14,7 +14,17 @@ const ContentTitle = styled(Grid)`
   }
 `;
 
-const fadeInTitle = keyframes`
+const fadeInName = keyframes`
+  from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+  }
+  to {
+      opacity: 0.9;
+      transform: translateY(0);
+  }
+`;
+const fadeInProfession = keyframes`
   from {
       opacity: 0;
       transform: translateY(0.5rem);
@@ -24,40 +34,41 @@ const fadeInTitle = keyframes`
       transform: translateY(0);
   }
 `;
-const fadeInSub = keyframes`
-  from {
-      opacity: 0;
-      transform: translateY(0.5rem);
-  }
-  to {
-      opacity: 0.7;
-      transform: translateY(0);
+
+const Name = styled(Typography)`
+  && {
+    color: inherit;
+    font-size: 1.7rem;
+    /* font-size: 3.5rem; */
+    font-weight: bold;
+    margin-top: -4rem; /* subtract header height */
+    @media (max-width: 600px) {
+      /* font-size: 2.5rem; */
+      font-size: 1.3rem;
+      margin-top: -3.5rem; /* subtract header height */
+    }
+    animation: ${fadeInName} 1s linear 0s 1 forwards;
   }
 `;
 
-const StyledTitle = styled(Typography)`
+const Profession = styled(Typography)`
   && {
     color: inherit;
     font-size: 3.5rem;
     font-weight: bold;
-    margin-top: -4rem; /* subtract header height */
-    @media (max-width: 600px) {
-      font-size: 2.5rem;
-      margin-top: -3.5rem;  /* subtract header height */
-    }
-    animation: ${fadeInTitle} 0.5s linear 0s 1 forwards;
-  }
-`;
-
-const SubTitle = styled(Typography)`
-  && {
-    color: inherit;
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     opacity: 0;
-    @media (max-width: 600px) {
-      font-size: 1.3rem;
+    @media (max-width: 830px) {
+      font-size: 2.7rem;
     }
-    animation: ${fadeInSub} 0.5s linear 0s 1 forwards;
+    @media (max-width: 600px) {
+      font-size: 2.0rem;
+      /* font-size: 1.3rem; */
+    }
+    @media (max-width: 350px) {
+      font-size: 1.7rem;
+    }
+    animation: ${fadeInProfession} 1s linear 0s 1 forwards;
   }
 `;
 
@@ -65,9 +76,12 @@ class Title extends Component {
   render() {
     return (
       <ContentTitle container justify="center" id="title">
-        <Grid item xs={9} md={8} lg={6}>
-          <StyledTitle>Hi, I'm Jun.</StyledTitle>
-          <SubTitle>Front-End Web Developer based in Vancouver</SubTitle>
+        <Grid item xs={10} md={9} lg={8}>
+          <Name>Hi, I'm Jun.</Name>
+          <Profession>
+            Front-End Web Developer <br />
+            based in Vancouver
+          </Profession>
         </Grid>
       </ContentTitle>
     );

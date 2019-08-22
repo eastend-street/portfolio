@@ -3,7 +3,8 @@ This is my portfolio showing front-end development and works.
 Website: &nbsp; https://junyamada.info
 
 
-[![top-portfolio](https://user-images.githubusercontent.com/43656115/62516649-7e3a1500-b7da-11e9-910f-bd18e0847d90.png)](https://junyamada.info)
+[![top](https://user-images.githubusercontent.com/43656115/63484453-7d4ce880-c454-11e9-87b3-dd8d432c3d4b.png)](https://junyamada.info)
+
 
 
 ## Skills I Used
