@@ -38,32 +38,27 @@ const fadeInProfession = keyframes`
 const Name = styled(Typography)`
   && {
     color: inherit;
-    font-size: 1.7rem;
-    /* font-size: 3.5rem; */
-    font-weight: bold;
+    font-size: 2.0rem;
     margin-top: -4rem; /* subtract header height */
     @media (max-width: 600px) {
-      /* font-size: 2.5rem; */
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin-top: -3.5rem; /* subtract header height */
     }
     animation: ${fadeInName} 1s linear 0s 1 forwards;
   }
 `;
 
-const Profession = styled(Typography)`
+const StyledTitle  = styled(Typography)`
   && {
     color: inherit;
     font-size: 3.5rem;
     font-weight: bold;
-    /* font-size: 1.7rem; */
     opacity: 0;
     @media (max-width: 830px) {
       font-size: 2.7rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 650px) {
       font-size: 2.0rem;
-      /* font-size: 1.3rem; */
     }
     @media (max-width: 350px) {
       font-size: 1.7rem;
@@ -72,16 +67,19 @@ const Profession = styled(Typography)`
   }
 `;
 
+
 class Title extends Component {
   render() {
     return (
       <ContentTitle container justify="center" id="title">
         <Grid item xs={10} md={9} lg={8}>
           <Name>Hi, I'm Jun.</Name>
-          <Profession>
-            Front-End Web Developer <br />
+          <StyledTitle>
+          Front-End Web Developer
+          </StyledTitle>
+          <StyledTitle>
             based in Vancouver
-          </Profession>
+          </StyledTitle>
         </Grid>
       </ContentTitle>
     );
