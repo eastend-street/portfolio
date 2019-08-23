@@ -105,10 +105,9 @@ class WorkExperience extends Component {
               <StyledUl>
                 <StyledLi>
                   <DescSentence>
-                    Developed house advertisement trading system, document
-                    creation web service responsible for all the front end work
-                    using Vue.js, service architecture, backend API server using
-                    Django REST framework.
+                    Developed all the front end work, backend API server for
+                    advertisement trading system, document creation web service
+                    using JavaScript, Vue.js, Python, Django REST framework.
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
@@ -119,14 +118,15 @@ class WorkExperience extends Component {
                 </StyledLi>
                 <StyledLi>
                   <DescSentence>
-                    Analyzed and Managed document creation web service for
-                    Marketing, SEO, traffic growth
+                    Analyzed and managed document creation web service for
+                    marketing, SEO, and traffic growth
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
                   <DescSentence>
-                    Designed new web service using the Design Sprint method,
-                    Agile software development
+                    As a product owner, held user interview and verified the
+                    hypothesis to grow the product using the Design Sprint
+                    method, Agile software development
                   </DescSentence>
                 </StyledLi>
               </StyledUl>
@@ -158,7 +158,7 @@ class WorkExperience extends Component {
                 </StyledLi>
                 <StyledLi>
                   <DescSentence>
-                    Promoted management and operated banking network system
+                    Progress management and operated banking network system
                   </DescSentence>
                 </StyledLi>
               </StyledUl>
@@ -171,10 +171,7 @@ class WorkExperience extends Component {
         <Grid item xs={10} sm={8}>
           <ContentButton>
             {/* <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" rel="nofollow"/> */}
-            <StyledButton
-              name="Email"
-              url="mailto:jun.yamada0097@gmail.com"
-            />
+            <StyledButton name="Email" url="mailto:jun.yamada0097@gmail.com" />
           </ContentButton>
         </Grid>
       </ContentWorkExperience>

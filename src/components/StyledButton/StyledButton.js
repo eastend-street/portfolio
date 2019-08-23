@@ -17,6 +17,12 @@ const StyledResumeButton = styled(Button)`
     @media (max-width: 960px) {
       margin: 1rem;
     }
+    /* :hover {
+      background-color: #eee;
+      color: #fff;
+      border: 0.01rem solid #eee;
+      transition: 0.5s;
+    } */
   }
 `;
 

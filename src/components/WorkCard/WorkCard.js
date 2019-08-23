@@ -16,6 +16,10 @@ const WorkImage = styled(CardMedia)`
   && {
     height: 0;
     padding-top: 62.5%;
+    /* :hover {
+      transition: 0.7s;
+      transform: scale(0.95, 0.95);
+    } */
   }
 `;
 

@@ -6,10 +6,10 @@ import { Typography } from "@material-ui/core";
 
 const ContentTitle = styled(Grid)`
   && {
-    min-height: calc(100vh - 4rem); /* subtract header height */
+    min-height: calc(95vh - 4rem); /* subtract header height */
     align-items: center;
     @media (max-width: 600px) {
-      min-height: calc(100vh - 3.5rem); /* subtract header height */
+      min-height: calc(95vh - 3.5rem); /* subtract header height */
     }
   }
 `;

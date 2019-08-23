@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import githubLogo from "../../static/images/logo/github.png";
 import linkedInLogo from "../../static/images/logo/linkedin.png";
-import FacebookLogo from "../../static/images/logo/facebook.png";
+// import FacebookLogo from "../../static/images/logo/facebook.png";
 
 const StyledFooter = styled.div`
   /* background-color: #d7ccc8; */
@@ -48,13 +48,13 @@ class Footer extends Component {
           >
             <SocialLogo src={linkedInLogo} alt="LinkedIn" />
           </a>
-          <a
+          {/* <a
             href="https://www.facebook.com/yamada.junya1211"
             target="_blank"
             rel="noopener noreferrer"
           >
             <SocialLogo src={FacebookLogo} alt="Facebook" />
-          </a>
+          </a> */}
         </ContentSocial>
         <Copyright>&copy; Jun Yamada 2018-2019 All rights reserved.</Copyright>
       </StyledFooter>

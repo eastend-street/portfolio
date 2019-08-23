@@ -158,10 +158,12 @@ class About extends Component {
               <JobTitle variant="h6">Front-End Web Developer</JobTitle>
               <Introduction variant="subtitle1">
                 Front-end web developer with a background as a software and
-                systems engineer. My strength is a software-focused front-end
-                using React.js, Vue.js, and JavaScript. Passionate about writing
-                readable and robust code and designing intuitive UI. In my free
-                time, I like working out, watching movies.
+                systems engineer for more than 2 years. My strength is a
+                software-focused front-end using React.js, Vue.js, and
+                JavaScript. Passionate about writing readable and robust code,
+                designing intuitive UI, and repeating verifying and hypothesis
+                to make a user-first product. In my free time, I like working
+                out, watching movies.
               </Introduction>
               <Strength variant="h6">Specialties:</Strength>
               <Grid container>
@@ -236,7 +238,12 @@ class About extends Component {
               <ContentButton>
                 <Grid container>
                   <Grid item xs={12} md={6}>
-                    <StyledButton name="Resume" url={process.env.PUBLIC_URL + '/resume_jun_yamada.pdf'} target="_blank" rel="nofollow"/>
+                    <StyledButton
+                      name="Resume"
+                      url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
+                      target="_blank"
+                      rel="nofollow"
+                    />
                     {/* <StyledButton name="Resume" url={resume} target="_blank" /> */}
                   </Grid>
                   <Grid item xs={12} md={6}>
