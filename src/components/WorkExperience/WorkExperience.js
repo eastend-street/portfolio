@@ -105,9 +105,10 @@ class WorkExperience extends Component {
               <StyledUl>
                 <StyledLi>
                   <DescSentence>
-                    Developed all the front end work, backend API server for
-                    advertisement trading system, document creation web service
-                    using JavaScript, Vue.js, Python, Django REST framework.
+                    Developed all the front end work, service architecture,
+                    backend API server for advertisement trading system,
+                    document creation web service using JavaScript, Vue.js,
+                    Python, Django REST framework.
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
