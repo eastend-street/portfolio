@@ -86,6 +86,7 @@ class Header extends Component {
             {/* <StyledLink to={process.env.PUBLIC_URL + "/"}> */}
             {/* <StyledHashLink smooth={true} to="/#title"> */}
             <Logo variant="title">Jun</Logo>
+            {/* <StyledLogo src="../../static/images/logo/logo.png" alt="logo"/> */}
             {/* </StyledHashLink> */}
             {/* </StyledLink> */}
           </LogoLink>
