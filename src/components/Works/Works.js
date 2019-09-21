@@ -167,9 +167,9 @@ class Works extends Component {
             </JotDownImageGrid>
             <JotDownTitleGrid item xs={12} md={6}>
               <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
-                <ServiceName variant="h5">Jot down</ServiceName>
+                <ServiceName variant="h5" component="h3">Jot down</ServiceName>
               </StyledLink>
-              <ServiceDescription variant="subtitle1">
+              <ServiceDescription variant="subtitle1" component="p">
                 - Bookmark and note web service -
               </ServiceDescription>
               <Technologies>
@@ -198,9 +198,9 @@ class Works extends Component {
             <MarketplaceTitleGrid item xs={12} md={6}>
               <AboutService>
                 <StyledLink to={process.env.PUBLIC_URL + "/work/marketplace"}>
-                  <ServiceName variant="h5">Mail Marketplace</ServiceName>
+                  <ServiceName variant="h5" component="h3">Mail Marketplace</ServiceName>
                 </StyledLink>
-                <ServiceDescription variant="subtitle1">
+                <ServiceDescription variant="subtitle1" component="p">
                   - A mail advertisement trading system -
                 </ServiceDescription>
                 <Technologies>
@@ -231,9 +231,9 @@ class Works extends Component {
             </SlackBotImageGrid>
             <SlackBotTitleGrid item xs={12} md={6}>
               <StyledLink to={process.env.PUBLIC_URL + "/work/slack-bot"}>
-                <ServiceName variant="h5">Translation Slack bot</ServiceName>
+                <ServiceName variant="h5" component="h3">Translation Slack bot</ServiceName>
               </StyledLink>
-              <ServiceDescription variant="subtitle1">
+              <ServiceDescription variant="subtitle1" component="p">
                 - A multilingual translation bot on Slack -
               </ServiceDescription>
               <Technologies>
@@ -252,7 +252,7 @@ class Works extends Component {
     return (
       <ContentWorks container justify="center" id="works">
         <Grid item xs={12}>
-          <Title variant="h4">WORKS</Title>
+          <Title variant="h4" component="h2">WORKS</Title>
         </Grid>
         <Grid item xs={11} md={10}>
           <Grid container>{this.renderWorkCard()}</Grid>

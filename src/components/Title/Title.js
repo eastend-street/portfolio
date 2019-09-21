@@ -38,7 +38,7 @@ const fadeInProfession = keyframes`
 const Name = styled(Typography)`
   && {
     color: inherit;
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-top: -4rem; /* subtract header height */
     @media (max-width: 600px) {
       font-size: 1.5rem;
@@ -48,7 +48,7 @@ const Name = styled(Typography)`
   }
 `;
 
-const StyledTitle  = styled(Typography)`
+const StyledTitle = styled(Typography)`
   && {
     color: inherit;
     font-size: 3.5rem;
@@ -58,7 +58,7 @@ const StyledTitle  = styled(Typography)`
       font-size: 2.7rem;
     }
     @media (max-width: 650px) {
-      font-size: 2.0rem;
+      font-size: 2rem;
     }
     @media (max-width: 350px) {
       font-size: 1.7rem;
@@ -67,19 +67,16 @@ const StyledTitle  = styled(Typography)`
   }
 `;
 
-
 class Title extends Component {
   render() {
     return (
       <ContentTitle container justify="center" id="title">
         <Grid item xs={10} md={9} lg={8}>
-          <Name>Hi, I'm Jun.</Name>
-          <StyledTitle>
-          Front-End Web Developer
-          </StyledTitle>
-          <StyledTitle>
-            based in Vancouver
-          </StyledTitle>
+          <h1>
+            <Name>Hi, I'm Jun.</Name>
+            <StyledTitle>Front-End Web Developer</StyledTitle>
+            <StyledTitle>based in Vancouver</StyledTitle>
+          </h1>
         </Grid>
       </ContentTitle>
     );

@@ -91,16 +91,24 @@ class WorkExperience extends Component {
     return (
       <ContentWorkExperience container justify="center">
         <Grid item xs={12}>
-          <Title variant="h4">EXPERIENCE</Title>
+          <Title variant="h4" component="h2">
+            EXPERIENCE
+          </Title>
         </Grid>
         <Grid item xs={11} sm={8}>
           <EachCompany>
-            <Occupation variant="h5">Software Engineer</Occupation>
-            <CompanyName variant="subtitle1">bizocean Co., Ltd.</CompanyName>
-            <Period variant="subtitle2">
+            <Occupation variant="h5" component="h3">
+              Software Engineer
+            </Occupation>
+            <CompanyName variant="subtitle1" component="p">
+              bizocean Co., Ltd.
+            </CompanyName>
+            <Period variant="subtitle2" component="p">
               September 2017 – September 2018 (1year and 1month)
             </Period>
-            <Place variant="subtitle2">Tokyo, Japan</Place>
+            <Place variant="subtitle2" component="p">
+              Tokyo, Japan
+            </Place>
             <Description>
               <StyledUl>
                 <StyledLi>
@@ -142,14 +150,18 @@ class WorkExperience extends Component {
             </SkillDescription>
           </EachCompany>
           <EachCompany>
-            <Occupation variant="h5">Systems Engineer</Occupation>
-            <CompanyName variant="subtitle1">
+            <Occupation variant="h5" component="h3">
+              Systems Engineer
+            </Occupation>
+            <CompanyName variant="subtitle1" component="p">
               Mizuho Information & Research Institute, Inc.
             </CompanyName>
-            <Period variant="subtitle2">
+            <Period variant="subtitle2" component="p">
               April 2016 – August 2017 (1year and 5months)
             </Period>
-            <Place variant="subtitle2">Tokyo, Japan</Place>
+            <Place variant="subtitle2" component="p">
+              Tokyo, Japan
+            </Place>
             <Description>
               <StyledUl>
                 <StyledLi>

@@ -148,15 +148,21 @@ class About extends Component {
     return (
       <ContentAbout container justify="center" id="about">
         <Grid item xs={11} sm={10}>
-          <Title variant="h4">ABOUT</Title>
+          <Title variant="h4" component="h2">
+            ABOUT
+          </Title>
           <Grid container justify="center">
             <ProfileGrid item xs={12} sm={5} md={6}>
               <ProfilePhoto src={profile} alt="profile" />
             </ProfileGrid>
             <Grid item xs={12} sm={7} md={6}>
-              <IntroSentence variant="h4">Jun Yamada</IntroSentence>
-              <JobTitle variant="h6">Front-End Web Developer</JobTitle>
-              <Introduction variant="subtitle1">
+              <IntroSentence variant="h4" component="h3">
+                Jun Yamada
+              </IntroSentence>
+              <JobTitle variant="h6" component="h4">
+                Front-End Web Developer
+              </JobTitle>
+              <Introduction variant="subtitle1" component="p">
                 Front-end web developer with a background as a software and
                 systems engineer for more than 2 years. My strength is a
                 software-focused front-end using React.js, Vue.js, and
@@ -165,7 +171,9 @@ class About extends Component {
                 to make a user-first product. In my free time, I like working
                 out, watching movies.
               </Introduction>
-              <Strength variant="h6">Specialties:</Strength>
+              <Strength variant="h6" component="h4">
+                Specialties:
+              </Strength>
               <Grid container>
                 <Grid item>
                   <WrapSkillLogo>
@@ -193,8 +201,10 @@ class About extends Component {
                   <StyledLi></StyledLi>
                 </StyledUl> */}
               {/* </Typography> */}
-              <Skills variant="h6">Other skills:</Skills>
-              <Typography variant="subtitle1">
+              <Skills variant="h6" component="h4">
+                Other skills:
+              </Skills>
+              <Typography variant="subtitle1" component="p">
                 <StyledUl>
                   <StyledLi>
                     <Category>Languages: </Category>
