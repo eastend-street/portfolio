@@ -100,7 +100,7 @@ class MarketPlace extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <Title variant="h4">Mail MarketPlace</Title>
+              <Title variant="h4" component="h1">Mail MarketPlace</Title>
             </Grid>
             <Grid item xs={11} sm={10} md={8}>
               <StyledWorkCard>
@@ -111,8 +111,8 @@ class MarketPlace extends Component {
           <ContentDescription>
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
-                <WhatIsIt variant="h6">What is Mail MarketPlace?</WhatIsIt>
-                <SiteDescription variant="subtitle1">
+                <WhatIsIt variant="h6" component="h2">What is Mail MarketPlace?</WhatIsIt>
+                <SiteDescription variant="subtitle1" component="p">
                   Mail MarketPlace is a mail advertisement trading web service.
                   This is a project I was involved in my previous company,
                   bizocean Co., Ltd.
@@ -124,8 +124,8 @@ class MarketPlace extends Component {
                   <br />* Unfortunately, I could not show you the web service due to company
                   rules.
                 </SiteDescription>
-                <Technology variant="h6">Technology</Technology>
-                <Typography variant="subtitle1">
+                <Technology variant="h6" component="h2">Technology</Technology>
+                <Typography variant="subtitle1" component="p">
                   I joined this project from the basic design phase. I developed
                   this web service responsible for all the front end work. Then
                   I wrote back end CRUD processing, and constructed cloud

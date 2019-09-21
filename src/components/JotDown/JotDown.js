@@ -127,7 +127,9 @@ class WorkDetail extends Component {
           <Grid container justify="center">
             <Grid item xs={12}>
               <StyledAnchor target="_blank" href="https://jotdown.site">
-                <Title variant="h4">Jot down</Title>
+                <Title variant="h4" component="h1">
+                  Jot down
+                </Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
@@ -153,20 +155,24 @@ class WorkDetail extends Component {
                     target="_blank"
                   />
                 </ButtonWrapper>
-                <WhatIsIt variant="h6">What is Jot down?</WhatIsIt>
-                <SiteDescription variant="subtitle1">
-                  Jot down is a bookmark and note web service.
-                  You can save some your favorite website or article to Jot down.
-                  Also you can write a note with your bookmark.
+                <WhatIsIt variant="h6" component="h2">
+                  What is Jot down?
+                </WhatIsIt>
+                <SiteDescription variant="subtitle1" component="p">
+                  Jot down is a bookmark and note web service. You can save some
+                  your favorite website or article to Jot down. Also you can
+                  write a note with your bookmark.
                 </SiteDescription>
-                <Technology variant="h6">Technology</Technology>
-                <Typography variant="subtitle1">
+                <Technology variant="h6" component="h2">
+                  Technology
+                </Technology>
+                <Typography variant="subtitle1" component="p">
                   I developed all of the service, front end, back end,
-                  infrastructure and design. In front end, using React, Redux and
-                  styled-components that realized correct style application and state
-                  management. In back end, using Django REST
-                  framework, Docker, Heroku that established RESTful
-                  API communication.
+                  infrastructure and design. In front end, using React, Redux
+                  and styled-components that realized correct style application
+                  and state management. In back end, using Django REST
+                  framework, Docker, Heroku that established RESTful API
+                  communication.
                 </Typography>
                 <StyledUl>
                   <StyledLi>
@@ -180,7 +186,8 @@ class WorkDetail extends Component {
                     <Category>Infrastructure: </Category> Docker, Heroku
                   </StyledLi>
                   <StyledLi>
-                    <Category>Others: </Category> REST API, Axios, Gunicorn, Netlify
+                    <Category>Others: </Category> REST API, Axios, Gunicorn,
+                    Netlify
                   </StyledLi>
                 </StyledUl>
               </Grid>
