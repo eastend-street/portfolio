@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { HashLink } from "react-router-hash-link";
+import Logo from "../../static/images/logo/logo.png"
 
 const StyledAppBar = styled(AppBar)`
   && {
@@ -52,13 +53,20 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const Logo = styled(Typography)`
-  && {
-    color: inherit;
+// const Logo = styled(Typography)`
+//   && {
+//     color: inherit;
+//     :hover {
+//       opacity: 0.7;
+//     }
+//   }
+// `;
+
+const StyledLogo = styled.img`
+    max-height: 2rem;
     :hover {
       opacity: 0.7;
     }
-  }
 `;
 
 const LogoLink = styled.a`
@@ -85,8 +93,8 @@ class Header extends Component {
           >
             {/* <StyledLink to={process.env.PUBLIC_URL + "/"}> */}
             {/* <StyledHashLink smooth={true} to="/#title"> */}
-            <Logo variant="title">Jun</Logo>
-            {/* <StyledLogo src="../../static/images/logo/logo.png" alt="logo"/> */}
+            <StyledLogo src={Logo} alt="logo"/>
+            {/* <Typography variant="title">Jun</Typography> */}
             {/* </StyledHashLink> */}
             {/* </StyledLink> */}
           </LogoLink>

@@ -204,7 +204,7 @@ class About extends Component {
               <Skills variant="h6" component="h4">
                 Other skills:
               </Skills>
-              <Typography variant="subtitle1" component="p">
+              <Typography variant="subtitle1" component="div">
                 <StyledUl>
                   <StyledLi>
                     <Category>Languages: </Category>
