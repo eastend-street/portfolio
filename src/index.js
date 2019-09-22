@@ -17,7 +17,7 @@ import 'react-app-polyfill/ie11';
 
 ReactDOM.render(
   <React.Fragment>
-    <Helmet titleTemplate="%s - Jun's Portfolio" defaultTitle="Jun's Portfolio">
+    <Helmet titleTemplate="%s | Jun Yamada - Front-End Web Developer" defaultTitle="Jun Yamada - Front-End Web Developer">
       {/* <meta
         name="description"
         content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
