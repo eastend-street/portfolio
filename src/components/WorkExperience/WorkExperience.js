@@ -78,7 +78,7 @@ const StyledLi = styled.li`
 `;
 
 const EachCompany = styled.div`
-  margin-top: 5rem;
+  margin-top: 4rem;
 `;
 
 const ContentButton = styled.div`
@@ -96,6 +96,47 @@ class WorkExperience extends Component {
           </Title>
         </Grid>
         <Grid item xs={11} sm={8}>
+          <EachCompany>
+            <Occupation variant="h5" component="h3">
+              Web Developer
+            </Occupation>
+            <CompanyName variant="subtitle1" component="p">
+              iData Research Inc.
+            </CompanyName>
+            <Period variant="subtitle2" component="p">
+              September 2019 – Current
+            </Period>
+            <Place variant="subtitle2" component="p">
+              Burnaby, British Columbia, Canada
+            </Place>
+            <Description>
+              <StyledUl>
+                <StyledLi>
+                  <DescSentence>
+                    Developing in-house e-commerce and content websites using
+                    React.js, Redux, JavaScript, and Sass
+                  </DescSentence>
+                </StyledLi>
+                <StyledLi>
+                  <DescSentence>
+                    Upgrading the company's homepage using modern HTML5, CSS3,
+                    and JavaScript
+                  </DescSentence>
+                </StyledLi>
+                <StyledLi>
+                  <DescSentence>
+                    Assisting with backend services, including creating backup
+                    management systems using Shell script and MySQL
+                  </DescSentence>
+                </StyledLi>
+              </StyledUl>
+            </Description>
+            <SkillDescription>
+              <DescSentence>
+                React.js, Redux, JavaScript, HTML, CSS, Sass, PHP, MySQL and AWS
+              </DescSentence>
+            </SkillDescription>
+          </EachCompany>
           <EachCompany>
             <Occupation variant="h5" component="h3">
               Software Engineer
@@ -116,13 +157,13 @@ class WorkExperience extends Component {
                     Developed all the front end work, service architecture,
                     backend API server for advertisement trading system,
                     document creation web service using JavaScript, Vue.js,
-                    Python, Django REST framework.
+                    Python, and Django REST framework.
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
                   <DescSentence>
                     Constructed cloud infrastructure environment using Google
-                    Cloud Platform, Docker
+                    Cloud Platform, and Docker
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
@@ -135,7 +176,7 @@ class WorkExperience extends Component {
                   <DescSentence>
                     As a product owner, held user interview and verified the
                     hypothesis to grow the product using the Design Sprint
-                    method, Agile software development
+                    method and Agile software development
                   </DescSentence>
                 </StyledLi>
               </StyledUl>
@@ -145,7 +186,7 @@ class WorkExperience extends Component {
                 Vue.js(JavaScript), Django(Python), Django REST framework,
                 HTML5, CSS3, SCSS, jQuery, Docker, MySQL, Google Cloud Platform,
                 REST API, Trello, Asana, Backlog, Google Analytics, Google
-                search console, Google keyword planners
+                search console, and Google keyword planners
               </DescSentence>
             </SkillDescription>
           </EachCompany>
@@ -177,7 +218,7 @@ class WorkExperience extends Component {
               </StyledUl>
             </Description>
             <SkillDescription>
-              <DescSentence>Java, SQL, VBA</DescSentence>
+              <DescSentence>Java, SQL, and VBA</DescSentence>
             </SkillDescription>
           </EachCompany>
         </Grid>
