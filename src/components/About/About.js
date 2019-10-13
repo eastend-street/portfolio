@@ -193,6 +193,12 @@ class About extends Component {
                     <SkillName> JavaScript</SkillName>
                   </WrapSkillLogo>
                 </Grid>
+                <Grid item>
+                  <WrapSkillLogo>
+                    <SkillsLogo src={javascriptLogo} alt="TypeScriptLogo" />
+                    <SkillName> TypeScript</SkillName>
+                  </WrapSkillLogo>
+                </Grid>
               </Grid>
               {/* <Typography variant="subtitle1"> */}
               {/* <StyledUl>
