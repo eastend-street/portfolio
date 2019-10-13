@@ -209,16 +209,16 @@ class About extends Component {
                   <StyledLi>
                     <Category>Languages: </Category>
                     <span>
-                      &nbsp;TypeScript, Python, HTML5, CSS3, Sass, Java
+                      &nbsp;TypeScript, Python, Node.js, HTML5, CSS3, Sass, Java
                     </span>
                   </StyledLi>
                   <StyledLi>
                     <Category>Frameworks / Libraries: </Category>
-                    &nbsp;Django, jQuery, Bootstrap
+                    &nbsp;Django, Express.js, jQuery, Bootstrap, Material-UI
                   </StyledLi>
                   <StyledLi>
                     <Category>Others: </Category>
-                    &nbsp;Docker, Google Cloud Platform, MySQL, Git, Ubuntu
+                    &nbsp;Docker, Google Cloud Platform, MySQL, MongoDB, Git, Ubuntu
                   </StyledLi>
                 </StyledUl>
               </Typography>
