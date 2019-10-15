@@ -9,6 +9,7 @@ import StyledButton from "../StyledButton/StyledButton";
 import javascriptLogo from "../../static/images/logo/javascript.svg";
 import reactLogo from "../../static/images/logo/react.svg";
 import vueLogo from "../../static/images/logo/vue.svg";
+import typescriptLogo from "../../static/images/logo/typescript.svg"
 
 const ContentAbout = styled(Grid)`
   && {
@@ -130,7 +131,10 @@ const WrapSkillLogo = styled.div`
     margin-right: 2rem;
   }
   @media (max-width: 600px) {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
+  }
+  @media (max-width: 400px) {
+    margin-right: 0.5rem;
   }
 `;
 
@@ -195,7 +199,7 @@ class About extends Component {
                 </Grid>
                 <Grid item>
                   <WrapSkillLogo>
-                    <SkillsLogo src={javascriptLogo} alt="TypeScriptLogo" />
+                    <SkillsLogo src={typescriptLogo} alt="TypeScriptLogo" />
                     <SkillName> TypeScript</SkillName>
                   </WrapSkillLogo>
                 </Grid>
