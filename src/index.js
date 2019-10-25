@@ -11,31 +11,10 @@ import NotFound from "./components/NotFound/NotFound";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import 'react-app-polyfill/ie11';
-// import ogmImage from "./static/images/profile.jpg"
-
-// console.log(ogmImage);
 
 ReactDOM.render(
-  <React.Fragment>
+  <>
     <Helmet titleTemplate="%s | Jun Yamada - Front-End Web Developer" defaultTitle="Jun Yamada - Front-End Web Developer">
-      {/* <meta
-        name="description"
-        content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
-      />
-      <meta
-        property="og:url"
-        content="https://eastend-street.github.io/portfolio/"
-      />
-      <meta property="og:title" content="Home - Jun Yamada Portfolio" />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:description"
-        content="My name is Jun Yamada, a Japanese front-end developer based in Vancouver."
-      />
-      <meta property="og:image" content="../src/static/images/profile.png" />
-      <meta name="twitter:card" content="Summary Card" />
-      <meta property="og:site_name" content="Jun's Portfolio" />
-      <meta property="og:locale" content="en_CA" /> */}
     </Helmet>
     <BrowserRouter>
       <Switch>
@@ -46,7 +25,7 @@ ReactDOM.render(
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
-  </React.Fragment>,
+  </>,
   document.getElementById("root")
 );
 

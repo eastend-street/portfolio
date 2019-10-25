@@ -135,6 +135,7 @@ const WrapSkillLogo = styled.div`
   }
   @media (max-width: 400px) {
     margin-right: 0.5rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -197,12 +198,12 @@ class About extends Component {
                     <SkillName> JavaScript</SkillName>
                   </WrapSkillLogo>
                 </Grid>
-                <Grid item>
+                {/* <Grid item>
                   <WrapSkillLogo>
                     <SkillsLogo src={typescriptLogo} alt="TypeScriptLogo" />
                     <SkillName> TypeScript</SkillName>
                   </WrapSkillLogo>
-                </Grid>
+                </Grid> */}
               </Grid>
               {/* <Typography variant="subtitle1"> */}
               {/* <StyledUl>
