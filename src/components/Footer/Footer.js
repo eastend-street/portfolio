@@ -4,6 +4,7 @@ import githubLogo from "../../static/images/logo/github.png";
 import linkedInLogo from "../../static/images/logo/linkedin.png";
 
 const StyledFooter = styled.div`
+  background-color: #fcfcfc;
   padding: 3rem;
 `;
 

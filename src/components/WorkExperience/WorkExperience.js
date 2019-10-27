@@ -10,7 +10,7 @@ const ContentWorkExperience = styled(Grid)`
   && {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #fcfcfc;
+    /* background-color: #fcfcfc; */
   }
 `;
 

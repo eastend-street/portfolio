@@ -13,7 +13,7 @@ import typescriptLogo from "../../static/images/logo/typescript.svg"
 
 const ContentAbout = styled(Grid)`
   && {
-    background-color: #fcfcfc;
+    /* background-color: #fff; */
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
