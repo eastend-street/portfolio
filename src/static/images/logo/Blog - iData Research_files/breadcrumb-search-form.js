@@ -1,2 +1,0 @@
-function search_button_style(searchField,searchIcon,unFocusColor,onTypeColor){if(searchField.value.length>=1){searchIcon.style.color=onTypeColor;}else{searchIcon.style.color=unFocusColor;}}
-const searchField=document.querySelector('.search-field');const searchIcon=document.querySelector('.fa.fa-search');const unFocusColor='black';const onTypeColor='#b2b2b6';if(searchField!==null){searchField.addEventListener('keyup',function(){search_button_style(searchField,searchIcon,unFocusColor,onTypeColor);});}
