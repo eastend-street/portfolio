@@ -1,10 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { createGlobalStyle } from "styled-components";
 import "react-app-polyfill/ie11";
 
-import Main from "./components/Main/Main";
+import Home from "./components/Home/Home";
 import JotDown from "./components/JotDown/JotDown";
 import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
@@ -30,10 +30,10 @@ const App = () => {
       ></Helmet>
       <BrowserRouter>
         <Switch>
-          <Route path={process.env.PUBLIC_URL + "/"} exact component={Main} />
-          <Route path="/work/jotdown" exact component={JotDown} />
-          <Route path="/work/marketplace" exact component={MarketPlace} />
-          <Route path="/work/slack-bot" exact component={SlackBot} />
+          <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
+          <Route path={process.env.PUBLIC_URL + "/work/jotdown"} exact component={JotDown} />
+          <Route path={process.env.PUBLIC_URL + "/work/marketplace"} exact component={MarketPlace} />
+          <Route path={process.env.PUBLIC_URL + "/work/slack-bot"} exact component={SlackBot} />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
