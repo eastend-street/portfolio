@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
+import "react-app-polyfill/ie11";
 
 import Main from "./components/Main/Main";
 import JotDown from "./components/JotDown/JotDown";
 import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
-import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
