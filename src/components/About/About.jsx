@@ -9,7 +9,7 @@ import StyledButton from "../StyledButton/StyledButton";
 import javascriptLogo from "../../static/images/logo/javascript.svg";
 import reactLogo from "../../static/images/logo/react.svg";
 import vueLogo from "../../static/images/logo/vue.svg";
-import typescriptLogo from "../../static/images/logo/typescript.svg"
+// import typescriptLogo from "../../static/images/logo/typescript.svg"
 
 const ContentAbout = styled(Grid)`
   && {
