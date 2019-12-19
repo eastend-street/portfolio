@@ -8,7 +8,7 @@ import Logo from "../../static/images/logo/logo.png";
 
 const StyledAppBar = styled(AppBar)`
   && {
-    background-color: #fff;
+    background-color: #f9f2ec;
     box-shadow: none;
   }
 `;
