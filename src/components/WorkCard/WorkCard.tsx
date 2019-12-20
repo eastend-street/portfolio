@@ -38,15 +38,15 @@ const StyledLink = styled(Link)`
 
 type WorkCardProps = {
   url: string;
-  imageUrl: string;
+  image: string;
 };
 
-const WorkCard: React.FC<WorkCardProps> = ({ url, imageUrl }) => {
+const WorkCard: React.FC<WorkCardProps> = ({ url, image }) => {
   return (
     <StyledWorkCard>
       <StyledLink to={url}>
         <CardActionArea>
-          <WorkImage image={imageUrl} />
+          <WorkImage image={image} />
         </CardActionArea>
       </StyledLink>
     </StyledWorkCard>
