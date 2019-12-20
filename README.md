@@ -5,14 +5,15 @@ Website: &nbsp; https://junyamada.info
 
 [![top](https://user-images.githubusercontent.com/43656115/63484453-7d4ce880-c454-11e9-87b3-dd8d432c3d4b.png)](https://junyamada.info)
 
+<br/>
 
-
-## Skills I Used
+## Technologies
 - React.js
 - React Router
 - React Helmet
 - Styled-components
 - Material-ui
+- TypeScript
 - JavaScript
 - HTML5
 - CSS3

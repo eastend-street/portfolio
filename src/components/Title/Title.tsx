@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 import Grid from "@material-ui/core/Grid";
@@ -67,20 +67,18 @@ const StyledTitle = styled(Typography)`
   }
 `;
 
-class Title extends Component {
-  render() {
-    return (
-      <ContentTitle container justify="center" id="title">
-        <Grid item xs={10} md={9} lg={8}>
-          <h1>
-            <Name>Hi, I'm Jun.</Name>
-            <StyledTitle>Front-End Web Developer</StyledTitle>
-            <StyledTitle>based in Vancouver</StyledTitle>
-          </h1>
-        </Grid>
-      </ContentTitle>
-    );
-  }
-}
+const Title: React.FC = () => {
+  return (
+    <ContentTitle container justify="center" id="title">
+      <Grid item xs={10} md={9} lg={8}>
+        <h1>
+          <Name>Hi, I'm Jun.</Name>
+          <StyledTitle>Front-End Web Developer</StyledTitle>
+          <StyledTitle>based in Vancouver</StyledTitle>
+        </h1>
+      </Grid>
+    </ContentTitle>
+  );
+};
 
 export default Title;

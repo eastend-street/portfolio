@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
-// import resume from "../../static/pdf/resume_jun_yamada.pdf";
 
 const ContentWorkExperience = styled(Grid)`
   && {
@@ -195,7 +194,7 @@ class WorkExperience extends Component {
               Systems Engineer
             </Occupation>
             <CompanyName variant="subtitle1" component="p">
-              Mizuho Information & Research Institute, Inc.
+              Mizuho Information &amp; Research Institute, Inc.
             </CompanyName>
             <Period variant="subtitle2" component="p">
               April 2016 – August 2017 (1year and 5months)

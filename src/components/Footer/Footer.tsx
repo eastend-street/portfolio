@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import githubLogo from "../../static/images/logo/github.png";
 import linkedInLogo from "../../static/images/logo/linkedin.png";
