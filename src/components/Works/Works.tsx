@@ -57,9 +57,6 @@ const ServiceDescription = styled(Typography)`
 const Technologies = styled.div`
   text-align: center;
   margin-top: 2rem;
-  /* @media (max-width: 1200px) {
-      display: none;
-  } */
   @media (max-width: 960px) {
     margin-top: 1rem;
   }
@@ -75,14 +72,6 @@ const TechName = styled.span`
   padding: 0.5rem;
   margin: 0.2rem;
 `;
-
-// const ServiceTechnologies = styled(Typography)`
-//   && {
-//     text-align: center;
-//     color: inherit;
-//     margin-top: 1rem;
-//   }
-// `;
 
 const JotDownImageGrid = styled(Grid)`
   && {
@@ -180,17 +169,6 @@ class Works extends Component {
                 <TechName>Docker</TechName>
               </Technologies>
             </JotDownTitleGrid>
-            {/* <JotDownTitleGrid item xs={12} md={6}>
-              <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
-                <ServiceName variant="h5">Jot down</ServiceName>
-              </StyledLink>
-              <ServiceDescription variant="subtitle1">
-                - Bookmark and note web service -
-              </ServiceDescription>
-              <Technologies>
-              React.js, Redux, Django REST framework, Python, Docker
-              </Technologies>
-            </JotDownTitleGrid> */}
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>

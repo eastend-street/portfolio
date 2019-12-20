@@ -8,7 +8,6 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import StyledButton from "../StyledButton/StyledButton";
-// import resume from "../../static/pdf/resume_jun_yamada.pdf";
 import JotDownPhoto from "../../static/images/websites/jotdown/home-jotdown.png";
 
 import Header from "../Header/Header";
@@ -92,11 +91,6 @@ const StyledLi = styled.li`
 const Category = styled.span`
   font-weight: bold;
 `;
-
-// const ContentButton = styled.div`
-//   /* margin-top: 3rem; */
-//   text-align: center;
-// `;
 
 const StyledAnchor = styled.a`
   text-decoration: none;
@@ -192,18 +186,6 @@ class WorkDetail extends Component {
                 </StyledUl>
               </Grid>
             </Grid>
-            {/* <ContentButton>
-              <StyledButton
-                name="Resume"
-                url={resume}
-                target="_blank"
-              />
-              <StyledButton
-                name="Email"
-                url="mailto:jun.yamada0097@gmail.com"
-                target="_blank"
-              />
-            </ContentButton> */}
           </ContentDescription>
         </ContentWorkDetail>
         <Footer />

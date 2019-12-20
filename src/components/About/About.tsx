@@ -7,8 +7,8 @@ import { Typography } from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
 import javascriptLogo from "../../static/images/logo/javascript.svg";
 import reactLogo from "../../static/images/logo/react.svg";
-// import vueLogo from "../../static/images/logo/vue.svg";
-import typescriptLogo from "../../static/images/logo/typescript.svg";
+import vueLogo from "../../static/images/logo/vue.svg";
+// import typescriptLogo from "../../static/images/logo/typescript.svg";
 
 const ContentAbout = styled(Grid)`
   && {
@@ -161,14 +161,14 @@ const About: React.FC = () => {
             <Grid container>
               <Grid item>
                 <WrapSkillLogo>
-                  <SkillsLogo src={reactLogo} alt="ReactLogo" />
+                  <SkillsLogo src={reactLogo} alt="React Logo" />
                   <SkillName> React.js</SkillName>
                 </WrapSkillLogo>
               </Grid>
               <Grid item>
                 <WrapSkillLogo>
-                  <SkillsLogo src={typescriptLogo} alt="TypeScriptLogo" />
-                  <SkillName> TypeScript</SkillName>
+                  <SkillsLogo src={vueLogo} alt="Vue Logo" />
+                  <SkillName> Vue.js</SkillName>
                 </WrapSkillLogo>
               </Grid>
               <Grid item>
@@ -185,11 +185,11 @@ const About: React.FC = () => {
               <StyledUl>
                 <StyledLi>
                   <Category>Languages: </Category>
-                  <span>&nbsp;Python, Node.js, HTML5, CSS3, Sass, Java</span>
+                  <span>&nbsp;TypeScript, Python, Node.js, HTML5, CSS3, Sass, Java</span>
                 </StyledLi>
                 <StyledLi>
                   <Category>Frameworks / Libraries: </Category>
-                  &nbsp;Vue.js, Django, Express.js, jQuery, Bootstrap,
+                  &nbsp;Django, Express.js, jQuery, Bootstrap,
                   Material-UI
                 </StyledLi>
                 <StyledLi>
