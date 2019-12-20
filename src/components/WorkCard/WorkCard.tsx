@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -36,18 +36,21 @@ const StyledLink = styled(Link)`
   }
 `;
 
-class WorkCard extends Component {
-  render() {
-    return (
-      <StyledWorkCard>
-        <StyledLink to={this.props.url}>
-          <CardActionArea>
-            <WorkImage image={this.props.image} />
-          </CardActionArea>
-        </StyledLink>
-      </StyledWorkCard>
-    );
-  }
-}
+type WorkCardProps = {
+  url: string;
+  imageUrl: string;
+};
+
+const WorkCard: React.FC<WorkCardProps> = ({ url, imageUrl }) => {
+  return (
+    <StyledWorkCard>
+      <StyledLink to={url}>
+        <CardActionArea>
+          <WorkImage image={imageUrl} />
+        </CardActionArea>
+      </StyledLink>
+    </StyledWorkCard>
+  );
+};
 
 export default WorkCard;
