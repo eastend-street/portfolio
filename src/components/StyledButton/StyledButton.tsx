@@ -39,18 +39,19 @@ const StyledAnchor = styled.a`
   }
 `;
 
-class StyledButton extends Component {
-  render() {
-    return (
-      <StyledAnchor
-        href={this.props.url}
-        target={this.props.target}
-        rel="noopener noreferrer"
-      >
-        <StyledResumeButton>{this.props.name}</StyledResumeButton>
-      </StyledAnchor>
-    );
-  }
-}
+type ButtonProps = {
+  url: string;
+  target?: string;
+  name: string;
+  rel?: string;
+};
+
+const StyledButton: React.FC<ButtonProps> = ({ url, target, name }) => {
+  return (
+    <StyledAnchor href={url} target={target} rel="noopener noreferrer">
+      <StyledResumeButton>{name}</StyledResumeButton>
+    </StyledAnchor>
+  );
+};
 
 export default StyledButton;

@@ -6,7 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
-import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png"
+import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png"
 
 
 import Header from "../Header/Header";

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import githubLogo from "../../static/images/logo/github.png";
-import linkedInLogo from "../../static/images/logo/linkedin.png";
+import githubLogo from "../../assets/images/logo/github.png";
+import linkedInLogo from "../../assets/images/logo/linkedin.png";
 
 const StyledFooter = styled.div`
   /* background-color: #fcfcfc; */

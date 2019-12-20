@@ -5,9 +5,9 @@ import styled from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import WorkCard from "../WorkCard/WorkCard";
 import { Typography } from "@material-ui/core";
-import JotDownPhoto from "../../static/images/websites/jotdown/home-jotdown.png";
-import MarketplacePhoto from "../../static/images/websites/marketplace/marketplace.png";
-import SlackBotPhoto from "../../static/images/websites/slack-bot/slack-bot.png";
+import JotDownPhoto from "../../assets/images/websites/jotdown/home-jotdown.png";
+import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png";
+import SlackBotPhoto from "../../assets/images/websites/slack-bot/slack-bot.png";
 
 const ContentWorks = styled(Grid)`
   && {

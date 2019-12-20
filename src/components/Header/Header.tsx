@@ -4,7 +4,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import Toolbar from "@material-ui/core/Toolbar";
 import { HashLink } from "react-router-hash-link";
-import Logo from "../../static/images/logo/logo.png";
+import Logo from "../../assets/images/logo/logo.png";
 
 const StyledAppBar = styled(AppBar)`
   && {

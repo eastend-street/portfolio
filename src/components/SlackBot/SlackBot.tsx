@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import StyledButton from "../StyledButton/StyledButton";
-import SlackBotPhoto from "../../static/images/websites/slack-bot/slack-bot.png";
+import SlackBotPhoto from "../../assets/images/websites/slack-bot/slack-bot.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
