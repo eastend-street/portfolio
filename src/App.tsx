@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
@@ -31,9 +31,21 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
-          <Route path={process.env.PUBLIC_URL + "/work/jotdown"} exact component={JotDown} />
-          <Route path={process.env.PUBLIC_URL + "/work/marketplace"} exact component={MarketPlace} />
-          <Route path={process.env.PUBLIC_URL + "/work/slack-bot"} exact component={SlackBot} />
+          <Route
+            path={process.env.PUBLIC_URL + "/work/jotdown"}
+            exact
+            component={JotDown}
+          />
+          <Route
+            path={process.env.PUBLIC_URL + "/work/marketplace"}
+            exact
+            component={MarketPlace}
+          />
+          <Route
+            path={process.env.PUBLIC_URL + "/work/slack-bot"}
+            exact
+            component={SlackBot}
+          />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>

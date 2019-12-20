@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
@@ -70,35 +70,30 @@ const LogoLink = styled.a`
   }
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <StyledAppBar position="static" id="header">
-        <Toolbar>
-          <LogoLink
-            href={process.env.PUBLIC_URL + "/"}
+const Header: React.FC = () => {
+  return (
+    <StyledAppBar position="static" id="header">
+      <Toolbar>
+        <LogoLink href={process.env.PUBLIC_URL + "/"} rel="noopener noreferrer">
+          <StyledLogo src={Logo} alt="logo" />
+        </LogoLink>
+        <WrapButton>
+          <StyledHashLink smooth={true} to="/#about">
+            <StyledButton>ABOUT</StyledButton>
+          </StyledHashLink>
+          <StyledHashLink smooth={true} to="/#works">
+            <StyledButton>WORKS</StyledButton>
+          </StyledHashLink>
+          <StyledAnchor
+            href="mailto:jun.yamada0097@gmail.com"
             rel="noopener noreferrer"
           >
-            <StyledLogo src={Logo} alt="logo" />
-          </LogoLink>
-          <WrapButton>
-            <StyledHashLink smooth={true} to="/#about">
-              <StyledButton>ABOUT</StyledButton>
-            </StyledHashLink>
-            <StyledHashLink smooth={true} to="/#works">
-              <StyledButton>WORKS</StyledButton>
-            </StyledHashLink>
-            <StyledAnchor
-              href="mailto:jun.yamada0097@gmail.com"
-              rel="noopener noreferrer"
-            >
-              <StyledButton>EMAIL</StyledButton>
-            </StyledAnchor>
-          </WrapButton>
-        </Toolbar>
-      </StyledAppBar>
-    );
-  }
-}
+            <StyledButton>EMAIL</StyledButton>
+          </StyledAnchor>
+        </WrapButton>
+      </Toolbar>
+    </StyledAppBar>
+  );
+};
 
 export default Header;
