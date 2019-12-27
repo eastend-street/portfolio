@@ -120,7 +120,7 @@ class Brickhouse extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor target="_blank" href="https://jotdown.site">
+              <StyledAnchor target="_blank" href="">
                 <Title variant="h4" component="h1">
                   Brickhouse
                 </Title>
@@ -128,7 +128,7 @@ class Brickhouse extends Component {
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://jotdown.site">
+                <CardActionArea target="_blank" href="">
                   <WorkImage image={JotDownPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
@@ -138,51 +138,29 @@ class Brickhouse extends Component {
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
                 <ButtonWrapper>
-                  <StyledButton
-                    name="Visit website"
-                    url="https://jotdown.site"
-                    target="_blank"
-                  />
-                  <StyledButton
-                    name="View Github"
-                    url="https://github.com/eastend-street/jotdown"
-                    target="_blank"
-                  />
+                  <StyledButton name="Coming soon" url="" target="_blank" />
                 </ButtonWrapper>
                 <WhatIsIt variant="h6" component="h2">
-                  What is Jot down?
+                  What is Brickhouse?
                 </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
-                  Jot down is a bookmark and note web service. You can save some
-                  your favorite website or article to Jot down. Also you can
-                  write a note with your bookmark.
+                  A company homepage of Brickhouse ventures. This is a team
+                  project in CICCC with real client.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">
                   Technology
                 </Technology>
                 <Typography variant="subtitle1" component="p">
-                  I developed all of the service, front end, back end,
-                  infrastructure and design. In front end, using React, Redux
-                  and styled-components that realized correct style application
-                  and state management. In back end, using Django REST
-                  framework, Docker, Heroku that established RESTful API
-                  communication.
+                  I developed front-end architecture such as directory
+                  structure, how to separate component. Also making each
+                  component using React.js and TypeScript.
                 </Typography>
                 <StyledUl>
-                  <StyledLi>
-                    <Category>Front-end: </Category> React.js, Redux,
-                    styled-components, Material-ui
-                  </StyledLi>
-                  <StyledLi>
-                    <Category>Backend: </Category> Django REST framework, Python
-                  </StyledLi>
-                  <StyledLi>
-                    <Category>Infrastructure: </Category> Docker, Heroku
-                  </StyledLi>
-                  <StyledLi>
-                    <Category>Others: </Category> REST API, Axios, Gunicorn,
-                    Netlify
-                  </StyledLi>
+                  <StyledLi>React.js</StyledLi>
+                  <StyledLi>React Hooks</StyledLi>
+                  <StyledLi>TypeScript</StyledLi>
+                  <StyledLi>JavaScript</StyledLi>
+                  <StyledLi>Sass</StyledLi>
                 </StyledUl>
               </Grid>
             </Grid>
