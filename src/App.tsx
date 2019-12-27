@@ -6,6 +6,7 @@ import "react-app-polyfill/ie11";
 
 import Home from "./components/Home/Home";
 import JotDown from "./components/JotDown/JotDown";
+import Codeo from "./components/Codeo/Codeo";
 import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
@@ -34,6 +35,11 @@ const App: React.FC = () => {
           path={process.env.PUBLIC_URL + "/work/jotdown"}
           exact
           component={JotDown}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/work/codeo"}
+          exact
+          component={Codeo}
         />
         <Route
           path={process.env.PUBLIC_URL + "/work/marketplace"}
