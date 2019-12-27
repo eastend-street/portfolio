@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import WorkCard from "../WorkCard/WorkCard";
 import { Typography } from "@material-ui/core";
 import JotDownPhoto from "../../assets/images/websites/jotdown/home-jotdown.png";
+import CodeoPhoto from "../../assets/images/websites/codeo/codeo.png";
 import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png";
 import SlackBotPhoto from "../../assets/images/websites/slack-bot/slack-bot.png";
 
@@ -94,12 +95,36 @@ const JotDownTitleGrid = styled(Grid)`
   }
 `;
 
-const MarketplaceImageGrid = styled(Grid)`
+const BrickhouseImageGrid = styled(Grid)`
   && {
+    order: 1;
+    @media (max-width: 960px) {
+      order: 2;
+    }
+  }
+`;
+
+const BrickhouseTitleGrid = styled(Grid)`
+  && {
+    order: 2;
+    padding-top: 6rem;
+    @media (max-width: 960px) {
+      order: 1;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 `;
 
 const MarketplaceTitleGrid = styled(Grid)`
+  && {
+    padding-top: 6rem;
+    @media (max-width: 960px) {
+      padding-top: 1rem;
+    }
+  }
+`;
+const CodeoTitleGrid = styled(Grid)`
   && {
     padding-top: 6rem;
     @media (max-width: 960px) {
@@ -156,7 +181,9 @@ class Works extends Component {
             </JotDownImageGrid>
             <JotDownTitleGrid item xs={12} md={6}>
               <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
-                <ServiceName variant="h5" component="h3">Jot down</ServiceName>
+                <ServiceName variant="h5" component="h3">
+                  Jot down
+                </ServiceName>
               </StyledLink>
               <ServiceDescription variant="subtitle1" component="p">
                 - Bookmark and note web service -
@@ -173,10 +200,65 @@ class Works extends Component {
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
+            <CodeoTitleGrid item xs={12} md={6}>
+              <AboutService>
+                <StyledLink to={process.env.PUBLIC_URL + "/work/codeo"}>
+                  <ServiceName variant="h5" component="h3">
+                    Codeo
+                  </ServiceName>
+                </StyledLink>
+                <ServiceDescription variant="subtitle1" component="p">
+                  - A website to search programming video from YouTube -
+                </ServiceDescription>
+                <Technologies>
+                  <TechName>React.js</TechName>
+                  <TechName>React hooks</TechName>
+                  <TechName>Context API</TechName>
+                  <TechName>TypeScript</TechName>
+                </Technologies>
+              </AboutService>
+            </CodeoTitleGrid>
+            <Grid item xs={12} md={6}>
+              <WorkCard
+                url={process.env.PUBLIC_URL + "/work/codeo"}
+                image={CodeoPhoto}
+              />
+            </Grid>
+          </Grid>
+        </GridCardItem>
+        <GridCardItem item xs={12} md={12}>
+          <Grid container>
+            <BrickhouseImageGrid item xs={12} md={6}>
+              <WorkCard
+                url={process.env.PUBLIC_URL + "/work/brickhouse"}
+                image={JotDownPhoto}
+              />
+            </BrickhouseImageGrid>
+            <BrickhouseTitleGrid item xs={12} md={6}>
+              <StyledLink to={process.env.PUBLIC_URL + "/work/brickhouse"}>
+                <ServiceName variant="h5" component="h3">
+                  Brickhouse
+                </ServiceName>
+              </StyledLink>
+              <ServiceDescription variant="subtitle1" component="p">
+                - Brickhouse company homepage -
+              </ServiceDescription>
+              <Technologies>
+                <TechName>React.js</TechName>
+                <TechName>React hooks</TechName>
+                <TechName>TypeScript</TechName>
+              </Technologies>
+            </BrickhouseTitleGrid>
+          </Grid>
+        </GridCardItem>
+        <GridCardItem item xs={12} md={12}>
+          <Grid container>
             <MarketplaceTitleGrid item xs={12} md={6}>
               <AboutService>
                 <StyledLink to={process.env.PUBLIC_URL + "/work/marketplace"}>
-                  <ServiceName variant="h5" component="h3">Mail Marketplace</ServiceName>
+                  <ServiceName variant="h5" component="h3">
+                    Mail Marketplace
+                  </ServiceName>
                 </StyledLink>
                 <ServiceDescription variant="subtitle1" component="p">
                   - A mail advertisement trading system -
@@ -191,12 +273,12 @@ class Works extends Component {
                 </Technologies>
               </AboutService>
             </MarketplaceTitleGrid>
-            <MarketplaceImageGrid item xs={12} md={6}>
+            <Grid item xs={12} md={6}>
               <WorkCard
                 url={process.env.PUBLIC_URL + "/work/marketplace"}
                 image={MarketplacePhoto}
               />
-            </MarketplaceImageGrid>
+            </Grid>
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
@@ -209,7 +291,9 @@ class Works extends Component {
             </SlackBotImageGrid>
             <SlackBotTitleGrid item xs={12} md={6}>
               <StyledLink to={process.env.PUBLIC_URL + "/work/slack-bot"}>
-                <ServiceName variant="h5" component="h3">Translation Slack bot</ServiceName>
+                <ServiceName variant="h5" component="h3">
+                  Translation Slack bot
+                </ServiceName>
               </StyledLink>
               <ServiceDescription variant="subtitle1" component="p">
                 - A multilingual translation bot on Slack -
@@ -230,7 +314,9 @@ class Works extends Component {
     return (
       <ContentWorks container justify="center" id="works">
         <Grid item xs={12}>
-          <Title variant="h4" component="h2">WORKS</Title>
+          <Title variant="h4" component="h2">
+            WORKS
+          </Title>
         </Grid>
         <Grid item xs={11} md={10}>
           <Grid container>{this.renderWorkCard()}</Grid>

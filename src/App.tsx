@@ -10,6 +10,7 @@ import Codeo from "./components/Codeo/Codeo";
 import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
+import Brickhouse from "./components/Brickhouse/Brickhouse";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -40,6 +41,11 @@ const App: React.FC = () => {
           path={process.env.PUBLIC_URL + "/work/codeo"}
           exact
           component={Codeo}
+        />
+        <Route
+          path={process.env.PUBLIC_URL + "/work/brickhouse"}
+          exact
+          component={Brickhouse}
         />
         <Route
           path={process.env.PUBLIC_URL + "/work/marketplace"}

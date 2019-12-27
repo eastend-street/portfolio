@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import StyledButton from "../StyledButton/StyledButton";
-import CodeoPhoto from "../../assets/images/websites/codeo/codeo.png";
+import JotDownPhoto from "../../assets/images/websites/jotdown/home-jotdown.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -86,7 +86,10 @@ const StyledUl = styled.ul`
 
 const StyledLi = styled.li`
   margin-top: 1rem;
-  color: #000;
+`;
+
+const Category = styled.span`
+  font-weight: bold;
 `;
 
 const StyledAnchor = styled.a`
@@ -102,31 +105,31 @@ const StyledAnchor = styled.a`
   }
 `;
 
-class Codeo extends Component {
+class Brickhouse extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
   render() {
     return (
-      <>
+      <React.Fragment>
         <Helmet>
-          <title>Codeo</title>
+          <title>Brickhouse</title>
         </Helmet>
         <Header />
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor target="_blank" href="https://codeo.site">
+              <StyledAnchor target="_blank" href="https://jotdown.site">
                 <Title variant="h4" component="h1">
-                  Codeo
+                  Brickhouse
                 </Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://Codeo.site">
-                  <WorkImage image={CodeoPhoto} />
+                <CardActionArea target="_blank" href="https://jotdown.site">
+                  <WorkImage image={JotDownPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
             </Grid>
@@ -137,46 +140,58 @@ class Codeo extends Component {
                 <ButtonWrapper>
                   <StyledButton
                     name="Visit website"
-                    url="https://codeo.site"
+                    url="https://jotdown.site"
                     target="_blank"
                   />
                   <StyledButton
                     name="View Github"
-                    url="https://github.com/eastend-street/codeo"
+                    url="https://github.com/eastend-street/jotdown"
                     target="_blank"
                   />
                 </ButtonWrapper>
                 <WhatIsIt variant="h6" component="h2">
-                  What is Codeo?
+                  What is Jot down?
                 </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
-                  Codeo is a website to search programming video from YouTube.
-                  You can search programming YouTube video by each category such
-                  as React, Python.
+                  Jot down is a bookmark and note web service. You can save some
+                  your favorite website or article to Jot down. Also you can
+                  write a note with your bookmark.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">
                   Technology
                 </Technology>
                 <Typography variant="subtitle1" component="p">
-                  I developed all of the service, front end, design, calling
-                  YouTube API.
+                  I developed all of the service, front end, back end,
+                  infrastructure and design. In front end, using React, Redux
+                  and styled-components that realized correct style application
+                  and state management. In back end, using Django REST
+                  framework, Docker, Heroku that established RESTful API
+                  communication.
                 </Typography>
                 <StyledUl>
-                  <StyledLi>React.js</StyledLi>
-                  <StyledLi>React Hooks</StyledLi>
-                  <StyledLi>Context API</StyledLi>
-                  <StyledLi>TypeScript</StyledLi>
-                  <StyledLi>Styled-components</StyledLi>
-                  <StyledLi>Material-UI</StyledLi>
+                  <StyledLi>
+                    <Category>Front-end: </Category> React.js, Redux,
+                    styled-components, Material-ui
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Backend: </Category> Django REST framework, Python
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Infrastructure: </Category> Docker, Heroku
+                  </StyledLi>
+                  <StyledLi>
+                    <Category>Others: </Category> REST API, Axios, Gunicorn,
+                    Netlify
+                  </StyledLi>
                 </StyledUl>
               </Grid>
             </Grid>
           </ContentDescription>
         </ContentWorkDetail>
         <Footer />
-      </>
+      </React.Fragment>
     );
   }
 }
 
-export default Codeo;
+export default Brickhouse;
