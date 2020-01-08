@@ -9,6 +9,8 @@ import JotDownPhoto from "../../assets/images/websites/jotdown/home-jotdown.png"
 import CodeoPhoto from "../../assets/images/websites/codeo/codeo.png";
 import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png";
 import SlackBotPhoto from "../../assets/images/websites/slack-bot/slack-bot.png";
+import BrickHousePhoto from "../../assets/images/websites/brickhouse/brickhouse.png";
+
 
 const ContentWorks = styled(Grid)`
   && {
@@ -231,13 +233,13 @@ class Works extends Component {
             <BrickhouseImageGrid item xs={12} md={6}>
               <WorkCard
                 url={process.env.PUBLIC_URL + "/work/brickhouse"}
-                image={JotDownPhoto}
+                image={BrickHousePhoto}
               />
             </BrickhouseImageGrid>
             <BrickhouseTitleGrid item xs={12} md={6}>
               <StyledLink to={process.env.PUBLIC_URL + "/work/brickhouse"}>
                 <ServiceName variant="h5" component="h3">
-                  Brickhouse
+                  Brickhouse &#40;Coming soon&#41;
                 </ServiceName>
               </StyledLink>
               <ServiceDescription variant="subtitle1" component="p">

@@ -8,7 +8,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
 import StyledButton from "../StyledButton/StyledButton";
-import JotDownPhoto from "../../assets/images/websites/jotdown/home-jotdown.png";
+import BrickHousePhoto from "../../assets/images/websites/brickhouse/brickhouse.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -120,16 +120,16 @@ class Brickhouse extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor target="_blank" href="">
+              {/* <StyledAnchor target="_blank" href=""> */}
                 <Title variant="h4" component="h1">
-                  Brickhouse
+                  Brickhouse <br/> &#40;Coming soon&#41;
                 </Title>
-              </StyledAnchor>
+              {/* </StyledAnchor> */}
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
                 <CardActionArea target="_blank" href="">
-                  <WorkImage image={JotDownPhoto} />
+                  <WorkImage image={BrickHousePhoto} />
                 </CardActionArea>
               </StyledWorkCard>
             </Grid>
@@ -137,9 +137,9 @@ class Brickhouse extends Component {
           <ContentDescription>
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
-                <ButtonWrapper>
-                  <StyledButton name="Coming soon" url="" target="_blank" />
-                </ButtonWrapper>
+                {/* <ButtonWrapper> */}
+                  {/* <StyledButton name="Coming soon" url="" target="_blank" /> */}
+                {/* </ButtonWrapper> */}
                 <WhatIsIt variant="h6" component="h2">
                   What is Brickhouse?
                 </WhatIsIt>
