@@ -38,8 +38,14 @@ const fadeInProfession = keyframes`
 const Name = styled(Typography)`
   && {
     color: inherit;
-    font-size: 2rem;
+    font-size: 4.5rem;
     margin-top: -4rem; /* subtract header height */
+    @media (max-width: 1920px) {
+      font-size: 3.5rem;
+    }
+    @media (max-width: 1280px) {
+      font-size: 2.5rem;
+    }
     @media (max-width: 600px) {
       font-size: 1.5rem;
       margin-top: -3.5rem; /* subtract header height */
@@ -51,9 +57,15 @@ const Name = styled(Typography)`
 const StyledTitle = styled(Typography)`
   && {
     color: inherit;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-weight: bold;
     opacity: 0;
+    @media (max-width: 1920px) {
+      font-size: 4.5rem;
+    }
+    @media (max-width: 1280px) {
+      font-size: 3.5rem;
+    }
     @media (max-width: 830px) {
       font-size: 2.7rem;
     }

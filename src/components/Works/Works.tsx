@@ -11,7 +11,6 @@ import MarketplacePhoto from "../../assets/images/websites/marketplace/marketpla
 import SlackBotPhoto from "../../assets/images/websites/slack-bot/slack-bot.png";
 import BrickHousePhoto from "../../assets/images/websites/brickhouse/brickhouse.png";
 
-
 const ContentWorks = styled(Grid)`
   && {
     padding-top: 5rem;
@@ -88,7 +87,9 @@ const JotDownImageGrid = styled(Grid)`
 const JotDownTitleGrid = styled(Grid)`
   && {
     order: 2;
-    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 960px) {
       order: 1;
       padding-top: 1rem;
@@ -109,7 +110,9 @@ const BrickhouseImageGrid = styled(Grid)`
 const BrickhouseTitleGrid = styled(Grid)`
   && {
     order: 2;
-    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 960px) {
       order: 1;
       padding-top: 1rem;
@@ -120,7 +123,9 @@ const BrickhouseTitleGrid = styled(Grid)`
 
 const MarketplaceTitleGrid = styled(Grid)`
   && {
-    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 960px) {
       padding-top: 1rem;
     }
@@ -128,7 +133,9 @@ const MarketplaceTitleGrid = styled(Grid)`
 `;
 const CodeoTitleGrid = styled(Grid)`
   && {
-    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 960px) {
       padding-top: 1rem;
     }
@@ -147,7 +154,9 @@ const SlackBotImageGrid = styled(Grid)`
 const SlackBotTitleGrid = styled(Grid)`
   && {
     order: 2;
-    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 960px) {
       order: 1;
       padding-top: 1rem;
@@ -182,43 +191,47 @@ class Works extends Component {
               />
             </JotDownImageGrid>
             <JotDownTitleGrid item xs={12} md={6}>
-              <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
-                <ServiceName variant="h5" component="h3">
-                  Jot down
-                </ServiceName>
-              </StyledLink>
-              <ServiceDescription variant="subtitle1" component="p">
-                - Bookmark and note web service -
-              </ServiceDescription>
-              <Technologies>
-                <TechName>React.js</TechName>
-                <TechName>Redux</TechName>
-                <TechName>Django</TechName>
-                <TechName>Python</TechName>
-                <TechName>Docker</TechName>
-              </Technologies>
+              <div>
+                <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
+                  <ServiceName variant="h5" component="h3">
+                    Jot down
+                  </ServiceName>
+                </StyledLink>
+                <ServiceDescription variant="subtitle1" component="p">
+                  - Bookmark and note web service -
+                </ServiceDescription>
+                <Technologies>
+                  <TechName>React.js</TechName>
+                  <TechName>Redux</TechName>
+                  <TechName>Django</TechName>
+                  <TechName>Python</TechName>
+                  <TechName>Docker</TechName>
+                </Technologies>
+              </div>
             </JotDownTitleGrid>
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
             <CodeoTitleGrid item xs={12} md={6}>
-              <AboutService>
-                <StyledLink to={process.env.PUBLIC_URL + "/work/codeo"}>
-                  <ServiceName variant="h5" component="h3">
-                    Codeo
-                  </ServiceName>
-                </StyledLink>
-                <ServiceDescription variant="subtitle1" component="p">
-                  - A website to search programming video from YouTube -
-                </ServiceDescription>
-                <Technologies>
-                  <TechName>React.js</TechName>
-                  <TechName>React hooks</TechName>
-                  <TechName>Context API</TechName>
-                  <TechName>TypeScript</TechName>
-                </Technologies>
-              </AboutService>
+              <div>
+                <AboutService>
+                  <StyledLink to={process.env.PUBLIC_URL + "/work/codeo"}>
+                    <ServiceName variant="h5" component="h3">
+                      Codeo
+                    </ServiceName>
+                  </StyledLink>
+                  <ServiceDescription variant="subtitle1" component="p">
+                    - A website to search programming video from YouTube -
+                  </ServiceDescription>
+                  <Technologies>
+                    <TechName>React.js</TechName>
+                    <TechName>React hooks</TechName>
+                    <TechName>Context API</TechName>
+                    <TechName>TypeScript</TechName>
+                  </Technologies>
+                </AboutService>
+              </div>
             </CodeoTitleGrid>
             <Grid item xs={12} md={6}>
               <WorkCard
@@ -237,43 +250,47 @@ class Works extends Component {
               />
             </BrickhouseImageGrid>
             <BrickhouseTitleGrid item xs={12} md={6}>
-              <StyledLink to={process.env.PUBLIC_URL + "/work/brickhouse"}>
-                <ServiceName variant="h5" component="h3">
-                  Brickhouse &#40;Coming soon&#41;
-                </ServiceName>
-              </StyledLink>
-              <ServiceDescription variant="subtitle1" component="p">
-                - Brickhouse company homepage -
-              </ServiceDescription>
-              <Technologies>
-                <TechName>React.js</TechName>
-                <TechName>React hooks</TechName>
-                <TechName>TypeScript</TechName>
-              </Technologies>
+              <div>
+                <StyledLink to={process.env.PUBLIC_URL + "/work/brickhouse"}>
+                  <ServiceName variant="h5" component="h3">
+                    Brickhouse &#40;Coming soon&#41;
+                  </ServiceName>
+                </StyledLink>
+                <ServiceDescription variant="subtitle1" component="p">
+                  - Brickhouse company homepage -
+                </ServiceDescription>
+                <Technologies>
+                  <TechName>React.js</TechName>
+                  <TechName>React hooks</TechName>
+                  <TechName>TypeScript</TechName>
+                </Technologies>
+              </div>
             </BrickhouseTitleGrid>
           </Grid>
         </GridCardItem>
         <GridCardItem item xs={12} md={12}>
           <Grid container>
             <MarketplaceTitleGrid item xs={12} md={6}>
-              <AboutService>
-                <StyledLink to={process.env.PUBLIC_URL + "/work/marketplace"}>
-                  <ServiceName variant="h5" component="h3">
-                    Mail Marketplace
-                  </ServiceName>
-                </StyledLink>
-                <ServiceDescription variant="subtitle1" component="p">
-                  - A mail advertisement trading system -
-                </ServiceDescription>
-                <Technologies>
-                  <TechName>Vue.js</TechName>
-                  <TechName>Vuex</TechName>
-                  <TechName>Django</TechName>
-                  <TechName>Python</TechName>
-                  <TechName>Docker</TechName>
-                  <TechName>Google Cloud Platform</TechName>
-                </Technologies>
-              </AboutService>
+              <div>
+                <AboutService>
+                  <StyledLink to={process.env.PUBLIC_URL + "/work/marketplace"}>
+                    <ServiceName variant="h5" component="h3">
+                      Mail Marketplace
+                    </ServiceName>
+                  </StyledLink>
+                  <ServiceDescription variant="subtitle1" component="p">
+                    - A mail advertisement trading system -
+                  </ServiceDescription>
+                  <Technologies>
+                    <TechName>Vue.js</TechName>
+                    <TechName>Vuex</TechName>
+                    <TechName>Django</TechName>
+                    <TechName>Python</TechName>
+                    <TechName>Docker</TechName>
+                    <TechName>Google Cloud Platform</TechName>
+                  </Technologies>
+                </AboutService>
+              </div>
             </MarketplaceTitleGrid>
             <Grid item xs={12} md={6}>
               <WorkCard
@@ -292,19 +309,21 @@ class Works extends Component {
               />
             </SlackBotImageGrid>
             <SlackBotTitleGrid item xs={12} md={6}>
-              <StyledLink to={process.env.PUBLIC_URL + "/work/slack-bot"}>
-                <ServiceName variant="h5" component="h3">
-                  Translation Slack bot
-                </ServiceName>
-              </StyledLink>
-              <ServiceDescription variant="subtitle1" component="p">
-                - A multilingual translation bot on Slack -
-              </ServiceDescription>
-              <Technologies>
-                <TechName>Python</TechName>
-                <TechName>Docker</TechName>
-                <TechName>Google Translation API</TechName>
-              </Technologies>
+              <div>
+                <StyledLink to={process.env.PUBLIC_URL + "/work/slack-bot"}>
+                  <ServiceName variant="h5" component="h3">
+                    Translation Slack bot
+                  </ServiceName>
+                </StyledLink>
+                <ServiceDescription variant="subtitle1" component="p">
+                  - A multilingual translation bot on Slack -
+                </ServiceDescription>
+                <Technologies>
+                  <TechName>Python</TechName>
+                  <TechName>Docker</TechName>
+                  <TechName>Google Translation API</TechName>
+                </Technologies>
+              </div>
             </SlackBotTitleGrid>
           </Grid>
         </GridCardItem>
