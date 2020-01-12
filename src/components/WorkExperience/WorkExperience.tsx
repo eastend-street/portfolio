@@ -112,14 +112,14 @@ class WorkExperience extends Component {
               <StyledUl>
                 <StyledLi>
                   <DescSentence>
-                    Developing in-house e-commerce and content websites using
-                    React.js, Redux, JavaScript, and Sass
+                    Revamping the company's homepage using React.js, React
+                    hooks, TypeScript, and Sass
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
                   <DescSentence>
-                    Upgrading the company's homepage using modern HTML5, CSS3,
-                    and JavaScript
+                    Developing in-house e-commerce and content websites using
+                    React.js, Redux, JavaScript, and Sass
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
@@ -132,7 +132,8 @@ class WorkExperience extends Component {
             </Description>
             <SkillDescription>
               <DescSentence>
-                React.js, Redux, JavaScript, HTML, CSS, Sass, PHP, MySQL and AWS
+                React.js, Redux, TypeScript, JavaScript, HTML, CSS, Sass, PHP,
+                MySQL and AWS
               </DescSentence>
             </SkillDescription>
           </EachCompany>
