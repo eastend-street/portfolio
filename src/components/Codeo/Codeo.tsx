@@ -164,7 +164,7 @@ class Codeo extends Component {
                 <StyledUl>
                   <StyledLi>React.js</StyledLi>
                   <StyledLi>React Hooks</StyledLi>
-                  <StyledLi>Context API</StyledLi>
+                  <StyledLi>React Context API</StyledLi>
                   <StyledLi>TypeScript</StyledLi>
                   <StyledLi>Styled-components</StyledLi>
                   <StyledLi>Material-UI</StyledLi>
