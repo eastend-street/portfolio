@@ -33,27 +33,27 @@ const App: React.FC = () => {
       <Switch>
         <Route path={process.env.PUBLIC_URL + "/"} exact component={Home} />
         <Route
-          path={process.env.PUBLIC_URL + "/work/jotdown"}
+          path={process.env.PUBLIC_URL + "/jotdown"}
           exact
           component={JotDown}
         />
         <Route
-          path={process.env.PUBLIC_URL + "/work/codeo"}
+          path={process.env.PUBLIC_URL + "/codeo"}
           exact
           component={Codeo}
         />
         <Route
-          path={process.env.PUBLIC_URL + "/work/brickhouse"}
+          path={process.env.PUBLIC_URL + "/brickhouse"}
           exact
           component={Brickhouse}
         />
         <Route
-          path={process.env.PUBLIC_URL + "/work/marketplace"}
+          path={process.env.PUBLIC_URL + "/marketplace"}
           exact
           component={MarketPlace}
         />
         <Route
-          path={process.env.PUBLIC_URL + "/work/slack-bot"}
+          path={process.env.PUBLIC_URL + "/slack-bot"}
           exact
           component={SlackBot}
         />

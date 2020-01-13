@@ -186,13 +186,13 @@ class Works extends Component {
           <Grid container>
             <JotDownImageGrid item xs={12} md={6}>
               <WorkCard
-                url={process.env.PUBLIC_URL + "/work/jotdown"}
+                url={process.env.PUBLIC_URL + "/jotdown"}
                 image={JotDownPhoto}
               />
             </JotDownImageGrid>
             <JotDownTitleGrid item xs={12} md={6}>
               <div>
-                <StyledLink to={process.env.PUBLIC_URL + "/work/jotdown"}>
+                <StyledLink to={process.env.PUBLIC_URL + "/jotdown"}>
                   <ServiceName variant="h5" component="h3">
                     Jot down
                   </ServiceName>
@@ -216,7 +216,7 @@ class Works extends Component {
             <CodeoTitleGrid item xs={12} md={6}>
               <div>
                 <AboutService>
-                  <StyledLink to={process.env.PUBLIC_URL + "/work/codeo"}>
+                  <StyledLink to={process.env.PUBLIC_URL + "/codeo"}>
                     <ServiceName variant="h5" component="h3">
                       Codeo
                     </ServiceName>
@@ -235,7 +235,7 @@ class Works extends Component {
             </CodeoTitleGrid>
             <Grid item xs={12} md={6}>
               <WorkCard
-                url={process.env.PUBLIC_URL + "/work/codeo"}
+                url={process.env.PUBLIC_URL + "/codeo"}
                 image={CodeoPhoto}
               />
             </Grid>
@@ -245,13 +245,13 @@ class Works extends Component {
           <Grid container>
             <BrickhouseImageGrid item xs={12} md={6}>
               <WorkCard
-                url={process.env.PUBLIC_URL + "/work/brickhouse"}
+                url={process.env.PUBLIC_URL + "/brickhouse"}
                 image={BrickHousePhoto}
               />
             </BrickhouseImageGrid>
             <BrickhouseTitleGrid item xs={12} md={6}>
               <div>
-                <StyledLink to={process.env.PUBLIC_URL + "/work/brickhouse"}>
+                <StyledLink to={process.env.PUBLIC_URL + "/brickhouse"}>
                   <ServiceName variant="h5" component="h3">
                     Brickhouse &#40;Coming soon&#41;
                   </ServiceName>
@@ -273,7 +273,7 @@ class Works extends Component {
             <MarketplaceTitleGrid item xs={12} md={6}>
               <div>
                 <AboutService>
-                  <StyledLink to={process.env.PUBLIC_URL + "/work/marketplace"}>
+                  <StyledLink to={process.env.PUBLIC_URL + "/marketplace"}>
                     <ServiceName variant="h5" component="h3">
                       Mail Marketplace
                     </ServiceName>
@@ -294,7 +294,7 @@ class Works extends Component {
             </MarketplaceTitleGrid>
             <Grid item xs={12} md={6}>
               <WorkCard
-                url={process.env.PUBLIC_URL + "/work/marketplace"}
+                url={process.env.PUBLIC_URL + "/marketplace"}
                 image={MarketplacePhoto}
               />
             </Grid>
@@ -304,13 +304,13 @@ class Works extends Component {
           <Grid container>
             <SlackBotImageGrid item xs={12} md={6}>
               <WorkCard
-                url={process.env.PUBLIC_URL + "/work/slack-bot"}
+                url={process.env.PUBLIC_URL + "/slack-bot"}
                 image={SlackBotPhoto}
               />
             </SlackBotImageGrid>
             <SlackBotTitleGrid item xs={12} md={6}>
               <div>
-                <StyledLink to={process.env.PUBLIC_URL + "/work/slack-bot"}>
+                <StyledLink to={process.env.PUBLIC_URL + "/slack-bot"}>
                   <ServiceName variant="h5" component="h3">
                     Translation Slack bot
                   </ServiceName>
