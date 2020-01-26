@@ -125,7 +125,7 @@ class Codeo extends Component {
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://Codeo.site">
+                <CardActionArea target="_blank" href="https://codeo.site">
                   <WorkImage image={CodeoPhoto} />
                 </CardActionArea>
               </StyledWorkCard>
