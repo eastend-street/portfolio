@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 
-const ContentTitle = styled(Grid)`
+const ContentHero = styled(Grid)`
   && {
     min-height: calc(95vh - 4rem); /* subtract header height */
     align-items: center;
@@ -54,7 +54,7 @@ const Name = styled(Typography)`
   }
 `;
 
-const StyledTitle = styled(Typography)`
+const StyledHero = styled(Typography)`
   && {
     color: inherit;
     font-size: 5.5rem;
@@ -79,18 +79,18 @@ const StyledTitle = styled(Typography)`
   }
 `;
 
-const Title: React.FC = () => {
+const Hero: React.FC = () => {
   return (
-    <ContentTitle container justify="center" id="title">
+    <ContentHero container justify="center" id="hero">
       <Grid item xs={10} md={9} lg={8}>
         <h1>
           <Name>Hi, I'm Jun.</Name>
-          <StyledTitle>Front-End Web Developer</StyledTitle>
-          <StyledTitle>based in Vancouver</StyledTitle>
+          <StyledHero>Front-End Web Developer</StyledHero>
+          <StyledHero>based in Vancouver</StyledHero>
         </h1>
       </Grid>
-    </ContentTitle>
+    </ContentHero>
   );
 };
 
-export default Title;
+export default Hero;

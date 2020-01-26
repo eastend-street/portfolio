@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import Title from "../Title/Title";
+import Hero from "../Hero/Hero";
 import About from "../About/About";
 import Works from "../Works/Works";
 import WorkExperience from "../WorkExperience/WorkExperience";
@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <Title />
+      <Hero />
       <About />
       <Works />
       <WorkExperience />
