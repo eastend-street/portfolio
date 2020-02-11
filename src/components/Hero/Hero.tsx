@@ -4,6 +4,8 @@ import styled, { keyframes } from "styled-components";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 
+import ScrollDownButton from "../parts/ScrollDownButton/ScrollDownButton";
+
 const ContentHero = styled(Grid)`
   && {
     min-height: calc(95vh - 4rem); /* subtract header height */
@@ -89,6 +91,7 @@ const Hero: React.FC = () => {
           <StyledHero>based in Vancouver</StyledHero>
         </h1>
       </Grid>
+      <ScrollDownButton/>
     </ContentHero>
   );
 };
