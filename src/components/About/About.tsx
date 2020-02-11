@@ -148,7 +148,7 @@ const About: React.FC = () => {
             </JobTitle>
             <Introduction variant="subtitle1" component="p">
               Front-end web developer with a background as a software and
-              systems engineer for more than 2 and a half years. My strength is
+              systems engineer for more than 3 years. My strength is
               a software-focused front-end using React.js, Vue.js, and
               JavaScript. Passionate about writing readable and robust code,
               designing intuitive UI, and repeating verifying and hypothesis to
@@ -190,7 +190,7 @@ const About: React.FC = () => {
                 <StyledLi>
                   <Category>Frameworks / Libraries: </Category>
                   &nbsp;Django, Express.js, jQuery, Bootstrap,
-                  Material-UI
+                  Material-UI, Gatsby.js
                 </StyledLi>
                 <StyledLi>
                   <Category>Others: </Category>

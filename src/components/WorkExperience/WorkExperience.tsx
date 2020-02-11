@@ -113,7 +113,7 @@ class WorkExperience extends Component {
                 <StyledLi>
                   <DescSentence>
                     Revamping the company's homepage using React.js, React
-                    hooks, TypeScript, and Sass
+                    hooks, Gatsby.js, TypeScript, and Styled-components
                   </DescSentence>
                 </StyledLi>
                 <StyledLi>
@@ -132,8 +132,8 @@ class WorkExperience extends Component {
             </Description>
             <SkillDescription>
               <DescSentence>
-                React.js, Redux, TypeScript, JavaScript, HTML, CSS, Sass, PHP,
-                MySQL and AWS
+                React.js, Redux, TypeScript, JavaScript, Gatsby.js, HTML, CSS,
+                Sass, PHP, MySQL, GraphQL and AWS
               </DescSentence>
             </SkillDescription>
           </EachCompany>
