@@ -9,6 +9,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 const StyledWorkCard = styled(Card)`
   && {
     box-shadow: none;
+    /* border-radius: 1rem; */
   }
 `;
 
