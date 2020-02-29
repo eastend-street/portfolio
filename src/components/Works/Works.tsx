@@ -14,7 +14,7 @@ import BrickHousePhoto from "../../assets/images/websites/brickhouse/brickhouse.
 const ContentWorks = styled(Grid)`
   && {
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 `;
 

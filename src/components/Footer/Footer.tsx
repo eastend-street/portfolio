@@ -11,12 +11,12 @@ const StyledFooter = styled.div`
 const Copyright = styled.p`
   text-align: center;
   color: #aea9a5;
-  margin-top: 5rem;
+  margin-top: 1rem;
 `;
 
 const ContentSocial = styled.div`
   text-align: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 `;
 
 const SocialLogo = styled.img`
