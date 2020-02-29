@@ -45,7 +45,7 @@ const WrapButton = styled.div`
 
 const StyledButton = styled(Button)`
   && {
-    color: #4e4e4e;
+    font-family: inherit;
     text-transform: none;
   }
 `;

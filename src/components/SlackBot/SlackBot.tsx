@@ -21,7 +21,7 @@ const ContentWorkDetail = styled.div`
 const Title = styled(Typography)`
   && {
     text-align: center;
-    color: inherit;
+    font-family: inherit;
     font-weight: bold;
     :hover {
       opacity: 0.7;

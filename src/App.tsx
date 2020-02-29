@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { createGlobalStyle } from "styled-components";
 import "react-app-polyfill/ie11";
+
+import GlobalStyle from "./theme/GlobalStyle";
 
 import Home from "./components/Home/Home";
 import JotDown from "./components/JotDown/JotDown";
@@ -11,16 +12,6 @@ import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
 import Brickhouse from "./components/Brickhouse/Brickhouse";
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    color: #4e4e4e;
-    background-color: #f9f2ec;
-  }
-`;
 
 const App: React.FC = () => {
   return (

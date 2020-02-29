@@ -20,8 +20,8 @@ const ContentWorkDetail = styled.div`
 
 const Title = styled(Typography)`
   && {
+    font-family: inherit;
     text-align: center;
-    color: inherit;
     font-weight: bold;
     :hover {
       opacity: 0.7;

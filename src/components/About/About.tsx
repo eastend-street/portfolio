@@ -20,8 +20,8 @@ const ContentAbout = styled(Grid)`
 
 const Title = styled(Typography)`
   && {
+    font-family: inherit;
     text-align: center;
-    color: inherit;
     font-weight: bold;
     margin-bottom: 5rem;
   }
@@ -29,7 +29,6 @@ const Title = styled(Typography)`
 
 const IntroSentence = styled(Typography)`
   && {
-    color: inherit;
     @media (max-width: 600px) {
       margin-top: 2rem;
       text-align: center;

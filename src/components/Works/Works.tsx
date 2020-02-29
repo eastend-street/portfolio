@@ -20,8 +20,8 @@ const ContentWorks = styled(Grid)`
 
 const Title = styled(Typography)`
   && {
+    font-family: inherit;
     text-align: center;
-    color: inherit;
     font-weight: bold;
   }
 `;
@@ -39,9 +39,10 @@ const AboutService = styled.div`
 
 const ServiceName = styled(Typography)`
   && {
+    font-family: inherit;
     text-align: center;
-    color: inherit;
-    font-weight: bold;
+    /* color: inherit; */
+    font-weight: 900;
     :hover {
       opacity: 0.7;
     }
@@ -50,8 +51,8 @@ const ServiceName = styled(Typography)`
 
 const ServiceDescription = styled(Typography)`
   && {
+    font-family: inherit;
     text-align: center;
-    color: inherit;
     opacity: 0.8;
   }
 `;

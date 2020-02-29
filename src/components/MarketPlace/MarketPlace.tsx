@@ -6,8 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
-import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png"
-
+import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -19,8 +18,8 @@ const ContentWorkDetail = styled.div`
 
 const Title = styled(Typography)`
   && {
+    font-family: inherit;
     text-align: center;
-    color: inherit;
     font-weight: bold;
   }
 `;
@@ -30,10 +29,10 @@ const ContentDescription = styled.div`
   padding-top: 10rem;
   padding-bottom: 2rem;
   @media (max-width: 800px) {
-      padding-top: 5rem;
-    }
+    padding-top: 5rem;
+  }
   @media (max-width: 500px) {
-      padding-top: 3rem;
+    padding-top: 3rem;
   }
 `;
 
@@ -100,7 +99,9 @@ class MarketPlace extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <Title variant="h4" component="h1">Mail MarketPlace</Title>
+              <Title variant="h4" component="h1">
+                Mail MarketPlace
+              </Title>
             </Grid>
             <Grid item xs={11} sm={10} md={8}>
               <StyledWorkCard>
@@ -111,7 +112,9 @@ class MarketPlace extends Component {
           <ContentDescription>
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
-                <WhatIsIt variant="h6" component="h2">What is Mail MarketPlace?</WhatIsIt>
+                <WhatIsIt variant="h6" component="h2">
+                  What is Mail MarketPlace?
+                </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
                   Mail MarketPlace is a mail advertisement trading web service.
                   This is a project I was involved in my previous company,
@@ -121,10 +124,12 @@ class MarketPlace extends Component {
                   search and sort inventory by price, date, type and other
                   conditions.
                   <br />
-                  <br />* Unfortunately, I could not show you the web service due to company
-                  rules.
+                  <br />* Unfortunately, I could not show you the web service
+                  due to company rules.
                 </SiteDescription>
-                <Technology variant="h6" component="h2">Technology</Technology>
+                <Technology variant="h6" component="h2">
+                  Technology
+                </Technology>
                 <Typography variant="subtitle1" component="p">
                   I joined this project from the basic design phase. I developed
                   this web service responsible for all the front end work. Then

@@ -39,6 +39,7 @@ const fadeInProfession = keyframes`
 
 const Name = styled(Typography)`
   && {
+    font-family: inherit;
     color: inherit;
     font-size: 4.5rem;
     margin-top: -4rem; /* subtract header height */
@@ -58,9 +59,10 @@ const Name = styled(Typography)`
 
 const StyledHero = styled(Typography)`
   && {
+    font-family: inherit;
     color: inherit;
     font-size: 5.5rem;
-    font-weight: bold;
+    font-weight: 900;
     opacity: 0;
     @media (max-width: 1920px) {
       font-size: 4.5rem;
