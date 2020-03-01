@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import "react-app-polyfill/ie11";
 
-import GlobalStyle from "./theme/GlobalStyle";
+// import GlobalStyle from "./theme/GlobalStyle";
+import { createGlobalStyle } from "styled-components";
 
 import Home from "./components/Home/Home";
 import JotDown from "./components/JotDown/JotDown";
@@ -12,6 +13,17 @@ import MarketPlace from "./components/MarketPlace/MarketPlace";
 import SlackBot from "./components/SlackBot/SlackBot";
 import NotFound from "./components/NotFound/NotFound";
 import Brickhouse from "./components/Brickhouse/Brickhouse";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #4e4e4e;
+    background-color: #f9f2ec;
+  }
+`;
 
 const App: React.FC = () => {
   return (
