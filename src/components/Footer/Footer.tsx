@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import githubLogo from "../../assets/images/logo/github.png";
-import linkedInLogo from "../../assets/images/logo/linkedin.png";
+// import linkedInLogo from "../../assets/images/logo/linkedin.png";
 
 const StyledFooter = styled.div`
   /* background-color: #fcfcfc; */
@@ -23,6 +23,7 @@ const SocialLogo = styled.img`
   text-align: center;
   height: 2rem;
   margin: auto 1rem;
+  transition: .5s;
   :hover {
     opacity: 0.7;
   }
@@ -39,13 +40,13 @@ const Footer: React.FC = () => {
         >
           <SocialLogo src={githubLogo} alt="Github" />
         </a>
-        <a
+        {/* <a
           href="https://www.linkedin.com/in/jun-yamada-0097"
           target="_blank"
           rel="noopener noreferrer"
         >
           <SocialLogo src={linkedInLogo} alt="LinkedIn" />
-        </a>
+        </a> */}
       </ContentSocial>
       <Copyright>&copy; Jun Yamada 2019-2020 All rights reserved.</Copyright>
     </StyledFooter>
