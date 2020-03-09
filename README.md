@@ -31,7 +31,7 @@ Website: &nbsp; https://junyamada.info
 
 ## Each project
 
-- <a href="https://github.com/eastend-street/jotdown"><h3>Jot down</h3></a>
+- <h3><a href="https://github.com/eastend-street/jotdown" target="_blank">Jot down</a></h3>
 Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)  
 
 <a href="https://github.com/eastend-street/jotdown">
