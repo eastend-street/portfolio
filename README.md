@@ -35,7 +35,8 @@ Website: &nbsp; https://junyamada.info
 ## Works
 
 - <h3><a href="https://github.com/eastend-street/jotdown">Jot down</a></h3>
-Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)  
+Bookmark and note web service📗   
+`React.js`, `Redux`, `Styled-components`, `Python`, `Django`, `Docker`    
 
 <a href="https://github.com/eastend-street/jotdown">
 <img src="https://user-images.githubusercontent.com/43656115/76158377-2f36c400-60ca-11ea-99e8-909b6363e555.png" width="60%" height="60%">
@@ -58,7 +59,8 @@ Search programming video website from YouTube📺
 <br/>
 
 - <h3><a href="https://junyamada.info/brickhouse">Brickhouse(Coming soon)</a></h3>
-A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.   
+A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
+`React.js`, `React Hooks`, `TypeScript`, `Sass`  
 
 <a href="https://junyamada.info/brickhouse">
 <img src="https://user-images.githubusercontent.com/43656115/76181928-21dc1100-6180-11ea-882b-766652c76194.png" width="60%" height="60%">
@@ -69,7 +71,8 @@ A company homepage of Brickhouse ventures. This is a team project in CICCC with 
 <br/>
 
 - <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
-Mail MarketPlace is a company project that is mail advertisement trading web service.(Vue.js, Vuex, Vuetify.js, Django REST framework, Google Cloud Platform, Docker)   
+Mail MarketPlace is a company project that is mail advertisement trading web service.   
+`Vue.js`, `Vuex`, `Vuetify.js`, `Django REST framework`, `Google Cloud Platform`, `Docker`      
 
 <a href="https://junyamada.info/marketplace">
 <img src="https://user-images.githubusercontent.com/43656115/76181926-1e488a00-6180-11ea-9b71-92ff645f9027.png" width="60%" height="60%">
@@ -80,7 +83,8 @@ Mail MarketPlace is a company project that is mail advertisement trading web ser
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
-Translation slack bot🗣 English ↔ Japanese, Other languages→ English (Python, Docker)    
+Translation slack bot🗣 English ↔ Japanese, Other languages→ English   
+`Python`, `Docker`       
 
 <a href="https://github.com/eastend-street/translation_slackbot">
 <img src="https://user-images.githubusercontent.com/43656115/76172573-c47e9a80-6154-11ea-8251-ddcaaa20ebbf.png" width="60%" height="60%">
