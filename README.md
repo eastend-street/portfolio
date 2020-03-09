@@ -31,15 +31,18 @@ Website: &nbsp; https://junyamada.info
 
 ## Each project
 
-- ### Jot down
+- <a href="https://github.com/eastend-street/jotdown"><h3>Jot down</h3></a>
 Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)  
 
+<a href="https://github.com/eastend-street/jotdown">
 <img src="https://user-images.githubusercontent.com/43656115/76158377-2f36c400-60ca-11ea-99e8-909b6363e555.png" width="60%" height="60%">
+</a>
 
 <br/>
 
 - ### Codeo
 Search programming video website from YouTube📺 (React.js, React hooks, TypeScript, Context API)  
+
 <img src="https://user-images.githubusercontent.com/43656115/71144579-5bc9f680-21d3-11ea-9b65-98c6fb660d17.png" width="60%" height="60%">
 
 ## Structure
