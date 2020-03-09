@@ -1,5 +1,5 @@
 # Portfolio
-This is my portfolio showing front-end development and works.
+This is my portfolio website to show front-end development works. Made by React.js.
 
 <br/>
 
