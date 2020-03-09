@@ -32,7 +32,7 @@ Website: &nbsp; https://junyamada.info
 
 <br/>
 
-## Each project
+## Works
 
 - <h3><a href="https://github.com/eastend-street/jotdown">Jot down</a></h3>
 Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)  
@@ -46,7 +46,8 @@ Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/codeo">Codeo</a></h3>
-Search programming video website from YouTube📺 (React.js, React hooks, TypeScript, Context API)  
+Search programming video website from YouTube📺   
+`React.js`, `React hooks`, `TypeScript`, `Context API`   
 
 <a href="https://github.com/eastend-street/codeo">
 <img src="https://user-images.githubusercontent.com/43656115/71144579-5bc9f680-21d3-11ea-9b65-98c6fb660d17.png" width="60%" height="60%">
@@ -68,7 +69,7 @@ A company homepage of Brickhouse ventures. This is a team project in CICCC with 
 <br/>
 
 - <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
-Mail MarketPlace is a mail advertisement trading web service.(Company project)   
+Mail MarketPlace is a company project that is mail advertisement trading web service.(Vue.js, Vuex, Vuetify.js, Django REST framework, Google Cloud Platform, Docker)   
 
 <a href="https://junyamada.info/marketplace">
 <img src="https://user-images.githubusercontent.com/43656115/76181926-1e488a00-6180-11ea-9b71-92ff645f9027.png" width="60%" height="60%">
