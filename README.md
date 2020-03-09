@@ -31,7 +31,7 @@ Website: &nbsp; https://junyamada.info
 
 ## Each project
 
-- <h3><a href="https://github.com/eastend-street/jotdown" target="_blank">Jot down</a></h3>
+- <h3><a href="https://github.com/eastend-street/jotdown">Jot down</a></h3>
 Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)  
 
 <a href="https://github.com/eastend-street/jotdown">
@@ -39,11 +39,49 @@ Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)
 </a>
 
 <br/>
+<br/>
 
-- ### Codeo
+- <h3><a href="https://github.com/eastend-street/codeo">Codeo</a></h3>
 Search programming video website from YouTube📺 (React.js, React hooks, TypeScript, Context API)  
 
+<a href="https://github.com/eastend-street/codeo">
 <img src="https://user-images.githubusercontent.com/43656115/71144579-5bc9f680-21d3-11ea-9b65-98c6fb660d17.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+
+- <h3><a href="https://junyamada.info/brickhouse">Brickhouse(Coming soon)</a></h3>
+A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
+
+<a href="https://junyamada.info/brickhouse">
+<img src="" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+
+- <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
+Mail MarketPlace is a mail advertisement trading web service.(Company project)    
+<a href="https://junyamada.info/marketplace">
+<img src="" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+
+- <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
+Translation slack bot🗣 English ↔ Japanese, Other languages→ English (Python, Docker)  
+
+<a href="https://github.com/eastend-street/translation_slackbot">
+<img src="https://user-images.githubusercontent.com/43656115/76172573-c47e9a80-6154-11ea-8251-ddcaaa20ebbf.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+
+
+
 
 ## Structure
 
