@@ -11,7 +11,7 @@ Website: &nbsp; https://junyamada.info
 <br/>
 
 ## User Interface
-![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182153-0f160c00-6181-11ea-9b36-14b35864adfe.png)
+![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182156-13422980-6181-11ea-8205-af8963d2e4da.png)
 
 <br/>
 
@@ -38,6 +38,7 @@ Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)
 <img src="https://user-images.githubusercontent.com/43656115/76158377-2f36c400-60ca-11ea-99e8-909b6363e555.png" width="60%" height="60%">
 </a>
 
+<br/>
 <br/>
 <br/>
 
