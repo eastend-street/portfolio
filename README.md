@@ -29,6 +29,18 @@ Website: &nbsp; https://junyamada.info
 
 <br/>
 
+## Each project
+
+- ### Jot down
+Bookmark and note web service📗 (React.js, Redux, Python, Django, Docker)  
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/43656115/76158377-2f36c400-60ca-11ea-99e8-909b6363e555.png" width="60%" height="60%">
+
+
+<img src="https://user-images.githubusercontent.com/43656115/71144579-5bc9f680-21d3-11ea-9b65-98c6fb660d17.png" width="60%" height="60%">
+
 ## Structure
 
 ```
