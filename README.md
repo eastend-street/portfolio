@@ -1,5 +1,8 @@
 # Portfolio
-This is my portfolio showing front-end development and works.  
+This is my portfolio showing front-end development and works.
+
+<br/>
+
 Website: &nbsp; https://junyamada.info
 
 
@@ -7,7 +10,7 @@ Website: &nbsp; https://junyamada.info
 
 <br/>
 
-# User Interface
+## User Interface
 ![portfolio-ui](https://user-images.githubusercontent.com/43656115/76179955-c6a72000-6179-11ea-84d1-c01b54b820d2.png)
 
 <br/>
@@ -23,3 +26,35 @@ Website: &nbsp; https://junyamada.info
 - HTML5
 - CSS3
 - Illustrator
+
+<br/>
+
+## Structure
+
+```
+src/
+ index.tsx
+ App.tsx
+ 
+ components/
+   COMPONENT_NAME/
+    |-- COMPONENT_NAME.tsx  -----components with styled-components
+ 
+ themes/ -----Define global style, breakpoints, color variables  
+ 
+ assets/
+  images/
+```
+
+<br/>
+
+## Upcoming features
+- Implement fade-in to each project card
+- Make works illustration such as Jotdown and Codeo (Currently using screenshot) 
+
+<br/>
+
+## Author
+[eastend-street](https://github.com/eastend-street)
+
+<br/>
