@@ -9,11 +9,14 @@ Website: &nbsp; https://junyamada.info
 [![top](https://user-images.githubusercontent.com/43656115/74611805-4a5a7900-50b4-11ea-81c0-505e53e4863d.png)](https://junyamada.info)
 
 <br/>
+<br/>
 
 ## User Interface
-![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182156-13422980-6181-11ea-8205-af8963d2e4da.png)
+![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
 
 <br/>
+<br/>
+
 
 ## Technologies
 - React.js
@@ -51,6 +54,7 @@ Search programming video website from YouTube📺 (React.js, React hooks, TypeSc
 
 <br/>
 <br/>
+<br/>
 
 - <h3><a href="https://junyamada.info/brickhouse">Brickhouse(Coming soon)</a></h3>
 A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.   
@@ -59,6 +63,7 @@ A company homepage of Brickhouse ventures. This is a team project in CICCC with 
 <img src="https://user-images.githubusercontent.com/43656115/76181928-21dc1100-6180-11ea-882b-766652c76194.png" width="60%" height="60%">
 </a>
 
+<br/>
 <br/>
 <br/>
 
@@ -71,6 +76,7 @@ Mail MarketPlace is a mail advertisement trading web service.(Company project)
 
 <br/>
 <br/>
+<br/>
 
 - <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
 Translation slack bot🗣 English ↔ Japanese, Other languages→ English (Python, Docker)    
@@ -79,6 +85,7 @@ Translation slack bot🗣 English ↔ Japanese, Other languages→ English (Pyth
 <img src="https://user-images.githubusercontent.com/43656115/76172573-c47e9a80-6154-11ea-8251-ddcaaa20ebbf.png" width="60%" height="60%">
 </a>
 
+<br/>
 <br/>
 <br/>
 
@@ -103,11 +110,14 @@ src/
 ```
 
 <br/>
+<br/>
+
 
 ## Upcoming features
 - Implement fade-in to each project card
 - Make works illustration such as Jotdown and Codeo (Currently using screenshot) 
 
+<br/>
 <br/>
 
 ## Author
