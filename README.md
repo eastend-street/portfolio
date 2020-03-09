@@ -11,7 +11,7 @@ Website: &nbsp; https://junyamada.info
 <br/>
 
 ## User Interface
-![portfolio-ui](https://user-images.githubusercontent.com/43656115/76179955-c6a72000-6179-11ea-84d1-c01b54b820d2.png)
+![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182153-0f160c00-6181-11ea-9b36-14b35864adfe.png)
 
 <br/>
 
@@ -52,7 +52,7 @@ Search programming video website from YouTube📺 (React.js, React hooks, TypeSc
 <br/>
 
 - <h3><a href="https://junyamada.info/brickhouse">Brickhouse(Coming soon)</a></h3>
-A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
+A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.   
 
 <a href="https://junyamada.info/brickhouse">
 <img src="https://user-images.githubusercontent.com/43656115/76181928-21dc1100-6180-11ea-882b-766652c76194.png" width="60%" height="60%">
@@ -62,7 +62,8 @@ A company homepage of Brickhouse ventures. This is a team project in CICCC with 
 <br/>
 
 - <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
-Mail MarketPlace is a mail advertisement trading web service.(Company project)    
+Mail MarketPlace is a mail advertisement trading web service.(Company project)   
+
 <a href="https://junyamada.info/marketplace">
 <img src="https://user-images.githubusercontent.com/43656115/76181926-1e488a00-6180-11ea-9b71-92ff645f9027.png" width="60%" height="60%">
 </a>
@@ -71,7 +72,7 @@ Mail MarketPlace is a mail advertisement trading web service.(Company project)
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
-Translation slack bot🗣 English ↔ Japanese, Other languages→ English (Python, Docker)  
+Translation slack bot🗣 English ↔ Japanese, Other languages→ English (Python, Docker)    
 
 <a href="https://github.com/eastend-street/translation_slackbot">
 <img src="https://user-images.githubusercontent.com/43656115/76172573-c47e9a80-6154-11ea-8251-ddcaaa20ebbf.png" width="60%" height="60%">
