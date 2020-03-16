@@ -32,7 +32,7 @@ const Title = styled(Typography)`
 const ContentDescription = styled.div`
   background-color: #fcfcfc;
   padding-top: 10rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   @media (max-width: 800px) {
     padding-top: 7rem;
   }

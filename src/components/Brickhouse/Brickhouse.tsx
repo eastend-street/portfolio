@@ -120,15 +120,15 @@ class Brickhouse extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              {/* <StyledAnchor target="_blank" href=""> */}
-                <Title variant="h4" component="h1">
-                  Brickhouse <br/> &#40;Coming soon&#41;
-                </Title>
-              {/* </StyledAnchor> */}
+              <StyledAnchor target="_blank" href="https://github.com/WMAD-react/brickhouse">
+              <Title variant="h4" component="h1">
+                Brickhouse <br /> &#40;Coming soon&#41;
+              </Title>
+              </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="">
+                <CardActionArea target="_blank" href="https://github.com/WMAD-react/brickhouse">
                   <WorkImage image={BrickHousePhoto} />
                 </CardActionArea>
               </StyledWorkCard>
@@ -137,9 +137,13 @@ class Brickhouse extends Component {
           <ContentDescription>
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
-                {/* <ButtonWrapper> */}
-                  {/* <StyledButton name="Coming soon" url="" target="_blank" /> */}
-                {/* </ButtonWrapper> */}
+                <ButtonWrapper>
+                  <StyledButton
+                    name="View Github"
+                    url="https://github.com/WMAD-react/brickhouse"
+                    target="_blank"
+                  />
+                </ButtonWrapper>
                 <WhatIsIt variant="h6" component="h2">
                   What is Brickhouse?
                 </WhatIsIt>
@@ -161,6 +165,9 @@ class Brickhouse extends Component {
                   <StyledLi>TypeScript</StyledLi>
                   <StyledLi>JavaScript</StyledLi>
                   <StyledLi>Sass</StyledLi>
+                  <StyledLi>Material-UI</StyledLi>
+                  <StyledLi>Netlify</StyledLi>
+                  <StyledLi>Netlify CMS</StyledLi>
                 </StyledUl>
               </Grid>
             </Grid>

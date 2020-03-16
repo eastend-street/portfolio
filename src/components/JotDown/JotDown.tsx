@@ -32,7 +32,7 @@ const Title = styled(Typography)`
 const ContentDescription = styled.div`
   background-color: #fcfcfc;
   padding-top: 10rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   @media (max-width: 800px) {
     padding-top: 7rem;
   }
@@ -158,6 +158,16 @@ class WorkDetail extends Component {
                   write a note with your bookmark.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">
+                  Why I created this app
+                </Technology>
+                <Typography variant="subtitle1" component="p">
+                  To manage a lot of bookmarks easily. I have been using chrome
+                  bookmark manager but sometimes I can't find the bookmark that
+                  I'm looking for. Then I often commented on bookmarks and saved
+                  them in slack to remember what bookmark is. But also difficult
+                  to find it again. Jotdown was born to solve these problems.
+                </Typography>
+                <Technology variant="h6" component="h2">
                   Technology
                 </Technology>
                 <Typography variant="subtitle1" component="p">
@@ -184,6 +194,18 @@ class WorkDetail extends Component {
                     Netlify
                   </StyledLi>
                 </StyledUl>
+                <ButtonWrapper>
+                  <StyledButton
+                    name="Visit website"
+                    url="https://jotdown.site"
+                    target="_blank"
+                  />
+                  <StyledButton
+                    name="View Github"
+                    url="https://github.com/eastend-street/jotdown"
+                    target="_blank"
+                  />
+                </ButtonWrapper>
               </Grid>
             </Grid>
           </ContentDescription>
