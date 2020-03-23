@@ -6,8 +6,7 @@ This is my portfolio website to show front-end development works🎓  Made by Re
 Website: &nbsp; https://junyamada.info
 
 
-[![top](https://user-images.githubusercontent.com/43656115/74611805-4a5a7900-50b4-11ea-81c0-505e53e4863d.png)](https://junyamada.info)
-
+[![hero](https://user-images.githubusercontent.com/43656115/77298041-6e0e7180-6ca7-11ea-934c-85b37790b630.png)](https://junyamada.info)
 <br/>
 <br/>
 
@@ -58,12 +57,12 @@ Search programming video website from YouTube📺
 <br/>
 <br/>
 
-- <h3><a href="https://junyamada.info/brickhouse">Brickhouse(Coming soon)</a></h3>
+- <h3><a href="https://github.com/WMAD-react/brickhouse">Brickhouse(Coming soon)</a></h3>
 A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
 `React.js`, `React Hooks`, `TypeScript`, `Sass`  
 
-<a href="https://junyamada.info/brickhouse">
-<img src="https://user-images.githubusercontent.com/43656115/76181928-21dc1100-6180-11ea-882b-766652c76194.png" width="60%" height="60%">
+<a href="https://github.com/WMAD-react/brickhouse">
+<img src="https://user-images.githubusercontent.com/43656115/77298161-b463d080-6ca7-11ea-9d79-b9f02ee330a7.png" width="60%" height="60%">
 </a>
 
 <br/>
