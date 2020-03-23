@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardMedia from "@material-ui/core/CardMedia";
+import { Card, CardActionArea, CardMedia } from "@material-ui/core";
 
 const StyledWorkCard = styled(Card)`
   && {

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Grid, Typography } from "@material-ui/core";
-import StyledButton from "../StyledButton/StyledButton";
+import StyledButton from "../parts/StyledButton/StyledButton";
 
 import profile from "../../assets/images/profile.png";
 import javascriptLogo from "../../assets/images/logo/javascript.svg";

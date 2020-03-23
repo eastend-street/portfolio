@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardMedia from "@material-ui/core/CardMedia";
-import StyledButton from "../StyledButton/StyledButton";
-import CodeoPhoto from "../../assets/images/websites/codeo/codeo.png";
+import {
+  Card,
+  CardActionArea,
+  CardMedia,
+  Grid,
+  Typography
+} from "@material-ui/core";
+import StyledButton from "../parts/StyledButton/StyledButton";
+import CodeoPhoto from "assets/images/websites/codeo/codeo.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";

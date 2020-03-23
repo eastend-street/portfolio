@@ -45,11 +45,11 @@ const Title = styled(Typography)`
       font-size: 2.2rem;
     }
     @media (max-width: 650px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-top: -3.5rem; /* subtract header height */
     }
     @media (max-width: 350px) {
-      font-size: 1.2rem;
+      font-size: 1.7rem;
     }
     animation: ${FadeIn} 1s linear 0s 1 forwards;
   }

@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import { Grid } from "@material-ui/core";
-import StyledButton from "components/StyledButton/StyledButton";
+import StyledButton from "components/parts/StyledButton/StyledButton";
 
-const StyledContainer = styled(Grid)`
+const Container = styled(Grid)`
   && {
     min-height: 90vh;
     justify-content: center;
@@ -28,24 +28,22 @@ const ContentButton = styled.div`
 
 const NotFound: React.FC = () => {
   return (
-    <React.Fragment>
-      <StyledContainer container>
-        <Helmet>
-          <title>Page not found</title>
-        </Helmet>
-        <Grid item xs={11} sm={12}>
-          <StyledH1>404 Page not found</StyledH1>
-          <StyledH3>
-            Sorry, I couldn't find the page...
-            <br />
-            Please click the button below to go back to the Homepage.
-          </StyledH3>
-          <ContentButton>
-            <StyledButton name="Go to Homepage" url="/" target="_self" />
-          </ContentButton>
-        </Grid>
-      </StyledContainer>
-    </React.Fragment>
+    <Container container>
+      <Helmet>
+        <title>Page not found</title>
+      </Helmet>
+      <Grid item xs={11} sm={12}>
+        <StyledH1>404 Page not found</StyledH1>
+        <StyledH3>
+          Sorry, I couldn't find the page...
+          <br />
+          Please click the button below to go back to the Homepage.
+        </StyledH3>
+        <ContentButton>
+          <StyledButton name="Go to Homepage" url="/" target="_self" />
+        </ContentButton>
+      </Grid>
+    </Container>
   );
 };
 

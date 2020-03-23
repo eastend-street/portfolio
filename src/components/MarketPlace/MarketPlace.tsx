@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import MarketplacePhoto from "../../assets/images/websites/marketplace/marketplace.png";
+import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
+import MarketplacePhoto from "assets/images/websites/marketplace/marketplace.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
