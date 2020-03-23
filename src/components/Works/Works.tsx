@@ -222,7 +222,7 @@ class Works extends Component {
                     </ServiceName>
                   </StyledLink>
                   <ServiceDescription variant="subtitle1" component="p">
-                    - A website to search programming video from YouTube -
+                    - Search programming video from YouTube -
                   </ServiceDescription>
                   <Technologies>
                     <TechName>React.js</TechName>
@@ -279,7 +279,7 @@ class Works extends Component {
                     </ServiceName>
                   </StyledLink>
                   <ServiceDescription variant="subtitle1" component="p">
-                    - A mail advertisement trading system -
+                    - Mail advertisement trading system -
                   </ServiceDescription>
                   <Technologies>
                     <TechName>Vue.js</TechName>
@@ -316,7 +316,7 @@ class Works extends Component {
                   </ServiceName>
                 </StyledLink>
                 <ServiceDescription variant="subtitle1" component="p">
-                  - A multilingual translation bot on Slack -
+                  - Multilingual translation Slack bot -
                 </ServiceDescription>
                 <Technologies>
                   <TechName>Python</TechName>

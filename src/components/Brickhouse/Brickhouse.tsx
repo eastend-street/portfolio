@@ -152,7 +152,7 @@ class Brickhouse extends Component {
                   What is Brickhouse?
                 </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
-                  A company homepage of Brickhouse ventures. This is a team
+                  Brickhouse ventures company's homepage. This is a team
                   project in CICCC with real client.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">

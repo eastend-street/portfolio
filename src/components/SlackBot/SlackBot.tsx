@@ -143,8 +143,7 @@ class WorkDetail extends Component {
                   What is Translation Slack Bot?
                 </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
-                  Translation Slack Bot is a multilingual translation bot on
-                  Slack. <br />
+                  Translation Slack Bot is a multilingual translation Slack bot.<br />
                   You can translate English to Japanese, Japanese to English,
                   Other languages to English. It automatically detects the
                   language and translates it.
