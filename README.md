@@ -6,8 +6,7 @@ This is my portfolio website to show front-end development works🎓  Made by Re
 Website: &nbsp; https://junyamada.info
 
 
-[![top](https://user-images.githubusercontent.com/43656115/74611805-4a5a7900-50b4-11ea-81c0-505e53e4863d.png)](https://junyamada.info)
-
+[![hero](https://user-images.githubusercontent.com/43656115/77298041-6e0e7180-6ca7-11ea-934c-85b37790b630.png)](https://junyamada.info)
 <br/>
 <br/>
 
