@@ -8,7 +8,7 @@ import StyledButton from "../StyledButton/StyledButton";
 import javascriptLogo from "../../assets/images/logo/javascript.svg";
 import reactLogo from "../../assets/images/logo/react.svg";
 import vueLogo from "../../assets/images/logo/vue.svg";
-// import typescriptLogo from "../../assets/images/logo/typescript.svg";
+import typescriptLogo from "../../assets/images/logo/typescript.svg";
 
 const ContentAbout = styled(Grid)`
   && {
@@ -155,13 +155,10 @@ const About: React.FC = () => {
               Front-End Web Developer
             </JobTitle>
             <Introduction variant="subtitle1" component="p">
-              Front-end web developer with a background as a software and
-              systems engineer for more than 3 years. My strength is a
-              software-focused front-end using React.js, Vue.js, and JavaScript.
-              Passionate about writing readable and robust code, designing
-              intuitive UI, and repeating verifying and hypothesis to make a
-              user-first product. In my free time, I like working out, watching
-              movies.
+              Front-end web developer with 3&#43; years of experience in software
+              and systems engineering. Specializes in React.js, TypeScript and
+              JavaScript. Keen on writing readable and maintainable code and
+              repeating verifying and hypothesis to make a user-first product.
             </Introduction>
             <Strength variant="h6" component="h4">
               Specialties:
@@ -169,19 +166,19 @@ const About: React.FC = () => {
             <Grid container>
               <Grid item>
                 <WrapSkillLogo>
-                  <SkillsLogo src={reactLogo} alt="React Logo" />
+                  <SkillsLogo src={reactLogo} alt="React" />
                   <SkillName> React.js</SkillName>
                 </WrapSkillLogo>
               </Grid>
               <Grid item>
                 <WrapSkillLogo>
-                  <SkillsLogo src={vueLogo} alt="Vue Logo" />
-                  <SkillName> Vue.js</SkillName>
+                  <SkillsLogo src={typescriptLogo} alt="TypeScript" />
+                  <SkillName> TypeScript</SkillName>
                 </WrapSkillLogo>
               </Grid>
               <Grid item>
                 <WrapSkillLogo>
-                  <SkillsLogo src={javascriptLogo} alt="JavaScriptLogo" />
+                  <SkillsLogo src={javascriptLogo} alt="JavaScript" />
                   <SkillName> JavaScript</SkillName>
                 </WrapSkillLogo>
               </Grid>
@@ -194,12 +191,12 @@ const About: React.FC = () => {
                 <StyledLi>
                   <Category>Languages: </Category>
                   <span>
-                    &nbsp;TypeScript, Python, Node.js, HTML5, CSS3, Sass, Java
+                    &nbsp;Python, Node.js, HTML5, CSS3, Sass, Java
                   </span>
                 </StyledLi>
                 <StyledLi>
                   <Category>Frameworks / Libraries: </Category>
-                  &nbsp;Django, Express.js, jQuery, Bootstrap, Material-UI,
+                  &nbsp;Django, Vue.js, Express.js, jQuery, Bootstrap, Material-UI,
                   Gatsby.js
                 </StyledLi>
                 <StyledLi>
