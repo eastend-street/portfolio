@@ -6,6 +6,7 @@ import { Button } from "@material-ui/core";
 const StyledResumeButton = styled(Button)`
   && {
     background-color: transparent;
+    font-family: inherit;
     border: 0.01rem solid #4e4e4e;
     border-radius: 0rem;
     text-transform: none;
