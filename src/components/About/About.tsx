@@ -83,13 +83,13 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 0.5rem;
   color: inherit;
 `;
 
 const Category = styled.span`
-  font-family: inherit;
+  font-family: "Open Sans", sans-serif;
   color: inherit;
   opacity: 0.7;
 `;
