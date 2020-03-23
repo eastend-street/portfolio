@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     color: #000;
     background-color: #e3bda3;
     background-color: #EEE2D7;
