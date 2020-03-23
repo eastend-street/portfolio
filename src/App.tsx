@@ -5,14 +5,14 @@ import "react-app-polyfill/ie11";
 
 import GlobalStyle from "./styles/GlobalStyle";
 
-import Home from "./components/Home/Home";
-import JotDown from "./components/JotDown/JotDown";
-import Codeo from "./components/Codeo/Codeo";
-import MarketPlace from "./components/MarketPlace/MarketPlace";
-import SlackBot from "./components/SlackBot/SlackBot";
-import NotFound from "./components/NotFound/NotFound";
-import Brickhouse from "./components/Brickhouse/Brickhouse";
+import Home from "pages/Home/Home";
+import NotFound from "pages/NotFound/NotFound";
 
+import JotDown from "components/JotDown/JotDown";
+import Codeo from "components/Codeo/Codeo";
+import MarketPlace from "components/MarketPlace/MarketPlace";
+import SlackBot from "components/SlackBot/SlackBot";
+import Brickhouse from "components/Brickhouse/Brickhouse";
 
 const App: React.FC = () => {
   return (

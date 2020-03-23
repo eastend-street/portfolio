@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardMedia from "@material-ui/core/CardMedia";
+import {
+  Card,
+  CardActionArea,
+  CardMedia,
+  Grid,
+  Typography
+} from "@material-ui/core";
 import StyledButton from "../StyledButton/StyledButton";
-import BrickHousePhoto from "../../assets/images/websites/brickhouse/brickhouse.png";
+import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.png";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -88,10 +90,6 @@ const StyledLi = styled.li`
   margin-top: 1rem;
 `;
 
-const Category = styled.span`
-  font-weight: bold;
-`;
-
 const StyledAnchor = styled.a`
   text-decoration: none;
   color: inherit;
@@ -120,15 +118,21 @@ class Brickhouse extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor target="_blank" href="https://github.com/WMAD-react/brickhouse">
-              <Title variant="h4" component="h1">
-                Brickhouse <br /> &#40;Coming soon&#41;
-              </Title>
+              <StyledAnchor
+                target="_blank"
+                href="https://github.com/WMAD-react/brickhouse"
+              >
+                <Title variant="h4" component="h1">
+                  Brickhouse <br /> &#40;Coming soon&#41;
+                </Title>
               </StyledAnchor>
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea target="_blank" href="https://github.com/WMAD-react/brickhouse">
+                <CardActionArea
+                  target="_blank"
+                  href="https://github.com/WMAD-react/brickhouse"
+                >
                   <WorkImage image={BrickHousePhoto} />
                 </CardActionArea>
               </StyledWorkCard>

@@ -2,8 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import Grid from "@material-ui/core/Grid";
-import StyledButton from "../StyledButton/StyledButton";
+import { Grid } from "@material-ui/core";
+import StyledButton from "components/StyledButton/StyledButton";
 
 const StyledContainer = styled(Grid)`
   && {
