@@ -29,6 +29,7 @@ const Title = styled(Typography)`
 
 const IntroSentence = styled(Typography)`
   && {
+    font-family: inherit;
     @media (max-width: 600px) {
       margin-top: 2rem;
       text-align: center;
@@ -37,6 +38,7 @@ const IntroSentence = styled(Typography)`
 `;
 const JobTitle = styled(Typography)`
   && {
+    font-family: inherit;
     color: inherit;
     margin-bottom: 1rem;
     opacity: 0.7;
@@ -48,6 +50,7 @@ const JobTitle = styled(Typography)`
 
 const Introduction = styled(Typography)`
   && {
+    font-family: inherit;
     @media (max-width: 600px) {
       margin-top: 2rem;
     }
@@ -56,6 +59,7 @@ const Introduction = styled(Typography)`
 
 const Strength = styled(Typography)`
   && {
+    font-family: inherit;
     color: inherit;
     opacity: 0.7;
     margin: 4rem auto 1rem auto;
@@ -64,6 +68,7 @@ const Strength = styled(Typography)`
 
 const Skills = styled(Typography)`
   && {
+    font-family: inherit;
     color: inherit;
     opacity: 0.7;
     margin-top: 3.5rem;
@@ -71,17 +76,20 @@ const Skills = styled(Typography)`
 `;
 
 const StyledUl = styled.ul`
+  font-family: inherit;
   margin-top: 0.7rem;
   padding-left: 0rem;
   list-style: none;
 `;
 
 const StyledLi = styled.li`
+  font-family: inherit;
   margin-bottom: 0.5rem;
   color: inherit;
 `;
 
 const Category = styled.span`
+  font-family: inherit;
   color: inherit;
   opacity: 0.7;
 `;
@@ -98,6 +106,7 @@ const ProfileGrid = styled(Grid)`
 
 const ContentButton = styled.div`
   margin: 3rem auto;
+  font-family: inherit;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -147,12 +156,12 @@ const About: React.FC = () => {
             </JobTitle>
             <Introduction variant="subtitle1" component="p">
               Front-end web developer with a background as a software and
-              systems engineer for more than 3 years. My strength is
-              a software-focused front-end using React.js, Vue.js, and
-              JavaScript. Passionate about writing readable and robust code,
-              designing intuitive UI, and repeating verifying and hypothesis to
-              make a user-first product. In my free time, I like working out,
-              watching movies.
+              systems engineer for more than 3 years. My strength is a
+              software-focused front-end using React.js, Vue.js, and JavaScript.
+              Passionate about writing readable and robust code, designing
+              intuitive UI, and repeating verifying and hypothesis to make a
+              user-first product. In my free time, I like working out, watching
+              movies.
             </Introduction>
             <Strength variant="h6" component="h4">
               Specialties:
@@ -184,12 +193,14 @@ const About: React.FC = () => {
               <StyledUl>
                 <StyledLi>
                   <Category>Languages: </Category>
-                  <span>&nbsp;TypeScript, Python, Node.js, HTML5, CSS3, Sass, Java</span>
+                  <span>
+                    &nbsp;TypeScript, Python, Node.js, HTML5, CSS3, Sass, Java
+                  </span>
                 </StyledLi>
                 <StyledLi>
                   <Category>Frameworks / Libraries: </Category>
-                  &nbsp;Django, Express.js, jQuery, Bootstrap,
-                  Material-UI, Gatsby.js
+                  &nbsp;Django, Express.js, jQuery, Bootstrap, Material-UI,
+                  Gatsby.js
                 </StyledLi>
                 <StyledLi>
                   <Category>Others: </Category>

@@ -1,8 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 import ScrollDownButton from "../parts/ScrollDownButton/ScrollDownButton";
 
@@ -16,17 +15,7 @@ const ContentHero = styled(Grid)`
   }
 `;
 
-const fadeInName = keyframes`
-  from {
-      opacity: 0;
-      transform: translateY(0.5rem);
-  }
-  to {
-      opacity: 0.9;
-      transform: translateY(0);
-  }
-`;
-const fadeInProfession = keyframes`
+const FadeIn = keyframes`
   from {
       opacity: 0;
       transform: translateY(0.5rem);
@@ -37,49 +26,32 @@ const fadeInProfession = keyframes`
   }
 `;
 
-const Name = styled(Typography)`
+const Title = styled(Typography)`
   && {
     font-family: inherit;
     color: inherit;
-    font-size: 4.5rem;
+    font-size: 4rem;
+    text-align: center;
+    opacity: 0;
     margin-top: -4rem; /* subtract header height */
+
     @media (max-width: 1920px) {
-      font-size: 3.5rem;
+      font-size: 4rem;
     }
     @media (max-width: 1280px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 830px) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: 650px) {
       font-size: 1.5rem;
       margin-top: -3.5rem; /* subtract header height */
     }
-    animation: ${fadeInName} 1s linear 0s 1 forwards;
-  }
-`;
-
-const StyledHero = styled(Typography)`
-  && {
-    font-family: inherit;
-    color: inherit;
-    font-size: 5.5rem;
-    font-weight: 900;
-    opacity: 0;
-    @media (max-width: 1920px) {
-      font-size: 4.5rem;
-    }
-    @media (max-width: 1280px) {
-      font-size: 3.5rem;
-    }
-    @media (max-width: 830px) {
-      font-size: 2.7rem;
-    }
-    @media (max-width: 650px) {
-      font-size: 2rem;
-    }
     @media (max-width: 350px) {
-      font-size: 1.7rem;
+      font-size: 1.2rem;
     }
-    animation: ${fadeInProfession} 1s linear 0s 1 forwards;
+    animation: ${FadeIn} 1s linear 0s 1 forwards;
   }
 `;
 
@@ -88,12 +60,10 @@ const Hero: React.FC = () => {
     <ContentHero container justify="center" id="hero">
       <Grid item xs={10} md={9} lg={8}>
         <h1>
-          <Name>Hi, I'm Jun.</Name>
-          <StyledHero>Front-End Web Developer</StyledHero>
-          <StyledHero>based in Vancouver</StyledHero>
+          <Title>Hi, I'm Jun. Front-End Web Developer based in Vancouver</Title>
         </h1>
       </Grid>
-      <ScrollDownButton/>
+      <ScrollDownButton />
     </ContentHero>
   );
 };
