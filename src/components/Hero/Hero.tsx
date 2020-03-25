@@ -32,7 +32,6 @@ const Title = styled(Typography)`
     color: inherit;
     font-size: 4rem;
     text-align: center;
-    opacity: 0;
     margin-top: -4rem; /* subtract header height */
 
     @media (max-width: 1920px) {
