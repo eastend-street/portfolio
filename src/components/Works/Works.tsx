@@ -253,7 +253,7 @@ class Works extends Component {
               <div>
                 <StyledLink to={process.env.PUBLIC_URL + "/brickhouse"}>
                   <ServiceName variant="h5" component="h3">
-                    Brickhouse &#40;Coming soon&#41;
+                    Brickhouse Ventures
                   </ServiceName>
                 </StyledLink>
                 <ServiceDescription variant="subtitle1" component="p">

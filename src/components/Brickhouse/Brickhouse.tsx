@@ -7,7 +7,7 @@ import {
   CardActionArea,
   CardMedia,
   Grid,
-  Typography
+  Typography,
 } from "@material-ui/core";
 import StyledButton from "../parts/StyledButton/StyledButton";
 import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.png";
@@ -120,10 +120,10 @@ class Brickhouse extends Component {
             <Grid item xs={12}>
               <StyledAnchor
                 target="_blank"
-                href="https://github.com/WMAD-react/brickhouse"
+                href="https://brickhouse.netlify.com"
               >
                 <Title variant="h4" component="h1">
-                  Brickhouse <br /> &#40;Coming soon&#41;
+                  Brickhouse Ventures
                 </Title>
               </StyledAnchor>
             </Grid>
@@ -131,7 +131,7 @@ class Brickhouse extends Component {
               <StyledWorkCard>
                 <CardActionArea
                   target="_blank"
-                  href="https://github.com/WMAD-react/brickhouse"
+                  href="https://brickhouse.netlify.com"
                 >
                   <WorkImage image={BrickHousePhoto} />
                 </CardActionArea>
@@ -143,6 +143,11 @@ class Brickhouse extends Component {
               <Grid item xs={11} sm={10} md={8} lg={7}>
                 <ButtonWrapper>
                   <StyledButton
+                    name="Visit website"
+                    url="https://brickhouse.netlify.com"
+                    target="_blank"
+                  />
+                  <StyledButton
                     name="View Github"
                     url="https://github.com/WMAD-react/brickhouse"
                     target="_blank"
@@ -152,8 +157,8 @@ class Brickhouse extends Component {
                   What is Brickhouse?
                 </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
-                  Brickhouse ventures company's homepage. This is a team
-                  project in CICCC with real client.
+                  Brickhouse ventures company's homepage. This is a team project
+                  in CICCC with real client.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">
                   Technology
