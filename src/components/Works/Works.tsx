@@ -8,7 +8,7 @@ import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.png";
 import CodeoPhoto from "assets/images/websites/codeo/codeo.png";
 import MarketplacePhoto from "assets/images/websites/marketplace/marketplace-logo.png";
 import SlackBotPhoto from "assets/images/websites/slack-bot/slack-bot-logo.png";
-import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.png";
+import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.jpg";
 
 const ContentWorks = styled(Grid)`
   && {

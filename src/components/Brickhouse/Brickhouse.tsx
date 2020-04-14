@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import StyledButton from "../parts/StyledButton/StyledButton";
-import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.png";
+import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.jpg";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
