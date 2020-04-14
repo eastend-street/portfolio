@@ -57,7 +57,7 @@ Search programming video website from YouTube📺
 <br/>
 <br/>
 
-- <h3><a href="https://github.com/WMAD-react/brickhouse">Brickhouse(Coming soon)</a></h3>
+- <h3><a href="https://github.com/WMAD-react/brickhouse">Brickhouse Ventures</a></h3>
 A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
 `React.js`, `React Hooks`, `TypeScript`, `Sass`  
 
