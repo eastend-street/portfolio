@@ -8,6 +8,7 @@ import Theme from "styles/theme";
 
 import Home from "pages/Home/Home";
 import NotFound from "pages/NotFound/NotFound";
+import WorkDetail from "pages/WorkDetail/WorkDetail";
 
 import JotDown from "components/JotDown/JotDown";
 import Codeo from "components/Codeo/Codeo";
@@ -31,6 +32,11 @@ const App: React.FC = () => {
             exact
             component={JotDown}
           />
+          {/* <Route
+            path={process.env.PUBLIC_URL + "/jotdown"}
+            exact
+            render={(props) => <WorkDetail {...props} title="Jot down" />}
+          /> */}
           <Route
             path={process.env.PUBLIC_URL + "/codeo"}
             exact

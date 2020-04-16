@@ -1,0 +1,27 @@
+backend:
+  repo: eastend-street/portfolio
+  name: git-gateway
+  accept_roles:
+    - admin
+
+media_folder: "public/images"
+public_folder: "images"
+
+collections:
+  - name: works
+    label: Works
+    create: false
+    delete: false
+    files:
+      - label: Press
+        name: press
+        file: src/data/_works
+        fields:
+          - label: Works
+            name: works
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Image, name: image, widget: image }
+              - { label: Link, name: link, widget: string }
+              - { label: Content, name: text, widget: markdown }
