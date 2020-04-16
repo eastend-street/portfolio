@@ -1,9 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-
 import { Grid, Typography } from "@material-ui/core";
-
-import ScrollDownButton from "../ChildComponents/ScrollDownButton/ScrollDownButton";
+import ScrollDownButton from "components/ChildComponents/ScrollDownButton/ScrollDownButton";
 
 const ContentHero = styled(Grid)`
   && {
