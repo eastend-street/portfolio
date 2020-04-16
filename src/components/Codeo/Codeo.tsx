@@ -9,8 +9,8 @@ import {
   Grid,
   Typography
 } from "@material-ui/core";
-import StyledButton from "../parts/StyledButton/StyledButton";
-import CodeoPhoto from "assets/images/websites/codeo/codeo.png";
+import StyledButton from "../ChildComponents/StyledButton/StyledButton";
+import CodeoPhoto from "assets/images/websites/codeo/codeo.jpg";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";

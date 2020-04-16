@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 
 import { Grid, Typography } from "@material-ui/core";
 
-import ScrollDownButton from "../parts/ScrollDownButton/ScrollDownButton";
+import ScrollDownButton from "../ChildComponents/ScrollDownButton/ScrollDownButton";
 
 const ContentHero = styled(Grid)`
   && {

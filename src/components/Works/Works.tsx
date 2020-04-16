@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 import { Grid, Typography } from "@material-ui/core";
 import WorkCard from "../WorkCard/WorkCard";
-import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.png";
-import CodeoPhoto from "assets/images/websites/codeo/codeo.png";
+import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.jpg";
+import CodeoPhoto from "assets/images/websites/codeo/codeo.jpg";
 import MarketplacePhoto from "assets/images/websites/marketplace/marketplace-logo.png";
 import SlackBotPhoto from "assets/images/websites/slack-bot/slack-bot-logo.png";
 import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.jpg";

@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 import { Grid, Typography } from "@material-ui/core";
-import StyledButton from "../parts/StyledButton/StyledButton";
+import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
 
-import profile from "../../assets/images/profile.png";
-import javascriptLogo from "../../assets/images/logo/javascript.svg";
-import reactLogo from "../../assets/images/logo/react.svg";
-import typescriptLogo from "../../assets/images/logo/typescript.svg";
+import profile from "assets/images/profile.png";
+import javascriptLogo from "assets/images/logo/javascript.svg";
+import reactLogo from "assets/images/logo/react.svg";
+import typescriptLogo from "assets/images/logo/typescript.svg";
 
 const ContentAbout = styled(Grid)`
   && {

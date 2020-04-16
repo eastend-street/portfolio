@@ -9,8 +9,8 @@ import {
   Grid,
   Typography
 } from "@material-ui/core";
-import StyledButton from "../parts/StyledButton/StyledButton";
-import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.png";
+import StyledButton from "../ChildComponents/StyledButton/StyledButton";
+import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.jpg";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";

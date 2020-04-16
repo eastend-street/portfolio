@@ -9,7 +9,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "../parts/StyledButton/StyledButton";
+import StyledButton from "../ChildComponents/StyledButton/StyledButton";
 import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.jpg";
 
 import Header from "../Header/Header";

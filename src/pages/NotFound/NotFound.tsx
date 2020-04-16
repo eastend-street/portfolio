@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import { Grid } from "@material-ui/core";
-import StyledButton from "components/parts/StyledButton/StyledButton";
+import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
 
 const Container = styled(Grid)`
   && {
