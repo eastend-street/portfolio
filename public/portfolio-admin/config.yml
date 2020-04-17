@@ -4,24 +4,19 @@ backend:
   accept_roles:
     - admin
 
-media_folder: "public/images"
-public_folder: "images"
+media_folder: "src/images/uploads"
+public_folder: "images/uploads"
 
 collections:
-  - name: works
-    label: Works
-    create: false
-    delete: false
-    files:
-      - label: Press
-        name: press
-        file: src/data/_works
+  - label: Works
+    name: work
+    file: src/data/_works
+    fields:
+      - label: Works
+        name: works
+        widget: list
         fields:
-          - label: Works
-            name: works
-            widget: list
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Image, name: image, widget: image }
-              - { label: Link, name: link, widget: string }
-              - { label: Content, name: text, widget: markdown }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Link, name: link, widget: string }
+          - { label: Content, name: text, widget: markdown }
