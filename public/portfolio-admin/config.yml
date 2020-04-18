@@ -10,13 +10,13 @@ public_folder: "images/uploads"
 collections:
   - label: Works
     name: work
-    file: src/data/_works
+    folder: src/data/_works
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
     fields:
-      - label: Works
-        name: works
-        widget: list
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Link, name: link, widget: string }
-          - { label: Content, name: text, widget: markdown }
+      - { label: Title, name: title, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Link, name: link, widget: string }
+      - { label: Content, name: text, widget: markdown }
