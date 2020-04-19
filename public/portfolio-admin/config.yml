@@ -1,8 +1,6 @@
 backend:
   repo: eastend-street/portfolio
   name: git-gateway
-  accept_roles:
-    - admin
 
 media_folder: "src/images/uploads"
 public_folder: "images/uploads"
