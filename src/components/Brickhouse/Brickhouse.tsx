@@ -118,30 +118,30 @@ class Brickhouse extends Component {
         <ContentWorkDetail>
           <Grid container justify="center">
             <Grid item xs={12}>
-              <StyledAnchor
+              {/* <StyledAnchor
                 target="_blank"
                 href="https://brickhouse.netlify.com"
-              >
+              > */}
                 <Title variant="h4" component="h1">
                   Brickhouse Ventures
                 </Title>
-              </StyledAnchor>
+              {/* </StyledAnchor> */}
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
               <StyledWorkCard>
-                <CardActionArea
+                {/* <CardActionArea
                   target="_blank"
                   href="https://brickhouse.netlify.com"
-                >
+                > */}
                   <WorkImage image={BrickHousePhoto} />
-                </CardActionArea>
+                {/* </CardActionArea> */}
               </StyledWorkCard>
             </Grid>
           </Grid>
           <ContentDescription>
             <Grid container justify="center">
               <Grid item xs={11} sm={10} md={8} lg={7}>
-                <ButtonWrapper>
+                {/* <ButtonWrapper>
                   <StyledButton
                     name="Visit website"
                     url="https://brickhouse.netlify.com"
@@ -152,13 +152,16 @@ class Brickhouse extends Component {
                     url="https://github.com/WMAD-react/brickhouse"
                     target="_blank"
                   />
-                </ButtonWrapper>
+                </ButtonWrapper> */}
                 <WhatIsIt variant="h6" component="h2">
                   What is Brickhouse?
                 </WhatIsIt>
                 <SiteDescription variant="subtitle1" component="p">
                   Brickhouse ventures company's homepage. This is a team project
                   in CICCC with real client.
+                  <br />
+                  <br />* Unfortunately, I could not show you the website
+                  due to company rules. Please request me if you want to see the website.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">
                   Technology
