@@ -61,7 +61,7 @@ Search programming video website from YouTube📺
 A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
 `React.js`, `React Hooks`, `TypeScript`, `Sass`  
 
-<a href="https://junyamada.info/brickhousee">
+<a href="https://junyamada.info/brickhouse">
 <img src="https://user-images.githubusercontent.com/43656115/77298161-b463d080-6ca7-11ea-9d79-b9f02ee330a7.png" width="60%" height="60%">
 </a>
 
