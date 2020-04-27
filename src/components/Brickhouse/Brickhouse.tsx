@@ -122,9 +122,9 @@ class Brickhouse extends Component {
                 target="_blank"
                 href="https://brickhouse.netlify.com"
               > */}
-                <Title variant="h4" component="h1">
-                  Brickhouse Ventures
-                </Title>
+              <Title variant="h4" component="h1">
+                Brickhouse Ventures
+              </Title>
               {/* </StyledAnchor> */}
             </Grid>
             <Grid item xs={11} sm={10} md={7}>
@@ -133,7 +133,7 @@ class Brickhouse extends Component {
                   target="_blank"
                   href="https://brickhouse.netlify.com"
                 > */}
-                  <WorkImage image={BrickHousePhoto} />
+                <WorkImage image={BrickHousePhoto} />
                 {/* </CardActionArea> */}
               </StyledWorkCard>
             </Grid>
@@ -160,8 +160,9 @@ class Brickhouse extends Component {
                   Brickhouse ventures company's homepage. This is a team project
                   in CICCC with real client.
                   <br />
-                  <br />* Unfortunately, I could not show you the website
-                  due to company rules. Please request me if you want to see the website.
+                  <br />* Unfortunately, I could not show the website here due
+                  to company rules. Please feel free to request me if you want to see the
+                  website.
                 </SiteDescription>
                 <Technology variant="h6" component="h2">
                   Technology
