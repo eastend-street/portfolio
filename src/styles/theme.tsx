@@ -1,6 +1,14 @@
 import React, { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 
+type ThemeProps = {
+  children: ReactNode;
+};
+
+const Theme: React.FC<ThemeProps> = ({ children }) => (
+  <ThemeProvider theme={theme}>{children}</ThemeProvider>
+);
+
 const theme = {
   colors: {
     mainBeige: "#EEE2D7",
@@ -16,13 +24,5 @@ const theme = {
     lg: 1920,
   },
 };
-
-type ThemeProps = {
-  children: ReactNode;
-};
-
-const Theme: React.FC<ThemeProps> = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
-);
 
 export default Theme;
