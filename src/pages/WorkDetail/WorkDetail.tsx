@@ -12,98 +12,6 @@ import {
 import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
 import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.jpg";
 
-const ContentWorkDetail = styled.div`
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-`;
-
-const Title = styled(Typography)`
-  && {
-    font-family: inherit;
-    text-align: center;
-    font-weight: bold;
-    :hover {
-      opacity: 0.7;
-    }
-  }
-`;
-
-const ContentDescription = styled.div`
-  background-color: #fcfcfc;
-  padding-top: 10rem;
-  padding-bottom: 5rem;
-  @media (max-width: 800px) {
-    padding-top: 7rem;
-  }
-  @media (max-width: 500px) {
-    padding-top: 5rem;
-  }
-`;
-
-const SiteDescription = styled(Typography)`
-  && {
-  }
-`;
-
-const WhatIsIt = styled(Typography)`
-  && {
-    font-weight: bold;
-    margin: 3rem auto 1rem auto;
-  }
-`;
-
-const StyledWorkCard = styled(Card)`
-  && {
-    box-shadow: none;
-    transform: translateY(20%);
-    /* margin: 0 auto -20% */
-  }
-`;
-
-const WorkImage = styled(CardMedia)`
-  && {
-    height: 0;
-    padding-top: 62.5%;
-  }
-`;
-
-const ButtonWrapper = styled.div`
-  text-align: center;
-`;
-
-const Technology = styled(Typography)`
-  && {
-    margin: 5rem auto 1rem auto;
-    font-weight: bold;
-  }
-`;
-
-const StyledUl = styled.ul`
-  margin: 2rem auto 5rem auto;
-  padding-left: 1rem;
-`;
-
-const StyledLi = styled.li`
-  margin-top: 1rem;
-`;
-
-const Category = styled.span`
-  font-weight: bold;
-`;
-
-const StyledAnchor = styled.a`
-  text-decoration: none;
-  color: inherit;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
-`;
-
 type WorkDetailProps = {
   title: string;
 };
@@ -213,5 +121,97 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ title }) => {
     </>
   );
 };
+
+const ContentWorkDetail = styled.div`
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+`;
+
+const Title = styled(Typography)`
+  && {
+    font-family: inherit;
+    text-align: center;
+    font-weight: bold;
+    :hover {
+      opacity: 0.7;
+    }
+  }
+`;
+
+const ContentDescription = styled.div`
+  background-color: #fcfcfc;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  @media (max-width: 800px) {
+    padding-top: 7rem;
+  }
+  @media (max-width: 500px) {
+    padding-top: 5rem;
+  }
+`;
+
+const SiteDescription = styled(Typography)`
+  && {
+  }
+`;
+
+const WhatIsIt = styled(Typography)`
+  && {
+    font-weight: bold;
+    margin: 3rem auto 1rem auto;
+  }
+`;
+
+const StyledWorkCard = styled(Card)`
+  && {
+    box-shadow: none;
+    transform: translateY(20%);
+    /* margin: 0 auto -20% */
+  }
+`;
+
+const WorkImage = styled(CardMedia)`
+  && {
+    height: 0;
+    padding-top: 62.5%;
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  text-align: center;
+`;
+
+const Technology = styled(Typography)`
+  && {
+    margin: 5rem auto 1rem auto;
+    font-weight: bold;
+  }
+`;
+
+const StyledUl = styled.ul`
+  margin: 2rem auto 5rem auto;
+  padding-left: 1rem;
+`;
+
+const StyledLi = styled.li`
+  margin-top: 1rem;
+`;
+
+const Category = styled.span`
+  font-weight: bold;
+`;
+
+const StyledAnchor = styled.a`
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
 
 export default WorkDetail;
