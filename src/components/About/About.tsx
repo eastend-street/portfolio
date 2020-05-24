@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Grid, Typography } from "@material-ui/core";
@@ -8,6 +8,96 @@ import profile from "assets/images/profile.png";
 import javascriptLogo from "assets/images/logo/javascript.svg";
 import reactLogo from "assets/images/logo/react.svg";
 import typescriptLogo from "assets/images/logo/typescript.svg";
+
+const About: FC = () => (
+  <ContentAbout container justify="center" id="about">
+    <Grid item xs={11} sm={10}>
+      <Title variant="h4" component="h2">
+        ABOUT
+      </Title>
+      <Grid container justify="center">
+        <ProfileGrid item xs={12} sm={5} md={6}>
+          <ProfilePhoto src={profile} alt="profile" />
+        </ProfileGrid>
+        <Grid item xs={12} sm={7} md={6}>
+          <IntroSentence variant="h4" component="h3">
+            Jun Yamada
+          </IntroSentence>
+          <JobTitle variant="h6" component="h4">
+            Front-End Web Developer
+          </JobTitle>
+          <Introduction variant="subtitle1" component="p">
+            Front-end web developer with 3&#43; years of experience in software
+            and systems engineering. Specializes in React.js, TypeScript and
+            JavaScript. Keen on writing readable and maintainable code and
+            repeating verifying and hypothesis to make a user-first product.
+          </Introduction>
+          <Strength variant="h6" component="h4">
+            Specialties:
+          </Strength>
+          <Grid container>
+            <Grid item>
+              <WrapSkillLogo>
+                <SkillsLogo src={reactLogo} alt="React" />
+                <SkillName> React.js</SkillName>
+              </WrapSkillLogo>
+            </Grid>
+            <Grid item>
+              <WrapSkillLogo>
+                <SkillsLogo src={typescriptLogo} alt="TypeScript" />
+                <SkillName> TypeScript</SkillName>
+              </WrapSkillLogo>
+            </Grid>
+            <Grid item>
+              <WrapSkillLogo>
+                <SkillsLogo src={javascriptLogo} alt="JavaScript" />
+                <SkillName> JavaScript</SkillName>
+              </WrapSkillLogo>
+            </Grid>
+          </Grid>
+          <Skills variant="h6" component="h4">
+            Other skills:
+          </Skills>
+          <Typography variant="subtitle1" component="div">
+            <StyledUl>
+              <StyledLi>
+                <Category>Languages: </Category>
+                <span>&nbsp;Python, Node.js, HTML5, CSS3, Sass, Java</span>
+              </StyledLi>
+              <StyledLi>
+                <Category>Frameworks / Libraries: </Category>
+                &nbsp;Django, Vue.js, Express.js, jQuery, Bootstrap,
+                Material-UI, Gatsby.js
+              </StyledLi>
+              <StyledLi>
+                <Category>Others: </Category>
+                &nbsp;Docker, Google Cloud Platform, MySQL, MongoDB, Git, Ubuntu
+              </StyledLi>
+            </StyledUl>
+          </Typography>
+          <ContentButton>
+            <Grid container>
+              <Grid item xs={12} md={6}>
+                <StyledButton
+                  name="Resume"
+                  url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
+                  target="_blank"
+                  rel="nofollow"
+                />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <StyledButton
+                  name="Email"
+                  url="mailto:jun.yamada0097@gmail.com"
+                />
+              </Grid>
+            </Grid>
+          </ContentButton>
+        </Grid>
+      </Grid>
+    </Grid>
+  </ContentAbout>
+);
 
 const ContentAbout = styled(Grid)`
   && {
@@ -134,100 +224,5 @@ const SkillsLogo = styled.img`
 const SkillName = styled.div`
   margin-top: 1rem;
 `;
-
-const About: React.FC = () => {
-  return (
-    <ContentAbout container justify="center" id="about">
-      <Grid item xs={11} sm={10}>
-        <Title variant="h4" component="h2">
-          ABOUT
-        </Title>
-        <Grid container justify="center">
-          <ProfileGrid item xs={12} sm={5} md={6}>
-            <ProfilePhoto src={profile} alt="profile" />
-          </ProfileGrid>
-          <Grid item xs={12} sm={7} md={6}>
-            <IntroSentence variant="h4" component="h3">
-              Jun Yamada
-            </IntroSentence>
-            <JobTitle variant="h6" component="h4">
-              Front-End Web Developer
-            </JobTitle>
-            <Introduction variant="subtitle1" component="p">
-              Front-end web developer with 3&#43; years of experience in software
-              and systems engineering. Specializes in React.js, TypeScript and
-              JavaScript. Keen on writing readable and maintainable code and
-              repeating verifying and hypothesis to make a user-first product.
-            </Introduction>
-            <Strength variant="h6" component="h4">
-              Specialties:
-            </Strength>
-            <Grid container>
-              <Grid item>
-                <WrapSkillLogo>
-                  <SkillsLogo src={reactLogo} alt="React" />
-                  <SkillName> React.js</SkillName>
-                </WrapSkillLogo>
-              </Grid>
-              <Grid item>
-                <WrapSkillLogo>
-                  <SkillsLogo src={typescriptLogo} alt="TypeScript" />
-                  <SkillName> TypeScript</SkillName>
-                </WrapSkillLogo>
-              </Grid>
-              <Grid item>
-                <WrapSkillLogo>
-                  <SkillsLogo src={javascriptLogo} alt="JavaScript" />
-                  <SkillName> JavaScript</SkillName>
-                </WrapSkillLogo>
-              </Grid>
-            </Grid>
-            <Skills variant="h6" component="h4">
-              Other skills:
-            </Skills>
-            <Typography variant="subtitle1" component="div">
-              <StyledUl>
-                <StyledLi>
-                  <Category>Languages: </Category>
-                  <span>
-                    &nbsp;Python, Node.js, HTML5, CSS3, Sass, Java
-                  </span>
-                </StyledLi>
-                <StyledLi>
-                  <Category>Frameworks / Libraries: </Category>
-                  &nbsp;Django, Vue.js, Express.js, jQuery, Bootstrap, Material-UI,
-                  Gatsby.js
-                </StyledLi>
-                <StyledLi>
-                  <Category>Others: </Category>
-                  &nbsp;Docker, Google Cloud Platform, MySQL, MongoDB, Git,
-                  Ubuntu
-                </StyledLi>
-              </StyledUl>
-            </Typography>
-            <ContentButton>
-              <Grid container>
-                <Grid item xs={12} md={6}>
-                  <StyledButton
-                    name="Resume"
-                    url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
-                    target="_blank"
-                    rel="nofollow"
-                  />
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <StyledButton
-                    name="Email"
-                    url="mailto:jun.yamada0097@gmail.com"
-                  />
-                </Grid>
-              </Grid>
-            </ContentButton>
-          </Grid>
-        </Grid>
-      </Grid>
-    </ContentAbout>
-  );
-};
 
 export default About;
