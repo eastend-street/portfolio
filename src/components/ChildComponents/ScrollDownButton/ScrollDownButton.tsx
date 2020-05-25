@@ -1,6 +1,12 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
+
+const ScrollDownButton: FC = () => (
+  <StyledHashLink smooth={true} to="/#about">
+    <StyledSpan></StyledSpan>
+  </StyledHashLink>
+);
 
 const StyledHashLink = styled(HashLink)`
   padding-top: 40px;
@@ -31,13 +37,5 @@ const StyledSpan = styled.span`
   transform: rotate(-45deg);
   box-sizing: border-box;
 `;
-
-const ScrollDownButton: React.FC = () => {
-  return (
-    <StyledHashLink smooth={true} to="/#about">
-      <StyledSpan></StyledSpan>
-    </StyledHashLink>
-  );
-};
 
 export default ScrollDownButton;

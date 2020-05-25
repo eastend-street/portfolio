@@ -1,7 +1,20 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Button } from "@material-ui/core";
+
+type ButtonProps = {
+  url: string;
+  target?: string;
+  name: string;
+  rel?: string;
+};
+
+const StyledButton: FC<ButtonProps> = ({ url, target, name }) => (
+  <StyledAnchor href={url} target={target} rel="noopener noreferrer">
+    <StyledResumeButton>{name}</StyledResumeButton>
+  </StyledAnchor>
+);
 
 const StyledResumeButton = styled(Button)`
   && {
@@ -39,20 +52,5 @@ const StyledAnchor = styled.a`
     text-decoration: none;
   }
 `;
-
-type ButtonProps = {
-  url: string;
-  target?: string;
-  name: string;
-  rel?: string;
-};
-
-const StyledButton: React.FC<ButtonProps> = ({ url, target, name }) => {
-  return (
-    <StyledAnchor href={url} target={target} rel="noopener noreferrer">
-      <StyledResumeButton>{name}</StyledResumeButton>
-    </StyledAnchor>
-  );
-};
 
 export default StyledButton;
