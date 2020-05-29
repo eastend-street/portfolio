@@ -1,10 +1,22 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import githubLogo from "assets/images/logo/github.png";
-// import linkedInLogo from "../../assets/images/logo/linkedin.png";
 
-const StyledFooter = styled.div`
-  /* background-color: #fcfcfc; */
+const Footer: FC = () => (
+  <StyledFooter>
+    <a
+      href="https://github.com/eastend-street"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <SocialLogo src={githubLogo} alt="Github" />
+    </a>
+    <Copyright>&copy; Jun Yamada 2019-2020 All rights reserved.</Copyright>
+  </StyledFooter>
+);
+
+const StyledFooter = styled.footer`
+  text-align: center;
   padding: 3rem;
 `;
 
@@ -14,43 +26,14 @@ const Copyright = styled.p`
   margin-top: 1rem;
 `;
 
-const ContentSocial = styled.div`
-  text-align: center;
-  /* margin-top: 2rem; */
-`;
-
 const SocialLogo = styled.img`
   text-align: center;
   height: 2rem;
   margin: auto 1rem;
-  transition: .5s;
+  transition: 0.5s;
   :hover {
     opacity: 0.7;
   }
 `;
-
-const Footer: React.FC = () => {
-  return (
-    <StyledFooter>
-      <ContentSocial>
-        <a
-          href="https://github.com/eastend-street"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialLogo src={githubLogo} alt="Github" />
-        </a>
-        {/* <a
-          href="https://www.linkedin.com/in/jun-yamada-0097"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SocialLogo src={linkedInLogo} alt="LinkedIn" />
-        </a> */}
-      </ContentSocial>
-      <Copyright>&copy; Jun Yamada 2019-2020 All rights reserved.</Copyright>
-    </StyledFooter>
-  );
-};
 
 export default Footer;
