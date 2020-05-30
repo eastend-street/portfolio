@@ -1,8 +1,32 @@
-import React from "react";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { AppBar, Button, Toolbar } from "@material-ui/core";
 import { HashLink } from "react-router-hash-link";
 import Logo from "assets/images/logo/logo.png";
+
+const Header: FC = () => (
+  <StyledAppBar position="static" id="header">
+    <Toolbar>
+      <LogoLink href={process.env.PUBLIC_URL + "/"} rel="noopener noreferrer">
+        <StyledLogo src={Logo} alt="logo" />
+      </LogoLink>
+      <WrapButton>
+        <StyledHashLink smooth={true} to="/#about">
+          <StyledButton>ABOUT</StyledButton>
+        </StyledHashLink>
+        <StyledHashLink smooth={true} to="/#works">
+          <StyledButton>WORKS</StyledButton>
+        </StyledHashLink>
+        <StyledAnchor
+          href="mailto:jun.yamada0097@gmail.com"
+          rel="noopener noreferrer"
+        >
+          <StyledButton>EMAIL</StyledButton>
+        </StyledAnchor>
+      </WrapButton>
+    </Toolbar>
+  </StyledAppBar>
+);
 
 const StyledAppBar = styled(AppBar)`
   && {
@@ -67,31 +91,5 @@ const LogoLink = styled.a`
     text-decoration: none;
   }
 `;
-
-const Header: React.FC = () => {
-  return (
-    <StyledAppBar position="static" id="header">
-      <Toolbar>
-        <LogoLink href={process.env.PUBLIC_URL + "/"} rel="noopener noreferrer">
-          <StyledLogo src={Logo} alt="logo" />
-        </LogoLink>
-        <WrapButton>
-          <StyledHashLink smooth={true} to="/#about">
-            <StyledButton>ABOUT</StyledButton>
-          </StyledHashLink>
-          <StyledHashLink smooth={true} to="/#works">
-            <StyledButton>WORKS</StyledButton>
-          </StyledHashLink>
-          <StyledAnchor
-            href="mailto:jun.yamada0097@gmail.com"
-            rel="noopener noreferrer"
-          >
-            <StyledButton>EMAIL</StyledButton>
-          </StyledAnchor>
-        </WrapButton>
-      </Toolbar>
-    </StyledAppBar>
-  );
-};
 
 export default Header;
