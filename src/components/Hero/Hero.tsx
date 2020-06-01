@@ -1,7 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import styled, { keyframes } from "styled-components";
 import { Grid, Typography } from "@material-ui/core";
 import ScrollDownButton from "components/ChildComponents/ScrollDownButton/ScrollDownButton";
+
+const Hero: FC = () => (
+  <ContentHero container justify="center" id="hero">
+    <Grid item xs={10} md={9} lg={8}>
+      <h1>
+        <Title>Hi, I'm Jun. Front-End Web Developer based in Vancouver</Title>
+      </h1>
+    </Grid>
+    <ScrollDownButton />
+  </ContentHero>
+);
 
 const ContentHero = styled(Grid)`
   && {
@@ -51,18 +62,5 @@ const Title = styled(Typography)`
     animation: ${FadeIn} 1s linear 0s 1 forwards;
   }
 `;
-
-const Hero: React.FC = () => {
-  return (
-    <ContentHero container justify="center" id="hero">
-      <Grid item xs={10} md={9} lg={8}>
-        <h1>
-          <Title>Hi, I'm Jun. Front-End Web Developer based in Vancouver</Title>
-        </h1>
-      </Grid>
-      <ScrollDownButton />
-    </ContentHero>
-  );
-};
 
 export default Hero;
