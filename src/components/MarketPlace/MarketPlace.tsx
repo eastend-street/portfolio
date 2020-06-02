@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { FC, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
@@ -7,6 +7,82 @@ import MarketplacePhoto from "assets/images/websites/marketplace/marketplace.png
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+
+const MarketPlace: FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <>
+      <Helmet>
+        <title>Mail MarketPlace</title>
+      </Helmet>
+      <Header />
+      <ContentWorkDetail>
+        <Grid container justify="center">
+          <Grid item xs={12}>
+            <Title variant="h4" component="h1">
+              Mail MarketPlace
+            </Title>
+          </Grid>
+          <Grid item xs={11} sm={10} md={8}>
+            <StyledWorkCard>
+              <WorkImage image={MarketplacePhoto} />
+            </StyledWorkCard>
+          </Grid>
+        </Grid>
+        <ContentDescription>
+          <Grid container justify="center">
+            <Grid item xs={11} sm={10} md={8} lg={7}>
+              <WhatIsIt variant="h6" component="h2">
+                What is Mail MarketPlace?
+              </WhatIsIt>
+              <SiteDescription variant="subtitle1" component="p">
+                Mail MarketPlace is a mail advertisement trading web service.
+                This is a project I was involved in my previous company,
+                bizocean Co., Ltd.
+                <br />
+                It designed to sell email inventory by online. Ad buyers can
+                search and sort inventory by price, date, type and other
+                conditions.
+                <br />
+                <br />* Unfortunately, I could not show you the web service due
+                to company rules.
+              </SiteDescription>
+              <Technology variant="h6" component="h2">
+                Technology
+              </Technology>
+              <Typography variant="subtitle1" component="p">
+                I joined this project from the basic design phase. I developed
+                this web service responsible for all the front end work. Then I
+                wrote back end CRUD processing, and constructed cloud
+                infrastructure environment.
+              </Typography>
+              <StyledUl>
+                <StyledLi>
+                  <Category>Front-end: </Category> Vue.js, Vuex, Vuetify.js, Vue
+                  Router
+                </StyledLi>
+                <StyledLi>
+                  <Category>Backend: </Category> Django REST framework, Python
+                </StyledLi>
+                <StyledLi>
+                  <Category>Infrastructure: </Category> Google Cloud Platform,
+                  Docker
+                </StyledLi>
+                <StyledLi>
+                  <Category>Others: </Category> REST API, Axios, Gunicorn
+                </StyledLi>
+              </StyledUl>
+            </Grid>
+          </Grid>
+        </ContentDescription>
+      </ContentWorkDetail>
+      <Footer />
+    </>
+  );
+};
 
 const ContentWorkDetail = styled.div`
   padding-top: 5rem;
@@ -80,83 +156,5 @@ const StyledLi = styled.li`
 const Category = styled.span`
   font-weight: bold;
 `;
-
-class MarketPlace extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <Helmet>
-          <title>Mail MarketPlace</title>
-        </Helmet>
-        <Header />
-        <ContentWorkDetail>
-          <Grid container justify="center">
-            <Grid item xs={12}>
-              <Title variant="h4" component="h1">
-                Mail MarketPlace
-              </Title>
-            </Grid>
-            <Grid item xs={11} sm={10} md={8}>
-              <StyledWorkCard>
-                <WorkImage image={MarketplacePhoto} />
-              </StyledWorkCard>
-            </Grid>
-          </Grid>
-          <ContentDescription>
-            <Grid container justify="center">
-              <Grid item xs={11} sm={10} md={8} lg={7}>
-                <WhatIsIt variant="h6" component="h2">
-                  What is Mail MarketPlace?
-                </WhatIsIt>
-                <SiteDescription variant="subtitle1" component="p">
-                  Mail MarketPlace is a mail advertisement trading web service.
-                  This is a project I was involved in my previous company,
-                  bizocean Co., Ltd.
-                  <br />
-                  It designed to sell email inventory by online. Ad buyers can
-                  search and sort inventory by price, date, type and other
-                  conditions.
-                  <br />
-                  <br />* Unfortunately, I could not show you the web service
-                  due to company rules.
-                </SiteDescription>
-                <Technology variant="h6" component="h2">
-                  Technology
-                </Technology>
-                <Typography variant="subtitle1" component="p">
-                  I joined this project from the basic design phase. I developed
-                  this web service responsible for all the front end work. Then
-                  I wrote back end CRUD processing, and constructed cloud
-                  infrastructure environment.
-                </Typography>
-                <StyledUl>
-                  <StyledLi>
-                    <Category>Front-end: </Category> Vue.js, Vuex, Vuetify.js,
-                    Vue Router
-                  </StyledLi>
-                  <StyledLi>
-                    <Category>Backend: </Category> Django REST framework, Python
-                  </StyledLi>
-                  <StyledLi>
-                    <Category>Infrastructure: </Category> Google Cloud Platform,
-                    Docker
-                  </StyledLi>
-                  <StyledLi>
-                    <Category>Others: </Category> REST API, Axios, Gunicorn
-                  </StyledLi>
-                </StyledUl>
-              </Grid>
-            </Grid>
-          </ContentDescription>
-        </ContentWorkDetail>
-        <Footer />
-      </React.Fragment>
-    );
-  }
-}
 
 export default MarketPlace;
