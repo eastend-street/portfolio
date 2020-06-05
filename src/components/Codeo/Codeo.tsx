@@ -15,7 +15,7 @@ import CodeoPhoto from "assets/images/websites/codeo/codeo.jpg";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const Codeo = () => {
+const Codeo: FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
