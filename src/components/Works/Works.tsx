@@ -169,11 +169,7 @@ const Works: FC = () => {
         </Title>
       </Grid>
       <Grid item xs={11} md={10}>
-<<<<<<< HEAD
         <Grid container>{renderWorkCard()}</Grid>
-=======
-        <Grid container>{renderWorkCard}</Grid>
->>>>>>> c6fb245fb360b1b8fcf0b7f3e1c8e407985e06af
       </Grid>
     </ContentWorks>
   );
