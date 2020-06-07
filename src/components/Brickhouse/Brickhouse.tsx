@@ -2,14 +2,7 @@ import React, { FC, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
-import {
-  Card,
-  CardActionArea,
-  CardMedia,
-  Grid,
-  Typography,
-} from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
+import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
 import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.jpg";
 
 import Header from "../Header/Header";
@@ -29,41 +22,19 @@ const Brickhouse: FC = () => {
       <ContentWorkDetail>
         <Grid container justify="center">
           <Grid item xs={12}>
-            {/* <StyledAnchor
-                target="_blank"
-                href="https://brickhouse.netlify.com"
-              > */}
             <Title variant="h4" component="h1">
               Brickhouse Ventures
             </Title>
-            {/* </StyledAnchor> */}
           </Grid>
           <Grid item xs={11} sm={10} md={7}>
             <StyledWorkCard>
-              {/* <CardActionArea
-                  target="_blank"
-                  href="https://brickhouse.netlify.com"
-                > */}
               <WorkImage image={BrickHousePhoto} />
-              {/* </CardActionArea> */}
             </StyledWorkCard>
           </Grid>
         </Grid>
         <ContentDescription>
           <Grid container justify="center">
             <Grid item xs={11} sm={10} md={8} lg={7}>
-              {/* <ButtonWrapper>
-                  <StyledButton
-                    name="Visit website"
-                    url="https://brickhouse.netlify.com"
-                    target="_blank"
-                  />
-                  <StyledButton
-                    name="View Github"
-                    url="https://github.com/WMAD-react/brickhouse"
-                    target="_blank"
-                  />
-                </ButtonWrapper> */}
               <WhatIsIt variant="h6" component="h2">
                 What is Brickhouse?
               </WhatIsIt>
@@ -157,10 +128,6 @@ const WorkImage = styled(CardMedia)`
   }
 `;
 
-const ButtonWrapper = styled.div`
-  text-align: center;
-`;
-
 const Technology = styled(Typography)`
   && {
     margin: 5rem auto 1rem auto;
@@ -175,19 +142,6 @@ const StyledUl = styled.ul`
 
 const StyledLi = styled.li`
   margin-top: 1rem;
-`;
-
-const StyledAnchor = styled.a`
-  text-decoration: none;
-  color: inherit;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
 `;
 
 export default Brickhouse;

@@ -1,8 +1,23 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { Card, CardActionArea, CardMedia } from "@material-ui/core";
+
+type WorkCardProps = {
+  url: string;
+  image: string;
+};
+
+const WorkCard: FC<WorkCardProps> = ({ url, image }) => (
+  <StyledWorkCard>
+    <StyledLink to={url}>
+      <CardActionArea>
+        <WorkImage image={image} />
+      </CardActionArea>
+    </StyledLink>
+  </StyledWorkCard>
+);
 
 const StyledWorkCard = styled(Card)`
   && {
@@ -34,22 +49,5 @@ const StyledLink = styled(Link)`
     text-decoration: none;
   }
 `;
-
-type WorkCardProps = {
-  url: string;
-  image: string;
-};
-
-const WorkCard: React.FC<WorkCardProps> = ({ url, image }) => {
-  return (
-    <StyledWorkCard>
-      <StyledLink to={url}>
-        <CardActionArea>
-          <WorkImage image={image} />
-        </CardActionArea>
-      </StyledLink>
-    </StyledWorkCard>
-  );
-};
 
 export default WorkCard;
