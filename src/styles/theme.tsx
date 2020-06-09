@@ -1,11 +1,11 @@
-import React, { ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
 
 type ThemeProps = {
   children: ReactNode;
 };
 
-const Theme: React.FC<ThemeProps> = ({ children }) => (
+const Theme: FC<ThemeProps> = ({ children }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>
 );
 

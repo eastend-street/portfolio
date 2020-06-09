@@ -162,7 +162,7 @@ const Works: FC = () => {
   );
 
   return (
-    <ContentWorks container justify="center" id="works">
+    <Container container justify="center" id="works">
       <Grid item xs={12}>
         <Title variant="h4" component="h2">
           WORKS
@@ -171,11 +171,11 @@ const Works: FC = () => {
       <Grid item xs={11} md={10}>
         <Grid container>{renderWorkCard()}</Grid>
       </Grid>
-    </ContentWorks>
+    </Container>
   );
 };
 
-const ContentWorks = styled(Grid)`
+const Container = styled(Grid)`
   && {
     padding-top: 5rem;
     padding-bottom: 10rem;

@@ -5,12 +5,12 @@ import { Grid, Typography } from "@material-ui/core";
 import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
 
 import profile from "assets/images/profile.png";
-import javascriptLogo from "assets/images/logo/javascript.svg";
+import jsLogo from "assets/images/logo/javascript.svg";
 import reactLogo from "assets/images/logo/react.svg";
-import typescriptLogo from "assets/images/logo/typescript.svg";
+import tsLogo from "assets/images/logo/typescript.svg";
 
 const About: FC = () => (
-  <ContentAbout container justify="center" id="about">
+  <Container container justify="center" id="about">
     <Grid item xs={11} sm={10}>
       <Title variant="h4" component="h2">
         ABOUT
@@ -44,13 +44,13 @@ const About: FC = () => (
             </Grid>
             <Grid item>
               <WrapSkillLogo>
-                <SkillsLogo src={typescriptLogo} alt="TypeScript" />
+                <SkillsLogo src={tsLogo} alt="TypeScript" />
                 <SkillName> TypeScript</SkillName>
               </WrapSkillLogo>
             </Grid>
             <Grid item>
               <WrapSkillLogo>
-                <SkillsLogo src={javascriptLogo} alt="JavaScript" />
+                <SkillsLogo src={jsLogo} alt="JavaScript" />
                 <SkillName> JavaScript</SkillName>
               </WrapSkillLogo>
             </Grid>
@@ -96,10 +96,10 @@ const About: FC = () => (
         </Grid>
       </Grid>
     </Grid>
-  </ContentAbout>
+  </Container>
 );
 
-const ContentAbout = styled(Grid)`
+const Container = styled(Grid)`
   && {
     background-color: #fff;
     padding-top: 5rem;
