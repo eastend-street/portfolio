@@ -8,7 +8,7 @@ import Theme from "styles/theme";
 
 import Home from "pages/Home/Home";
 import NotFound from "pages/NotFound/NotFound";
-import WorkDetail from "pages/WorkDetail/WorkDetail";
+// import WorkDetail from "pages/WorkDetail/WorkDetail";
 
 import JotDown from "components/JotDown/JotDown";
 import Codeo from "components/Codeo/Codeo";
