@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Jot down",
+    "subtitle": "Bookmark and note web service",
+    "technologies": ["React.js", "Redux", "Django", "Python", "Docker"],
+    "imagePath": "/images/websites/jotdown/home-jotdown.jpg",
+    "innerUrl": "/jotdown"
+  },
+  {
+    "title": "Codeo",
+    "subtitle": "Search programming video from YouTube",
+    "technologies": ["React.js", "React hooks", "Context API", "TypeScript"],
+    "imagePath": "/images/websites/codeo/codeo.jpg",
+    "innerUrl": "/codeo"
+  },
+  {
+    "title": "Brickhouse Ventures",
+    "subtitle": "Brickhouse company homepage",
+    "technologies": ["React.js", "React hooks", "TypeScript"],
+    "imagePath": "/images/websites/brickhouse/brickhouse.jpg",
+    "innerUrl": "/brickhouse"
+  },
+  {
+    "title": "Mail Marketplace",
+    "subtitle": "Mail advertisement trading system",
+    "technologies": [
+      "Vue.js",
+      "Vuex",
+      "Django",
+      "Python",
+      "Docker",
+      "Google Cloud Platform"
+    ],
+    "imagePath": "/images/websites/marketplace/marketplace-logo.png",
+    "innerUrl": "/marketplace"
+  },
+  {
+    "title": "Translation Slack bot",
+    "subtitle": "Multilingual translation Slack bot",
+    "technologies": ["Python", "Docker", "Google Translation API"],
+    "imagePath": "/images/websites/slack-bot/slack-bot-logo.png",
+    "innerUrl": "/slack-bot"
+  }
+]
