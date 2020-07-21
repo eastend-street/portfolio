@@ -42,16 +42,17 @@ const WorkSection: FC<Props> = ({
 
 const Container = styled.div<Pick<Props, "odd">>`
   display: flex;
-  padding: 1rem;
+  margin: 5rem;
   flex-direction: ${(props) => props.odd && "row-reverse"};
   @media (max-width: 960px) {
     flex-direction: column;
+    margin: 5rem 1rem;
   }
 `;
 
 const ThumbnailArea = styled.div`
   flex-basis: 50%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   @media (max-width: 960px) {
     padding: 0 1rem;
   }
