@@ -2,6 +2,8 @@ import React, { FC, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
+import { JOT_DOWN } from "constants/works";
+
 import {
   Card,
   CardActionArea,
@@ -23,21 +25,21 @@ const WorkDetail: FC = () => {
   return (
     <>
       <Helmet>
-        <title>Jot down</title>
+        <title>{JOT_DOWN.name}</title>
       </Helmet>
       <Header />
       <ContentWorkDetail>
         <Grid container justify="center">
           <Grid item xs={12}>
-            <StyledAnchor target="_blank" href="https://jotdown.netlify.app">
+            <StyledAnchor target="_blank" href={JOT_DOWN.url}>
               <Title variant="h4" component="h1">
-                Jot down
+                {JOT_DOWN.name}
               </Title>
             </StyledAnchor>
           </Grid>
           <Grid item xs={11} sm={10} md={7}>
             <StyledWorkCard>
-              <CardActionArea target="_blank" href="https://jotdown.netlify.app">
+              <CardActionArea target="_blank" href={JOT_DOWN.url}>
                 <WorkImage image={JotDownPhoto} />
               </CardActionArea>
             </StyledWorkCard>
@@ -49,12 +51,12 @@ const WorkDetail: FC = () => {
               <ButtonWrapper>
                 <StyledButton
                   name="Visit website"
-                  url="https://jotdown.netlify.app"
+                  url={JOT_DOWN.url}
                   target="_blank"
                 />
                 <StyledButton
                   name="View Github"
-                  url="https://github.com/eastend-street/jotdown"
+                  url={JOT_DOWN.gitHubUrl}
                   target="_blank"
                 />
               </ButtonWrapper>
@@ -105,12 +107,12 @@ const WorkDetail: FC = () => {
               <ButtonWrapper>
                 <StyledButton
                   name="Visit website"
-                  url="https://jotdown.netlify.app"
+                  url={JOT_DOWN.url}
                   target="_blank"
                 />
                 <StyledButton
                   name="View Github"
-                  url="https://github.com/eastend-street/jotdown"
+                  url={JOT_DOWN.gitHubUrl}
                   target="_blank"
                 />
               </ButtonWrapper>
