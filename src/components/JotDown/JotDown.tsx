@@ -29,7 +29,7 @@ const WorkDetail: FC = () => {
       <ContentWorkDetail>
         <Grid container justify="center">
           <Grid item xs={12}>
-            <StyledAnchor target="_blank" href="https://jotdown.site">
+            <StyledAnchor target="_blank" href="https://jotdown.netlify.app">
               <Title variant="h4" component="h1">
                 Jot down
               </Title>
@@ -37,7 +37,7 @@ const WorkDetail: FC = () => {
           </Grid>
           <Grid item xs={11} sm={10} md={7}>
             <StyledWorkCard>
-              <CardActionArea target="_blank" href="https://jotdown.site">
+              <CardActionArea target="_blank" href="https://jotdown.netlify.app">
                 <WorkImage image={JotDownPhoto} />
               </CardActionArea>
             </StyledWorkCard>
@@ -49,7 +49,7 @@ const WorkDetail: FC = () => {
               <ButtonWrapper>
                 <StyledButton
                   name="Visit website"
-                  url="https://jotdown.site"
+                  url="https://jotdown.netlify.app"
                   target="_blank"
                 />
                 <StyledButton
@@ -105,7 +105,7 @@ const WorkDetail: FC = () => {
               <ButtonWrapper>
                 <StyledButton
                   name="Visit website"
-                  url="https://jotdown.site"
+                  url="https://jotdown.netlify.app"
                   target="_blank"
                 />
                 <StyledButton
