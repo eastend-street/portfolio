@@ -9,11 +9,11 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
+import StyledButton from "components/ChildComponents/StyledButton";
 import CodeoPhoto from "assets/images/websites/codeo/codeo.jpg";
 
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const Codeo: FC = () => {
   useEffect(() => {

@@ -11,11 +11,11 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
+import StyledButton from "components/ChildComponents/StyledButton";
 import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.jpg";
 
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const WorkDetail: FC = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const WorkDetail: FC = () => {
   return (
     <>
       <Helmet>
-        <title>{JOT_DOWN.name}</title>
+        <title>{JOT_DOWN.title}</title>
       </Helmet>
       <Header />
       <ContentWorkDetail>
@@ -33,7 +33,7 @@ const WorkDetail: FC = () => {
           <Grid item xs={12}>
             <StyledAnchor target="_blank" href={JOT_DOWN.url}>
               <Title variant="h4" component="h1">
-                {JOT_DOWN.name}
+                {JOT_DOWN.title}
               </Title>
             </StyledAnchor>
           </Grid>

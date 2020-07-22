@@ -9,11 +9,11 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
+import StyledButton from "components/ChildComponents/StyledButton";
 import SlackBotPhoto from "assets/images/websites/slack-bot/slack-bot.png";
 
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const WorkDetail: FC = () => {
   useEffect(() => {

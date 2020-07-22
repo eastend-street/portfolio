@@ -5,8 +5,8 @@ import styled from "styled-components";
 import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
 import MarketplacePhoto from "assets/images/websites/marketplace/marketplace.png";
 
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const MarketPlace: FC = () => {
   useEffect(() => {

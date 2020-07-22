@@ -5,8 +5,8 @@ import styled from "styled-components";
 import { Card, CardMedia, Grid, Typography } from "@material-ui/core";
 import BrickHousePhoto from "assets/images/websites/brickhouse/brickhouse.jpg";
 
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const Brickhouse: FC = () => {
   useEffect(() => {

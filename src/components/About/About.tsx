@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Grid, Typography } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton/StyledButton";
+import StyledButton from "components/ChildComponents/StyledButton";
 
 import profile from "assets/images/profile.png";
 import jsLogo from "assets/images/logo/javascript.svg";
@@ -24,10 +24,10 @@ const About: FC = () => (
             Jun Yamada
           </IntroSentence>
           <JobTitle variant="h6" component="h4">
-            Front-End Web Developer
+            Front End Engineer
           </JobTitle>
           <Introduction variant="subtitle1" component="p">
-            Front-end web developer with 3&#43; years of experience in software
+            Front end engineer with 3&#43; years of experience in software
             and systems engineering. Specializes in React.js, TypeScript and
             JavaScript. Keen on writing readable and maintainable code and
             repeating verifying and hypothesis to make a user-first product.
@@ -66,7 +66,7 @@ const About: FC = () => (
               </StyledLi>
               <StyledLi>
                 <Category>Frameworks / Libraries: </Category>
-                &nbsp;Django, Vue.js, Express.js, jQuery, Bootstrap,
+                &nbsp;Next.js, Django, Vue.js, Express.js, Bootstrap,
                 Material-UI, Gatsby.js
               </StyledLi>
               <StyledLi>
