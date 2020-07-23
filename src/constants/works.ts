@@ -1,39 +1,35 @@
 export const JOT_DOWN = {
-  title: "Jot down",
-  subtitle: "Bookmark and note web service",
-  url: "https://jotdown.netlify.app",
-  gitHubUrl: "https://github.com/eastend-street/jotdown",
-  technologies: ["React.js", "Redux", "Django", "Python", "Docker"],
-  imagePath: "/images/websites/jotdown/home-jotdown.jpg",
-  innerUrl: "/jotdown",
+  TITLE: "Jot down",
+  SUBTITLE: "Bookmark and note web service",
+  URL: "https://jotdown.netlify.app",
+  GITHUB: "https://github.com/eastend-street/jotdown",
+  TECHNOLOGIES: ["React.js", "Redux", "Django", "Python", "Docker"],
+  IMAGE_PATH: "/images/websites/jotdown/home-jotdown.jpg",
+  INNER_URL: "/jotdown",
 };
 
 export const CODEO = {
-  title: "Codeo",
-  subtitle: "Search programming video from YouTube",
-  url: "https://codeo.site",
-  gitHubUrl: "https://github.com/eastend-street/codeo",
-  technologies: ["React.js", "React hooks", "Context API", "TypeScript"],
-  imagePath: "/images/websites/codeo/codeo.jpg",
-  innerUrl: "/codeo",
+  TITLE: "Codeo",
+  SUBTITLE: "Search programming video from YouTube",
+  URL: "https://codeo.site",
+  GITHUB: "https://github.com/eastend-street/codeo",
+  TECHNOLOGIES: ["React.js", "React hooks", "Context API", "TypeScript"],
+  IMAGE_PATH: "/images/websites/codeo/codeo.jpg",
+  INNER_URL: "/codeo",
 };
 
 export const BRICKHOUSE = {
-  title: "Brickhouse Ventures",
-  subtitle: "Brickhouse company homepage",
-  url: null,
-  gitHubUrl: null,
-  technologies: ["React.js", "React hooks", "TypeScript"],
-  imagePath: "/images/websites/brickhouse/brickhouse.jpg",
-  innerUrl: "/brickhouse",
+  TITLE: "Brickhouse Ventures",
+  SUBTITLE: "Brickhouse company homepage",
+  TECHNOLOGIES: ["React.js", "React hooks", "TypeScript"],
+  IMAGE_PATH: "/images/websites/brickhouse/brickhouse.jpg",
+  INNER_URL: "/brickhouse",
 };
 
 export const MARKETPLACE = {
-  title: "Mail Marketplace",
-  subtitle: "Mail advertisement trading system",
-  url: null,
-  gitHubUrl: null,
-  technologies: [
+  TITLE: "Mail Marketplace",
+  SUBTITLE: "Mail advertisement trading system",
+  TECHNOLOGIES: [
     "Vue.js",
     "Vuex",
     "Django",
@@ -41,18 +37,19 @@ export const MARKETPLACE = {
     "Docker",
     "Google Cloud Platform",
   ],
-  imagePath: "/images/websites/marketplace/marketplace-logo.png",
-  innerUrl: "/marketplace",
+  IMAGE_PATH: "/images/websites/marketplace/marketplace-logo.png",
+  INNER_URL: "/marketplace",
 };
 
 export const SLACK_BOT = {
-  title: "Translation Slack bot",
-  subtitle: "Multilingual translation Slack bot",
-  url: null,
-  gitHubUrl: "https://github.com/eastend-street/translation_slackbot",
-  technologies: ["Python", "Docker", "Google Translation API"],
-  imagePath: "/images/websites/slack-bot/slack-bot-logo.png",
-  innerUrl: "/slack-bot",
+  TITLE: "Translation Slack bot",
+  SUBTITLE: "Multilingual translation Slack bot",
+  GITHUB: "https://github.com/eastend-street/translation_slackbot",
+  TECHNOLOGIES: ["Python", "Docker", "Google Translation API"],
+  IMAGE_PATH: "/images/websites/slack-bot/slack-bot-logo.png",
+  INNER_URL: "/slack-bot",
 };
 
-export const WORKS = [JOT_DOWN, CODEO, BRICKHOUSE, MARKETPLACE, SLACK_BOT];
+const WORKS = [JOT_DOWN, CODEO, BRICKHOUSE, MARKETPLACE, SLACK_BOT];
+
+export default WORKS;
