@@ -3,15 +3,13 @@ import styled from "styled-components";
 
 import WorkSection from "components/WorkSection";
 
-import { WorksData as WorksDataType } from "types/worksData";
-import WorksJson from "data/works.json";
+import WORKS from "constants/works";
 
 const Works: FC = () => {
-  const works: WorksDataType = WorksJson;
   return (
     <Container>
       <Title>WORKS</Title>
-      {works.map((work, index) => (
+      {WORKS.map((work, index: number) => (
         <WorkSection odd={(index + 1) % 2 !== 0} key={index} {...work} />
       ))}
     </Container>

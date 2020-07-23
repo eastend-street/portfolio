@@ -1,31 +1,31 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { WorkData as WorkDataType } from "types/worksData";
+import { Work as WorkType } from "types/works";
 
-interface Props extends WorkDataType {
+interface Props extends WorkType {
   odd: boolean;
 }
 
 const WorkSection: FC<Props> = ({
-  title,
-  subtitle,
-  technologies,
-  imagePath,
-  innerUrl,
+  TITLE,
+  SUBTITLE,
+  TECHNOLOGIES,
+  IMAGE_PATH,
+  INNER_URL,
   odd,
 }) => {
-  const detailUrl = process.env.PUBLIC_URL + innerUrl;
+  const detailUrl = process.env.PUBLIC_URL + INNER_URL;
   return (
     <Container odd={odd}>
       <SummaryArea>
         <div>
           <StyledLink to={detailUrl}>
-            <Title>{title}</Title>
+            <Title>{TITLE}</Title>
           </StyledLink>
-          <Subtitle>{`- ${subtitle} -`}</Subtitle>
+          <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
           <Technologies>
-            {technologies.map((name: string, index: number) => (
+            {TECHNOLOGIES.map((name: string, index: number) => (
               <TechName key={index}>{name}</TechName>
             ))}
           </Technologies>
@@ -33,7 +33,7 @@ const WorkSection: FC<Props> = ({
       </SummaryArea>
       <ThumbnailArea>
         <StyledLink to={detailUrl}>
-          <Thumbnail src={imagePath} />
+          <Thumbnail src={IMAGE_PATH} />
         </StyledLink>
       </ThumbnailArea>
     </Container>

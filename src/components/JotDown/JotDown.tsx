@@ -25,21 +25,21 @@ const WorkDetail: FC = () => {
   return (
     <>
       <Helmet>
-        <title>{JOT_DOWN.title}</title>
+        <title>{JOT_DOWN.TITLE}</title>
       </Helmet>
       <Header />
       <ContentWorkDetail>
         <Grid container justify="center">
           <Grid item xs={12}>
-            <StyledAnchor target="_blank" href={JOT_DOWN.url}>
+            <StyledAnchor target="_blank" href={JOT_DOWN.URL}>
               <Title variant="h4" component="h1">
-                {JOT_DOWN.title}
+                {JOT_DOWN.TITLE}
               </Title>
             </StyledAnchor>
           </Grid>
           <Grid item xs={11} sm={10} md={7}>
             <StyledWorkCard>
-              <CardActionArea target="_blank" href={JOT_DOWN.url}>
+              <CardActionArea target="_blank" href={JOT_DOWN.URL}>
                 <WorkImage image={JotDownPhoto} />
               </CardActionArea>
             </StyledWorkCard>
@@ -51,12 +51,12 @@ const WorkDetail: FC = () => {
               <ButtonWrapper>
                 <StyledButton
                   name="Visit website"
-                  url={JOT_DOWN.url}
+                  url={JOT_DOWN.URL}
                   target="_blank"
                 />
                 <StyledButton
                   name="View Github"
-                  url={JOT_DOWN.gitHubUrl}
+                  url={JOT_DOWN.GITHUB}
                   target="_blank"
                 />
               </ButtonWrapper>
@@ -107,12 +107,12 @@ const WorkDetail: FC = () => {
               <ButtonWrapper>
                 <StyledButton
                   name="Visit website"
-                  url={JOT_DOWN.url}
+                  url={JOT_DOWN.URL}
                   target="_blank"
                 />
                 <StyledButton
                   name="View Github"
-                  url={JOT_DOWN.gitHubUrl}
+                  url={JOT_DOWN.GITHUB}
                   target="_blank"
                 />
               </ButtonWrapper>
