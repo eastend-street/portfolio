@@ -5,16 +5,14 @@ import WorkSection from "components/WorkSection";
 
 import WORKS from "constants/works";
 
-const Works: FC = () => {
-  return (
-    <Container>
-      <Title>WORKS</Title>
-      {WORKS.map((work, index: number) => (
-        <WorkSection odd={(index + 1) % 2 !== 0} key={index} {...work} />
-      ))}
-    </Container>
-  );
-};
+const Works: FC = () => (
+  <Container>
+    <Title>WORKS</Title>
+    {WORKS.map((work, index: number) => (
+      <WorkSection odd={(index + 1) % 2 !== 0} key={index} {...work} />
+    ))}
+  </Container>
+);
 
 const Container = styled.div`
   margin: 5rem 0 7rem 0;

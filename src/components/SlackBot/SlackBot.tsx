@@ -9,7 +9,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton";
+import StyledButton from "components/shared/StyledButton";
 import SlackBotPhoto from "assets/images/websites/slack-bot/slack-bot.png";
 
 import Header from "components/Header";

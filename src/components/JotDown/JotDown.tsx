@@ -11,7 +11,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton";
+import StyledButton from "components/shared/StyledButton";
 import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.jpg";
 
 import Header from "components/Header";

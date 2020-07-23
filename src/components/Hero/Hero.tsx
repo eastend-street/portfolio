@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled, { keyframes } from "styled-components";
 import { Grid, Typography } from "@material-ui/core";
-import ScrollDownButton from "components/ChildComponents/ScrollDownButton";
+import ScrollDownButton from "components/shared/ScrollDownButton";
 
 const Hero: FC = () => (
   <ContentHero container justify="center" id="hero">

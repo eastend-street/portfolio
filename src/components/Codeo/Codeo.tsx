@@ -9,7 +9,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/ChildComponents/StyledButton";
+import StyledButton from "components/shared/StyledButton";
 import CodeoPhoto from "assets/images/websites/codeo/codeo.jpg";
 
 import Header from "components/Header";
