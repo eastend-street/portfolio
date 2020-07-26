@@ -1,64 +1,42 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { AppBar, Button, Toolbar } from "@material-ui/core";
+import { EMAIL } from "constants/Info";
 
 const Header: React.FC = () => (
-  <StyledAppBar position="static" id="header">
-    <Toolbar>
-      <Link href="/">
-        <StyledLogo src="assets/images/logo/logo.png" alt="logo" />
+  <Container id="header">
+    <Link href="/">
+      <Logo src="assets/images/logo/logo.png" alt="logo" />
+    </Link>
+    <Nav>
+      <Link href="/#about">
+        <EachNav>ABOUT</EachNav>
       </Link>
-      <WrapButton>
-        <Link href="/#about">
-          <StyledButton>ABOUT</StyledButton>
-        </Link>
-        <Link href="/#works">
-          <StyledButton>WORKS</StyledButton>
-        </Link>
-        <StyledAnchor
-          href="mailto:jun.yamada0097@gmail.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <StyledButton>EMAIL</StyledButton>
-        </StyledAnchor>
-      </WrapButton>
-    </Toolbar>
-  </StyledAppBar>
+      <Link href="/#works">
+        <EachNav>WORKS</EachNav>
+      </Link>
+      <a href={`mailto:${EMAIL}`} rel="noopener noreferrer" target="_blank">
+        <EachNav>EMAIL</EachNav>
+      </a>
+    </Nav>
+  </Container>
 );
 
-const StyledAppBar = styled(AppBar)`
-  && {
-    background-color: #eee2d7;
-    box-shadow: none;
-  }
+const Container = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 `;
 
-const StyledAnchor = styled.a`
-  text-decoration: none;
-  color: white;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
+const Nav = styled.nav`
+  display: flex;
 `;
 
-const WrapButton = styled.div`
-  margin: 0 0 0 auto;
+const EachNav = styled.div`
+  margin: 0 0.5rem;
 `;
 
-const StyledButton = styled(Button)`
-  && {
-    font-family: inherit;
-    text-transform: none;
-  }
-`;
-
-const StyledLogo = styled.img`
+const Logo = styled.img`
   max-height: 2rem;
   :hover {
     opacity: 0.7;

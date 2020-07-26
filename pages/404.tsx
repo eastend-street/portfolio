@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import styled from "styled-components";
 
 import { Grid } from "@material-ui/core";
@@ -6,9 +5,6 @@ import StyledButton from "components/shared/StyledButton";
 
 const NotFound: React.FC = () => (
   <Container container>
-    <Helmet>
-      <title>Page not found</title>
-    </Helmet>
     <Grid item xs={11} sm={12}>
       <StyledH1>404 Page not found</StyledH1>
       <StyledH3>

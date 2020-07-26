@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import styled from "styled-components";
 
 import { Button } from "@material-ui/core";
@@ -10,7 +9,7 @@ type ButtonProps = {
   rel?: string;
 };
 
-const StyledButton: FC<ButtonProps> = ({ url, target, name }) => (
+const StyledButton: React.FC<ButtonProps> = ({ url, target, name }) => (
   <StyledAnchor href={url} target={target} rel="noopener noreferrer">
     <StyledResumeButton>{name}</StyledResumeButton>
   </StyledAnchor>
