@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
-    transition: .3s;
     &:focus,
     &:hover,
     &:visited,
@@ -21,10 +20,7 @@ const GlobalStyle = createGlobalStyle`
     &:active {
       text-decoration: none;
     }
-    &:hover {
-      cursor: pointer;
-      opacity: 0.7;
-    }
+   
   }
 `;
 

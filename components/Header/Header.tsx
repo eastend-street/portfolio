@@ -34,6 +34,11 @@ const Nav = styled.nav`
 
 const EachNav = styled.div`
   margin: 0 0.5rem;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
 `;
 
 const Logo = styled.img`
