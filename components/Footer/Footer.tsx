@@ -1,15 +1,13 @@
-import React, { FC } from "react";
 import styled from "styled-components";
-import githubLogo from "assets/images/logo/github.png";
 
-const Footer: FC = () => (
+const Footer: React.FC = () => (
   <StyledFooter>
     <a
       href="https://github.com/eastend-street"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <SocialLogo src={githubLogo} alt="Github" />
+      <SocialLogo src="assets/images/logo/github.png" alt="Github" />
     </a>
     <Copyright>&copy; Jun Yamada 2019-2020 All rights reserved.</Copyright>
   </StyledFooter>

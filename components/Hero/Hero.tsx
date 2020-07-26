@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import { Grid, Typography } from "@material-ui/core";
-import ScrollDownButton from "components/shared/ScrollDownButton";
 
 const Hero: React.FC = () => (
   <ContentHero container justify="center" id="hero">
@@ -9,7 +8,6 @@ const Hero: React.FC = () => (
         <Title>Hi, I'm Jun. Front End Engineer based in Vancouver</Title>
       </h1>
     </Grid>
-    <ScrollDownButton />
   </ContentHero>
 );
 

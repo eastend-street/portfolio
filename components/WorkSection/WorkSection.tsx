@@ -1,5 +1,4 @@
-import React, { FC } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import styled from "styled-components";
 import { Work as WorkType } from "types/works";
 
@@ -7,7 +6,7 @@ interface Props extends WorkType {
   odd: boolean;
 }
 
-const WorkSection: FC<Props> = ({
+const WorkSection: React.FC<Props> = ({
   TITLE,
   SUBTITLE,
   TECHNOLOGIES,
@@ -20,9 +19,9 @@ const WorkSection: FC<Props> = ({
     <Container odd={odd}>
       <SummaryArea>
         <div>
-          <StyledLink to={detailUrl}>
+          <Link href={detailUrl}>
             <Title>{TITLE}</Title>
-          </StyledLink>
+          </Link>
           <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
           <Technologies>
             {TECHNOLOGIES.map((name: string, index: number) => (
@@ -32,9 +31,9 @@ const WorkSection: FC<Props> = ({
         </div>
       </SummaryArea>
       <ThumbnailArea>
-        <StyledLink to={detailUrl}>
+        <Link href={detailUrl}>
           <Thumbnail src={IMAGE_PATH} />
-        </StyledLink>
+        </Link>
       </ThumbnailArea>
     </Container>
   );
