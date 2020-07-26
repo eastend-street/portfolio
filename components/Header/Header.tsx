@@ -1,23 +1,24 @@
-import React, { FC } from "react";
+import Link from "next/link";
 import styled from "styled-components";
 import { AppBar, Button, Toolbar } from "@material-ui/core";
 
-const Header: FC = () => (
+const Header: React.FC = () => (
   <StyledAppBar position="static" id="header">
     <Toolbar>
-      {/* <LogoLink href={process.env.PUBLIC_URL + "/"} rel="noopener noreferrer"> */}
-      <StyledLogo src="assets/images/logo/logo.png" alt="logo" />
-      {/* </LogoLink> */}
+      <Link href="/">
+        <StyledLogo src="assets/images/logo/logo.png" alt="logo" />
+      </Link>
       <WrapButton>
-        {/* <StyledHashLink smooth={true} to="/#about"> */}
-        <StyledButton>ABOUT</StyledButton>
-        {/* </StyledHashLink> */}
-        {/* <StyledHashLink smooth={true} to="/#works"> */}
-        <StyledButton>WORKS</StyledButton>
-        {/* </StyledHashLink> */}
+        <Link href="/#about">
+          <StyledButton>ABOUT</StyledButton>
+        </Link>
+        <Link href="/#works">
+          <StyledButton>WORKS</StyledButton>
+        </Link>
         <StyledAnchor
           href="mailto:jun.yamada0097@gmail.com"
           rel="noopener noreferrer"
+          target="_blank"
         >
           <StyledButton>EMAIL</StyledButton>
         </StyledAnchor>
@@ -32,19 +33,6 @@ const StyledAppBar = styled(AppBar)`
     box-shadow: none;
   }
 `;
-
-// const StyledHashLink = styled(HashLink)`
-//   text-decoration: none;
-//   color: #4e4e4e;
-
-//   &:focus,
-//   &:hover,
-//   &:visited,
-//   &:link,
-//   &:active {
-//     text-decoration: none;
-//   }
-// `;
 
 const StyledAnchor = styled.a`
   text-decoration: none;
@@ -74,19 +62,6 @@ const StyledLogo = styled.img`
   max-height: 2rem;
   :hover {
     opacity: 0.7;
-  }
-`;
-
-const LogoLink = styled.a`
-  text-decoration: none;
-  color: #4e4e4e;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
   }
 `;
 

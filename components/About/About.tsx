@@ -1,15 +1,8 @@
-import React, { FC } from "react";
 import styled from "styled-components";
-
 import { Grid, Typography } from "@material-ui/core";
 import StyledButton from "components/shared/StyledButton";
 
-import profile from "assets/images/profile.png";
-import jsLogo from "assets/images/logo/javascript.svg";
-import reactLogo from "assets/images/logo/react.svg";
-import tsLogo from "assets/images/logo/typescript.svg";
-
-const About: FC = () => (
+const About: React.FC = () => (
   <Container container justify="center" id="about">
     <Grid item xs={11} sm={10}>
       <Title variant="h4" component="h2">
@@ -17,7 +10,7 @@ const About: FC = () => (
       </Title>
       <Grid container justify="center">
         <ProfileGrid item xs={12} sm={5} md={6}>
-          <ProfilePhoto src={profile} alt="profile" />
+          <ProfilePhoto src="assets/images/profile.png" alt="profile" />
         </ProfileGrid>
         <Grid item xs={12} sm={7} md={6}>
           <IntroSentence variant="h4" component="h3">
@@ -27,8 +20,8 @@ const About: FC = () => (
             Front End Engineer
           </JobTitle>
           <Introduction variant="subtitle1" component="p">
-            Front end engineer with 3&#43; years of experience in software
-            and systems engineering. Specializes in React.js, TypeScript and
+            Front end engineer with 3&#43; years of experience in software and
+            systems engineering. Specializes in React.js, TypeScript and
             JavaScript. Keen on writing readable and maintainable code and
             repeating verifying and hypothesis to make a user-first product.
           </Introduction>
@@ -38,19 +31,25 @@ const About: FC = () => (
           <Grid container>
             <Grid item>
               <WrapSkillLogo>
-                <SkillsLogo src={reactLogo} alt="React" />
+                <SkillsLogo src="assets/images/logo/react.svg" alt="React" />
                 <SkillName> React.js</SkillName>
               </WrapSkillLogo>
             </Grid>
             <Grid item>
               <WrapSkillLogo>
-                <SkillsLogo src={tsLogo} alt="TypeScript" />
+                <SkillsLogo
+                  src="assets/images/logo/typescript.svg"
+                  alt="TypeScript"
+                />
                 <SkillName> TypeScript</SkillName>
               </WrapSkillLogo>
             </Grid>
             <Grid item>
               <WrapSkillLogo>
-                <SkillsLogo src={jsLogo} alt="JavaScript" />
+                <SkillsLogo
+                  src="assets/images/logo/javascript.svg"
+                  alt="JavaScript"
+                />
                 <SkillName> JavaScript</SkillName>
               </WrapSkillLogo>
             </Grid>

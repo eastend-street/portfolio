@@ -1,9 +1,8 @@
-import React, { FC } from "react";
 import styled, { keyframes } from "styled-components";
 import { Grid, Typography } from "@material-ui/core";
 import ScrollDownButton from "components/shared/ScrollDownButton";
 
-const Hero: FC = () => (
+const Hero: React.FC = () => (
   <ContentHero container justify="center" id="hero">
     <Grid item xs={10} md={9} lg={8}>
       <h1>
