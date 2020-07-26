@@ -1,30 +1,130 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
+This is my portfolio website to show front-end development works🎓  Made by React.js.
 
-## Getting Started
+<br/>
 
-First, run the development server:
+Website: &nbsp; https://junyamada.info
 
-```bash
-npm run dev
-# or
-yarn dev
+
+[![hero](https://user-images.githubusercontent.com/43656115/77298041-6e0e7180-6ca7-11ea-934c-85b37790b630.png)](https://junyamada.info)
+<br/>
+<br/>
+
+## User Interface
+![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
+
+<br/>
+<br/>
+
+
+## Technologies
+- React.js
+- React Router
+- React Helmet
+- Styled-components
+- Material-ui
+- TypeScript
+- JavaScript
+- HTML5
+- CSS3
+- Illustrator
+
+<br/>
+
+## Works
+
+- <h3><a href="https://github.com/eastend-street/jotdown">Jot down</a></h3>
+Bookmark and note web service📗   
+`React.js`, `Redux`, `Styled-components`, `Python`, `Django`, `Docker`    
+
+<a href="https://github.com/eastend-street/jotdown">
+<img src="https://user-images.githubusercontent.com/43656115/76158377-2f36c400-60ca-11ea-99e8-909b6363e555.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+<br/>
+
+- <h3><a href="https://github.com/eastend-street/codeo">Codeo</a></h3>
+Search programming video website from YouTube📺   
+`React.js`, `React hooks`, `TypeScript`, `Context API`   
+
+<a href="https://github.com/eastend-street/codeo">
+<img src="https://user-images.githubusercontent.com/43656115/71144579-5bc9f680-21d3-11ea-9b65-98c6fb660d17.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+<br/>
+
+- <h3><a href="https://junyamada.info/brickhouse">Brickhouse Ventures</a></h3>
+A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
+`React.js`, `React Hooks`, `TypeScript`, `Sass`  
+
+<a href="https://junyamada.info/brickhouse">
+<img src="https://user-images.githubusercontent.com/43656115/77298161-b463d080-6ca7-11ea-9d79-b9f02ee330a7.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+<br/>
+
+- <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
+Mail MarketPlace is a company project that is mail advertisement trading web service.   
+`Vue.js`, `Vuex`, `Vuetify.js`, `Django REST framework`, `Google Cloud Platform`, `Docker`      
+
+<a href="https://junyamada.info/marketplace">
+<img src="https://user-images.githubusercontent.com/43656115/76181926-1e488a00-6180-11ea-9b71-92ff645f9027.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+<br/>
+
+- <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
+Translation slack bot🗣 English ↔ Japanese, Other languages→ English   
+`Python`, `Docker`       
+
+<a href="https://github.com/eastend-street/translation_slackbot">
+<img src="https://user-images.githubusercontent.com/43656115/76172573-c47e9a80-6154-11ea-8251-ddcaaa20ebbf.png" width="60%" height="60%">
+</a>
+
+<br/>
+<br/>
+<br/>
+
+
+
+
+## Structure
+
+```
+src/
+ index.tsx
+ App.tsx
+ 
+ components/
+   COMPONENT_NAME/
+    |-- COMPONENT_NAME.tsx  -----components with styled-components
+ 
+ themes/ -----Define global style, breakpoints, color variables  
+ 
+ assets/
+  images/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
+<br/>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+## Upcoming features
+- Implement fade-in to each project card
+- Make works illustration such as Jotdown and Codeo (Currently using screenshot) 
 
-To learn more about Next.js, take a look at the following resources:
+<br/>
+<br/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
+[eastend-street](https://github.com/eastend-street)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br/>
