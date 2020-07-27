@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Footer: React.FC = () => (
-  <StyledFooter>
+  <Container>
     <a
       href="https://github.com/eastend-street"
       target="_blank"
@@ -9,11 +9,13 @@ const Footer: React.FC = () => (
     >
       <SocialLogo src="assets/images/logo/github.png" alt="Github" />
     </a>
-    <Copyright>&copy; Jun Yamada 2019-2020 All rights reserved.</Copyright>
-  </StyledFooter>
+    <Copyright>&copy; Jun Yamada 2020 All rights reserved.</Copyright>
+  </Container>
 );
 
-const StyledFooter = styled.footer`
+export default Footer;
+
+const Container = styled.footer`
   text-align: center;
   padding: 3rem;
 `;
@@ -33,5 +35,3 @@ const SocialLogo = styled.img`
     opacity: 0.7;
   }
 `;
-
-export default Footer;

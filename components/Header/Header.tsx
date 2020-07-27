@@ -21,6 +21,8 @@ const Header: React.FC = () => (
   </Container>
 );
 
+export default Header;
+
 const Container = styled.header`
   display: flex;
   justify-content: space-between;
@@ -47,5 +49,3 @@ const Logo = styled.img`
     opacity: 0.7;
   }
 `;
-
-export default Header;
