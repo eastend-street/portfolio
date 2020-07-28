@@ -6,7 +6,9 @@ const Footer: React.FC = () => (
     <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
       <SocialLogo src="assets/images/logo/github.png" alt="Github" />
     </a>
-    <Copyright>&copy; Jun Yamada 2020 All rights reserved.</Copyright>
+    <Copyright>
+      &copy; Jun Yamada {new Date().getFullYear()} All rights reserved.
+    </Copyright>
   </Container>
 );
 
