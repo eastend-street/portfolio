@@ -1,12 +1,9 @@
 import styled from "styled-components";
+import { GITHUB_URL } from "constants/Info";
 
 const Footer: React.FC = () => (
   <Container>
-    <a
-      href="https://github.com/eastend-street"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
       <SocialLogo src="assets/images/logo/github.png" alt="Github" />
     </a>
     <Copyright>&copy; Jun Yamada 2020 All rights reserved.</Copyright>
