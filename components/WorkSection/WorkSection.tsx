@@ -69,6 +69,11 @@ const SummaryArea = styled.div`
 
 const Thumbnail = styled.img`
   width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  :hover {
+    opacity: 0.7;
+  }
 `;
 
 const Title = styled.h3`
@@ -76,6 +81,8 @@ const Title = styled.h3`
   text-align: center;
   font-weight: 900;
   margin: 0;
+  cursor: pointer;
+  transition: 0.3s;
   :hover {
     opacity: 0.7;
   }
@@ -105,17 +112,17 @@ const TechName = styled.span`
   margin: 0.2rem;
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: #4e4e4e;
+// const StyledLink = styled(Link)`
+//   text-decoration: none;
+//   color: #4e4e4e;
 
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
-`;
+//   &:focus,
+//   &:hover,
+//   &:visited,
+//   &:link,
+//   &:active {
+//     text-decoration: none;
+//   }
+// `;
 
 export default WorkSection;

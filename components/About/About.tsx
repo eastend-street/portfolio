@@ -3,116 +3,115 @@ import { Grid, Typography } from "@material-ui/core";
 import StyledButton from "components/shared/StyledButton";
 
 const About: React.FC = () => (
-  <Container container justify="center" id="about">
-    <Grid item xs={11} sm={10}>
-      <Title variant="h4" component="h2">
-        ABOUT
-      </Title>
-      <Grid container justify="center">
-        <ProfileGrid item xs={12} sm={5} md={6}>
-          <ProfilePhoto src="assets/images/profile.png" alt="profile" />
-        </ProfileGrid>
-        <Grid item xs={12} sm={7} md={6}>
-          <IntroSentence variant="h4" component="h3">
-            Jun Yamada
-          </IntroSentence>
-          <JobTitle variant="h6" component="h4">
-            Front End Engineer
-          </JobTitle>
-          <Introduction variant="subtitle1" component="p">
-            Front end engineer with 3&#43; years of experience in software and
-            systems engineering. Specializes in React.js, TypeScript and
-            JavaScript. Keen on writing readable and maintainable code and
-            repeating verifying and hypothesis to make a user-first product.
-          </Introduction>
-          <Strength variant="h6" component="h4">
-            Specialties:
-          </Strength>
+  <Container id="about">
+    <Title>
+      ABOUT
+    </Title>
+    <Wrapper>
+      <ProfileGrid item xs={12} sm={5} md={6}>
+        <ProfilePhoto src="assets/images/profile.png" alt="profile" />
+      </ProfileGrid>
+      <Grid item xs={12} sm={7} md={6}>
+        <IntroSentence variant="h4" component="h3">
+          Jun Yamada
+        </IntroSentence>
+        <JobTitle variant="h6" component="h4">
+          Front End Engineer
+        </JobTitle>
+        <Introduction variant="subtitle1" component="p">
+          Front end engineer with 3&#43; years of experience in software and
+          systems engineering. Specializes in React.js, TypeScript and
+          JavaScript. Keen on writing readable and maintainable code and
+          repeating verifying and hypothesis to make a user-first product.
+        </Introduction>
+        <Strength variant="h6" component="h4">
+          Specialties:
+        </Strength>
+        <Grid container>
+          <Grid item>
+            <WrapSkillLogo>
+              <SkillsLogo src="assets/images/logo/react.svg" alt="React" />
+              <SkillName> React.js</SkillName>
+            </WrapSkillLogo>
+          </Grid>
+          <Grid item>
+            <WrapSkillLogo>
+              <SkillsLogo
+                src="assets/images/logo/typescript.svg"
+                alt="TypeScript"
+              />
+              <SkillName> TypeScript</SkillName>
+            </WrapSkillLogo>
+          </Grid>
+          <Grid item>
+            <WrapSkillLogo>
+              <SkillsLogo
+                src="assets/images/logo/javascript.svg"
+                alt="JavaScript"
+              />
+              <SkillName> JavaScript</SkillName>
+            </WrapSkillLogo>
+          </Grid>
+        </Grid>
+        <Skills variant="h6" component="h4">
+          Other skills:
+        </Skills>
+        <Typography variant="subtitle1" component="div">
+          <StyledUl>
+            <StyledLi>
+              <Category>Languages: </Category>
+              <span>&nbsp;Python, Node.js, HTML5, CSS3, Sass, Java</span>
+            </StyledLi>
+            <StyledLi>
+              <Category>Frameworks / Libraries: </Category>
+              &nbsp;Next.js, Django, Vue.js, Express.js, Bootstrap, Material-UI,
+              Gatsby.js
+            </StyledLi>
+            <StyledLi>
+              <Category>Others: </Category>
+              &nbsp;Docker, Google Cloud Platform, MySQL, MongoDB, Git, Ubuntu
+            </StyledLi>
+          </StyledUl>
+        </Typography>
+        <ContentButton>
           <Grid container>
-            <Grid item>
-              <WrapSkillLogo>
-                <SkillsLogo src="assets/images/logo/react.svg" alt="React" />
-                <SkillName> React.js</SkillName>
-              </WrapSkillLogo>
+            <Grid item xs={12} md={6}>
+              <StyledButton
+                name="Resume"
+                url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
+                target="_blank"
+                rel="nofollow"
+              />
             </Grid>
-            <Grid item>
-              <WrapSkillLogo>
-                <SkillsLogo
-                  src="assets/images/logo/typescript.svg"
-                  alt="TypeScript"
-                />
-                <SkillName> TypeScript</SkillName>
-              </WrapSkillLogo>
-            </Grid>
-            <Grid item>
-              <WrapSkillLogo>
-                <SkillsLogo
-                  src="assets/images/logo/javascript.svg"
-                  alt="JavaScript"
-                />
-                <SkillName> JavaScript</SkillName>
-              </WrapSkillLogo>
+            <Grid item xs={12} md={6}>
+              <StyledButton
+                name="Email"
+                url="mailto:jun.yamada0097@gmail.com"
+              />
             </Grid>
           </Grid>
-          <Skills variant="h6" component="h4">
-            Other skills:
-          </Skills>
-          <Typography variant="subtitle1" component="div">
-            <StyledUl>
-              <StyledLi>
-                <Category>Languages: </Category>
-                <span>&nbsp;Python, Node.js, HTML5, CSS3, Sass, Java</span>
-              </StyledLi>
-              <StyledLi>
-                <Category>Frameworks / Libraries: </Category>
-                &nbsp;Next.js, Django, Vue.js, Express.js, Bootstrap,
-                Material-UI, Gatsby.js
-              </StyledLi>
-              <StyledLi>
-                <Category>Others: </Category>
-                &nbsp;Docker, Google Cloud Platform, MySQL, MongoDB, Git, Ubuntu
-              </StyledLi>
-            </StyledUl>
-          </Typography>
-          <ContentButton>
-            <Grid container>
-              <Grid item xs={12} md={6}>
-                <StyledButton
-                  name="Resume"
-                  url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
-                  target="_blank"
-                  rel="nofollow"
-                />
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <StyledButton
-                  name="Email"
-                  url="mailto:jun.yamada0097@gmail.com"
-                />
-              </Grid>
-            </Grid>
-          </ContentButton>
-        </Grid>
+        </ContentButton>
       </Grid>
-    </Grid>
+    </Wrapper>
   </Container>
 );
 
-const Container = styled(Grid)`
-  && {
-    background-color: #fff;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-  }
+const Container = styled.div`
+  background-color: #fff;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 `;
 
-const Title = styled(Typography)`
-  && {
-    font-family: inherit;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 5rem;
-  }
+const Title = styled.h2`
+  font-size: 2.125rem;
+  text-align: center;
+  margin-bottom: 5rem;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 const IntroSentence = styled(Typography)`

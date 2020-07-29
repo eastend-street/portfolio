@@ -1,11 +1,8 @@
-import React, { FC } from "react";
 import styled from "styled-components";
-
 import WorkSection from "components/WorkSection";
-
 import WORKS from "constants/works";
 
-const Works: FC = () => (
+const Works: React.FC = () => (
   <Container>
     <Title>WORKS</Title>
     {WORKS.map((work, index: number) => (
