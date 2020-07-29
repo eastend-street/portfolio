@@ -1,97 +1,56 @@
 import styled from "styled-components";
-import { Grid, Typography } from "@material-ui/core";
 import StyledButton from "components/shared/StyledButton";
+
+import { SKILLS } from "constants/skills";
+import { EMAIL } from "constants/Info";
 
 const About: React.FC = () => (
   <Container id="about">
-    <Title>
-      ABOUT
-    </Title>
+    <Title>ABOUT</Title>
     <Wrapper>
-      <ProfileGrid item xs={12} sm={5} md={6}>
-        <ProfilePhoto src="assets/images/profile.png" alt="profile" />
-      </ProfileGrid>
-      <Grid item xs={12} sm={7} md={6}>
-        <IntroSentence variant="h4" component="h3">
-          Jun Yamada
-        </IntroSentence>
-        <JobTitle variant="h6" component="h4">
-          Front End Engineer
-        </JobTitle>
-        <Introduction variant="subtitle1" component="p">
+      <PhotoSection>
+        <Profile src="assets/images/profile.png" alt="profile" />
+      </PhotoSection>
+      <AboutSection>
+        <Name>Jun Yamada</Name>
+        <JobTitle>Front End Engineer</JobTitle>
+        <Intro>
           Front end engineer with 3&#43; years of experience in software and
           systems engineering. Specializes in React.js, TypeScript and
           JavaScript. Keen on writing readable and maintainable code and
           repeating verifying and hypothesis to make a user-first product.
-        </Introduction>
-        <Strength variant="h6" component="h4">
-          Specialties:
-        </Strength>
-        <Grid container>
-          <Grid item>
+        </Intro>
+        <SubHeading>Specialties:</SubHeading>
+        <Specialties>
+          {SKILLS.specialties.map((skill) => (
             <WrapSkillLogo>
-              <SkillsLogo src="assets/images/logo/react.svg" alt="React" />
-              <SkillName> React.js</SkillName>
+              <SkillsLogo src={skill.imagePath} alt={skill.name} />
+              <SkillName>{skill.name}</SkillName>
             </WrapSkillLogo>
-          </Grid>
-          <Grid item>
-            <WrapSkillLogo>
-              <SkillsLogo
-                src="assets/images/logo/typescript.svg"
-                alt="TypeScript"
-              />
-              <SkillName> TypeScript</SkillName>
-            </WrapSkillLogo>
-          </Grid>
-          <Grid item>
-            <WrapSkillLogo>
-              <SkillsLogo
-                src="assets/images/logo/javascript.svg"
-                alt="JavaScript"
-              />
-              <SkillName> JavaScript</SkillName>
-            </WrapSkillLogo>
-          </Grid>
-        </Grid>
-        <Skills variant="h6" component="h4">
-          Other skills:
-        </Skills>
-        <Typography variant="subtitle1" component="div">
-          <StyledUl>
+          ))}
+        </Specialties>
+        <SubHeading>Other skills:</SubHeading>
+        <StyledUl>
+          {SKILLS.otherSkills.map((category) => (
             <StyledLi>
-              <Category>Languages: </Category>
-              <span>&nbsp;Python, Node.js, HTML5, CSS3, Sass, Java</span>
+              <Category>{category.name}: </Category>
+              <span>
+                &nbsp;
+                {category.skills.map((techName) => `${techName}, `)}
+              </span>
             </StyledLi>
-            <StyledLi>
-              <Category>Frameworks / Libraries: </Category>
-              &nbsp;Next.js, Django, Vue.js, Express.js, Bootstrap, Material-UI,
-              Gatsby.js
-            </StyledLi>
-            <StyledLi>
-              <Category>Others: </Category>
-              &nbsp;Docker, Google Cloud Platform, MySQL, MongoDB, Git, Ubuntu
-            </StyledLi>
-          </StyledUl>
-        </Typography>
-        <ContentButton>
-          <Grid container>
-            <Grid item xs={12} md={6}>
-              <StyledButton
-                name="Resume"
-                url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
-                target="_blank"
-                rel="nofollow"
-              />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <StyledButton
-                name="Email"
-                url="mailto:jun.yamada0097@gmail.com"
-              />
-            </Grid>
-          </Grid>
-        </ContentButton>
-      </Grid>
+          ))}
+        </StyledUl>
+        <WrapButtons>
+          <StyledButton
+            name="Resume"
+            url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
+            target="_blank"
+            rel="nofollow"
+          />
+          <StyledButton name="Email" url={`mailto:${EMAIL}`} />
+        </WrapButtons>
+      </AboutSection>
     </Wrapper>
   </Container>
 );
@@ -114,89 +73,54 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-const IntroSentence = styled(Typography)`
-  && {
-    font-family: inherit;
-    @media (max-width: 600px) {
-      margin-top: 2rem;
-      text-align: center;
-    }
-  }
-`;
-const JobTitle = styled(Typography)`
-  && {
-    font-family: inherit;
-    color: inherit;
-    margin-bottom: 1rem;
-    opacity: 0.7;
-    @media (max-width: 600px) {
-      text-align: center;
-    }
-  }
+const PhotoSection = styled.div`
+  text-align: center;
+  flex: 1;
 `;
 
-const Introduction = styled(Typography)`
-  && {
-    font-family: inherit;
-    @media (max-width: 600px) {
-      margin-top: 2rem;
-    }
-  }
-`;
-
-const Strength = styled(Typography)`
-  && {
-    font-family: inherit;
-    color: inherit;
-    opacity: 0.7;
-    margin: 4rem auto 1rem auto;
-  }
-`;
-
-const Skills = styled(Typography)`
-  && {
-    font-family: inherit;
-    color: inherit;
-    opacity: 0.7;
-    margin-top: 3.5rem;
-  }
-`;
-
-const StyledUl = styled.ul`
-  font-family: inherit;
-  margin-top: 0.7rem;
-  padding-left: 0rem;
-  list-style: none;
-`;
-
-const StyledLi = styled.li`
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 0.5rem;
-  color: inherit;
-`;
-
-const Category = styled.span`
-  font-family: "Open Sans", sans-serif;
-  color: inherit;
-  opacity: 0.7;
-`;
-
-const ProfilePhoto = styled.img`
+const Profile = styled.img`
   max-width: 50%;
 `;
 
-const ProfileGrid = styled(Grid)`
-  && {
+const AboutSection = styled.div`
+  flex: 1;
+`;
+
+const Name = styled.h3`
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+  @media (max-width: 600px) {
+    margin-top: 2rem;
     text-align: center;
   }
 `;
 
-const ContentButton = styled.div`
-  margin: 3rem auto;
-  font-family: inherit;
-  @media (max-width: 960px) {
+const JobTitle = styled.h4`
+  font-size: 1.3rem;
+  margin: 0 0 1rem;
+  opacity: 0.7;
+  @media (max-width: 600px) {
     text-align: center;
   }
+`;
+
+const Intro = styled.p`
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  @media (max-width: 600px) {
+    margin-top: 2rem;
+  }
+`;
+
+const SubHeading = styled.h4`
+  font-size: 1.3rem;
+  opacity: 0.7;
+  margin: 4rem auto 1rem auto;
+`;
+
+const Specialties = styled.div`
+  display: flex;
 `;
 
 const WrapSkillLogo = styled.div`
@@ -217,6 +141,32 @@ const WrapSkillLogo = styled.div`
 const SkillsLogo = styled.img`
   height: 3rem;
   margin: 0 auto;
+`;
+
+const StyledUl = styled.ul`
+  margin-top: 0.7rem;
+  padding-left: 0rem;
+  list-style: none;
+`;
+
+const StyledLi = styled.li`
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8rem;
+`;
+
+const Category = styled.span`
+  font-family: "Open Sans", sans-serif;
+  color: inherit;
+  opacity: 0.7;
+`;
+
+const WrapButtons = styled.div`
+  display: flex;
+  margin: 3rem auto;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
 `;
 
 const SkillName = styled.div`

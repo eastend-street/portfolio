@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #000;
+    color: rgba(0,0,0,0.7);
     background-color: #EEE2D7;
     scroll-behavior: smooth;
   }
