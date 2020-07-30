@@ -1,21 +1,22 @@
+import Link, { LinkProps } from "next/link";
 import styled from "styled-components";
+import { ButtonStyle } from "./style";
+import Button from "./Button"
 
-import { Button } from "@material-ui/core";
+const LinkButton: React.FC<LinkProps> = (props) => (
+  <Link {...props} >
+    <Button></Button>
+  </Link>
 
-type ButtonProps = {
-  url: string;
-  target?: string;
-  name: string;
-  rel?: string;
-};
-
-const StyledButton: React.FC<ButtonProps> = ({ url, target, name }) => (
-  <StyledAnchor href={url} target={target} rel="noopener noreferrer">
-    <StyledResumeButton>{name}</StyledResumeButton>
-  </StyledAnchor>
 );
 
-const StyledResumeButton = styled(Button)`
+export default LinkButton;
+
+const StyledLinkButton = styled(Link)`
+  ${ButtonStyle}
+`;
+
+const StyledResumeButton = styled.button`
   && {
     background-color: transparent;
     font-family: inherit;
@@ -51,5 +52,3 @@ const StyledAnchor = styled.a`
     text-decoration: none;
   }
 `;
-
-export default StyledButton;
