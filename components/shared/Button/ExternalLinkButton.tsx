@@ -3,20 +3,23 @@ import styled from "styled-components";
 import { ButtonStyle } from "./style";
 import Button from "./Button";
 
-interface LinkButtonProps extends LinkProps {
+interface ExternalLinkButtonProps {
   name: string;
+  href: string;
   target?: string;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ name, target, ...props }) => (
-  <Link {...props} passHref={true}>
-    <a target={target}>
-      <Button>{name}</Button>
-    </a>
-  </Link>
+const ExternalLinkButton: React.FC<ExternalLinkButtonProps> = ({
+  name,
+  href,
+  target = "_blank",
+}) => (
+  <a href={href} target={target}>
+    <Button>{name}</Button>
+  </a>
 );
 
-export default LinkButton;
+export default ExternalLinkButton;
 
 const StyledLinkButton = styled(Link)`
   ${ButtonStyle}

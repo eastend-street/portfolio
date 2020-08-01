@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { Grid } from "@material-ui/core";
-import StyledButton from "components/shared/StyledButton";
+import { LinkButton } from "components/shared/Button";
 
 const NotFound: React.FC = () => (
   <Container container>
@@ -13,7 +13,7 @@ const NotFound: React.FC = () => (
         Please click the button below to go back to the Homepage.
       </StyledH3>
       <ContentButton>
-        <StyledButton name="Go to Homepage" url="/" target="_self" />
+        <LinkButton name="Go to Homepage" href="/" target="_self" />
       </ContentButton>
     </Grid>
   </Container>

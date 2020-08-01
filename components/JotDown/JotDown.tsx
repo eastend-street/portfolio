@@ -11,7 +11,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/shared/StyledButton";
+import { Button } from "components/shared/Button";
 import JotDownPhoto from "assets/images/websites/jotdown/home-jotdown.jpg";
 
 import Header from "components/Header";
@@ -49,12 +49,12 @@ const WorkDetail: FC = () => {
           <Grid container justify="center">
             <Grid item xs={11} sm={10} md={8} lg={7}>
               <ButtonWrapper>
-                <StyledButton
+                <Button
                   name="Visit website"
                   url={JOT_DOWN.URL}
                   target="_blank"
                 />
-                <StyledButton
+                <Button
                   name="View Github"
                   url={JOT_DOWN.GITHUB}
                   target="_blank"
@@ -105,12 +105,12 @@ const WorkDetail: FC = () => {
                 </StyledLi>
               </StyledUl>
               <ButtonWrapper>
-                <StyledButton
+                <Button
                   name="Visit website"
                   url={JOT_DOWN.URL}
                   target="_blank"
                 />
-                <StyledButton
+                <Button
                   name="View Github"
                   url={JOT_DOWN.GITHUB}
                   target="_blank"

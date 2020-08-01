@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import StyledButton from "components/shared/StyledButton";
+import { LinkButton, ExternalLinkButton } from "components/shared/Button";
 
 import { SKILLS } from "constants/skills";
 import { EMAIL } from "constants/Info";
@@ -42,13 +42,12 @@ const About: React.FC = () => (
           ))}
         </StyledUl>
         <WrapButtons>
-          <StyledButton
+          <LinkButton
             name="Resume"
-            url={process.env.PUBLIC_URL + "/resume_jun_yamada.pdf"}
+            href="/resume_jun_yamada.pdf"
             target="_blank"
-            rel="nofollow"
           />
-          <StyledButton name="Email" url={`mailto:${EMAIL}`} />
+          <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
         </WrapButtons>
       </AboutSection>
     </Wrapper>

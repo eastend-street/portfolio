@@ -9,7 +9,7 @@ import {
   Grid,
   Typography,
 } from "@material-ui/core";
-import StyledButton from "components/shared/StyledButton";
+import { Button } from "components/shared/Button";
 import CodeoPhoto from "assets/images/websites/codeo/codeo.jpg";
 
 import Header from "components/Header";
@@ -47,12 +47,12 @@ const Codeo: FC = () => {
           <Grid container justify="center">
             <Grid item xs={11} sm={10} md={8} lg={7}>
               <ButtonWrapper>
-                <StyledButton
+                <Button
                   name="Visit website"
                   url="https://codeo.site"
                   target="_blank"
                 />
-                <StyledButton
+                <Button
                   name="View Github"
                   url="https://github.com/eastend-street/codeo"
                   target="_blank"
