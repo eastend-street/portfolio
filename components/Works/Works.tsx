@@ -3,7 +3,7 @@ import WorkSection from "components/WorkSection";
 import WORKS from "constants/works";
 
 const Works: React.FC = () => (
-  <Container>
+  <Container id="works">
     <Title>WORKS</Title>
     {WORKS.map((work, index: number) => (
       <WorkSection odd={(index + 1) % 2 !== 0} key={index} {...work} />
