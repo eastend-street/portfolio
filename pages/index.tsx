@@ -4,14 +4,14 @@ import About from "components/About";
 import Works from "components/Works";
 import Footer from "components/Footer";
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <About />
-      <Works />
-      <Footer />
-    </>
-  );
-}
+const Home = () => (
+  <>
+    <Header />
+    <Hero />
+    <About />
+    <Works />
+    <Footer />
+  </>
+);
+
+export default Home;

@@ -1,43 +1,33 @@
 import styled from "styled-components";
-
-import { Grid } from "@material-ui/core";
 import { LinkButton } from "components/shared/Button";
 
 const NotFound: React.FC = () => (
-  <Container container>
-    <Grid item xs={11} sm={12}>
-      <StyledH1>404 Page not found</StyledH1>
-      <StyledH3>
-        Sorry, I couldn't find the page...
-        <br />
-        Please click the button below to go back to the Homepage.
-      </StyledH3>
-      <ContentButton>
-        <LinkButton name="Go to Homepage" href="/" target="_self" />
-      </ContentButton>
-    </Grid>
+  <Container>
+    <Title>404 Page not found</Title>
+    <Description>
+      Sorry, I couldn't find the page...
+      <br />
+      Please click the button below to go back to the Homepage.
+    </Description>
+    <LinkButton name="Go to Homepage" href="/" target="_self" />
   </Container>
 );
 
-const Container = styled(Grid)`
-  && {
-    min-height: 90vh;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-const StyledH1 = styled.h1`
-  text-align: center;
-`;
-
-const StyledH3 = styled.h3`
-  text-align: center;
-`;
-
-const ContentButton = styled.div`
-  margin: 2rem;
-  text-align: center;
-`;
-
 export default NotFound;
+
+const Container = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Title = styled.h1`
+  font-size: 1.5rem;
+  text-align: center;
+`;
+
+const Description = styled.p`
+  text-align: center;
+`;
