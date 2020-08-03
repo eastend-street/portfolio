@@ -1,5 +1,4 @@
 import Link, { LinkProps } from "next/link";
-import styled from "styled-components";
 import Button from "./Button";
 
 interface LinkButtonProps extends LinkProps {

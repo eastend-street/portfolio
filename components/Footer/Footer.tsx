@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GITHUB_URL } from "constants/Info";
+import { GITHUB_URL } from "constants/info";
 
 const Footer: React.FC = () => (
   <Container>

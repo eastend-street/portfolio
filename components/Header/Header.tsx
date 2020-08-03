@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { EMAIL } from "constants/Info";
+import { EMAIL } from "constants/info";
 
 const Header: React.FC = () => (
   <Container id="header">

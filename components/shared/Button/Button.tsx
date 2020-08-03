@@ -1,8 +1,10 @@
+import React, { HTMLAttributes } from "react";
 import styled from "styled-components";
 
-const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> = (
-  props
-) => <StyledButton {...props} />;
+const Button: React.FC = React.forwardRef<
+  HTMLButtonElement,
+  HTMLAttributes<HTMLButtonElement>
+>((props, ref) => <StyledButton ref={ref} {...props} />);
 
 export default Button;
 

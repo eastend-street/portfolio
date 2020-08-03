@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { LinkButton, ExternalLinkButton } from "components/shared/Button";
 
 import { SKILLS } from "constants/skills";
-import { EMAIL } from "constants/Info";
+import { EMAIL } from "constants/info";
 
 const About: React.FC = () => (
   <Container id="about">

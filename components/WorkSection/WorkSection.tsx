@@ -14,12 +14,11 @@ const WorkSection: React.FC<Props> = ({
   INNER_URL,
   odd,
 }) => {
-  const detailUrl = process.env.PUBLIC_URL + INNER_URL;
   return (
     <Container odd={odd}>
       <SummaryArea>
         <div>
-          <Link href={detailUrl}>
+          <Link href="[work]" as={INNER_URL}>
             <Title>{TITLE}</Title>
           </Link>
           <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
@@ -31,7 +30,7 @@ const WorkSection: React.FC<Props> = ({
         </div>
       </SummaryArea>
       <ThumbnailArea>
-        <Link href={detailUrl}>
+        <Link href={INNER_URL}>
           <Thumbnail src={IMAGE_PATH} />
         </Link>
       </ThumbnailArea>

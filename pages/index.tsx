@@ -1,17 +1,14 @@
-import Header from "components/Header";
+import Layout from "components/Layout";
 import Hero from "components/Hero";
 import About from "components/About";
 import Works from "components/Works";
-import Footer from "components/Footer";
 
 const Home = () => (
-  <>
-    <Header />
+  <Layout>
     <Hero />
     <About />
     <Works />
-    <Footer />
-  </>
+  </Layout>
 );
 
 export default Home;
