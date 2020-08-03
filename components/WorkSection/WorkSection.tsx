@@ -13,30 +13,28 @@ const WorkSection: React.FC<Props> = ({
   IMAGE_PATH,
   INNER_URL,
   odd,
-}) => {
-  return (
-    <Container odd={odd}>
-      <SummaryArea>
-        <div>
-          <Link href="[work]" as={INNER_URL}>
-            <Title>{TITLE}</Title>
-          </Link>
-          <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
-          <Technologies>
-            {TECHNOLOGIES.map((name: string, index: number) => (
-              <TechName key={index}>{name}</TechName>
-            ))}
-          </Technologies>
-        </div>
-      </SummaryArea>
-      <ThumbnailArea>
-        <Link href={INNER_URL}>
-          <Thumbnail src={IMAGE_PATH} />
+}) => (
+  <Container odd={odd}>
+    <SummaryArea>
+      <div>
+        <Link href="[work]" as={INNER_URL}>
+          <Title>{TITLE}</Title>
         </Link>
-      </ThumbnailArea>
-    </Container>
-  );
-};
+        <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
+        <Technologies>
+          {TECHNOLOGIES.map((name: string, index: number) => (
+            <TechName key={index}>{name}</TechName>
+          ))}
+        </Technologies>
+      </div>
+    </SummaryArea>
+    <ThumbnailArea>
+      <Link href={INNER_URL}>
+        <Thumbnail src={IMAGE_PATH} />
+      </Link>
+    </ThumbnailArea>
+  </Container>
+);
 
 const Container = styled.div<Pick<Props, "odd">>`
   display: flex;
