@@ -22,8 +22,8 @@ const About: React.FC = () => (
         </Intro>
         <SubHeading>Specialties:</SubHeading>
         <Specialties>
-          {SKILLS.specialties.map((skill) => (
-            <WrapSkillLogo>
+          {SKILLS.specialties.map((skill, index) => (
+            <WrapSkillLogo key={index}>
               <SkillsLogo src={skill.imagePath} alt={skill.name} />
               <SkillName>{skill.name}</SkillName>
             </WrapSkillLogo>
@@ -31,8 +31,8 @@ const About: React.FC = () => (
         </Specialties>
         <SubHeading>Other skills:</SubHeading>
         <StyledUl>
-          {SKILLS.otherSkills.map((category) => (
-            <StyledLi>
+          {SKILLS.otherSkills.map((category, index) => (
+            <StyledLi key={index}>
               <Category>{category.name}: </Category>
               <span>
                 &nbsp;

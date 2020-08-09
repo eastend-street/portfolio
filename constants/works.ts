@@ -1,4 +1,4 @@
-export const JOT_DOWN = {
+export const JOTDOWN = {
   TITLE: "Jot down",
   SUBTITLE: "Bookmark and note web service",
   URL: "https://jotdown.netlify.app",
@@ -41,15 +41,15 @@ export const MARKETPLACE = {
   INNER_URL: "/marketplace",
 };
 
-export const SLACK_BOT = {
+export const SLACKBOT = {
   TITLE: "Translation Slack bot",
   SUBTITLE: "Multilingual translation Slack bot",
   GITHUB: "https://github.com/eastend-street/translation_slackbot",
   TECHNOLOGIES: ["Python", "Docker", "Google Translation API"],
   IMAGE_PATH: "assets/images/websites/slack-bot/slack-bot-logo.png",
-  INNER_URL: "/slack-bot",
+  INNER_URL: "/slackbot",
 };
 
-const WORKS = [JOT_DOWN, CODEO, BRICKHOUSE, MARKETPLACE, SLACK_BOT];
+const WORKS = [JOTDOWN, CODEO, BRICKHOUSE, MARKETPLACE, SLACKBOT];
 
 export default WORKS;
