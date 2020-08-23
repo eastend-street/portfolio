@@ -70,11 +70,17 @@ const Wrapper = styled.div`
   display: flex;
   width: 80%;
   margin: 0 auto;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+  @media (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 const PhotoSection = styled.div`
   text-align: center;
-  flex: 1;
+  flex: 50%;
 `;
 
 const Profile = styled.img`
@@ -82,7 +88,7 @@ const Profile = styled.img`
 `;
 
 const AboutSection = styled.div`
-  flex: 1;
+  flex: 50%;
 `;
 
 const Name = styled.h3`
@@ -163,8 +169,11 @@ const Category = styled.span`
 const WrapButtons = styled.div`
   display: flex;
   margin: 3rem auto;
-  @media (max-width: 960px) {
-    text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: 600px) {
+    flex-direction: column;
   }
 `;
 
