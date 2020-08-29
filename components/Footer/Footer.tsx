@@ -16,7 +16,7 @@ export default Footer;
 
 const Container = styled.footer`
   text-align: center;
-  padding: 3rem;
+  padding: 8rem 0 3rem;
 `;
 
 const Copyright = styled.p`
