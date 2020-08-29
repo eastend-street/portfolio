@@ -12,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: #EEE2D7;
   }
 
+  h1, h2, h3, h4 {
+    font-weight: normal;
+  }
+
   a {
     text-decoration: none;
     color: inherit;

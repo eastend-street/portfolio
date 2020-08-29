@@ -76,7 +76,6 @@ const Thumbnail = styled.img`
 const Title = styled.h3`
   font-size: 1.5rem;
   text-align: center;
-  font-weight: 900;
   margin: 0;
   cursor: pointer;
   transition: 0.3s;

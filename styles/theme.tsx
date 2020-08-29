@@ -12,6 +12,7 @@ const Theme: FC<ThemeProps> = ({ children }) => (
 const theme = {
   colors: {
     mainBeige: "#EEE2D7",
+    white: "#FFFFFF",
   },
   fonts: ["Open Sans", "sans-serif"],
   breakpoints: {

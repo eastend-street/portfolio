@@ -20,7 +20,10 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
     <Layout>
       <Container>
         <Title>{WORK_INFO?.TITLE}</Title>
-        <ReactMarkdown source={workData} />
+        <WorkImage src={WORK_INFO?.IMAGE_PATH} alt={WORK_INFO?.TITLE} />
+        <WrapMarkDown>
+          <StyledReactMarkdown source={workData} />
+        </WrapMarkDown>
       </Container>
     </Layout>
   );
@@ -51,4 +54,34 @@ const Title = styled.h1`
   font-size: 2rem;
   text-align: center;
   margin: 5rem 0;
+`;
+
+const WorkImage = styled.img`
+  width: 70%;
+`;
+
+const WrapMarkDown = styled.div`
+  background-color: ${(props) => props.theme.colors.white};
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+`;
+
+const StyledReactMarkdown = styled(ReactMarkdown)`
+  flex-basis: 60%;
+  text-align: left;
+
+  h2 {
+    font-weight: bold;
+    margin: 4rem auto 0;
+    font-size: 1.25rem;
+  }
+  p {
+    margin: 1rem 0;
+    line-height: 1.8;
+  }
+
+  li {
+    margin: 0.5rem 0;
+  }
 `;
