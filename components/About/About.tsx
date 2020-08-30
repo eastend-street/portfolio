@@ -5,7 +5,6 @@ import { SKILLS } from "constants/skills";
 import { EMAIL } from "constants/info";
 import mq from "styles/mediaQuery";
 
-
 const About: React.FC = () => (
   <Container id="about">
     <Title>ABOUT</Title>
@@ -60,12 +59,18 @@ const Container = styled.div`
   background-color: #fff;
   padding-top: 5rem;
   padding-bottom: 10rem;
+  ${mq("xs")} {
+    padding: 3rem 0;
+  }
 `;
 
 const Title = styled.h2`
   font-size: 2.125rem;
   text-align: center;
   margin-bottom: 5rem;
+  ${mq("xs")} {
+    margin-bottom: 3rem;
+  }
 `;
 
 const Wrapper = styled.div`

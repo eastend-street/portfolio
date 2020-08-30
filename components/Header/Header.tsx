@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { EMAIL } from "constants/info";
+import { ExternalLink } from "components/shared/Link";
 
 const Header: React.FC = () => (
   <Container id="header">
@@ -14,9 +15,9 @@ const Header: React.FC = () => (
       <Link href="/#works">
         <EachNav>WORKS</EachNav>
       </Link>
-      <a href={`mailto:${EMAIL}`} rel="noopener noreferrer" target="_blank">
+      <ExternalLink href={`mailto:${EMAIL}`}>
         <EachNav>EMAIL</EachNav>
-      </a>
+      </ExternalLink>
     </Nav>
   </Container>
 );

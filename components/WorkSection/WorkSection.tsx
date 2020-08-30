@@ -4,11 +4,11 @@ import { Work as WorkType } from "types/works";
 import mq from "styles/mediaQuery";
 
 
-interface Props extends WorkType {
+interface WorkSectionProps extends WorkType {
   odd: boolean;
 }
 
-const WorkSection: React.FC<Props> = ({
+const WorkSection: React.FC<WorkSectionProps> = ({
   TITLE,
   SUBTITLE,
   TECHNOLOGIES,
@@ -38,7 +38,7 @@ const WorkSection: React.FC<Props> = ({
   </Container>
 );
 
-const Container = styled.div<Pick<Props, "odd">>`
+const Container = styled.div<Pick<WorkSectionProps, "odd">>`
   display: flex;
   margin: 5rem;
   flex-direction: ${(props) => props.odd && "row-reverse"};
@@ -106,18 +106,5 @@ const TechName = styled.span`
   padding: 0.5rem;
   margin: 0.2rem;
 `;
-
-// const StyledLink = styled(Link)`
-//   text-decoration: none;
-//   color: #4e4e4e;
-
-//   &:focus,
-//   &:hover,
-//   &:visited,
-//   &:link,
-//   &:active {
-//     text-decoration: none;
-//   }
-// `;
 
 export default WorkSection;

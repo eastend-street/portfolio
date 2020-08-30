@@ -12,7 +12,7 @@ export const getAllWorks = () => {
   }));
 };
 
-export const getWorkData = (name: string) => {
+export const getWorkData = (name: string): string => {
   const fullPath = path.join(worksDirectory, `${name}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 

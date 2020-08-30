@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { ExternalLink } from "components/shared/Link";
 
 interface ExternalLinkButtonProps {
   name: string;
@@ -9,11 +10,11 @@ interface ExternalLinkButtonProps {
 const ExternalLinkButton: React.FC<ExternalLinkButtonProps> = ({
   name,
   href,
-  target = "_blank",
+  target,
 }) => (
-  <a href={href} target={target}>
+  <ExternalLink href={href} target={target}>
     <Button>{name}</Button>
-  </a>
+  </ExternalLink>
 );
 
 export default ExternalLinkButton;
