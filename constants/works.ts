@@ -21,6 +21,8 @@ export const CODEO = {
 export const BRICKHOUSE = {
   TITLE: "Brickhouse Ventures",
   SUBTITLE: "Brickhouse company homepage",
+  URL: "",
+  GITHUB: "",
   TECHNOLOGIES: ["React.js", "React hooks", "TypeScript"],
   IMAGE_PATH: "assets/images/websites/brickhouse/brickhouse.jpg",
   INNER_URL: "/brickhouse",
@@ -29,6 +31,8 @@ export const BRICKHOUSE = {
 export const MARKETPLACE = {
   TITLE: "Mail Marketplace",
   SUBTITLE: "Mail advertisement trading system",
+  URL: "",
+  GITHUB: "",
   TECHNOLOGIES: [
     "Vue.js",
     "Vuex",
@@ -44,6 +48,7 @@ export const MARKETPLACE = {
 export const SLACKBOT = {
   TITLE: "Translation Slack bot",
   SUBTITLE: "Multilingual translation Slack bot",
+  URL: "",
   GITHUB: "https://github.com/eastend-street/translation_slackbot",
   TECHNOLOGIES: ["Python", "Docker", "Google Translation API"],
   IMAGE_PATH: "assets/images/websites/slack-bot/slack-bot-logo.png",
