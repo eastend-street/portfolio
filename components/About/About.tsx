@@ -3,6 +3,8 @@ import { LinkButton, ExternalLinkButton } from "components/shared/Button";
 
 import { SKILLS } from "constants/skills";
 import { EMAIL } from "constants/info";
+import mq from "styles/mediaQuery";
+
 
 const About: React.FC = () => (
   <Container id="about">
@@ -70,10 +72,10 @@ const Wrapper = styled.div`
   display: flex;
   width: 80%;
   margin: 0 auto;
-  @media (max-width: 960px) {
+  ${mq("sm")} {
     flex-direction: column;
   }
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     width: 90%;
   }
 `;
@@ -95,7 +97,7 @@ const Name = styled.h3`
   font-size: 2rem;
   font-weight: normal;
   margin: 0;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     margin-top: 2rem;
     text-align: center;
   }
@@ -105,7 +107,7 @@ const JobTitle = styled.h4`
   font-size: 1.3rem;
   margin: 0 0 1rem;
   opacity: 0.7;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     text-align: center;
   }
 `;
@@ -113,7 +115,7 @@ const JobTitle = styled.h4`
 const Intro = styled.p`
   font-size: 1.1rem;
   line-height: 1.8rem;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     margin-top: 2rem;
   }
 `;
@@ -131,13 +133,13 @@ const Specialties = styled.div`
 const WrapSkillLogo = styled.div`
   text-align: center;
   margin-right: 3rem;
-  @media (max-width: 960px) {
+  ${mq("sm")} {
     margin-right: 2rem;
   }
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     margin-right: 1rem;
   }
-  @media (max-width: 400px) {
+  ${mq("xxxs")} {
     margin-right: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -172,7 +174,7 @@ const WrapButtons = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     flex-direction: column;
   }
 `;

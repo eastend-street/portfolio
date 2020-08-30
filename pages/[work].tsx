@@ -6,6 +6,7 @@ import Layout from "components/Layout";
 import { ExternalLinkButton } from "components/shared/Button";
 import { ExternalLink } from "components/shared/Link";
 import { getAllWorks, getWorkData } from "lib/works";
+import mq from "styles/mediaQuery";
 
 import WORKS from "constants/works";
 
@@ -72,7 +73,7 @@ const Title = styled.h1`
 
 const WorkImage = styled.img`
   width: 60%;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     width: 80%;
   }
 `;
@@ -81,7 +82,7 @@ const Description = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   padding: 10rem 0 5rem;
   margin-top: -10rem;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     padding: 5rem 0;
     margin-top: -5rem;
   }
@@ -92,7 +93,7 @@ const WrapButtons = styled.div`
   margin: 3rem auto;
   justify-content: center;
   align-items: center;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     flex-direction: column;
   }
 `;
@@ -101,7 +102,7 @@ const StyledReactMarkdown = styled(ReactMarkdown)`
   width: 60%;
   margin: 0 auto;
   text-align: left;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     width: 80%;
   }
 

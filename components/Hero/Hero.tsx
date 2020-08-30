@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import mq from "styles/mediaQuery";
 
 const Hero: React.FC = () => (
   <Container id="hero">
@@ -13,7 +14,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     min-height: calc(95vh - 3.5rem); /* subtract header height */
   }
 `;
@@ -35,21 +36,21 @@ const Title = styled.h1`
   text-align: center;
   margin-top: -4rem; /* subtract header height */
   width: 80%;
-  @media (max-width: 1920px) {
+  ${mq("lg")} {
     font-size: 4rem;
   }
-  @media (max-width: 1280px) {
+  ${mq("md")} {
     font-size: 3rem;
   }
-  @media (max-width: 830px) {
+  ${mq(830)} {
     font-size: 2.2rem;
     width: 95%;
   }
-  @media (max-width: 650px) {
+  ${mq(650)} {
     font-size: 2rem;
     margin-top: -3.5rem; /* subtract header height */
   }
-  @media (max-width: 350px) {
+  ${mq(350)} {
     font-size: 1.7rem;
   }
   animation: ${FadeIn} 1s linear 0s 1 forwards;

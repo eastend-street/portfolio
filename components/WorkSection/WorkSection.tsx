@@ -1,6 +1,8 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { Work as WorkType } from "types/works";
+import mq from "styles/mediaQuery";
+
 
 interface Props extends WorkType {
   odd: boolean;
@@ -40,7 +42,7 @@ const Container = styled.div<Pick<Props, "odd">>`
   display: flex;
   margin: 5rem;
   flex-direction: ${(props) => props.odd && "row-reverse"};
-  @media (max-width: 960px) {
+  ${mq("sm")} {
     flex-direction: column;
     margin: 5rem 1rem;
   }
@@ -49,7 +51,7 @@ const Container = styled.div<Pick<Props, "odd">>`
 const ThumbnailArea = styled.div`
   flex-basis: 50%;
   padding: 0 1rem;
-  @media (max-width: 960px) {
+  ${mq("sm")} {
     padding: 0 1rem;
   }
 `;
@@ -59,7 +61,7 @@ const SummaryArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 960px) {
+  ${mq("sm")} {
     margin-bottom: 1rem;
   }
 `;
@@ -90,7 +92,7 @@ const Subtitle = styled.p`
 const Technologies = styled.div`
   text-align: center;
   margin-top: 2rem;
-  @media (max-width: 960px) {
+  ${mq("sm")} {
     margin-top: 1rem;
   }
 `;

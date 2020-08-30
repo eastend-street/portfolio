@@ -1,5 +1,7 @@
 import React, { HTMLAttributes } from "react";
 import styled from "styled-components";
+import mq from "styles/mediaQuery";
+
 
 const Button: React.FC = React.forwardRef<
   HTMLButtonElement,
@@ -20,7 +22,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   outline: none;
 
-  @media (max-width: 600px) {
+  ${mq("xs")} {
     margin: 0.5rem;
   }
 
