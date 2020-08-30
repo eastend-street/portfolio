@@ -15,15 +15,6 @@ const theme = {
     white: "#FFFFFF",
   },
   fonts: ["Open Sans", "sans-serif"],
-  breakpoints: {
-    xxxs: 400,
-    xxs: 500,
-    xs: 600,
-    xsm: 750,
-    sm: 960,
-    md: 1280,
-    lg: 1920,
-  },
 };
 
 export default Theme;
