@@ -57,12 +57,13 @@ const Title = styled.h1`
 `;
 
 const WorkImage = styled.img`
-  width: 70%;
+  width: 60%;
 `;
 
 const WrapMarkDown = styled.div`
   background-color: ${(props) => props.theme.colors.white};
-  padding: 5rem 0;
+  padding: 10rem 0 5rem;
+  margin-top: -10rem;
   display: flex;
   justify-content: center;
 `;
