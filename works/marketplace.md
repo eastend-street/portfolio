@@ -9,7 +9,7 @@ It designed to sell email inventory by online. Ad buyers can search and sort inv
 
 I joined this project from the basic design phase. I developed this web service responsible for all the front end work. Then I wrote back end CRUD processing, and constructed cloud infrastructure environment.
 
-- Front-end: Vue.js, Vuex, Vuetify.js, Vue Router
-- Backend: Django REST framework, Python
-- Infrastructure: Google Cloud Platform, Docker
-- Others: REST API, Axios, Gunicorn
+- **Front-end:** Vue.js, Vuex, Vuetify.js, Vue Router
+- **Backend:** Django REST framework, Python
+- **Infrastructure:** Google Cloud Platform, Docker
+- **Others:** REST API, Axios, Gunicorn

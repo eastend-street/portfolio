@@ -68,9 +68,6 @@ const Thumbnail = styled.img`
   width: 100%;
   cursor: pointer;
   transition: 0.3s;
-  :hover {
-    opacity: 0.7;
-  }
 `;
 
 const Title = styled.h3`

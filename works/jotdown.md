@@ -10,7 +10,7 @@ To manage a lot of bookmarks easily. I have been using chrome bookmark manager b
 
 I developed all of the service, front end, back end, infrastructure and design. In front end, using React, Redux and styled-components that realized correct style application and state management. In back end, using Django REST framework, Docker, Heroku that established RESTful API communication.
 
-- Front-end: React.js, Redux, styled-components, Material-ui
-- Backend: Django REST framework, Python
-- Infrastructure: Docker, Heroku
-- Others: REST API, Axios, Gunicorn, Netlify
+- **Front-end:** React.js, Redux, styled-components, Material-ui
+- **Backend:** Django REST framework, Python
+- **Infrastructure:** Docker, Heroku
+- **Others:** REST API, Axios, Gunicorn, Netlify

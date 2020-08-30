@@ -45,6 +45,7 @@ const EachNav = styled.div`
 
 const Logo = styled.img`
   max-height: 2rem;
+  cursor: pointer;
   :hover {
     opacity: 0.7;
   }

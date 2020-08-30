@@ -1,11 +1,11 @@
 import { GetStaticProps, GetStaticPaths } from "next";
-import Link from "next/link";
-import Layout from "components/Layout";
 import styled from "styled-components";
+import ReactMarkdown from "react-markdown";
+
+import Layout from "components/Layout";
 import { ExternalLinkButton } from "components/shared/Button";
 import { ExternalLink } from "components/shared/Link";
 import { getAllWorks, getWorkData } from "lib/works";
-import ReactMarkdown from "react-markdown";
 
 import WORKS from "constants/works";
 
@@ -21,10 +21,10 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
   return (
     <Layout>
       <Container>
-        <ExternalLink href={WORK_INFO?.URL}>
+        <ExternalLink href={WORK_INFO?.URL || WORK_INFO?.GITHUB}>
           <Title>{WORK_INFO?.TITLE}</Title>
         </ExternalLink>
-        <ExternalLink href={WORK_INFO?.URL}>
+        <ExternalLink href={WORK_INFO?.URL || WORK_INFO?.GITHUB}>
           <WorkImage src={WORK_INFO?.IMAGE_PATH} alt={WORK_INFO?.TITLE} />
         </ExternalLink>
         <Description>
@@ -120,5 +120,10 @@ const StyledReactMarkdown = styled(ReactMarkdown)`
   }
   li {
     margin: 0.5rem 0;
+  }
+
+  strong {
+    opacity: 0.8;
+    font-weight: normal;
   }
 `;
