@@ -45,7 +45,7 @@ const About: React.FC = () => (
         <WrapButtons>
           <LinkButton
             name="Resume"
-            href="/resume_jun_yamada.pdf"
+            href="resume_jun_yamada.pdf"
             target="_blank"
           />
           <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
