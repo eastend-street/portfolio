@@ -11,7 +11,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => (
   <>
     <Head>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="favicon.ico" />
       <meta name="description" content={SITE.description} />
       <meta name="og:title" content={SITE.title} />
       <meta property="og:url" content={SITE.url} />
