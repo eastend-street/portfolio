@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Work as WorkType } from "types/works";
 import mq from "styles/mediaQuery";
 
-
 interface WorkSectionProps extends WorkType {
   odd: boolean;
 }
@@ -19,7 +18,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
   <Container odd={odd}>
     <SummaryArea>
       <div>
-        <Link href="[work]" as={INNER_URL}>
+        <Link href="/[work]" as={INNER_URL}>
           <Title>{TITLE}</Title>
         </Link>
         <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
@@ -31,7 +30,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
       </div>
     </SummaryArea>
     <ThumbnailArea>
-      <Link href={INNER_URL}>
+      <Link href="/[work]" as={INNER_URL}>
         <Thumbnail src={IMAGE_PATH} />
       </Link>
     </ThumbnailArea>
