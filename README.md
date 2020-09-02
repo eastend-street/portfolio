@@ -1,5 +1,5 @@
 # Portfolio
-This is my portfolio website to show frontend development works🎓  Made by Next.js(React.js).
+This is my portfolio website to show frontend development works🎓   Made by Next.js(React.js).
 
 <br/>
 
