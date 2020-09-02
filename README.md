@@ -1,5 +1,5 @@
 # Portfolio
-This is my portfolio website to show front-end development works🎓  Made by React.js.
+This is my portfolio website to show frontend development works🎓  Made by Next.js(React.js).
 
 <br/>
 
@@ -10,7 +10,7 @@ Website: &nbsp; https://junyamada.info
 <br/>
 <br/>
 
-## User Interface
+## UI Design
 ![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
 
 <br/>
@@ -18,16 +18,12 @@ Website: &nbsp; https://junyamada.info
 
 
 ## Technologies
+- Next.js
 - React.js
-- React Router
-- React Helmet
+- React hooks
 - Styled-components
-- Material-ui
-- TypeScript
-- JavaScript
-- HTML5
-- CSS3
-- Illustrator
+- TypeScript (JavaScript)
+- Vercel
 
 <br/>
 
@@ -99,18 +95,24 @@ Translation slack bot🗣 English ↔ Japanese, Other languages→ English
 ## Structure
 
 ```
-src/
- index.tsx
- App.tsx
- 
  components/
    COMPONENT_NAME/
     |-- COMPONENT_NAME.tsx  -----components with styled-components
  
- themes/ -----Define global style, breakpoints, color variables  
+ constants/
  
- assets/
-  images/
+ lib/    --- Util functions like getting markdown path 
+ 
+ pages/  --- Each page with dymanic routing
+ 
+ public/ --- image files
+ 
+ styles/ --- Common styles like global style, breakpoints, color variables
+ 
+ types/  --- Commonn type definitions
+ 
+ works/  --- My works markdown files for each page
+ 
 ```
 
 <br/>
