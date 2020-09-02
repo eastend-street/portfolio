@@ -6,7 +6,7 @@ This is my portfolio website to show frontend development works🎓  Made by Nex
 Website: &nbsp; https://junyamada.info
 
 
-[![hero](https://user-images.githubusercontent.com/43656115/77298041-6e0e7180-6ca7-11ea-934c-85b37790b630.png)](https://junyamada.info)
+[![hero](https://user-images.githubusercontent.com/43656115/91936765-5b13ba80-eca5-11ea-9658-d2307b9f4bb6.png)](https://junyamada.info)
 <br/>
 <br/>
 
