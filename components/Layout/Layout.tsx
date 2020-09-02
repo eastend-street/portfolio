@@ -11,11 +11,11 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => (
   <>
     <Head>
-      <link rel="icon" href="favicon.ico" />
+      <link rel="icon" href={`${SITE.url}/favicon.ico`} />
       <meta name="description" content={SITE.description} />
       <meta name="og:title" content={SITE.title} />
       <meta property="og:url" content={SITE.url} />
-      <meta property="og:image" content={SITE.imagePath} />
+      <meta property="og:image" content={`${SITE.url}/${SITE.imagePath}`} />
       <meta property="og:description" content={SITE.ogDescription} />
       <meta property="og:site_name" content={SITE.title} />
       <meta property="og:locale" content="en_CA" />
