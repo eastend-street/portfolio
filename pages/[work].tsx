@@ -70,6 +70,7 @@ const Title = styled.h1`
   text-align: center;
   margin: 5rem 0;
   ${mq("xs")} {
+    font-size: 1.8rem;
     margin: 3rem 0;
   }
 `;
