@@ -5,7 +5,7 @@ export const SITE = {
   url: "https://junyamada.info",
   ogDescription:
     "My name is Jun Yamada, Frontend Engineer based in Vancouver.",
-  imagePath: "assets/images/profile.jpg",
+  imagePath: "/assets/images/profile.jpg",
 };
 
 export const EMAIL = "jun.yamada0097@gmail.com";
