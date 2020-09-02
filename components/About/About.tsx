@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { LinkButton, ExternalLinkButton } from "components/shared/Button";
 
 import { SKILLS } from "constants/skills";
-import { EMAIL } from "constants/infoaaa";
+import { EMAIL } from "constants/info";
 import mq from "styles/mediaQuery";
 
 const About: React.FC = () => (
