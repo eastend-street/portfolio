@@ -2,7 +2,6 @@ import React, { HTMLAttributes } from "react";
 import styled from "styled-components";
 import mq from "styles/mediaQuery";
 
-
 const Button: React.FC = React.forwardRef<
   HTMLButtonElement,
   HTMLAttributes<HTMLButtonElement>
@@ -21,7 +20,7 @@ const StyledButton = styled.button`
   transition: 0.3s;
   cursor: pointer;
   outline: none;
-
+  font-family: "Open Sans", sans-serif;
   ${mq("xs")} {
     margin: 0.5rem;
   }
