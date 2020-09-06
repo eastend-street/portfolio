@@ -6,6 +6,8 @@ export const SITE = {
   ogDescription: "My name is Jun Yamada, Frontend Engineer based in Vancouver.",
   imagePath: "/assets/images/profile.jpg",
   ogpImagePath: "/assets/images/ogp-image.png",
+  appleIconPath: "/assets/images/logo/apple-touch-icon.png",
+  androidIconPath: "/assets/images/logo/android-touch-icon.png",
 };
 
 export const EMAIL = "jun.yamada0097@gmail.com";

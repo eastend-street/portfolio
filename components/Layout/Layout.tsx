@@ -12,6 +12,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
   <>
     <Head>
       <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href={SITE.appleIconPath} sizes="180x180" />
+      <link
+        rel="icon"
+        type="image/png"
+        href={SITE.androidIconPath}
+        sizes="192x192"
+      />
       <meta name="description" content={SITE.description} />
       <meta name="og:title" content={SITE.title} />
       <meta property="og:url" content={SITE.url} />
