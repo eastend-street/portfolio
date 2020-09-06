@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
       <meta name="description" content={SITE.description} />
       <meta name="og:title" content={SITE.title} />
       <meta property="og:url" content={SITE.url} />
-      <meta property="og:image" content={SITE.imagePath} />
+      <meta property="og:image" content={SITE.ogpImagePath} />
       <meta property="og:description" content={SITE.ogDescription} />
       <meta property="og:site_name" content={SITE.title} />
       <meta property="og:locale" content="en_CA" />
