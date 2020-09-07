@@ -1,7 +1,8 @@
-import styled from "styled-components";
-import { ExternalLink } from "components/shared/Link";
-import { GITHUB_URL } from "constants/info";
-import mq from "styles/mediaQuery";
+import React from 'react';
+import styled from 'styled-components';
+import { ExternalLink } from 'components/shared/Link';
+import { GITHUB_URL } from 'constants/info';
+import mq from 'styles/mediaQuery';
 
 const Footer: React.FC = () => (
   <Container>
@@ -9,7 +10,11 @@ const Footer: React.FC = () => (
       <SocialLogo src="assets/images/logo/github.png" alt="Github" />
     </ExternalLink>
     <Copyright>
-      &copy; Jun Yamada {new Date().getFullYear()} All rights reserved.
+      &copy; Jun Yamada
+      {' '}
+      {new Date().getFullYear()}
+      {' '}
+      All rights reserved.
     </Copyright>
   </Container>
 );
@@ -19,7 +24,7 @@ export default Footer;
 const Container = styled.footer`
   text-align: center;
   padding: 8rem 0 3rem;
-  ${mq("xs")} {
+  ${mq('xs')} {
     padding: 3rem 0;
   }
 `;

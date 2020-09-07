@@ -1,7 +1,8 @@
-import Link from "next/link";
-import styled from "styled-components";
-import { EMAIL } from "constants/info";
-import { ExternalLink } from "components/shared/Link";
+import React from 'react';
+import Link from 'next/link';
+import styled from 'styled-components';
+import { EMAIL } from 'constants/info';
+import { ExternalLink } from 'components/shared/Link';
 
 const Header: React.FC = () => (
   <Container id="header">

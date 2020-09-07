@@ -1,11 +1,12 @@
-import styled from "styled-components";
-import { LinkButton } from "components/shared/Button";
+import React from 'react';
+import styled from 'styled-components';
+import { LinkButton } from 'components/shared/Button';
 
 const NotFound: React.FC = () => (
   <Container>
     <Title>404 Page not found</Title>
     <Description>
-      Sorry, I couldn't find the page...
+      Sorry, I couldn&apos;t find the page...
       <br />
       Please click the button below to go back to the Homepage.
     </Description>

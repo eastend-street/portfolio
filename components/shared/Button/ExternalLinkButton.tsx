@@ -1,5 +1,6 @@
-import Button from "./Button";
-import { ExternalLink } from "components/shared/Link";
+import React from 'react';
+import { ExternalLink } from 'components/shared/Link';
+import Button from './Button';
 
 interface ExternalLinkButtonProps {
   name: string;

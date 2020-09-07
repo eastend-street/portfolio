@@ -1,9 +1,10 @@
-import styled from "styled-components";
-import { LinkButton, ExternalLinkButton } from "components/shared/Button";
+import React from 'react';
+import styled from 'styled-components';
+import { LinkButton, ExternalLinkButton } from 'components/shared/Button';
 
-import { SKILLS } from "constants/skills";
-import { EMAIL } from "constants/info";
-import mq from "styles/mediaQuery";
+import SKILLS from 'constants/skills';
+import { EMAIL } from 'constants/info';
+import mq from 'styles/mediaQuery';
 
 const About: React.FC = () => (
   <Container id="about">
@@ -23,8 +24,8 @@ const About: React.FC = () => (
         </Intro>
         <SubHeading>Specialties:</SubHeading>
         <Specialties>
-          {SKILLS.specialties.map((skill, index) => (
-            <WrapSkillLogo key={index}>
+          {SKILLS.specialties.map((skill) => (
+            <WrapSkillLogo key={skill.name}>
               <SkillsLogo src={skill.imagePath} alt={skill.name} />
               <SkillName>{skill.name}</SkillName>
             </WrapSkillLogo>
@@ -32,9 +33,12 @@ const About: React.FC = () => (
         </Specialties>
         <SubHeading>Other skills:</SubHeading>
         <StyledUl>
-          {SKILLS.otherSkills.map((category, index) => (
-            <StyledLi key={index}>
-              <Category>{category.name}: </Category>
+          {SKILLS.otherSkills.map((category) => (
+            <StyledLi key={category.name}>
+              <Category>
+                {category.name}
+                :
+              </Category>
               <span>
                 &nbsp;
                 {category.skills.map((techName) => `${techName}, `)}
@@ -59,7 +63,7 @@ const Container = styled.div`
   background-color: #fff;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  ${mq("xs")} {
+  ${mq('xs')} {
     padding: 3rem 0;
   }
 `;
@@ -68,7 +72,7 @@ const Title = styled.h2`
   font-size: 2.125rem;
   text-align: center;
   margin-bottom: 5rem;
-  ${mq("xs")} {
+  ${mq('xs')} {
     margin-bottom: 3rem;
   }
 `;
@@ -77,10 +81,10 @@ const Wrapper = styled.div`
   display: flex;
   width: 80%;
   margin: 0 auto;
-  ${mq("sm")} {
+  ${mq('sm')} {
     flex-direction: column;
   }
-  ${mq("xs")} {
+  ${mq('xs')} {
     width: 90%;
   }
 `;
@@ -102,7 +106,7 @@ const Name = styled.h3`
   font-size: 2rem;
   font-weight: normal;
   margin: 0;
-  ${mq("xs")} {
+  ${mq('xs')} {
     margin-top: 2rem;
     text-align: center;
   }
@@ -112,7 +116,7 @@ const JobTitle = styled.h4`
   font-size: 1.3rem;
   margin: 0 0 1rem;
   opacity: 0.7;
-  ${mq("xs")} {
+  ${mq('xs')} {
     text-align: center;
   }
 `;
@@ -120,7 +124,7 @@ const JobTitle = styled.h4`
 const Intro = styled.p`
   font-size: 1.1rem;
   line-height: 1.8rem;
-  ${mq("xs")} {
+  ${mq('xs')} {
     margin-top: 2rem;
   }
 `;
@@ -138,13 +142,13 @@ const Specialties = styled.div`
 const WrapSkillLogo = styled.div`
   text-align: center;
   margin-right: 3rem;
-  ${mq("sm")} {
+  ${mq('sm')} {
     margin-right: 2rem;
   }
-  ${mq("xs")} {
+  ${mq('xs')} {
     margin-right: 1rem;
   }
-  ${mq("xxxs")} {
+  ${mq('xxxs')} {
     margin-right: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -168,7 +172,7 @@ const StyledLi = styled.li`
 `;
 
 const Category = styled.span`
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: inherit;
   opacity: 0.7;
 `;
@@ -179,7 +183,7 @@ const WrapButtons = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  ${mq("xs")} {
+  ${mq('xs')} {
     flex-direction: column;
   }
 `;
