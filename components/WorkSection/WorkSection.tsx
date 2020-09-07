@@ -1,7 +1,8 @@
-import Link from "next/link";
-import styled from "styled-components";
-import { Work as WorkType } from "types/works";
-import mq from "styles/mediaQuery";
+import React from 'react';
+import Link from 'next/link';
+import styled from 'styled-components';
+import { Work as WorkType } from 'types/works';
+import mq from 'styles/mediaQuery';
 
 interface WorkSectionProps extends WorkType {
   odd: boolean;
@@ -23,8 +24,8 @@ const WorkSection: React.FC<WorkSectionProps> = ({
         </Link>
         <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
         <Technologies>
-          {TECHNOLOGIES.map((name: string, index: number) => (
-            <TechName key={index}>{name}</TechName>
+          {TECHNOLOGIES.map((name: string) => (
+            <TechName key={name}>{name}</TechName>
           ))}
         </Technologies>
       </div>
@@ -37,11 +38,11 @@ const WorkSection: React.FC<WorkSectionProps> = ({
   </Container>
 );
 
-const Container = styled.div<Pick<WorkSectionProps, "odd">>`
+const Container = styled.div<Pick<WorkSectionProps, 'odd'>>`
   display: flex;
   margin: 5rem;
-  flex-direction: ${(props) => props.odd && "row-reverse"};
-  ${mq("sm")} {
+  flex-direction: ${(props) => props.odd && 'row-reverse'};
+  ${mq('sm')} {
     flex-direction: column;
     margin: 5rem 1rem;
   }
@@ -50,7 +51,7 @@ const Container = styled.div<Pick<WorkSectionProps, "odd">>`
 const ThumbnailArea = styled.div`
   flex-basis: 50%;
   padding: 0 1rem;
-  ${mq("sm")} {
+  ${mq('sm')} {
     padding: 0 1rem;
   }
 `;
@@ -60,7 +61,7 @@ const SummaryArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  ${mq("sm")} {
+  ${mq('sm')} {
     margin-bottom: 1rem;
   }
 `;
@@ -91,7 +92,7 @@ const Subtitle = styled.p`
 const Technologies = styled.div`
   text-align: center;
   margin-top: 2rem;
-  ${mq("sm")} {
+  ${mq('sm')} {
     margin-top: 1rem;
   }
 `;

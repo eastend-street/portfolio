@@ -12,7 +12,6 @@ const breakpoints: Breakpoints = {
   lg: 1920,
 };
 
-const mq = (bp: string | number): string =>
-  `@media (max-width: ${breakpoints[bp] || bp}px)`;
+const mq = (bp: string | number): string => `@media (max-width: ${breakpoints[bp] || bp}px)`;
 
 export default mq;

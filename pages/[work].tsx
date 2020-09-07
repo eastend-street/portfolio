@@ -1,14 +1,15 @@
-import { GetStaticProps, GetStaticPaths } from "next";
-import styled from "styled-components";
-import ReactMarkdown from "react-markdown";
+import React from 'react';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
 
-import Layout from "components/Layout";
-import { ExternalLinkButton } from "components/shared/Button";
-import { ExternalLink } from "components/shared/Link";
-import { getAllWorks, getWorkData } from "lib/works";
-import mq from "styles/mediaQuery";
+import Layout from 'components/Layout';
+import { ExternalLinkButton } from 'components/shared/Button';
+import { ExternalLink } from 'components/shared/Link';
+import { getAllWorks, getWorkData } from 'lib/works';
+import mq from 'styles/mediaQuery';
 
-import WORKS from "constants/works";
+import WORKS from 'constants/works';
 
 interface WorkDetailProps {
   name: string;
@@ -17,7 +18,7 @@ interface WorkDetailProps {
 
 const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
   const WORK_INFO = WORKS.find(
-    (item) => item.INNER_URL === `/${name.toLowerCase()}`
+    (item) => item.INNER_URL === `/${name.toLowerCase()}`,
   );
   return (
     <Layout>
@@ -69,7 +70,7 @@ const Title = styled.h1`
   font-size: 2rem;
   text-align: center;
   margin: 5rem 0;
-  ${mq("xs")} {
+  ${mq('xs')} {
     font-size: 1.8rem;
     margin: 3rem 0;
   }
@@ -77,7 +78,7 @@ const Title = styled.h1`
 
 const WorkImage = styled.img`
   width: 60%;
-  ${mq("xs")} {
+  ${mq('xs')} {
     width: 80%;
   }
 `;
@@ -86,7 +87,7 @@ const Description = styled.div`
   background-color: ${(props) => props.theme.colors.white};
   padding: 10rem 0 5rem;
   margin-top: -10rem;
-  ${mq("xs")} {
+  ${mq('xs')} {
     padding: 5rem 0;
     margin-top: -5rem;
   }
@@ -97,7 +98,7 @@ const WrapButtons = styled.div`
   margin: 3rem auto;
   justify-content: center;
   align-items: center;
-  ${mq("xs")} {
+  ${mq('xs')} {
     flex-direction: column;
   }
 `;
@@ -106,7 +107,7 @@ const StyledReactMarkdown = styled(ReactMarkdown)`
   width: 60%;
   margin: 0 auto;
   text-align: left;
-  ${mq("xs")} {
+  ${mq('xs')} {
     width: 80%;
   }
 

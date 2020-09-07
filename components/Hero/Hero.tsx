@@ -1,9 +1,10 @@
-import styled, { keyframes } from "styled-components";
-import mq from "styles/mediaQuery";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import mq from 'styles/mediaQuery';
 
 const Hero: React.FC = () => (
   <Container id="hero">
-    <Title>Hi, I'm Jun. Front End Engineer based in Vancouver</Title>
+    <Title>Hi, I&apos;m Jun. Front End Engineer based in Vancouver</Title>
   </Container>
 );
 
@@ -14,7 +15,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${mq("xs")} {
+  ${mq('xs')} {
     min-height: calc(95vh - 3.5rem); /* subtract header height */
   }
 `;
@@ -36,10 +37,10 @@ const Title = styled.h1`
   text-align: center;
   margin-top: -4rem; /* subtract header height */
   width: 80%;
-  ${mq("lg")} {
+  ${mq('lg')} {
     font-size: 4rem;
   }
-  ${mq("md")} {
+  ${mq('md')} {
     font-size: 3rem;
   }
   ${mq(830)} {

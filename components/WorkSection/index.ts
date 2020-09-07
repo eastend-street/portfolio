@@ -1,1 +1,1 @@
-export { default } from "./WorkSection";
+export { default } from './WorkSection';
