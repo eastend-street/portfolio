@@ -35,10 +35,7 @@ const About: React.FC = () => (
         <StyledUl>
           {SKILLS.otherSkills.map((category) => (
             <StyledLi key={category.name}>
-              <Category>
-                {category.name}
-                :
-              </Category>
+              <Category>{category.name}:</Category>
               <span>
                 &nbsp;
                 {category.skills.map((techName) => `${techName}, `)}
@@ -51,6 +48,7 @@ const About: React.FC = () => (
             name="Resume"
             href="resume_jun_yamada.pdf"
             target="_blank"
+            prefetch={false}
           />
           <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
         </WrapButtons>
