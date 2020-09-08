@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown';
 
 import Layout from 'components/Layout';
 import { ExternalLinkButton } from 'components/shared/Button';
-import { ExternalLink } from 'components/shared/Link';
+import ExternalLink from 'components/shared/ExternalLink';
 import { getAllWorks, getWorkData } from 'lib/works';
 import mq from 'styles/mediaQuery';
 

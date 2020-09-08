@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'components/shared/Link';
+import ExternalLink from 'components/shared/ExternalLink';
 import Button from './Button';
 
 interface ExternalLinkButtonProps {
@@ -11,7 +11,7 @@ interface ExternalLinkButtonProps {
 const ExternalLinkButton: React.FC<ExternalLinkButtonProps> = ({
   name,
   href,
-  target,
+  target = '_blank',
 }) => (
   <ExternalLink href={href} target={target}>
     <Button>{name}</Button>

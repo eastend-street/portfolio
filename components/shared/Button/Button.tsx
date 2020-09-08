@@ -1,11 +1,8 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import mq from 'styles/mediaQuery';
 
-const Button: React.FC = React.forwardRef<
-  HTMLButtonElement,
-  HTMLAttributes<HTMLButtonElement>
->((props, ref) => <StyledButton ref={ref} {...props} />);
+const Button: React.FC = (props) => <StyledButton {...props} />;
 
 export default Button;
 
@@ -20,7 +17,7 @@ const StyledButton = styled.button`
   transition: 0.3s;
   cursor: pointer;
   outline: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   ${mq('xs')} {
     margin: 0.5rem;
   }

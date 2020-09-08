@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ExternalLink } from 'components/shared/Link';
+import ExternalLink from 'components/shared/ExternalLink';
 import { GITHUB_URL } from 'constants/info';
 import mq from 'styles/mediaQuery';
 

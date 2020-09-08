@@ -4,11 +4,17 @@ import Button from './Button';
 
 interface LinkButtonProps extends LinkProps {
   name: string;
+  href: string;
   target?: string;
 }
 
-const LinkButton: React.FC<LinkButtonProps> = ({ name, target, ...props }) => (
-  <Link {...props} passHref>
+const LinkButton: React.FC<LinkButtonProps> = ({
+  name,
+  href,
+  target = '_self',
+}) => (
+  <Link href={href}>
+    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
     <a target={target}>
       <Button>{name}</Button>
     </a>
