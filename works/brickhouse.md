@@ -1,12 +1,12 @@
 ## What is Brickhouse?
 
-Brickhouse ventures company's homepage. This is a team project in CICCC with real client.
+Brickhouse ventures is a eSports VC fund. This is a Brickhouse company website as a team project in Cornerstone community college.
 
-\* Unfortunately, I could not show the website here due to company rules. Feel free to request me if you want to see the website.
+\* Unfortunately, I couldn't show you the website here due to company rules. Feel free to request me if you want to see the website.
 
 ## Technologies
 
-I developed front-end architecture such as directory structure, how to separate component. Also making each component using React.js and TypeScript.
+Dveloped front-end architecture such as folder structure and separating component. Also made each component using React.js and TypeScript.
 
 - React.js
 - React Hooks
