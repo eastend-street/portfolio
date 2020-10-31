@@ -1,5 +1,5 @@
 # Portfolio
-This is my portfolio website to show frontend development works🎓   Made by Next.js(React.js).
+This is my portfolio website to show frontend development works🎓 &nbsp;Made by Next.js(React.js).
 
 <br/>
 
@@ -54,7 +54,7 @@ Search programming video website from YouTube📺
 <br/>
 
 - <h3><a href="https://junyamada.info/brickhouse">Brickhouse Ventures</a></h3>
-A company homepage of Brickhouse ventures. This is a team project in CICCC with real client.  
+Brickhouse ventures company homepage. This is a team project at Cornerstone Community College with real client.  
 `React.js`, `React Hooks`, `TypeScript`, `Sass`  
 
 <a href="https://junyamada.info/brickhouse">
@@ -66,7 +66,7 @@ A company homepage of Brickhouse ventures. This is a team project in CICCC with 
 <br/>
 
 - <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
-Mail MarketPlace is a company project that is mail advertisement trading web service.   
+Mail MarketPlace is a mail advertisement trading web application as a company project.   
 `Vue.js`, `Vuex`, `Vuetify.js`, `Django REST framework`, `Google Cloud Platform`, `Docker`      
 
 <a href="https://junyamada.info/marketplace">
@@ -78,7 +78,7 @@ Mail MarketPlace is a company project that is mail advertisement trading web ser
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
-Translation slack bot🗣 English ↔ Japanese, Other languages→ English   
+Translation slack bot🗣 English ↔ Japanese and the other languages→ English   
 `Python`, `Docker`       
 
 <a href="https://github.com/eastend-street/translation_slackbot">
@@ -121,7 +121,7 @@ Translation slack bot🗣 English ↔ Japanese, Other languages→ English
 
 ## Upcoming features
 - Implement fade-in to each project card
-- Make works illustration such as Jotdown and Codeo (Currently using screenshot) 
+- Make Works illustration such as Jotdown and Codeo (Currently using screenshot) 
 
 <br/>
 <br/>
