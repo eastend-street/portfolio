@@ -23,6 +23,8 @@ Website: &nbsp; https://junyamada.info
 - React hooks
 - Styled-components
 - TypeScript (JavaScript)
+- Jest
+- React Testing Library
 - Vercel
 
 <br/>
