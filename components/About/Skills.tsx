@@ -27,10 +27,10 @@ const Skills: React.FC = () => (
             &nbsp;
             {category.skills.map(
               (techName, index) => (
-                <>
+                <span key={techName}>
                   {techName}
                   {index < category.skills.length - 1 && ', '}
-                </>
+                </span>
               ),
             )}
           </span>
