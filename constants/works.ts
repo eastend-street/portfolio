@@ -11,7 +11,7 @@ export const JOTDOWN = {
 export const CODEO = {
   TITLE: 'Codeo',
   SUBTITLE: 'Search programming video from YouTube',
-  URL: 'https://codeo.site',
+  URL: 'https://codeo.netlify.app',
   GITHUB: 'https://github.com/eastend-street/codeo',
   TECHNOLOGIES: ['React.js', 'React hooks', 'Context API', 'TypeScript'],
   IMAGE_PATH: 'assets/images/websites/codeo/codeo.jpg',
