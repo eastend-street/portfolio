@@ -7,7 +7,7 @@ import ExternalLink from 'components/shared/ExternalLink';
 const Header: React.FC = () => (
   <Container id="header">
     <Link href="/">
-      <Logo src="assets/images/logo/logo.png" alt="logo" />
+      <Logo src="assets/images/logo/logo.png" alt="Jun Yamada Logo" />
     </Link>
     <Nav>
       <Link href="/#about">
