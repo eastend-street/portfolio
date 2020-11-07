@@ -28,6 +28,8 @@ const SKILLS = {
         'Bootstrap',
         'Material-UI',
         'Gatsby.js',
+        'Jest',
+        'React Testing Library',
       ],
     },
     {
