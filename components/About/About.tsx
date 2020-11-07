@@ -35,10 +35,20 @@ const About: React.FC = () => (
         <StyledUl>
           {SKILLS.otherSkills.map((category) => (
             <StyledLi key={category.name}>
-              <Category>{category.name}:</Category>
+              <Category>
+                {category.name}
+                :
+              </Category>
               <span>
                 &nbsp;
-                {category.skills.map((techName) => `${techName}, `)}
+                {category.skills.map(
+                  (techName, index) => (
+                    <>
+                      {techName}
+                      {index < category.skills.length - 1 && ', '}
+                    </>
+                  ),
+                )}
               </span>
             </StyledLi>
           ))}
