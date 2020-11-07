@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { LinkButton, ExternalLinkButton } from 'components/shared/Button';
 
-import SKILLS from 'constants/skills';
 import { EMAIL } from 'constants/info';
 import mq from 'styles/mediaQuery';
+import Skills from './Skills';
 
 const About: React.FC = () => (
   <Container id="about">
@@ -22,37 +23,7 @@ const About: React.FC = () => (
           JavaScript. Keen on writing readable and maintainable code and
           repeating verifying and hypothesis to make a user-first product.
         </Intro>
-        <SubHeading>Specialties:</SubHeading>
-        <Specialties>
-          {SKILLS.specialties.map((skill) => (
-            <WrapSkillLogo key={skill.name}>
-              <SkillsLogo src={skill.imagePath} alt={skill.name} />
-              <SkillName>{skill.name}</SkillName>
-            </WrapSkillLogo>
-          ))}
-        </Specialties>
-        <SubHeading>Other skills:</SubHeading>
-        <StyledUl>
-          {SKILLS.otherSkills.map((category) => (
-            <StyledLi key={category.name}>
-              <Category>
-                {category.name}
-                :
-              </Category>
-              <span>
-                &nbsp;
-                {category.skills.map(
-                  (techName, index) => (
-                    <>
-                      {techName}
-                      {index < category.skills.length - 1 && ', '}
-                    </>
-                  ),
-                )}
-              </span>
-            </StyledLi>
-          ))}
-        </StyledUl>
+        <Skills />
         <WrapButtons>
           <LinkButton
             name="Resume"
@@ -66,6 +37,8 @@ const About: React.FC = () => (
     </Wrapper>
   </Container>
 );
+
+export default About;
 
 const Container = styled.div`
   background-color: #fff;
@@ -137,54 +110,6 @@ const Intro = styled.p`
   }
 `;
 
-const SubHeading = styled.h4`
-  font-size: 1.3rem;
-  opacity: 0.7;
-  margin: 4rem auto 1rem auto;
-`;
-
-const Specialties = styled.div`
-  display: flex;
-`;
-
-const WrapSkillLogo = styled.div`
-  text-align: center;
-  margin-right: 3rem;
-  ${mq('sm')} {
-    margin-right: 2rem;
-  }
-  ${mq('xs')} {
-    margin-right: 1rem;
-  }
-  ${mq('xxxs')} {
-    margin-right: 0.5rem;
-    margin-bottom: 1rem;
-  }
-`;
-
-const SkillsLogo = styled.img`
-  height: 3rem;
-  margin: 0 auto;
-`;
-
-const StyledUl = styled.ul`
-  margin-top: 0.7rem;
-  padding-left: 0rem;
-  list-style: none;
-`;
-
-const StyledLi = styled.li`
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  line-height: 1.8rem;
-`;
-
-const Category = styled.span`
-  font-family: 'Open Sans', sans-serif;
-  color: inherit;
-  opacity: 0.7;
-`;
-
 const WrapButtons = styled.div`
   display: flex;
   margin: 3rem auto;
@@ -195,9 +120,3 @@ const WrapButtons = styled.div`
     flex-direction: column;
   }
 `;
-
-const SkillName = styled.div`
-  margin-top: 1rem;
-`;
-
-export default About;
