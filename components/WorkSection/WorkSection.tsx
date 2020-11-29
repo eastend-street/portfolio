@@ -32,7 +32,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
     </SummaryArea>
     <ThumbnailArea>
       <Link href="/[work]" as={INNER_URL}>
-        <Thumbnail src={IMAGE_PATH} />
+        <Thumbnail src={IMAGE_PATH} data-testid={`thumbnail-${TITLE}`} />
       </Link>
     </ThumbnailArea>
   </Container>
