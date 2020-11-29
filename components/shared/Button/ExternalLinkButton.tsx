@@ -13,7 +13,7 @@ const ExternalLinkButton: React.FC<ExternalLinkButtonProps> = ({
   href,
   target = '_blank',
 }) => (
-  <ExternalLink href={href} target={target}>
+  <ExternalLink href={href} target={target} name={name}>
     <Button>{name}</Button>
   </ExternalLink>
 );

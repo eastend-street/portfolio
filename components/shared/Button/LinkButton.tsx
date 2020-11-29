@@ -17,7 +17,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
 }) => (
   <Link href={href} prefetch={prefetch}>
     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-    <a target={target}>
+    <a target={target} data-testid={`link-${name}`}>
       <Button>{name}</Button>
     </a>
   </Link>
