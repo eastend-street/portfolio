@@ -34,13 +34,11 @@ describe('<About/>', () => {
     });
   });
 
-  test('Should render resume button link', () => {
+  test('Should click resume and email button links', () => {
     render(<About />);
     buttonData.forEach((button) => {
       const buttonComponent = screen.getByTestId(`${button.type}-${button.name}`);
       expect(buttonComponent?.getAttribute('href')).toBe(button.url);
     });
   });
-
-  test.todo('Should render email button link');
 });
