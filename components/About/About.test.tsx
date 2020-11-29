@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import SKILLS from 'constants/skills';
 import { EMAIL } from 'constants/info';
 import About from './About';
@@ -20,9 +20,7 @@ const buttonData = [
 describe('<About/>', () => {
   test('Render without crashing', () => {
     render(<About />);
-    expect(
-      screen.getByText('ABOUT'),
-    ).toBeInTheDocument();
+    expect(screen.getByText('ABOUT')).toBeInTheDocument();
   });
 
   test('Should have the last skill w/o comma in other skills', () => {
@@ -34,11 +32,11 @@ describe('<About/>', () => {
     });
   });
 
-  test('Should click resume and email button links', () => {
+  test('Should navigate to resume and email when each link is clicked', () => {
     render(<About />);
     buttonData.forEach((button) => {
-      const buttonComponent = screen.getByTestId(`${button.type}-${button.name}`);
-      expect(buttonComponent?.getAttribute('href')).toBe(button.url);
+      const buttonLink = screen.getByTestId(`${button.type}-${button.name}`);
+      expect(buttonLink).toHaveAttribute('href', button.url);
     });
   });
 });
