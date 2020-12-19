@@ -1,14 +1,14 @@
 import React from 'react';
 
 interface ExternalLink {
-  name: string;
+  name?: string;
   href: string | undefined;
   children: React.ReactNode;
   target?: string;
 }
 
 const ExternalLink: React.FC<ExternalLink> = ({
-  name,
+  name = '',
   href,
   target = '_blank',
   children,
