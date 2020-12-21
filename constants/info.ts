@@ -1,9 +1,9 @@
 export const SITE = {
   title: 'Jun Yamada - Frontend Engineer',
   description:
-    'My name is Jun Yamada, Frontend Engineer based in Vancouver, Canada. Specializes in React.js, TypeScript and JavaScript. Keen on writing readable and maintainable code.',
+    'My name is Jun Yamada, a Frontend engineer. Specializes in React.js, TypeScript and JavaScript. Keen on writing readable and maintainable code.',
   url: 'https://junyamada.info',
-  ogDescription: 'My name is Jun Yamada, Frontend Engineer based in Vancouver.',
+  ogDescription: 'My name is Jun Yamada, a Frontend Engineer.',
   imagePath: '/assets/images/profile.jpg',
   ogpImagePath: '/assets/images/ogp-image.png',
   appleIconPath: '/assets/images/logo/apple-touch-icon.png',

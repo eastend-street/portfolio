@@ -6,7 +6,7 @@ describe('<Hero/>', () => {
   test('render without crashing', () => {
     render(<Hero />);
     expect(
-      screen.getByText("Hi, I'm Jun. Front End Engineer based in Vancouver"),
+      screen.getByText("Hello. I'm Jun, a Front End Engineer"),
     ).toBeInTheDocument();
   });
 });

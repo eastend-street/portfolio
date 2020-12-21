@@ -4,7 +4,7 @@ import mq from 'styles/mediaQuery';
 
 const Hero: React.FC = () => (
   <Container id="hero">
-    <Title>Hi, I&apos;m Jun. Front End Engineer based in Vancouver</Title>
+    <Title>Hello. I&apos;m Jun, a Front End Engineer</Title>
   </Container>
 );
 
