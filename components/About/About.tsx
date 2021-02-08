@@ -18,7 +18,7 @@ const About: React.FC = () => (
         <Name>Jun Yamada</Name>
         <JobTitle>Front End Engineer</JobTitle>
         <Intro>
-          Front end engineer with 3&#43; years of experience in software and
+          Front end engineer with 4&#43; years of experience in software and
           systems engineering. Specializes in React.js, TypeScript and
           JavaScript. Keen on writing readable and maintainable code and
           repeating verifying and hypothesis to make a user-first product.
