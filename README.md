@@ -124,7 +124,6 @@ Translation slack bot🗣 English ↔ Japanese and the other languages→ Englis
 ## Upcoming features
 - Implement fade-in to each project card
 - Make Works illustration such as Jotdown and Codeo (Currently using screenshot) 
-- Add animation on Hero section
 
 <br/>
 <br/>
