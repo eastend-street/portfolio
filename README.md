@@ -10,7 +10,7 @@ Website: &nbsp; https://junyamada.info
 <br/>
 <br/>
 
-## UI Design
+## UI Mockup
 ![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
 
 <br/>
@@ -121,9 +121,10 @@ Translation slack bot🗣 English ↔ Japanese and the other languages→ Englis
 <br/>
 
 
-## Upcoming features
+## Upcoming development
 - Implement fade-in to each project card
 - Make Works illustration such as Jotdown and Codeo (Currently using screenshot) 
+- Add CI/CD
 
 <br/>
 <br/>
