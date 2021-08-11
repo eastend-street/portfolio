@@ -10,7 +10,7 @@ Website: &nbsp; https://junyamada.info
 <br/>
 <br/>
 
-## UI Mockup
+## Initial Mockup
 ![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
 
 <br/>
@@ -44,7 +44,7 @@ Bookmark and note web service📗
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/codeo">Codeo</a></h3>
-Search programming video website from YouTube📺   
+A website you can search for programming YouTube videos📺   
 `React.js`, `React hooks`, `TypeScript`, `Context API`   
 
 <a href="https://github.com/eastend-street/codeo">
@@ -56,7 +56,7 @@ Search programming video website from YouTube📺
 <br/>
 
 - <h3><a href="https://junyamada.info/brickhouse">Brickhouse Ventures</a></h3>
-Brickhouse ventures company homepage. This is a team project at Cornerstone Community College with real client.  
+Brickhouse ventures company homepage. This is a team project at Cornerstone Community College with a real client.  
 `React.js`, `React Hooks`, `TypeScript`, `Sass`  
 
 <a href="https://junyamada.info/brickhouse">
@@ -80,7 +80,7 @@ Mail MarketPlace is a mail advertisement trading web application as a company pr
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
-Translation slack bot🗣 English ↔ Japanese and the other languages→ English   
+Translation slack bot🗣 English ↔ Japanese / other languages→ English   
 `Python`, `Docker`       
 
 <a href="https://github.com/eastend-street/translation_slackbot">
