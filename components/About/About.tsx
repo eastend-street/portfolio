@@ -94,6 +94,7 @@ const Name = styled.h3`
 const Intro = styled.p`
   font-size: 1.1rem;
   line-height: 1.8rem;
+  margin-bottom: 0;
   ${mq('xs')} {
     margin-top: 2rem;
   }

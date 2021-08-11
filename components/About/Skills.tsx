@@ -30,7 +30,7 @@ const Skills: React.FC = () => (
                 <span key={techName}>
                   {techName}
                   {index < category.skills.length - 2 && ', '}
-                  {index === category.skills.length - 2 && ', and '}
+                  {index === category.skills.length - 2 && ' and '}
                 </span>
               ),
             )}
@@ -50,7 +50,7 @@ const Container = styled.div`
 const SubHeading = styled.h4`
   font-size: 1.3rem;
   opacity: 0.7;
-  margin-bottom: 0.5rem;
+  margin: 3rem 0 0;
 `;
 
 const Specialties = styled.div`
@@ -78,7 +78,7 @@ const SkillsLogo = styled.img`
 `;
 
 const StyledUl = styled.ul`
-  margin-top: 0;
+  margin-top: 0.2rem;
   padding-left: 0rem;
   list-style: none;
 `;

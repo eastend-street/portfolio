@@ -16,7 +16,7 @@ const SKILLS = {
   otherSkills: [
     {
       name: 'Languages',
-      skills: ['Python', 'Node.js', 'HTML5', 'CSS3', 'Sass', 'Java'],
+      skills: ['Python', 'Node.js', 'HTML5', 'CSS3', 'Sass'],
     },
     {
       name: 'Frameworks / Libraries',
@@ -34,7 +34,14 @@ const SKILLS = {
     },
     {
       name: 'Others',
-      skills: ['Docker', 'Google Cloud Platform', 'MySQL', 'MongoDB', 'Git'],
+      skills: [
+        'GraphQL',
+        'Docker',
+        'Google Cloud Platform',
+        'MySQL',
+        'MongoDB',
+        'Git',
+      ],
     },
   ],
 };
