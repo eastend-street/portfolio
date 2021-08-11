@@ -10,7 +10,7 @@ To manage a lot of bookmarks easily. I have been using chrome bookmark manager b
 
 Developed all of the service, frontend, backend, infrastructure and design.
 
-- **Front-end:** React.js, Redux, styled-components, Material-ui
-- **Backend:** Django REST framework, Python
-- **Infrastructure:** Docker, Heroku
-- **Others:** REST API, Axios, Gunicorn, Netlify
+- **Front-end:** React.js, Redux, styled-components and Material-ui
+- **Backend:** Django REST framework and Python
+- **Infrastructure:** Docker and Heroku
+- **Others:** REST API, Axios, Gunicorn and Netlify

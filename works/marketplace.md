@@ -9,7 +9,7 @@ It's designed to sell email inventories by online. Ad buyers are able to search 
 
 I joined this project from the basic design phase. I developed the Marketplace responsible for all the front end work. Then I wrote backend CRUD processing, and constructed cloud infrastructure environment as well.
 
-- **Front-end:** Vue.js, Vuex, Vuetify.js, Vue Router
-- **Backend:** Django REST framework, Python
-- **Infrastructure:** Google Cloud Platform, Docker
-- **Others:** REST API, Axios, Gunicorn
+- **Front-end:** Vue.js, Vuex, Vuetify.js and Vue Router
+- **Backend:** Django REST framework and Python
+- **Infrastructure:** Google Cloud Platform and Docker
+- **Others:** REST API, Axios and Gunicorn
