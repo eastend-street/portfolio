@@ -15,7 +15,7 @@ const Skills: React.FC = () => (
         </WrapSkillLogo>
       ))}
     </Specialties>
-    <SubHeading>Other skills:</SubHeading>
+    <SubHeading>Other Skills:</SubHeading>
     <StyledUl>
       {SKILLS.otherSkills.map((category) => (
         <StyledLi key={category.name}>
@@ -29,7 +29,8 @@ const Skills: React.FC = () => (
               (techName, index) => (
                 <span key={techName}>
                   {techName}
-                  {index < category.skills.length - 1 && ', '}
+                  {index < category.skills.length - 2 && ', '}
+                  {index === category.skills.length - 2 && ', and '}
                 </span>
               ),
             )}
@@ -49,7 +50,7 @@ const Container = styled.div`
 const SubHeading = styled.h4`
   font-size: 1.3rem;
   opacity: 0.7;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 const Specialties = styled.div`
@@ -58,7 +59,7 @@ const Specialties = styled.div`
 
 const WrapSkillLogo = styled.div`
   text-align: center;
-  margin-right: 3rem;
+  margin: 0.5rem 3rem 0 0;
   ${mq('sm')} {
     margin-right: 2rem;
   }
@@ -77,14 +78,14 @@ const SkillsLogo = styled.img`
 `;
 
 const StyledUl = styled.ul`
-  margin-top: 0.7rem;
+  margin-top: 0;
   padding-left: 0rem;
   list-style: none;
 `;
 
 const StyledLi = styled.li`
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.8rem;
 `;
 
