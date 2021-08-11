@@ -16,12 +16,10 @@ const About: React.FC = () => (
       </PhotoSection>
       <AboutSection>
         <Name>Jun Yamada</Name>
-        <JobTitle>Front End Engineer</JobTitle>
         <Intro>
           Front end engineer with 4&#43; years of experience in software and
           systems engineering. Specializes in React.js, TypeScript and
-          JavaScript. Keen on writing readable and maintainable code and
-          repeating verifying and hypothesis to make a user-first product.
+          JavaScript. Keen on writing readable and maintainable code.
         </Intro>
         <Skills />
         <WrapButtons>
@@ -89,15 +87,6 @@ const Name = styled.h3`
   margin: 0;
   ${mq('xs')} {
     margin-top: 2rem;
-    text-align: center;
-  }
-`;
-
-const JobTitle = styled.h4`
-  font-size: 1.3rem;
-  margin: 0 0 1rem;
-  opacity: 0.7;
-  ${mq('xs')} {
     text-align: center;
   }
 `;
