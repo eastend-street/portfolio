@@ -4,7 +4,7 @@ Jot down is a bookmark and note web service. You can save your favorite websites
 
 ## Why I created this app
 
-To manage a lot of bookmarks easily. I had been using Chrome bookmark manager but sometimes I couldn't find the bookmark that I was looking for. Also, I wanted to write a note with bookmarks to remember what the bookmarks are, but Chrome bookmark manager doesn't have that. To solve these problems, I made Jotdown.
+To manage a lot of bookmarks easily. I had been using Chrome bookmark manager but sometimes I couldn't find the bookmark that I was looking for. Also, I wanted to write a note with bookmarks to remember what the bookmarks are, but Chrome bookmark manager doesn't have that. To solve these problems, I made Jot down.
 
 ## Technologies
 
