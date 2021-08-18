@@ -44,7 +44,7 @@ Bookmark and note web service📗
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/codeo">Codeo</a></h3>
-A website you can search for programming YouTube videos📺   
+A website where you can search for programming videos from YouTube📺   
 `React.js`, `React hooks`, `TypeScript`, `Context API`   
 
 <a href="https://github.com/eastend-street/codeo">
