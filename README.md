@@ -33,7 +33,7 @@ Website: &nbsp; https://junyamada.info
 
 - <h3><a href="https://github.com/eastend-street/jotdown">Jot down</a></h3>
 Bookmark and note web service📗   
-`React.js`, `Redux`, `Styled-components`, `Python`, `Django`, `Docker`    
+`React.js` `Redux` `Styled-components` `Python` `Django` `Docker`    
 
 <a href="https://github.com/eastend-street/jotdown">
 <img src="https://user-images.githubusercontent.com/43656115/76158377-2f36c400-60ca-11ea-99e8-909b6363e555.png" width="60%" height="60%">
@@ -44,8 +44,8 @@ Bookmark and note web service📗
 <br/>
 
 - <h3><a href="https://github.com/eastend-street/codeo">Codeo</a></h3>
-A website you can search for programming YouTube videos📺   
-`React.js`, `React hooks`, `TypeScript`, `Context API`   
+A website where you can search for programming videos from YouTube📺   
+`React.js` `React hooks` `TypeScript` `Context API`   
 
 <a href="https://github.com/eastend-street/codeo">
 <img src="https://user-images.githubusercontent.com/43656115/71144579-5bc9f680-21d3-11ea-9b65-98c6fb660d17.png" width="60%" height="60%">
@@ -57,7 +57,7 @@ A website you can search for programming YouTube videos📺
 
 - <h3><a href="https://junyamada.info/brickhouse">Brickhouse Ventures</a></h3>
 Brickhouse ventures company homepage. This is a team project at Cornerstone Community College with a real client.  
-`React.js`, `React Hooks`, `TypeScript`, `Sass`  
+`React.js` `React Hooks` `TypeScript` `Sass`  
 
 <a href="https://junyamada.info/brickhouse">
 <img src="https://user-images.githubusercontent.com/43656115/77298161-b463d080-6ca7-11ea-9d79-b9f02ee330a7.png" width="60%" height="60%">
@@ -69,7 +69,7 @@ Brickhouse ventures company homepage. This is a team project at Cornerstone Comm
 
 - <h3><a href="https://junyamada.info/marketplace">Mail MarketPlace</a></h3>
 Mail MarketPlace is a mail advertisement trading web application as a company project.   
-`Vue.js`, `Vuex`, `Vuetify.js`, `Django REST framework`, `Google Cloud Platform`, `Docker`      
+`Vue.js` `Vuex` `Vuetify.js` `Django REST framework` `Google Cloud Platform` `Docker`      
 
 <a href="https://junyamada.info/marketplace">
 <img src="https://user-images.githubusercontent.com/43656115/76181926-1e488a00-6180-11ea-9b71-92ff645f9027.png" width="60%" height="60%">
@@ -81,7 +81,7 @@ Mail MarketPlace is a mail advertisement trading web application as a company pr
 
 - <h3><a href="https://github.com/eastend-street/translation_slackbot">Translation Slack Bot</a></h3>
 Translation slack bot🗣 English ↔ Japanese / other languages→ English   
-`Python`, `Docker`       
+`Python` `Docker`       
 
 <a href="https://github.com/eastend-street/translation_slackbot">
 <img src="https://user-images.githubusercontent.com/43656115/76172573-c47e9a80-6154-11ea-8251-ddcaaa20ebbf.png" width="60%" height="60%">
