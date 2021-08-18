@@ -30,7 +30,7 @@ const Skills: React.FC = () => (
                 <span key={techName}>
                   {techName}
                   {index < category.skills.length - 2 && ', '}
-                  {index === category.skills.length - 2 && ' and '}
+                  {index === category.skills.length - 2 && ', and '}
                 </span>
               ),
             )}

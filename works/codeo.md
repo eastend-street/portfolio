@@ -1,8 +1,7 @@
 ## What is Codeo?
-Codeo is a website to search programming video from YouTube. You can search programming YouTube video by each category such as React, Python and etc.
+Codeo is a website where you can search for programming videos from YouTube. You can search for programming videos by each category such as React, Python, and etc.
 
 ## Technologies
-Developed all of the service, frontend, design and calling YouTube API.
 
 - React.js
 - React Hooks
@@ -10,3 +9,4 @@ Developed all of the service, frontend, design and calling YouTube API.
 - TypeScript
 - Styled-components
 - Material-UI
+- YouTube API

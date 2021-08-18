@@ -6,8 +6,6 @@ Brickhouse ventures is a eSports VC fund. This is a Brickhouse company website a
 
 ## Technologies
 
-Dveloped front-end architecture such as folder structure and separating component. Also made each component using React.js and TypeScript.
-
 - React.js
 - React Hooks
 - TypeScript
