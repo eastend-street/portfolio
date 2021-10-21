@@ -120,15 +120,6 @@ Translation slack bot🗣 English ↔ Japanese / other languages→ English
 <br/>
 <br/>
 
-
-## Upcoming development
-- Implement fade-in to each project card
-- Make Works illustration such as Jotdown and Codeo (Currently using screenshot) 
-- Add CI/CD
-
-<br/>
-<br/>
-
 ## Author
 [eastend-street](https://github.com/eastend-street)
 
