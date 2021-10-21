@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { LinkButton, ExternalLinkButton } from 'components/shared/Button';
+import ContentWrapper from 'components/shared/ContentWrapper';
 
 import { EMAIL } from 'constants/info';
 import mq from 'styles/mediaQuery';
@@ -9,30 +10,32 @@ import Skills from './Skills';
 
 const About: React.FC = () => (
   <Container id="about">
-    <Title>ABOUT</Title>
-    <Wrapper>
-      <PhotoSection>
-        <Profile src="assets/images/profile.png" alt="profile" />
-      </PhotoSection>
-      <AboutSection>
-        <Name>Jun Yamada</Name>
-        <Intro>
-          Front end engineer with 4&#43; years of experience in software and
-          systems engineering. Specializes in React.js, TypeScript, and
-          JavaScript. Keen on writing readable and maintainable code.
-        </Intro>
-        <Skills />
-        <WrapButtons>
-          <LinkButton
-            name="Resume"
-            href="resume_jun_yamada.pdf"
-            target="_blank"
-            prefetch={false}
-          />
-          <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
-        </WrapButtons>
-      </AboutSection>
-    </Wrapper>
+    <ContentWrapper>
+      <Title>ABOUT</Title>
+      <Wrapper>
+        <PhotoSection>
+          <Profile src="assets/images/profile.png" alt="profile" />
+        </PhotoSection>
+        <AboutSection>
+          <Name>Jun Yamada</Name>
+          <Intro>
+            Front end engineer with 4&#43; years of experience in software and
+            systems engineering. Specializes in React.js, TypeScript, and
+            JavaScript. Keen on writing readable and maintainable code.
+          </Intro>
+          <Skills />
+          <WrapButtons>
+            <LinkButton
+              name="Resume"
+              href="resume_jun_yamada.pdf"
+              target="_blank"
+              prefetch={false}
+            />
+            <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
+          </WrapButtons>
+        </AboutSection>
+      </Wrapper>
+    </ContentWrapper>
   </Container>
 );
 

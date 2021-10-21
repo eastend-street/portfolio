@@ -1,21 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import ExternalLink from 'components/shared/ExternalLink';
+import ContentWrapper from 'components/shared/ContentWrapper';
 import { GITHUB_URL } from 'constants/info';
 import mq from 'styles/mediaQuery';
 
 const Footer: React.FC = () => (
   <Container>
-    <ExternalLink href={GITHUB_URL}>
-      <SocialLogo src="assets/images/logo/github.png" alt="Github" />
-    </ExternalLink>
-    <Copyright>
-      &copy; Jun Yamada
-      {' '}
-      {new Date().getFullYear()}
-      {' '}
-      All rights reserved.
-    </Copyright>
+    <ContentWrapper>
+      <ExternalLink href={GITHUB_URL}>
+        <SocialLogo src="assets/images/logo/github.png" alt="Github" />
+      </ExternalLink>
+      <Copyright>
+        &copy; Jun Yamada {new Date().getFullYear()} All rights reserved.
+      </Copyright>
+    </ContentWrapper>
   </Container>
 );
 

@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import WorkSection from 'components/WorkSection';
+import ContentWrapper from 'components/shared/ContentWrapper';
 import WORKS from 'constants/works';
 import mq from 'styles/mediaQuery';
 
 const Works: React.FC = () => (
   <Container id="works">
-    <Title>WORKS</Title>
-    {WORKS.map((work, index: number) => (
-      <WorkSection odd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
-    ))}
+    <ContentWrapper>
+      <Title>WORKS</Title>
+      {WORKS.map((work, index: number) => (
+        <WorkSection odd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
+      ))}
+    </ContentWrapper>
   </Container>
 );
 
