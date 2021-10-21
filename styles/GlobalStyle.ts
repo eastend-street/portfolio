@@ -7,6 +7,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     color: rgba(0,0,0,0.7);
     background-color: #EEE2D7;
+
+    --content-max-width: 1280px;
   }
 
   h1, h2, h3, h4 {
