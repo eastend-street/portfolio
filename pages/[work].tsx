@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import Layout from 'components/Layout';
 import { ExternalLinkButton } from 'components/shared/Button';
 import ExternalLink from 'components/shared/ExternalLink';
+import ContentWrapper from 'components/shared/ContentWrapper';
 import { getAllWorks, getWorkData } from 'lib/works';
 import mq from 'styles/mediaQuery';
 
@@ -18,7 +19,7 @@ interface WorkDetailProps {
 
 const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
   const WORK_INFO = WORKS.find(
-    (item) => item.INNER_URL === `/${name.toLowerCase()}`,
+    (item) => item.INNER_URL === `/${name.toLowerCase()}`
   );
   return (
     <Layout>
@@ -30,15 +31,20 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
           <WorkImage src={WORK_INFO?.IMAGE_PATH} alt={WORK_INFO?.TITLE} />
         </ExternalLink>
         <Description>
-          <WrapButtons>
-            {WORK_INFO?.URL && (
-              <ExternalLinkButton name="Visit website" href={WORK_INFO.URL} />
-            )}
-            {WORK_INFO?.GITHUB && (
-              <ExternalLinkButton name="View GitHub" href={WORK_INFO.GITHUB} />
-            )}
-          </WrapButtons>
-          <StyledReactMarkdown source={workData} />
+          <ContentWrapper>
+            <WrapButtons>
+              {WORK_INFO?.URL && (
+                <ExternalLinkButton name="Visit website" href={WORK_INFO.URL} />
+              )}
+              {WORK_INFO?.GITHUB && (
+                <ExternalLinkButton
+                  name="View GitHub"
+                  href={WORK_INFO.GITHUB}
+                />
+              )}
+            </WrapButtons>
+            <StyledReactMarkdown source={workData} />
+          </ContentWrapper>
         </Description>
       </Container>
     </Layout>
@@ -77,6 +83,7 @@ const Title = styled.h1`
 `;
 
 const WorkImage = styled.img`
+  max-width: var(--content-max-width);
   width: 60%;
   ${mq('xs')} {
     width: 80%;
@@ -104,7 +111,7 @@ const WrapButtons = styled.div`
 `;
 
 const StyledReactMarkdown = styled(ReactMarkdown)`
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   text-align: left;
   ${mq('xs')} {
