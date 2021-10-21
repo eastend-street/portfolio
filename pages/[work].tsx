@@ -27,9 +27,12 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
         <ExternalLink href={WORK_INFO?.URL || WORK_INFO?.GITHUB}>
           <Title>{WORK_INFO?.TITLE}</Title>
         </ExternalLink>
-        <ExternalLink href={WORK_INFO?.URL || WORK_INFO?.GITHUB}>
-          <WorkImage src={WORK_INFO?.IMAGE_PATH} alt={WORK_INFO?.TITLE} />
-        </ExternalLink>
+        <ContentWrapper>
+          <ExternalLink href={WORK_INFO?.URL || WORK_INFO?.GITHUB}>
+            <WorkImage src={WORK_INFO?.IMAGE_PATH} alt={WORK_INFO?.TITLE} />
+          </ExternalLink>
+        </ContentWrapper>
+
         <Description>
           <ContentWrapper>
             <WrapButtons>
@@ -83,11 +86,7 @@ const Title = styled.h1`
 `;
 
 const WorkImage = styled.img`
-  max-width: var(--content-max-width);
-  width: 60%;
-  ${mq('xs')} {
-    width: 80%;
-  }
+  width: 80%;
 `;
 
 const Description = styled.div`

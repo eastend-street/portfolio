@@ -11,13 +11,16 @@ const Hero: React.FC = () => (
 export default Hero;
 
 const Container = styled.div`
-  min-height: calc(95vh - 4rem); /* subtract header height */
+  height: calc(95vh - 4rem); /* subtract header height */
   display: flex;
   justify-content: center;
   align-items: center;
   ${mq('xs')} {
     min-height: calc(95vh - 3.5rem); /* subtract header height */
   }
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  max-height: 1080px;
 `;
 
 const FadeIn = keyframes`
@@ -32,14 +35,11 @@ const FadeIn = keyframes`
 `;
 
 const Title = styled.h1`
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: normal;
   text-align: center;
   margin-top: -4rem; /* subtract header height */
   width: 80%;
-  ${mq('lg')} {
-    font-size: 4rem;
-  }
   ${mq('md')} {
     font-size: 3rem;
   }
