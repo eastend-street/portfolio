@@ -7,6 +7,7 @@ const Button: React.FC = (props) => <StyledButton {...props} />;
 export default Button;
 
 const StyledButton = styled.button`
+  color: inherit;
   display: block;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.7);
