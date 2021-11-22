@@ -28,6 +28,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
       <meta property="og:site_name" content={SITE.title} />
       <meta property="og:locale" content="en_CA" />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="google-site-verification"
+        content="m3lF9Sv6ous6Vc_uXEn4xUQcT0pPqq7I4hjK7XgkE2M"
+      />
       <title>{SITE.title}</title>
     </Head>
     <Header />
