@@ -6,14 +6,14 @@
     "@testing-library/dom": "^7.26.3",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
-    "next": "^10.2.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "next": "^11.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
     "react-helmet": "^5.2.1",
-    "react-markdown": "^4.3.1",
+    "react-markdown": "^8.0.0",
     "styled-components": "^4.2.0",
-    "typescript": "^3.7.3"
+    "typescript": "^4.5.5"
   },
   "scripts": {
     "dev": "next dev",
@@ -26,8 +26,8 @@
   "devDependencies": {
     "@types/jest": "^26.0.15",
     "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
     "@types/react-gtm-module": "^2.0.1",
     "@types/react-helmet": "^5.0.14",
     "@types/styled-components": "^4.4.1",
