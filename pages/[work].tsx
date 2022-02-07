@@ -46,7 +46,7 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
                 />
               )}
             </WrapButtons>
-            <StyledReactMarkdown children={workData} />
+            <StyledReactMarkdown>{workData}</StyledReactMarkdown>
           </ContentWrapper>
         </Description>
       </Container>

@@ -21,8 +21,8 @@ describe('<Works/>', () => {
       );
 
       screen.debug();
-      const title = screen.getByText(work.TITLE);
-      const thumbnail = screen.getByTestId(`thumbnail-${work.TITLE}`);
+      // const title = screen.getByText(work.TITLE);
+      // const thumbnail = screen.getByTestId(`thumbnail-${work.TITLE}`);
       // TODO: Figure out how to test inner route
       // expect(title.closest('a')).toHaveAttribute('href', work.INNER_URL);
       // expect(thumbnail.closest('a')).toHaveAttribute('href', work.INNER_URL);
