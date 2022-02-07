@@ -6,16 +6,14 @@ interface LinkButtonProps extends LinkProps {
   name: string;
   href: string;
   target?: string;
-  prefetch?: boolean
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({
   name,
   href,
   target = '_self',
-  prefetch = true,
 }) => (
-  <Link href={href} prefetch={prefetch}>
+  <Link href={href}>
     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
     <a target={target} data-testid={`link-${name}`}>
       <Button>{name}</Button>
