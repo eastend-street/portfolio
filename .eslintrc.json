@@ -39,7 +39,9 @@
       }
     ],
     "react/prop-types": ["off"],
-    "react/jsx-props-no-spreading": ["off"]
+    "react/require-default-props": "off", // Since we do not use prop-types
+    "react/jsx-props-no-spreading": ["off"],
+    "no-use-before-define": ["off"]
   },
   "settings": {
     "import/resolver": {
