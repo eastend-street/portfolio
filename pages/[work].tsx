@@ -19,7 +19,7 @@ interface WorkDetailProps {
 
 const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
   const WORK_INFO = WORKS.find(
-    (item) => item.INNER_URL === `/${name.toLowerCase()}`,
+    (item) => item.INNER_URL === `/${name.toLowerCase()}`
   );
   return (
     <Layout>

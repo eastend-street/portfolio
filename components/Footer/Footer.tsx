@@ -10,11 +10,7 @@ const Footer: React.FC = () => (
       <SocialLogo src="assets/images/logo/github.png" alt="Github" />
     </ExternalLink>
     <Copyright>
-      &copy; Jun Yamada
-      {' '}
-      {new Date().getFullYear()}
-      {' '}
-      All rights reserved.
+      &copy; Jun Yamada {new Date().getFullYear()} All rights reserved.
     </Copyright>
   </Container>
 );
