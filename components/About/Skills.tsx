@@ -19,21 +19,16 @@ const Skills: React.FC = () => (
     <StyledUl>
       {SKILLS.otherSkills.map((category) => (
         <StyledLi key={category.name}>
-          <Category>
-            {category.name}
-            :
-          </Category>
+          <Category>{category.name}:</Category>
           <span>
             &nbsp;
-            {category.skills.map(
-              (techName, index) => (
-                <span key={techName}>
-                  {techName}
-                  {index < category.skills.length - 2 && ', '}
-                  {index === category.skills.length - 2 && ', and '}
-                </span>
-              ),
-            )}
+            {category.skills.map((techName, index) => (
+              <span key={techName}>
+                {techName}
+                {index < category.skills.length - 2 && ', '}
+                {index === category.skills.length - 2 && ', and '}
+              </span>
+            ))}
           </span>
         </StyledLi>
       ))}
@@ -44,7 +39,7 @@ const Skills: React.FC = () => (
 export default Skills;
 
 const Container = styled.div`
-  margin-top: 4rem
+  margin-top: 4rem;
 `;
 
 const SubHeading = styled.h4`

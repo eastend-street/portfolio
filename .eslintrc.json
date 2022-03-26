@@ -41,8 +41,10 @@
     "react/prop-types": ["off"],
     "react/require-default-props": "off", // Since we do not use prop-types
     "react/jsx-props-no-spreading": ["off"],
-    "no-use-before-define": ["off"]
+    "no-use-before-define": ["off"],
+    "import/no-extraneous-dependencies": ["off"]
   },
+
   "settings": {
     "import/resolver": {
       "node": {
