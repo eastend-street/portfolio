@@ -8,7 +8,9 @@
     "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/react"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -22,8 +24,9 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".ts", ".tsx"] }
