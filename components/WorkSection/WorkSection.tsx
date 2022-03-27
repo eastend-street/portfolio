@@ -19,7 +19,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
   <Container odd={odd}>
     <SummaryArea>
       <div>
-        <Link href="/[work]" as={INNER_URL}>
+        <Link href="/[work]" as={INNER_URL} passHref>
           <Title>{TITLE}</Title>
         </Link>
         <Subtitle>{`- ${SUBTITLE} -`}</Subtitle>
@@ -31,7 +31,7 @@ const WorkSection: React.FC<WorkSectionProps> = ({
       </div>
     </SummaryArea>
     <ThumbnailArea>
-      <Link href="/[work]" as={INNER_URL}>
+      <Link href="/[work]" as={INNER_URL} passHref>
         <Thumbnail src={IMAGE_PATH} data-testid={`thumbnail-${TITLE}`} />
       </Link>
     </ThumbnailArea>

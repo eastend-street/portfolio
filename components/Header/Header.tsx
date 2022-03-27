@@ -6,14 +6,14 @@ import ExternalLink from 'components/shared/ExternalLink';
 
 const Header: React.FC = () => (
   <Container id="header">
-    <Link href="/">
+    <Link href="/" passHref>
       <Logo src="assets/images/logo/logo.png" alt="Jun Yamada Logo" />
     </Link>
     <Nav>
-      <Link href="/#about">
+      <Link href="/#about" passHref>
         <EachNav>ABOUT</EachNav>
       </Link>
-      <Link href="/#works">
+      <Link href="/#works" passHref>
         <EachNav>WORKS</EachNav>
       </Link>
       <ExternalLink href={`mailto:${EMAIL}`}>
