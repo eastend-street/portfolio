@@ -29,6 +29,7 @@ const About: React.FC = () => (
               name="Resume"
               href="/resume_jun_yamada.pdf"
               target="_blank"
+              prefetch={false}
             />
             <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
           </WrapButtons>
