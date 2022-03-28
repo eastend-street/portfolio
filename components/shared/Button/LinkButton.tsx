@@ -12,8 +12,9 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   name,
   href,
   target = '_self',
+  ...restProps
 }) => (
-  <Link href={href} passHref>
+  <Link href={href} passHref {...restProps}>
     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
     <a target={target} data-testid={`link-${name}`}>
       <Button>{name}</Button>
