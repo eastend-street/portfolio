@@ -1,3 +1,6 @@
+import GlobalStyle from 'styles/GlobalStyle';
+import Theme from 'styles/theme';
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -7,3 +10,12 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <Theme>
+      <GlobalStyle />
+      <Story />
+    </Theme>
+  ),
+];
