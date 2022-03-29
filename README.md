@@ -10,12 +10,6 @@ Website: &nbsp; https://junyamada.info
 <br/>
 <br/>
 
-## Initial Mockup
-
-![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
-
-<br/>
-<br/>
 
 ## Technologies
 
@@ -92,7 +86,7 @@ Website: &nbsp; https://junyamada.info
 <br/>
 <br/>
 
-## Structure
+## Directory Structure
 
 ```
  components/
@@ -117,6 +111,15 @@ Website: &nbsp; https://junyamada.info
 
 <br/>
 <br/>
+
+
+## Initial Mockup
+
+![portfolio-ui](https://user-images.githubusercontent.com/43656115/76182313-a3806e80-6181-11ea-8bc5-8a1634ab9c6b.png)
+
+<br/>
+<br/>
+
 
 ## Author
 
