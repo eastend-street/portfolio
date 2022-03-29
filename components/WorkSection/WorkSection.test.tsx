@@ -7,7 +7,7 @@ describe('<Works/>', () => {
   test('Render without crashing', () => {
     WORKS.forEach((work, index) => {
       render(
-        <WorkSection odd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
+        <WorkSection isOdd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
       );
       const workRegex = new RegExp(`^${work.TITLE}$`);
       expect(screen.getByText(workRegex)).toBeInTheDocument();
@@ -17,7 +17,7 @@ describe('<Works/>', () => {
   test('Should navigate to the each work when the title or the thumbnail is clicked', () => {
     WORKS.forEach((work, index) => {
       render(
-        <WorkSection odd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
+        <WorkSection isOdd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
       );
 
       screen.debug();
