@@ -5,7 +5,7 @@ import { Work as WorkType } from 'types/works';
 import mq from 'styles/mediaQuery';
 
 interface WorkSectionProps extends WorkType {
-  odd: boolean;
+  isOdd: boolean;
 }
 
 const WorkSection: React.FC<WorkSectionProps> = ({
@@ -14,9 +14,9 @@ const WorkSection: React.FC<WorkSectionProps> = ({
   TECHNOLOGIES,
   IMAGE_PATH,
   INNER_URL,
-  odd,
+  isOdd,
 }) => (
-  <Container odd={odd}>
+  <Container isOdd={isOdd}>
     <SummaryArea>
       <div>
         <Link href="/[work]" as={INNER_URL} passHref>
@@ -38,10 +38,10 @@ const WorkSection: React.FC<WorkSectionProps> = ({
   </Container>
 );
 
-const Container = styled.div<Pick<WorkSectionProps, 'odd'>>`
+const Container = styled.div<Pick<WorkSectionProps, 'isOdd'>>`
   display: flex;
   margin: 5rem;
-  flex-direction: ${(props) => props.odd && 'row-reverse'};
+  flex-direction: ${(props) => props.isOdd && 'row-reverse'};
   ${mq('sm')} {
     flex-direction: column;
     margin: 5rem 1rem;

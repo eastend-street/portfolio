@@ -10,7 +10,7 @@ const Works: React.FC = () => (
     <ContentWrapper>
       <Title>WORKS</Title>
       {WORKS.map((work, index: number) => (
-        <WorkSection odd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
+        <WorkSection isOdd={(index + 1) % 2 !== 0} key={work.TITLE} {...work} />
       ))}
     </ContentWrapper>
   </Container>
