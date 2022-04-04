@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 
 import Layout from 'components/Layout';
-import { ExternalLinkButton } from 'components/shared/Button';
+import { ExternalLinkButton } from 'components/shared/Buttons';
 import ExternalLink from 'components/shared/ExternalLink';
 import ContentWrapper from 'components/shared/ContentWrapper';
 import { getAllWorks, getWorkData } from 'lib/works';

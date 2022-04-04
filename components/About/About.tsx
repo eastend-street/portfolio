@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { LinkButton, ExternalLinkButton } from 'components/shared/Button';
+import { ExternalLinkButton } from 'components/shared/Buttons';
 import ContentWrapper from 'components/shared/ContentWrapper';
 
 import { EMAIL } from 'constants/info';
@@ -25,12 +25,13 @@ const About: React.FC = () => (
           </Intro>
           <Skills />
           <WrapButtons>
-            <LinkButton
-              name="Resume"
+            <ExternalLinkButton
               href="/resume_jun_yamada.pdf"
               target="_blank"
               prefetch={false}
-            />
+            >
+              Resume
+            </ExternalLinkButton>
             <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
           </WrapButtons>
         </AboutSection>
