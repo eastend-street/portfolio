@@ -1,16 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { LinkButton } from 'components/shared/Button';
+import { LinkButton } from 'components/shared/Buttons';
 
 const NotFound: React.FC = () => (
   <Container>
     <Title>404 Page not found</Title>
     <Description>
-      Sorry, I couldn&apos;t find the page...
+      Sorry, cannot find the page...
       <br />
       Please click the button below to go back to the Homepage.
     </Description>
-    <LinkButton name="Go to Homepage" href="/" target="_self" />
+    <LinkButton href="/" data-testid="link-button-go-to-homepage">
+      Go to Homepage
+    </LinkButton>
   </Container>
 );
 
