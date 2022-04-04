@@ -25,14 +25,12 @@ const About: React.FC = () => (
           </Intro>
           <Skills />
           <WrapButtons>
-            <ExternalLinkButton
-              href="/resume_jun_yamada.pdf"
-              target="_blank"
-              prefetch={false}
-            >
+            <ExternalLinkButton href="/resume_jun_yamada.pdf">
               Resume
             </ExternalLinkButton>
-            <ExternalLinkButton name="Email" href={`mailto:${EMAIL}`} />
+            <ExternalLinkButton href={`mailto:${EMAIL}`}>
+              Email
+            </ExternalLinkButton>
           </WrapButtons>
         </AboutSection>
       </Wrapper>

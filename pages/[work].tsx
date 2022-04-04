@@ -37,13 +37,14 @@ const WorkDetail: React.FC<WorkDetailProps> = ({ name, workData }) => {
           <ContentWrapper>
             <WrapButtons>
               {WORK_INFO?.URL && (
-                <ExternalLinkButton name="Visit website" href={WORK_INFO.URL} />
+                <ExternalLinkButton href={WORK_INFO.URL}>
+                  Visit website
+                </ExternalLinkButton>
               )}
               {WORK_INFO?.GITHUB && (
-                <ExternalLinkButton
-                  name="View GitHub"
-                  href={WORK_INFO.GITHUB}
-                />
+                <ExternalLinkButton href={WORK_INFO.GITHUB}>
+                  View GitHub
+                </ExternalLinkButton>
               )}
             </WrapButtons>
             <StyledReactMarkdown>{workData}</StyledReactMarkdown>
