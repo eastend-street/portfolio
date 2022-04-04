@@ -1,27 +1,14 @@
-import React from 'react';
+import { FC } from 'react';
 
-interface ExternalLink {
-  name?: string;
-  href: string | undefined;
-  children: React.ReactNode;
-  target?: string;
-}
+import { ExternalLinkProps } from './types';
 
-const ExternalLink: React.FC<ExternalLink> = ({
-  name = '',
-  href,
-  target = '_blank',
+const ExternalLink: FC<ExternalLinkProps> = ({
   children,
+  ...restProps
 }) => (
-  <>
-    {href ? (
-      <a href={href} target={target} data-testid={`external-link-${name}`}>
-        {children}
-      </a>
-    ) : (
-      <>{children}</>
-    )}
-  </>
+  <a {...restProps}>
+    {children}
+  </a>
 );
 
 export default ExternalLink;
