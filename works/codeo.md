@@ -4,7 +4,7 @@ Codeo is a website where you can search for programming videos from YouTube. You
 
 ## Technologies
 
-- React.js
+- React
 - React Hooks
 - React Context API
 - TypeScript

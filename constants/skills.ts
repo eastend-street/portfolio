@@ -1,7 +1,7 @@
 const SKILLS = {
   specialties: [
     {
-      name: 'React.js',
+      name: 'React',
       imagePath: 'assets/images/logo/react.svg',
     },
     {
@@ -22,12 +22,10 @@ const SKILLS = {
       name: 'Frameworks / Libraries',
       skills: [
         'Next.js',
+        'NestJS',
         'Django',
         'Vue.js',
-        'Express.js',
-        'Bootstrap',
-        'Material-UI',
-        'Gatsby.js',
+        'Express',
         'Jest',
         'React Testing Library',
       ],
@@ -39,7 +37,6 @@ const SKILLS = {
         'Docker',
         'Google Cloud Platform',
         'MySQL',
-        'MongoDB',
         'Git',
       ],
     },
