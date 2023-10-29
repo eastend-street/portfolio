@@ -1,6 +1,6 @@
 # Portfolio
 
-This is my portfolio website to show frontend development works🎓 &nbsp;Made by Next.js(React.js).
+This is my portfolio website to show frontend development works🎓 &nbsp;Made by Next.js(React).
 
 <br/>
 
@@ -14,7 +14,7 @@ Website: &nbsp; https://junyamada.info
 ## Technologies
 
 - Next.js
-- React.js
+- React
 - React hooks
 - Styled-components
 - TypeScript (JavaScript)

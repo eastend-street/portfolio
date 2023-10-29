@@ -8,7 +8,7 @@ To manage a lot of bookmarks easily. I had been using Chrome bookmark manager bu
 
 ## Technologies
 
-- **Front end:** React.js, Redux, styled-components, and Material-ui
+- **Front end:** React, Redux, styled-components, and Material-ui
 - **Back end:** Django REST framework and Python
 - **Infrastructure:** Docker and Heroku
 - **Others:** REST API, Axios, Gunicorn, and Netlify
